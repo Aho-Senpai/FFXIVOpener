@@ -14,3 +14,7 @@ body {
     width: 5%;
     height: auto;
 }
+
+.DiscordButton {
+    cursor: crosshair;
+}
