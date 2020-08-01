@@ -11,6 +11,7 @@ header {
 
 body {
     background-color: #111113;
+    color: white;
 }
 
 .Logo {
@@ -35,9 +36,36 @@ body {
 
 .DiscordButton:hover {
     background-color: rgba(24, 21, 180, 0.7);
+    
 }
 
 .WebsiteTitle {
     color: white;
     font-size: xxx-large;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.jobSelectCol {
+    width: 10%;
+    background-color: blue;
+}
+
+.rotationRow {
+    width: 90%;
+    background-color: aqua;
+}
+.jobSkillsCol {
+    width: 50%;
+    background-color: chartreuse;
+}
+.globalSkillsCol {
+    width: 25%;
+    background-color: darkred;
+}
+.skillTooltipCol {
+    width: 25%;
+    background-color: fuchsia;
 }
