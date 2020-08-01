@@ -1,0 +1,16 @@
+header {
+    background-color: #24252a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    background-color: #111113;
+}
+
+.Logo {
+    cursor: pointer;
+    width: 5%;
+    height: auto;
+}
