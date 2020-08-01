@@ -3,6 +3,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 5%;
+    padding-left: 3%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 body {
@@ -16,5 +20,24 @@ body {
 }
 
 .DiscordButton {
-    cursor: crosshair;
+    cursor: pointer;
+    padding: 9px 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: rgba(24, 21, 180, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+
+.DiscordButton:hover {
+    background-color: rgba(24, 21, 180, 0.7);
+}
+
+.WebsiteTitle {
+    color: white;
+    font-size: xxx-large;
 }
