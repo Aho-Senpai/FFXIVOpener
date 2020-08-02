@@ -1,5 +1,7 @@
-body {
+body {    
     background-color: #111113;
+    margin: 0;
+    height: 100%;
 }
 header {
     background-color: #24252a;
@@ -16,6 +18,7 @@ main {
     width: 100%;
     height: 100%;
     margin: 0;
+    background-color: purple;
 }
 footer {
     background-color: blue;
@@ -56,39 +59,40 @@ footer {
 }
 
 .container {
-    margin: 0 auto;
+    margin: 0;
+    height: 100%;
     display: grid;
+    grid-template-columns: 20% 25% 25% 30%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+        "jobSelectCol rotationRow rotationRow rotationRow"
+        "jobSelectCol jobSkillsCol globalSkillsCol skillTooltipCol";
 }
 
 .jobSelectCol {
     width: 10%;
     background-color: blue;
     height: 100%;
-    grid-column: 1;
-    grid-row: 1 / span 2;
+    grid-area: jobSelectCol;
 }
 
 .rotationRow {
     width: 90%;
     background-color: aqua;
-    grid-column: 2 / span 3;
-    grid-row: 1;
+    grid-area: rotationRow;
 }
 .jobSkillsCol {
     width: 50%;
     background-color: chartreuse;
-    grid-column: 2;
-    grid-row: 2;
+    grid-area: jobSkillsCol;
 }
 .globalSkillsCol {
     width: 25%;
     background-color: darkred;
-    grid-row: 2;
-    grid-column: 3;
+    grid-area: globalSkillsCol;
 }
 .skillTooltipCol {
     width: 25%;
     background-color: fuchsia;
-    grid-row: 2;
-    grid-column: 4;
+    grid-area: skillTooltipCol;
 }
