@@ -1,9 +1,10 @@
 let jobList = [];
 let jobSkills = {};
 let roleSkills = {};
+let currentJobId = 0;
 
 $(function() {
-    $.getJSON('https://xivapi.com/ClassJob?columns=ID,Name,Icon,ClassJobCategory.Name,ClassJobCategory.ID,Role,IsLimitedJob,ItemSoulCrystalTargetID', function(data) {
+    $.getJSON('https://xivapi.com/ClassJob?columns=ID,Name,Icon,ClassJobCategory.Name,ClassJobCategory.ID,Role,IsLimitedJob,ItemSoulCrystalTargetID,Abbreviation', function(data) {
         $.each(data.Results, function (_, job) {
             if(job.IsLimitedJob === 1){
                 job.Role = 5;
@@ -25,11 +26,11 @@ $(function() {
             let clickableImage = $(`<img src="https://xivapi.com${job.Icon}" width=40 height=40>`);
             $(`#role-${job.Role}`).append(link);
             link.click(function(element){
-                console.log(`You clicked on ${$(this).data("id")} you sly dog`);
                 getJobSkills($(this).data("id"));
+                currentJobId = $(job.ID);
             });
         });
-    });                
+    });
 });
 
 function getJobSkills(jobId) {
@@ -38,15 +39,20 @@ function getJobSkills(jobId) {
     getAllData(url, 1).then(function(data){
         jobSkills[jobId] = data.filter(action => action.IsRoleAction === 0);
         roleSkills[jobId] = data.filter(action => action.IsRoleAction === 1);
-        $(`#jobSkillsList`).empty();
+        $(`#jobSkillsListGCD`).empty();
         $.each(jobSkills[jobId], function (_, skill) {
-            let image = $(`<img src="https://xivapi.com${skill.Icon}" width="40" height="40">`);                        
-            $(`#jobSkillsList`).append(image);
+            let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID}>`);                        
+            $(`#jobSkillsListGCD`).append(image);
         });
         $(`#roleSkills`).empty();
         $.each(roleSkills[jobId], function (_, skill) {
-            let image = $(`<img src="https://xivapi.com${skill.Icon}" width="40" height="40">`);                        
+            let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40">`);                        
             $(`#roleSkills`).append(image);
+        });
+        $(".imgHover").hover(function(_, skill){
+            console.log("hi");
+            let tooltip = $(`<p>${jobSkills[currentJobId].filter(skill => skill.ID === $(this).data("id"))}</p>`);
+            $(`.skillTooltipCol`).append(tooltip);
         });
     });
 }
