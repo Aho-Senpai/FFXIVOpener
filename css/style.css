@@ -80,7 +80,7 @@ footer {
     color: white;
     font-size: 2vh;
     justify-self: center;
-    padding: 5%;
+    align-self: center;
 }
 .roleSkills {
     grid-row: 1;
@@ -90,5 +90,4 @@ footer {
 }
 .roleJob {
     font-size: 2vh;
-    
 }
