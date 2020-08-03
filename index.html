@@ -6,6 +6,7 @@
         <meta name="description" content="This website is for FFXIV openers"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -21,7 +22,17 @@
         <main>
             <div class="container">
                 <div class="col jobSelectCol">
-                    Job Selection Column
+                    <span class="jobSelectTitle">SELECT YOUR JOB</span>
+                    <div id="jobSelect">
+                        <div id="role-1">
+                            <span class="roleJob">Tank</span>
+                        </div>
+                        <div id="role-4">Healer</div>
+                        <div id="role-2">Melee</div>
+                        <div id="role-3">Physical Ranged</div>
+                        <div id="role-6">Magical Ranged</div>
+                        <div id="role-5">Special Snowflake</div>
+                    </div>
                 </div>
                 <div class="row rotationRow">
                     Rotation Row
@@ -30,7 +41,12 @@
                     Job Specific Column
                 </div>
                 <div class="col globalSkillsCol">
-                    Global Skills Column
+                    <div class="roleSkills">
+                        Role Skills List
+                    </div>
+                    <div class="generalActions">
+                        General Actions : LB, sprint, food, pot ... 
+                    </div>
                 </div>
                 <div class="col skillTooltipCol">
                     Mouseover Skill Tooltop

@@ -2,6 +2,7 @@ body {
     background-color: #111113;
     margin: 0;
     height: 100%;
+    color: white;
 }
 header {
     background-color: #24252a;
@@ -40,7 +41,6 @@ footer {
 }
 .DiscordButton:hover {
     background-color: rgba(24, 21, 180, 0.7);
-    
 }
 .WebsiteTitle {
     color: white;
@@ -58,8 +58,8 @@ footer {
     height: calc(100vh - 8vh - 2vh);
 }
 .jobSelectCol {
-    background-color: blue;
     grid-area: jobSelectCol;
+    display: contents;
 }
 .rotationRow {
     background-color: aqua;
@@ -70,10 +70,22 @@ footer {
     grid-area: jobSkillsCol;
 }
 .globalSkillsCol {
-    background-color: darkred;
     grid-area: globalSkillsCol;
+    display: grid;
 }
 .skillTooltipCol {
     background-color: fuchsia;
     grid-area: skillTooltipCol;
+}
+.jobSelectTitle {
+    color: white;
+    font-size: 2vh;
+    justify-self: center;
+    padding: 5%;
+}
+.roleSkills {
+    grid-row: 1;
+}
+.generalActions {
+    grid-row: 2;
 }
