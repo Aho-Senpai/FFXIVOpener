@@ -8,11 +8,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 5%;
-    padding-left: 3%;
-    padding-top: 5px;
-    padding-bottom: 5px;
     color: white;
+    height: 8vh;
 }
 main {
     width: 100%;
@@ -26,21 +23,18 @@ footer {
     bottom: 0;
     position: fixed;
     width: 100%;
+    height: 2vh;
 }
 
 .Logo {
     cursor: pointer;
-    width: 5%;
+    width: 8vh;
     height: auto;
 }
 
 .DiscordButton {
     cursor: pointer;
     padding: 9px 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 25px;
-    padding-left: 25px;
     background-color: rgba(24, 21, 180, 1);
     border: none;
     border-radius: 50px;
@@ -55,44 +49,39 @@ footer {
 
 .WebsiteTitle {
     color: white;
-    font-size: xxx-large;
+    font-size: 7vh;
 }
 
 .container {
     margin: 0;
-    height: 100%;
+    width: 100%;
     display: grid;
-    grid-template-columns: 20% 25% 25% 30%;
+    grid-template-columns: 20% 35% 20% 25%;
     grid-template-rows: 20% 80%;
     grid-template-areas: 
         "jobSelectCol rotationRow rotationRow rotationRow"
         "jobSelectCol jobSkillsCol globalSkillsCol skillTooltipCol";
+    height: calc(100vh - 8vh - 2vh);
 }
 
 .jobSelectCol {
-    width: 10%;
     background-color: blue;
-    height: 100%;
     grid-area: jobSelectCol;
 }
 
 .rotationRow {
-    width: 90%;
     background-color: aqua;
     grid-area: rotationRow;
 }
 .jobSkillsCol {
-    width: 50%;
     background-color: chartreuse;
     grid-area: jobSkillsCol;
 }
 .globalSkillsCol {
-    width: 25%;
     background-color: darkred;
     grid-area: globalSkillsCol;
 }
 .skillTooltipCol {
-    width: 25%;
     background-color: fuchsia;
     grid-area: skillTooltipCol;
 }
