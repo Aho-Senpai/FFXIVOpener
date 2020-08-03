@@ -1,0 +1,79 @@
+body {    
+    background-color: #111113;
+    margin: 0;
+    height: 100%;
+}
+header {
+    background-color: #24252a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 8vh;
+}
+main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+footer {
+    background-color: blue;
+    justify-content: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 2vh;
+}
+.Logo {
+    cursor: pointer;
+    width: 8vh;
+    height: auto;
+}
+.DiscordButton {
+    cursor: pointer;
+    padding: 9px 25px;
+    background-color: rgba(24, 21, 180, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+.DiscordButton:hover {
+    background-color: rgba(24, 21, 180, 0.7);
+    
+}
+.WebsiteTitle {
+    color: white;
+    font-size: 7vh;
+}
+.container {
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 35% 20% 25%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+        "jobSelectCol rotationRow rotationRow rotationRow"
+        "jobSelectCol jobSkillsCol globalSkillsCol skillTooltipCol";
+    height: calc(100vh - 8vh - 2vh);
+}
+.jobSelectCol {
+    background-color: blue;
+    grid-area: jobSelectCol;
+}
+.rotationRow {
+    background-color: aqua;
+    grid-area: rotationRow;
+}
+.jobSkillsCol {
+    background-color: chartreuse;
+    grid-area: jobSkillsCol;
+}
+.globalSkillsCol {
+    background-color: darkred;
+    grid-area: globalSkillsCol;
+}
+.skillTooltipCol {
+    background-color: fuchsia;
+    grid-area: skillTooltipCol;
+}
