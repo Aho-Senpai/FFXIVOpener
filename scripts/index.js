@@ -1,4 +1,7 @@
 let jobList = [];
+let jobSkills = {};
+let roleSkills = {};
+
 $(function() {
     $.getJSON('https://xivapi.com/ClassJob?columns=ID,Name,Icon,ClassJobCategory.Name,ClassJobCategory.ID,Role,IsLimitedJob,ItemSoulCrystalTargetID', function(data) {
         $.each(data.Results, function (_, job) {
@@ -29,16 +32,38 @@ $(function() {
     });                
 });
 
-let jobSkills = {};
 function getJobSkills(jobId) {
-    $.getJSON(`https://xivapi.com/search?indexes=Action&filters=ClassJob.ID=${jobId}&columns=ID,Icon,Name,Url,Description,Cast100ms,Recast100ms,Range,PrimaryCostType,PrimaryCostValue,SecondaryCostType,SecondaryCostValue,CastType`, function(data) {
-        jobSkills[jobId] = data.Results;
+    let shorthand = jobList.find(x => x.ID === jobId).Abbreviation
+    let url = `https://xivapi.com/search?indexes=Action&filters=ClassJobCategory.${shorthand}=1,IsPvP=0,IsPlayerAction=1&columns=ID,Icon,Name,Url,Description,Cast100ms,Recast100ms,Range,PrimaryCostType,PrimaryCostValue,SecondaryCostType,SecondaryCostValue,CastType,ActionCategory,ClassJobCategoryTargetID,IsRoleAction&page=`;
+    getAllData(url, 1).then(function(data){
+        jobSkills[jobId] = data.filter(action => action.IsRoleAction === 0);
+        roleSkills[jobId] = data.filter(action => action.IsRoleAction === 1);
+        $(`#jobSkillsList`).empty();
+        $.each(jobSkills[jobId], function (_, skill) {
+            let image = $(`<img src="https://xivapi.com${skill.Icon}" width="40" height="40">`);                        
+            $(`#jobSkillsList`).append(image);
+        });
+        $(`#roleSkills`).empty();
+        $.each(roleSkills[jobId], function (_, skill) {
+            let image = $(`<img src="https://xivapi.com${skill.Icon}" width="40" height="40">`);                        
+            $(`#roleSkills`).append(image);
+        });
     });
-    $(`#jobSkillsList`).empty();
-    $.each(jobSkills[jobId], function () {
-        let image = $(`<img src="https://xivapi.com${jobSkills[jobId].Icon}" width="40" height="40">`);
-        $(`#jobSkillsList`).append(image);
-        console.log(jobSkills[jobId]);
-        console.log(jobId);
+}
+
+function getAllData(uri, page) {
+    let fullUrl = `${uri}${(page || 1)}`;
+    return $.ajax({
+        url:fullUrl,
+        method:'get',
+        dataType:'JSON'
+    }).then(function(data){
+        if (page < data.Pagination.PageTotal) {
+            return getAllData(uri, page + 1)
+            .then(function (more) {
+                return data.Results.concat(more);
+            });
+        }
+        return data.Results;
     });
 }
