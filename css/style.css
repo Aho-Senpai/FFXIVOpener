@@ -65,6 +65,7 @@ footer {
 }
 .jobSkillsCol {
     grid-area: jobSkillsCol;
+    display: grid;
 }
 .globalSkillsCol {
     grid-area: globalSkillsCol;
@@ -72,6 +73,10 @@ footer {
 }
 .skillTooltipCol {
     grid-area: skillTooltipCol;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    background-color: #24252a;
 }
 .jobSelectTitle {
     font-size: 2.8vh;
@@ -117,4 +122,16 @@ footer {
 }
 #role-5 {
     grid-row: 7;
+}
+#SkillNameTooltip {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-size: xX-large;
+}
+#jobSkillsListGCD {
+    grid-row: 1;
+}
+#jobSkillsListOGCD {
+    grid-row: 2;
 }
