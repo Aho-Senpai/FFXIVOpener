@@ -78,9 +78,10 @@ footer {
 }
 .jobSelectTitle {
     color: white;
-    font-size: 2vh;
+    font-size: 2.8vh;
     justify-self: center;
     align-self: center;
+    grid-row: 1;
 }
 .roleSkills {
     grid-row: 1;
@@ -88,18 +89,24 @@ footer {
 .generalActions {
     grid-row: 2;
 }
-#jobSelect {
+.jobSelectCol {
     display: grid;
     height: 100%;
-    grid-template-rows: 10% 15% 15% 15% 15% 15% 15%;
+    grid-template-rows: 4% 16% 16% 16% 16% 16% 16%;
 }
 .roleJob {
-    grid-row: 1;
-    font-size: 2vh;
-    
+    font-size: 3vh;
+    justify-self: center;
+    align-self: center;
+}
+.roleJobSpan {
+    justify-self: center;
+    align-self: center;
 }
 #role-1 {
     grid-row: 2;
+    align-self: center;
+    justify-self: center;
 }
 #role-4 {
     grid-row: 3;
