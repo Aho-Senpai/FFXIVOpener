@@ -1,5 +1,3 @@
-
-
 let jobList = [];
 let jobSkills = {};
 let roleSkills = {};
@@ -17,7 +15,7 @@ $(function() {
             if(job.Role === 3 && job.ClassJobCategory.ID === 31) job.Role = 6;
             jobList.push(job);
         });
-        let roleSortOrder = [1, 4, 2, 3, 6, 5]; // 1 Tank, 4 Healer, 2 Melee, 3 Ranged, 5 Custom Limited Job 6 Custom Ranged Magic
+        let roleSortOrder = [1, 4, 2, 3, 6, 5]; // 1 Tank, 4 Healer, 2 Melee, 3 Ranged, 6 Custom Ranged Magic, 5 Custom Limited Job 
         jobList.sort(function(a,b){
             if(a.Role == b.Role) return a.Role - b.Role;
             return roleSortOrder.indexOf(a.Role) - roleSortOrder.indexOf(b.Role);
@@ -44,21 +42,23 @@ function getJobSkills(jobId) {
         $(`#jobSkillsListGCD`).empty();
         $(`#jobSkillsListOGCD`).empty();
         $.each(jobSkills[jobId], function(_, skill) {
-            if (skill.ActionCategory.Name === ("Spell" || "Weaponskill")) {
+            if (skill.ActionCategory.Name === "Spell" ||skill.ActionCategory.Name === "Weaponskill") {
                 let imageGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID}>`);
+                $(`#jobSkillsListGCD`).append(imageGCD);
             }
             else if (gcdOverrides.includes(skill.ID)) {
                 let imageGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID}>`);
+                $(`#jobSkillsListGCD`).append(imageGCD);
             }
-            $(`#jobSkillsListGCD`).append(imageGCD);
-        
+            
             if (skill.ActionCategory.Name === "Ability") {
                 let imageOGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID}>`);
+                $(`#jobSkillsListOGCD`).append(imageOGCD);
             }
             else if (ogcdOverrides.includes(skill.ID)) {
                 let imageOGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID}>`);
+                $(`#jobSkillsListOGCD`).append(imageOGCD);
             }
-            $(`#jobSkillsListOGCD`).append(imageOGCD);
         });
         $(`#roleSkills`).empty();
         $.each(roleSkills[jobId], function (_, skill) {
@@ -95,25 +95,7 @@ function getAllData(uri, page) {
 }
 
 
-/*$(`#jobSkillsListGCD`).empty();
-$(`#jobSkillsListOGCD`).empty();
-$.each(jobSkills[jobId], function(_, skill) {
-    if (skill.ActionCategory.Name === (Spell || Weaponskill)) {
-        let imageGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID}>`);
-    }
-    else if (gcdOverrides.includes(skill.ID)) {
-        let imageGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID}>`);
-    }
-    $(`#jobSkillsListGCD`).append(imageGCD);
 
-    if (skill.ActionCategory.Name === Ability) {
-        let imageOGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID}>`);
-    }
-    else if (ogcdOverrides.includes(skill.ID)) {
-        let imageOGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID}>`);
-    }
-    $(`#jobSkillsListOGCD`).append(imageOGCD);
-});*/
 
 /*
 $.each(jobSkills[jobId], function (_, skill) {
