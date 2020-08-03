@@ -1,6 +1,6 @@
 //thanks to https://github.com/Rawrington/SkillDisplay/blob/master/src/Action.js
 
-const gcdOverrides = new Set([
+/*const gcdOverrides = new Set([
 	15997, //standard step
 	15998, //technical step
 	15999,
@@ -51,3 +51,6 @@ const ogcdOverrides = new Set([
 	116, //bard AP
 	114 //bard MB
 ])
+
+export let gcdOverrides;
+export let ogcdOverrides;*/
