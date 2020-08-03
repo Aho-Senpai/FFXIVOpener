@@ -61,11 +61,9 @@ footer {
     grid-area: jobSelectCol;
 }
 .rotationRow {
-    background-color: aqua;
     grid-area: rotationRow;
 }
 .jobSkillsCol {
-    background-color: chartreuse;
     grid-area: jobSkillsCol;
 }
 .globalSkillsCol {
@@ -73,11 +71,9 @@ footer {
     display: grid;
 }
 .skillTooltipCol {
-    background-color: fuchsia;
     grid-area: skillTooltipCol;
 }
 .jobSelectTitle {
-    color: white;
     font-size: 2.8vh;
     justify-self: center;
     align-self: center;
@@ -96,8 +92,9 @@ footer {
 }
 .roleJob {
     font-size: 3vh;
-    justify-self: center;
+    justify-content: center;
     align-self: center;
+    text-align: center;
 }
 .roleJobSpan {
     justify-self: center;
@@ -105,8 +102,6 @@ footer {
 }
 #role-1 {
     grid-row: 2;
-    align-self: center;
-    justify-self: center;
 }
 #role-4 {
     grid-row: 3;

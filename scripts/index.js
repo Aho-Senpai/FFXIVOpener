@@ -1,5 +1,3 @@
-//https://xivapi.com/classjob
-
 let jobList = [];
 $(function() {
     $.getJSON('https://xivapi.com/ClassJob?columns=ID,Name,Icon,ClassJobCategory.Name,ClassJobCategory.ID,Role,IsLimitedJob,ItemSoulCrystalTargetID', function(data) {
@@ -25,7 +23,22 @@ $(function() {
             $(`#role-${job.Role}`).append(link);
             link.click(function(element){
                 console.log(`You clicked on ${$(this).data("id")} you sly dog`);
+                getJobSkills($(this).data("id"));
             });
         });
     });                
 });
+
+let jobSkills = {};
+function getJobSkills(jobId) {
+    $.getJSON(`https://xivapi.com/search?indexes=Action&filters=ClassJob.ID=${jobId}&columns=ID,Icon,Name,Url,Description,Cast100ms,Recast100ms,Range,PrimaryCostType,PrimaryCostValue,SecondaryCostType,SecondaryCostValue,CastType`, function(data) {
+        jobSkills[jobId] = data.Results;
+    });
+    $(`#jobSkillsList`).empty();
+    $.each(jobSkills[jobId], function () {
+        let image = $(`<img src="https://xivapi.com${jobSkills[jobId].Icon}" width="40" height="40">`);
+        $(`#jobSkillsList`).append(image);
+        console.log(jobSkills[jobId]);
+        console.log(jobId);
+    });
+}
