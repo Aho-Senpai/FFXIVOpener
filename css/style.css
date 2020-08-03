@@ -59,7 +59,6 @@ footer {
 }
 .jobSelectCol {
     grid-area: jobSelectCol;
-    display: contents;
 }
 .rotationRow {
     background-color: aqua;
@@ -88,4 +87,8 @@ footer {
 }
 .generalActions {
     grid-row: 2;
+}
+.roleJob {
+    font-size: 2vh;
+    
 }
