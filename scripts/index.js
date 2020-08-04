@@ -97,8 +97,11 @@ $(function() {
         let link = $("<a></a>").attr("id", `generalSkillButton`).attr("href", "#").append(image);
         $(`#generalActions`).append(link);
         link.click(function(element){
-            (link).clone().appendTo($(`#rotationActual`));
-        })
+            (link)
+                .clone()
+                .attr("id", `timelineButton`)
+                .appendTo($(`#rotationActual`));
+        });
     };
 });
 
@@ -119,7 +122,6 @@ function getJobSkills(jobId) {
                 let imageGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job">`);
                 $(`#jobSkillsListGCD`).append(imageGCD);
             }
-
             if (skill.ActionCategory.Name === "Ability") {
                 let imageOGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job">`);
                 $(`#jobSkillsListOGCD`).append(imageOGCD);
@@ -156,8 +158,10 @@ function getJobSkills(jobId) {
             $(`.skillTooltipCol`).append(tooltip);
         });
         $(".imgHover").click(function(){ 
-            $(this).clone().appendTo($(`#rotationActual`));
-            console.log("hi");
+            $(this)
+                .clone()
+                .attr("id", `timelineButton`)
+                .appendTo($(`#rotationActual`));
         })
     });
 }
