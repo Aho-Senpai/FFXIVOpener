@@ -62,6 +62,8 @@ footer {
 }
 .rotationRow {
     grid-area: rotationRow;
+    display: grid;
+    grid-template-rows: 90% 10%;
 }
 .jobSkillsCol {
     grid-area: jobSkillsCol;
@@ -87,7 +89,7 @@ footer {
 .roleSkills {
     grid-row: 1;
 }
-.generalActions {
+#generalActions {
     grid-row: 2;
 }
 .jobSelectCol {
@@ -131,7 +133,23 @@ footer {
 }
 #jobSkillsListGCD {
     grid-row: 1;
+    cursor: pointer;
 }
 #jobSkillsListOGCD {
     grid-row: 2;
+}
+.rotationBar {
+    grid-row: 1;
+    background-color: blue;
+    display: block;
+    margin: auto;
+}
+.rotationButtons {
+    grid-row: 2;
+    background-color: chocolate;
+}
+#rotationActual {
+    margin: auto;
+    background-color: darkorchid;
+    text-align: center;
 }

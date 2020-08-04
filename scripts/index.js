@@ -1,3 +1,4 @@
+// Thanks to https://github.com/Rawrington/SkillDisplay/blob/master/src/Action.js
 const gcdOverrides = new Set([
 	15997, //standard step
 	15998, //technical step
@@ -43,11 +44,18 @@ const gcdOverrides = new Set([
 	18881,
 	2272, //rabbit medium
 ])
-
+// Thanks to https://github.com/Rawrington/SkillDisplay/blob/master/src/Action.js
 const ogcdOverrides = new Set([
 	3559, //bard WM
 	116, //bard AP
 	114 //bard MB
+])
+
+const globalSkillsList = new Set([
+    "https://www.xivapi.com/i/000000/000101.png",
+    "https://www.xivapi.com/i/000000/000103.png",
+    "https://www.xivapi.com/i/000000/000104.png",
+    "https://www.xivapi.com/i/020000/020707.png"
 ])
 
 let jobList = [];
@@ -83,6 +91,14 @@ $(function() {
             });
         });
     });
+    for(const skill of globalSkillsList) {
+        let image = $(`<img src="${skill}" width=40 height=40>`);
+        let link = $("<a></a>").attr("id", `generalSkillButton`).attr("href", "#").append(image);
+        $(`#generalActions`).append(link);
+        link.click(function(element){
+            (link).clone().appendTo($(`#rotationActual`));
+        })
+    };
 });
 
 function getJobSkills(jobId) {
@@ -114,7 +130,7 @@ function getJobSkills(jobId) {
         });
         $(`#roleSkills`).empty();
         $.each(roleSkills[jobId], function (_, skill) {
-            let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40">`);                        
+            let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID}>`);                        
             $(`#roleSkills`).append(image);
         });
         $(".imgHover").hover(function(){
@@ -126,6 +142,10 @@ function getJobSkills(jobId) {
             $(`.skillTooltipCol`).empty();
             $(`.skillTooltipCol`).append(tooltip);
         });
+        $(".imgHover").click(function(){ 
+            $(this).clone().appendTo($(`#rotationActual`));
+            console.log("hi");
+        })
     });
 }
 
