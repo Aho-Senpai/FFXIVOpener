@@ -133,7 +133,6 @@ footer {
 }
 #jobSkillsListGCD {
     grid-row: 1;
-    cursor: pointer;
 }
 #jobSkillsListOGCD {
     grid-row: 2;
@@ -152,4 +151,7 @@ footer {
     margin: auto;
     background-color: darkorchid;
     text-align: center;
+}
+.imgHover {
+    cursor: pointer;
 }
