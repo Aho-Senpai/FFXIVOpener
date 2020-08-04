@@ -44,6 +44,7 @@ const gcdOverrides = new Set([
 	18881,
 	2272, //rabbit medium
 ])
+
 // Thanks to https://github.com/Rawrington/SkillDisplay/blob/master/src/Action.js
 const ogcdOverrides = new Set([
 	3559, //bard WM
@@ -118,7 +119,7 @@ function getJobSkills(jobId) {
                 let imageGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job">`);
                 $(`#jobSkillsListGCD`).append(imageGCD);
             }
-            
+
             if (skill.ActionCategory.Name === "Ability") {
                 let imageOGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job">`);
                 $(`#jobSkillsListOGCD`).append(imageOGCD);
@@ -148,8 +149,8 @@ function getJobSkills(jobId) {
                     break;
             }
             let tooltip = $(`
-            <span id="SkillNameTooltip">${skill.Name}</span>
-            <p>${skill.Description}</p>`
+                <span id="SkillNameTooltip">${skill.Name}</span>
+                <p>${skill.Description}</p>`
             );
             $(`.skillTooltipCol`).empty();
             $(`.skillTooltipCol`).append(tooltip);
@@ -177,12 +178,3 @@ function getAllData(uri, page) {
         return data.Results;
     });
 }
-
-
-
-
-/*
-$.each(jobSkills[jobId], function (_, skill) {
-    let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID}>`);                        
-    $(`#jobSkillsListGCD`).append(image);
-});*/
