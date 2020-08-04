@@ -111,30 +111,42 @@ function getJobSkills(jobId) {
         $(`#jobSkillsListOGCD`).empty();
         $.each(jobSkills[jobId], function(_, skill) {
             if (skill.ActionCategory.Name === "Spell" ||skill.ActionCategory.Name === "Weaponskill") {
-                let imageGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID}>`);
+                let imageGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job">`);
                 $(`#jobSkillsListGCD`).append(imageGCD);
             }
             else if (gcdOverrides.has(skill.ID)) {
-                let imageGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID}>`);
+                let imageGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job">`);
                 $(`#jobSkillsListGCD`).append(imageGCD);
             }
             
             if (skill.ActionCategory.Name === "Ability") {
-                let imageOGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID}>`);
+                let imageOGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job">`);
                 $(`#jobSkillsListOGCD`).append(imageOGCD);
             }
             else if (ogcdOverrides.has(skill.ID)) {
-                let imageOGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID}>`);
+                let imageOGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job">`);
                 $(`#jobSkillsListOGCD`).append(imageOGCD);
             }
         });
         $(`#roleSkills`).empty();
         $.each(roleSkills[jobId], function (_, skill) {
-            let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID}>`);                        
+            let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="role">`);                        
             $(`#roleSkills`).append(image);
         });
         $(".imgHover").hover(function(){
-            let skill = jobSkills[currentJobId].find(skill => skill.ID === $(this).data("id"));
+            let skill = {};
+            switch($(this).data("type")){
+                case "job":
+                    skill = jobSkills[currentJobId].find(skill => skill.ID === $(this).data("id"));
+                    break;
+                case "role":
+                    skill = roleSkills[currentJobId].find(skill => skill.ID === $(this).data("id"));
+                    break;
+                default:
+                    //This scenario shouldn't happen
+                    skill = jobSkills[currentJobId].find(skill => skill.ID === $(this).data("id"));
+                    break;
+            }
             let tooltip = $(`
             <span id="SkillNameTooltip">${skill.Name}</span>
             <p>${skill.Description}</p>`
