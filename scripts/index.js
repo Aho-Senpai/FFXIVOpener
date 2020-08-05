@@ -105,6 +105,10 @@ $(function() {
     };
 });
 
+$(`#timelineButton`).click(function() {
+    $(this).remove();
+});
+
 function getJobSkills(jobId) {
     let shorthand = jobList.find(x => x.ID === jobId).Abbreviation
     let url = `https://xivapi.com/search?indexes=Action&filters=ClassJobCategory.${shorthand}=1,IsPvP=0,IsPlayerAction=1&columns=ID,Icon,Name,Url,Description,Cast100ms,Recast100ms,Range,PrimaryCostType,PrimaryCostValue,SecondaryCostType,SecondaryCostValue,CastType,ActionCategory,ClassJobCategoryTargetID,IsRoleAction&page=`;
