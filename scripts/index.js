@@ -53,10 +53,30 @@ const ogcdOverrides = [
 ];
 
 const globalSkillsList = [
-    "https://www.xivapi.com/i/000000/000101.png",
-    "https://www.xivapi.com/i/000000/000103.png",
-    "https://www.xivapi.com/i/000000/000104.png",
-    "https://www.xivapi.com/i/020000/020707.png"
+    {
+        ID: 7,
+        Icon: "/i/000000/000101.png",
+        Name: "Auto-Attack",
+        Description: "This is an Auto-Attack, duh",
+    },
+    {
+        ID: 209,
+        Icon: "/i/000000/000103.png",
+        Name: "Limit Break",
+        Description: "Limit Break does big boom damage!",
+    },
+    {
+        ID: 209,
+        Icon: "/i/000000/000104.png",
+        Name: "Sprint",
+        Description: "Makes you run faster you goofball!",
+    },
+    {
+        ID: 4610,
+        Icon: "/i/020000/020707.png",
+        Name: "Potion",
+        Description: "Doping makes you stronger!",
+    }
 ];
 
 let jobList = [];
@@ -87,29 +107,13 @@ $(function() {
         $.each(jobList, function (_, job) {
             let image = $(`<img src="https://xivapi.com${job.Icon}" width=40 height=40>`);
             let link = $("<a></a>").attr("id", `job-${job.ID}`).attr("href", "#").attr("data-id", job.ID).append(image);
-            let clickableImage = $(`<img src="https://xivapi.com${job.Icon}" width=40 height=40>`);
             $(`#role-${job.Role}`).append(link);
-            link.click(function(element){
+            link.click(function(){
                 getJobSkills($(this).data("id"));
                 currentJobId = job.ID;
             });
         });
     });
-    for(const skill of globalSkillsList) {
-        let image = $(`<img src="${skill}" width=40 height=40>`);
-        let link = $("<a></a>").attr("id", `generalSkillButton`).attr("href", "#").append(image);
-        $(`#generalActions`).append(link);
-        link.click(function(element){
-            (link)
-                .clone()
-                .attr("id", `timelineButton`)
-                .appendTo($(`#rotationActual`));
-        });
-        $(`#timelineButton`).click(function() {
-            $(this).remove();
-            console.log("test2");
-        });
-    };
 });
 
 function getJobSkills(jobId) {
@@ -120,6 +124,7 @@ function getJobSkills(jobId) {
         roleSkills[jobId] = data.filter(action => action.IsRoleAction === 1);
         $(`#jobSkillsListGCD`).empty();
         $(`#jobSkillsListOGCD`).empty();
+        $(`#generalActions`).empty();
         $.each(jobSkills[jobId], function(_, skill) {
             if (skill.ActionCategory.Name === "Spell" ||skill.ActionCategory.Name === "Weaponskill") {
                 let imageGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job">`);
@@ -143,6 +148,10 @@ function getJobSkills(jobId) {
             let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="role" href="#  ">`);                        
             $(`#roleSkills`).append(image);
         });
+        $.each(globalSkillsList, function (_, skill) {
+            let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="global" href="#  ">`);                        
+            $(`#generalActions`).append(image);
+        });
         $(".imgHover").hover(function(){
             let skill = {};
             switch($(this).data("type")){
@@ -152,6 +161,9 @@ function getJobSkills(jobId) {
                 case "role":
                     skill = roleSkills[currentJobId].find(skill => skill.ID === $(this).data("id"));
                     break;
+                case "global":
+                        skill = globalSkillsList.find(skill => skill.ID === $(this).data("id"));
+                        break;
                 default:
                     //This scenario shouldn't happen
                     skill = jobSkills[currentJobId].find(skill => skill.ID === $(this).data("id"));
@@ -167,12 +179,12 @@ function getJobSkills(jobId) {
         $(".imgHover").click(function(){ 
             $(this)
                 .clone()
-                .attr("id", `timelineButton`)
+                .attr("id", `timeline-${$(this).data("id")}`)
+                .click(function() {
+                    $(this).remove();
+                    console.log("test2");
+                })
                 .appendTo($(`#rotationActual`));
-        });
-        $(`#timelineButton`).click(function() {
-            $(this).remove();
-            console.log("test2");
         });
     });
 }
