@@ -36,7 +36,6 @@ footer {
     background-color: rgba(24, 21, 180, 1);
     border: none;
     border-radius: 50px;
-    transition: all 0.3s ease 0s;
     color: white;
 }
 .DiscordButton:hover {
