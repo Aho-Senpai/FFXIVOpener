@@ -1,5 +1,5 @@
 // Thanks to https://github.com/Rawrington/SkillDisplay/blob/master/src/Action.js
-const gcdOverrides = new Set([
+const gcdOverrides = [
 	15997, //standard step
 	15998, //technical step
 	15999,
@@ -43,21 +43,21 @@ const gcdOverrides = new Set([
 	2271, //suiton
 	18881,
 	2272, //rabbit medium
-])
+];
 
 // Thanks to https://github.com/Rawrington/SkillDisplay/blob/master/src/Action.js
-const ogcdOverrides = new Set([
+const ogcdOverrides = [
 	3559, //bard WM
 	116, //bard AP
 	114 //bard MB
-])
+];
 
-const globalSkillsList = new Set([
+const globalSkillsList = [
     "https://www.xivapi.com/i/000000/000101.png",
     "https://www.xivapi.com/i/000000/000103.png",
     "https://www.xivapi.com/i/000000/000104.png",
     "https://www.xivapi.com/i/020000/020707.png"
-])
+];
 
 let jobList = [];
 let jobSkills = {};
@@ -70,16 +70,19 @@ $(function() {
             if(job.IsLimitedJob === 1){
                 job.Role = 5;
             }
-            if(job.ItemSoulCrystalTargetID === 0) return;
+            if(job.ItemSoulCrystalTargetID === 0) 
+                return;
             let classJobCategoryIds = [30, 31];
-            if(!classJobCategoryIds.includes(job.ClassJobCategory.ID)) return;
-            if(job.Role === 3 && job.ClassJobCategory.ID === 31) job.Role = 6;
+            if(!classJobCategoryIds.includes(job.ClassJobCategory.ID)) 
+                return;
+            if(job.Role === 3 && job.ClassJobCategory.ID === 31) 
+                job.Role = 6;
             jobList.push(job);
         });
         let roleSortOrder = [1, 4, 2, 3, 6, 5]; // 1 Tank, 4 Healer, 2 Melee, 3 Ranged, 6 Custom Ranged Magic, 5 Custom Limited Job 
         jobList.sort(function(a,b){
             if(a.Role == b.Role) return a.Role - b.Role;
-            return roleSortOrder.indexOf(a.Role) - roleSortOrder.indexOf(b.Role);
+                return roleSortOrder.indexOf(a.Role) - roleSortOrder.indexOf(b.Role);
         });                    
         $.each(jobList, function (_, job) {
             let image = $(`<img src="https://xivapi.com${job.Icon}" width=40 height=40>`);
@@ -102,11 +105,11 @@ $(function() {
                 .attr("id", `timelineButton`)
                 .appendTo($(`#rotationActual`));
         });
+        $(`#timelineButton`).click(function() {
+            $(this).remove();
+            console.log("test2");
+        });
     };
-});
-
-$(`#timelineButton`).click(function() {
-    $(this).remove();
 });
 
 function getJobSkills(jobId) {
@@ -122,7 +125,7 @@ function getJobSkills(jobId) {
                 let imageGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job">`);
                 $(`#jobSkillsListGCD`).append(imageGCD);
             }
-            else if (gcdOverrides.has(skill.ID)) {
+            else if (gcdOverrides.includes(skill.ID)) {
                 let imageGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job">`);
                 $(`#jobSkillsListGCD`).append(imageGCD);
             }
@@ -130,14 +133,14 @@ function getJobSkills(jobId) {
                 let imageOGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job">`);
                 $(`#jobSkillsListOGCD`).append(imageOGCD);
             }
-            else if (ogcdOverrides.has(skill.ID)) {
+            else if (ogcdOverrides.includes(skill.ID)) {
                 let imageOGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job">`);
                 $(`#jobSkillsListOGCD`).append(imageOGCD);
             }
         });
         $(`#roleSkills`).empty();
         $.each(roleSkills[jobId], function (_, skill) {
-            let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="role">`);                        
+            let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="role" href="#  ">`);                        
             $(`#roleSkills`).append(image);
         });
         $(".imgHover").hover(function(){
@@ -166,7 +169,11 @@ function getJobSkills(jobId) {
                 .clone()
                 .attr("id", `timelineButton`)
                 .appendTo($(`#rotationActual`));
-        })
+        });
+        $(`#timelineButton`).click(function() {
+            $(this).remove();
+            console.log("test2");
+        });
     });
 }
 
