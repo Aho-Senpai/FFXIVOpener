@@ -38,6 +38,18 @@ footer {
     border-radius: 50px;
     color: white;
 }
+#btnClearRotation {
+    cursor: pointer;
+    padding: 9px 25px;
+    background-color: transparent;
+    border-color: red;
+    border-radius: 5%;
+    border-radius: 50px;
+    color: white;
+    align-self: flex-end;
+    align-items: flex-end;
+    justify-self: end;
+}
 .DiscordButton:hover {
     background-color: rgba(24, 21, 180, 0.7);
 }
@@ -50,7 +62,9 @@ footer {
     width: 100%;
     display: grid;
     grid-template-columns: 20% 35% 20% 25%;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 
+        40% 
+        60%;
     grid-template-areas: 
         "jobSelectCol rotationRow rotationRow rotationRow"
         "jobSelectCol jobSkillsCol globalSkillsCol skillTooltipCol";
@@ -62,7 +76,9 @@ footer {
 .rotationRow {
     grid-area: rotationRow;
     display: grid;
-    grid-template-rows: 90% 10%;
+    grid-template-rows: 
+        85% 
+        15%;
 }
 .jobSkillsCol {
     grid-area: jobSkillsCol;
@@ -94,7 +110,14 @@ footer {
 .jobSelectCol {
     display: grid;
     height: 100%;
-    grid-template-rows: 4% 16% 16% 16% 16% 16% 16%;
+    grid-template-rows: 
+        4% 
+        16% 
+        16% 
+        16% 
+        16% 
+        16% 
+        16%;
 }
 .roleJob {
     font-size: 3vh;
@@ -138,19 +161,21 @@ footer {
 }
 .rotationBar {
     grid-row: 1;
-    background-color: blue;
     display: block;
     margin: auto;
 }
 .rotationButtons {
     grid-row: 2;
-    background-color: chocolate;
+    display: flex;
+    align-items: flex-end;
 }
 #rotationActual {
     margin: auto;
-    background-color: darkorchid;
     text-align: center;
 }
 .imgHover {
     cursor: pointer;
+}
+.ogcd {
+    padding-bottom: 20px;
 }

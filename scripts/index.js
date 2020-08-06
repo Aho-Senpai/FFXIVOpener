@@ -44,7 +44,6 @@ const gcdOverrides = [
 	18881,
 	2272, //rabbit medium
 ];
-
 // Thanks to https://github.com/Rawrington/SkillDisplay/blob/master/src/Action.js
 const ogcdOverrides = [
 	3559, //bard WM
@@ -66,7 +65,7 @@ const globalSkillsList = [
         Description: "Limit Break does big boom damage!",
     },
     {
-        ID: 209,
+        ID: 3,
         Icon: "/i/000000/000104.png",
         Name: "Sprint",
         Description: "Makes you run faster you goofball!",
@@ -101,8 +100,9 @@ $(function() {
         });
         let roleSortOrder = [1, 4, 2, 3, 6, 5]; // 1 Tank, 4 Healer, 2 Melee, 3 Ranged, 6 Custom Ranged Magic, 5 Custom Limited Job 
         jobList.sort(function(a,b){
-            if(a.Role == b.Role) return a.Role - b.Role;
-                return roleSortOrder.indexOf(a.Role) - roleSortOrder.indexOf(b.Role);
+            if(a.Role == b.Role) 
+                return a.Role - b.Role;
+            return roleSortOrder.indexOf(a.Role) - roleSortOrder.indexOf(b.Role);
         });                    
         $.each(jobList, function (_, job) {
             let image = $(`<img src="https://xivapi.com${job.Icon}" width=40 height=40>`);
@@ -126,7 +126,7 @@ function getJobSkills(jobId) {
         $(`#jobSkillsListOGCD`).empty();
         $(`#generalActions`).empty();
         $.each(jobSkills[jobId], function(_, skill) {
-            if (skill.ActionCategory.Name === "Spell" ||skill.ActionCategory.Name === "Weaponskill") {
+            if (skill.ActionCategory.Name === "Spell" || skill.ActionCategory.Name === "Weaponskill") {
                 let imageGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job">`);
                 $(`#jobSkillsListGCD`).append(imageGCD);
             }
@@ -135,18 +135,27 @@ function getJobSkills(jobId) {
                 $(`#jobSkillsListGCD`).append(imageGCD);
             }
             if (skill.ActionCategory.Name === "Ability") {
-                let imageOGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job">`);
+                let imageOGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job" data-ogcd="true">`);
                 $(`#jobSkillsListOGCD`).append(imageOGCD);
             }
             else if (ogcdOverrides.includes(skill.ID)) {
-                let imageOGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job">`);
+                let imageOGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job" data-ogcd="true">`);
                 $(`#jobSkillsListOGCD`).append(imageOGCD);
             }
         });
         $(`#roleSkills`).empty();
         $.each(roleSkills[jobId], function (_, skill) {
-            let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="role" href="#  ">`);                        
-            $(`#roleSkills`).append(image);
+            if (skill.ID !== 7568 || skill.ID !== 16560) {
+                let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="role" href="#" data-ogcd="true">`);                        
+                $(`#roleSkills`).append(image);
+                console.log(skill.ID);
+            }
+            // Need to fix Esuna and Repose : they are NOT OGCDs
+            /*else {
+                let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="role" href="#">`);                        
+                $(`#roleSkills`).append(image);
+                console.log("hi");
+            }*/
         });
         $.each(globalSkillsList, function (_, skill) {
             let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="global" href="#  ">`);                        
@@ -180,9 +189,9 @@ function getJobSkills(jobId) {
             $(this)
                 .clone()
                 .attr("id", `timeline-${$(this).data("id")}`)
+                .addClass(`${$(this).data("ogcd") ? "ogcd" : ""}`)
                 .click(function() {
                     $(this).remove();
-                    console.log("test2");
                 })
                 .appendTo($(`#rotationActual`));
         });
