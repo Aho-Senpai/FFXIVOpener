@@ -1,6 +1,6 @@
-# FFXIV Opener Website (Better Name SoonTM)
+# FFXIV Opener
 
-[Website](https://aho-senpai.github.io/FFXIV-Openers-Website/)
+[Website](https://aho-senpai.github.io/FFXIVOpener/)
 
 ## WHAT IS THIS?
 
