@@ -5,12 +5,26 @@ body {
     color: white;
 }
 header {
-    background-color: #24252a;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
     height: 8vh;
+}
+.WebsiteTitle {
+    color: white;
+    font-size: 7vh;
+}
+.DiscordButton {
+    cursor: pointer;
+    padding: 9px 25px;
+    background-color: #242424;
+    border-radius: 50px;
+    border-color: blue;
+    color: white;
+}
+.DiscordButton:hover {
+    background-color: rgba(24, 21, 180, 0.7);
 }
 main {
     width: 100%;
@@ -18,45 +32,38 @@ main {
     margin: 0;
 }
 footer {
-    background-color: blue;
-    justify-content: center;
+    display: flex;
+    justify-content: flex-end;
     bottom: 0;
     position: fixed;
     width: 100%;
-    height: 2vh;
+    height: 4vh;
+}
+.footerBtn {
+    cursor: pointer;
+    background-color: transparent;
+    border-color: blue;
+    border-radius: 5%;
+    color: white;
+    padding-right: 5px;
 }
 .Logo {
-    cursor: pointer;
     width: 8vh;
     height: auto;
 }
-.DiscordButton {
-    cursor: pointer;
-    padding: 9px 25px;
-    background-color: rgba(24, 21, 180, 1);
-    border: none;
-    border-radius: 50px;
-    color: white;
-}
-#btnClearRotation {
+
+.btnClearRotation {
     cursor: pointer;
     padding: 9px 25px;
     background-color: transparent;
     border-color: red;
-    border-radius: 5%;
     border-radius: 50px;
     color: white;
     align-self: flex-end;
     align-items: flex-end;
     justify-self: end;
 }
-.DiscordButton:hover {
-    background-color: rgba(24, 21, 180, 0.7);
-}
-.WebsiteTitle {
-    color: white;
-    font-size: 7vh;
-}
+
 .container {
     margin: 0;
     width: 100%;
@@ -96,16 +103,24 @@ footer {
     background-color: #24252a;
 }
 .jobSelectTitle {
-    font-size: 2.8vh;
+    font-size: x-large;
     justify-self: center;
     align-self: center;
     grid-row: 1;
 }
-.roleSkills {
+#roleSkills {
     grid-row: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
 }
 #generalActions {
     grid-row: 2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
 }
 .jobSelectCol {
     display: grid;
@@ -155,9 +170,17 @@ footer {
 }
 #jobSkillsListGCD {
     grid-row: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
 }
 #jobSkillsListOGCD {
     grid-row: 2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
 }
 .rotationBar {
     grid-row: 1;
@@ -167,7 +190,7 @@ footer {
 .rotationButtons {
     grid-row: 2;
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-end;
 }
 #rotationActual {
     margin: auto;
@@ -178,4 +201,10 @@ footer {
 }
 .ogcd {
     padding-bottom: 20px;
+}
+#SSS {
+    background-color:transparent;
+    border-color: red;
+    border-radius: 50px;
+    color: white;
 }

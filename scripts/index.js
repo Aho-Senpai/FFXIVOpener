@@ -82,6 +82,7 @@ let jobList = [];
 let jobSkills = {};
 let roleSkills = {};
 let currentJobId = 0;
+let MoxSetting = false;
 
 $(function() {
     $.getJSON('https://xivapi.com/ClassJob?columns=ID,Name,Icon,ClassJobCategory.Name,ClassJobCategory.ID,Role,IsLimitedJob,ItemSoulCrystalTargetID,Abbreviation', function(data) {
@@ -111,6 +112,9 @@ $(function() {
             link.click(function(){
                 getJobSkills($(this).data("id"));
                 currentJobId = job.ID;
+                if (!MoxSetting) {
+                    ClearBtn();
+                }
             });
         });
     });
@@ -160,6 +164,7 @@ function getJobSkills(jobId) {
         $.each(globalSkillsList, function (_, skill) {
             let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="global" href="#  ">`);                        
             $(`#generalActions`).append(image);
+            // Need to fix AA, Infusion and Sprint : OGCDs
         });
         $(".imgHover").hover(function(){
             let skill = {};
@@ -213,4 +218,19 @@ function getAllData(uri, page) {
         }
         return data.Results;
     });
+}
+
+function ClearBtn() {
+    $("#rotationActual").empty();
+}
+
+function SecretSetting() {
+    if (MoxSetting) {
+        MoxSetting = false;
+        $("#SSS").css("border-color", "red");
+    }
+    else {    
+        MoxSetting = true;
+        $("#SSS").css("border-color", "green");
+    }
 }
