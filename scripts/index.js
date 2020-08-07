@@ -78,6 +78,15 @@ const globalSkillsList = [
     }
 ];
 
+const skillsBlacklist = [
+    18805, //NIN Mudras with "bad" Skill Description
+    18806,
+    18807,
+    19238, //BLU Aetherial Mimickery with "bad" Skill Desc
+    19239,
+    19240
+];
+
 let jobList = [];
 let jobSkills = {};
 let roleSkills = {};

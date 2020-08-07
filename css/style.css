@@ -108,16 +108,16 @@ footer {
     align-self: center;
     grid-row: 1;
 }
-#roleSkills {
+#roleSkillsOuter {
     grid-row: 1;
-    display: flex;
+    display: grid;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
 }
-#generalActions {
+#generalActionsOuter {
     grid-row: 2;
-    display: flex;
+    display: grid;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
@@ -168,16 +168,16 @@ footer {
     justify-self: center;
     font-size: xX-large;
 }
-#jobSkillsListGCD {
+#jobSkillsListGCDOuter {
     grid-row: 1;
-    display: flex;
+    display: grid;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
 }
-#jobSkillsListOGCD {
+#jobSkillsListOGCDOuter {
     grid-row: 2;
-    display: flex;
+    display: grid;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
@@ -207,4 +207,22 @@ footer {
     border-color: red;
     border-radius: 50px;
     color: white;
+}
+.skillListDesc {
+    align-self: center;
+    justify-self: center;
+    grid-row: 1;
+    text-align: center;
+}
+#generalActions {
+    grid-row: 2;
+}
+#roleSkills {
+    grid-row: 2;
+}
+#jobSkillsListOGCD {
+    grid-row: 2;
+}
+#jobSkillsListGCD {
+    grid-row: 2;
 }
