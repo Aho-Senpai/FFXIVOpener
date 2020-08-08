@@ -121,6 +121,7 @@ const skillsWhitelist = [
     7527, //Enchanted Ripost
     7528, //Enchanted Zwerchhau
     7529, //Enchanted Redoublement
+    16528, //Enchanted Reprise
     7525, //Verflare
     7526, //Verfire
     16530, //Scorch
