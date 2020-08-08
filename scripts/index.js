@@ -35,14 +35,15 @@ const gcdOverrides = [
 	2268, //hyoton
 	18878,
 	16492, //hyosho ranryu
-	16471, //goka meykakku
+	16491, //goka meykakku
 	2270, //doton
 	18880,
 	2269, //huton
 	18879,
 	2271, //suiton
 	18881,
-	2272, //rabbit medium
+    2272, //rabbit medium
+    16483, //Tsubame-Gaeshi
 ];
 // Thanks to https://github.com/Rawrington/SkillDisplay/blob/master/src/Action.js
 const ogcdOverrides = [
@@ -94,7 +95,44 @@ const skillsWhitelist = [
     2269, //Huton
     2270, //Doton
     2271, //Suiton
-    7521, // Enchanted Redoublement
+	16491, //goka meykakku
+    16492, //hyosho ranryu
+    3547, //Forbidden Chacra
+    4401, //Balance
+    4402, //Arrow
+    4403, //Spear
+    4404, //Bole
+    4405, //Ewer
+    4406, //Spire
+    7444, //Lord
+    7445, //Lady
+    7487, //Midare
+    7488, //Tenka Goken
+    7489, //Higanbana
+    16484, //Kaeshi: Higanbana
+    16485, //Kaeshi: Goken
+    16486, //Kaeshi: Setsugekka
+    15999, //Emboite
+    16000, //Entrechat
+    16001, //Jete
+    16002, //Pirouette
+    16003, //Standard Finish
+    16004, //Technical Finish
+    7527, //Enchanted Ripost
+    7528, //Enchanted Zwerchhau
+    7529, //Enchanted Redoublement
+    7525, //Verflare
+    7526, //Verfire
+    16530, //Scorch
+    16513, //Firebird Trance
+    16514, //Fountain of Fire
+    16515, //Brand of Purgatory
+    16516, //Enkindle Phoenix
+    16517, //Everlasting Flight
+    16156, //Jugular Rip
+    16157, //Abdomen Tear
+    16158, //Eye Gouge
+    7400, //Nastrond
 ];
 
 let jobList = [];
@@ -149,7 +187,7 @@ function getJobSkills(jobId) {
         $(`#jobSkillsListOGCD`).empty();
         $(`#generalActions`).empty();
         $.each(jobSkills[jobId], function(_, skill) {
-            if (skill.IsPlayerAction == "1" || skillsWhitelist.includes(skill)) {
+            if (skill.IsPlayerAction == "1" || skillsWhitelist.includes(skill.ID)) {
                 if (skill.ActionCategory.Name === "Spell" || skill.ActionCategory.Name === "Weaponskill") {
                     if (!ogcdOverrides.includes(skill.ID) && !skillsBlacklist.includes(skill.ID)) {
                         let imageGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job">`);
