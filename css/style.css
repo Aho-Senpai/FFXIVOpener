@@ -267,3 +267,26 @@ footer {
 #jobSkillsListGCD {
     grid-row: 2;
 }
+/* FFXIV Roles Colors 
+Dark
+DPS: #843131
+Tank: #425ABD
+Healer: #397B18
+
+Light
+DPS: #CE5252
+Tank: #6B94E7
+Healer: #5AC629 
+*/
+#roleTank {
+    background-color: #425ABD;
+}
+#roleHealer {
+    background-color: #397B18;
+}
+#roleMelee, #rolePhyRange, #roleMagRange {
+    background-color: #843131;
+}
+#roleSpeSnow {
+    background-color: #843131;
+}
