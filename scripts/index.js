@@ -57,25 +57,27 @@ const globalSkillsList = [
         ID: 7,
         Icon: "/i/000000/000101.png",
         Name: "Auto-Attack",
-        Description: "This is an Auto-Attack, duh",
+        Description: "This is an Auto-Attack.<br>Really, that's all.",
     },
     {
         ID: 209,
         Icon: "/i/000000/000103.png",
         Name: "Limit Break",
-        Description: "Limit Break does big boom damage!",
+        Description: "Limit Break.<br>Not sure why you are using that in an opener.",
     },
     {
         ID: 3,
         Icon: "/i/000000/000104.png",
         Name: "Sprint",
-        Description: "Makes you run faster you goofball!",
+        Description: "Sprint.<br>Makes you run fast.<br>WHAT ELSE DO YOU WANT?",
+        Recast100ms: 600,
     },
     {
         ID: 4610,
         Icon: "/i/020000/020707.png",
         Name: "Potion",
-        Description: "Doping makes you stronger!",
+        Description: "This is a placeholder for your Infusion/Tincture.</br>The recast assumes you are using HQ.",
+        Recast100ms: 2700,
     }
 ];
 
