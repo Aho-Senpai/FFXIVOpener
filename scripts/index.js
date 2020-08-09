@@ -176,6 +176,9 @@ $(function() {
             });
         });
     });
+    $("#rotationActual").sortable();
+    $("#rotationActual").disableSelection();
+    
 });
 
 function getJobSkills(jobId) {
@@ -216,7 +219,6 @@ function getJobSkills(jobId) {
             if (skill.ActionCategory.Name === "Ability") {
                 let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="role" href="#" data-ogcd="true">`);                        
                 $(`#roleSkills`).append(image);
-                console.log(skill.ID);
             }
             // Weapponskill is mainly for futureproofing (tho unlikely)
             else if (skill.ActionCategory.Name === "Spell" || skill.ActionCategory.Name === "Weaponskill") {
