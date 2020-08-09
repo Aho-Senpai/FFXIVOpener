@@ -218,16 +218,19 @@ function getJobSkills(jobId) {
                 $(`#roleSkills`).append(image);
                 console.log(skill.ID);
             }
-            else if (skill.ActionCategory.Name === "Spell") {
+            // Weapponskill is mainly for futureproofing (tho unlikely)
+            else if (skill.ActionCategory.Name === "Spell" || skill.ActionCategory.Name === "Weaponskill") {
                 let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="role" href="#">`);                        
                 $(`#roleSkills`).append(image);
             }
         });
         $.each(globalSkillsList, function (_, skill) {
+            // If it's AutoAttack or Sprint or Potion: OGCD
             if (skill.ID == 7 || skill.ID == 3 || skill.ID == 4610) {
                 let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="global" href="#" data-ogcd="true">`);                        
                 $(`#generalActions`).append(image);
             }
+            // If it's Limit Break: GCD
             else if (skill.ID == 209) {
                 let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="global" href="#">`);                        
                 $(`#generalActions`).append(image);
