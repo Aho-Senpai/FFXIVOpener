@@ -53,7 +53,7 @@ footer {
     height: auto;
 }
 
-.btnClearRotation, .btnExportRotation {
+.btnClearRotation, .btnExportRotation, .btnShareRotation {
     cursor: pointer;
     padding: 9px 25px;
     background-color: transparent;
@@ -64,7 +64,7 @@ footer {
     align-self: center;
     margin: 5px;
 }
-.btnExportRotation {
+.btnExportRotation, .btnShareRotation {
     border-color: #5AC629;
 }
 
