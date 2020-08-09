@@ -213,22 +213,25 @@ function getJobSkills(jobId) {
         });
         $(`#roleSkills`).empty();
         $.each(roleSkills[jobId], function (_, skill) {
-            if (skill.ID !== 7568 || skill.ID !== 16560) {
+            if (skill.ActionCategory.Name === "Ability") {
                 let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="role" href="#" data-ogcd="true">`);                        
                 $(`#roleSkills`).append(image);
                 console.log(skill.ID);
             }
-            // Need to fix Esuna and Repose : they are NOT OGCDs
-            /*else {
+            else if (skill.ActionCategory.Name === "Spell") {
                 let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="role" href="#">`);                        
                 $(`#roleSkills`).append(image);
-                console.log("hi");
-            }*/
+            }
         });
         $.each(globalSkillsList, function (_, skill) {
-            let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="global" href="#  ">`);                        
-            $(`#generalActions`).append(image);
-            // Need to fix AA, Infusion and Sprint : OGCDs
+            if (skill.ID == 7 || skill.ID == 3 || skill.ID == 4610) {
+                let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="global" href="#" data-ogcd="true">`);                        
+                $(`#generalActions`).append(image);
+            }
+            else if (skill.ID == 209) {
+                let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="global" href="#">`);                        
+                $(`#generalActions`).append(image);
+            }
         });
         $(".imgHover").hover(function(){
             let skill = {};
