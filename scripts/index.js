@@ -134,6 +134,8 @@ const skillsWhitelist = [
     16157, //Abdomen Tear
     16158, //Eye Gouge
     7400, //Nastrond
+    16465, //Inner Chaos
+    16463, //Chaotic Cyclone
 ];
 
 let jobList = [];
