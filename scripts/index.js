@@ -298,32 +298,3 @@ function SecretSetting() {
         $("#SSS").css("border-color", "green");
     }
 }
-
-/*
-https://xivapi.com/search?
-    indexes=Action
-    &filters=
-        ClassJobCategory.NIN=1,
-        IsPvP=0
-    &columns=
-        ID,
-        Icon,
-        Name,
-        Url,
-        Description,
-        Cast100ms,
-        Recast100ms,
-        Range,
-        PrimaryCostType,
-        PrimaryCostValue,
-        SecondaryCostType,
-        SecondaryCostValue,
-        CastType,
-        ActionCategory,
-        ClassJobCategoryTargetID,
-        IsRoleAction,
-        IsPlayerAction=1
-    &page=
-*/
-
-//https://xivapi.com/search?indexes=Action&filters=ClassJobCategory.NIN=1,IsPvP=0,ActionCategory.ID%3E=3,ActionCategory.ID%3C=4&columns=ID,Icon,Name,Url,Description,Cast100ms,Recast100ms,Range,PrimaryCostType,PrimaryCostValue,SecondaryCostType,SecondaryCostValue,CastType,ActionCategory,ClassJobCategoryTargetID,IsRoleAction,IsPlayerAction&page=

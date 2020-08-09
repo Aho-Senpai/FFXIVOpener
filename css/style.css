@@ -184,8 +184,9 @@ footer {
 }
 .rotationBar {
     grid-row: 1;
-    display: block;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
 .rotationButtons {
     grid-row: 2;
@@ -193,8 +194,8 @@ footer {
     justify-content: flex-end;
 }
 #rotationActual {
-    margin: auto;
-    text-align: center;
+    align-self: center;
+    justify-self: center;
 }
 .imgHover {
     cursor: pointer;
