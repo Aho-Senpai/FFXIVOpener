@@ -255,9 +255,12 @@ function getJobSkills(jobId) {
                     skill = jobSkills[currentJobId].find(skill => skill.ID === $(this).data("id"));
                     break;
             }
+            let recast = skill.Recast100ms/10;
             let tooltip = $(`
                 <span id="SkillNameTooltip">${skill.Name}</span>
-                <p>${skill.Description}</p>`
+                <p>${skill.Description}</p>
+                <span>Recast: ${recast} Seonds</span>
+                `
             );
             $(`.skillTooltipCol`).empty();
             $(`.skillTooltipCol`).append(tooltip);
@@ -303,6 +306,6 @@ function SecretSetting() {
     }
     else {    
         MoxSetting = true;
-        $("#SSS").css("border-color", "green");
+        $("#SSS").css("border-color", "#5AC629");
     }
 }

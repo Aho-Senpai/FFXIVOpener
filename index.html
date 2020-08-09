@@ -56,9 +56,18 @@
                         </div>
                     </div>
                     <div class="rotationButtons">
-                        <button class="btnClearRotation" onclick="ClearBtn()">
-                            Clear
-                        </button>
+                        <div class="SpeedDiv">
+                            <span id="SpeedSpan">Input Sks/Sps (NYI)</span>
+                            <input type="number" id="SpeedInput" min="0">
+                        </div>
+                        <div style="display: flex;">
+                            <button class="btnExportRotation" >
+                                Export (NYI)
+                            </button>
+                            <button class="btnClearRotation" onclick="ClearBtn()">
+                                Clear
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="col jobSkillsCol">

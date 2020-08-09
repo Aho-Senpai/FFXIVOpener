@@ -38,6 +38,7 @@ footer {
     position: fixed;
     width: 100%;
     height: 4vh;
+    align-items: center;
 }
 .footerBtn {
     cursor: pointer;
@@ -52,16 +53,19 @@ footer {
     height: auto;
 }
 
-.btnClearRotation {
+.btnClearRotation, .btnExportRotation {
     cursor: pointer;
     padding: 9px 25px;
     background-color: transparent;
     border-color: red;
     border-radius: 50px;
     color: white;
-    align-self: flex-end;
-    align-items: flex-end;
     justify-self: end;
+    align-self: center;
+    margin: 5px;
+}
+.btnExportRotation {
+    border-color: #5AC629;
 }
 
 .container {
@@ -75,7 +79,7 @@ footer {
     grid-template-areas: 
         "jobSelectCol rotationRow rotationRow rotationRow"
         "jobSelectCol jobSkillsCol globalSkillsCol skillTooltipCol";
-    height: calc(100vh - 8vh - 2vh);
+    height: calc(100vh - 8vh);
 }
 .jobSelectCol {
     grid-area: jobSelectCol;
@@ -226,7 +230,7 @@ footer {
 .rotationButtons {
     grid-row: 2;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 #rotationActual {
     align-self: center;
@@ -289,4 +293,15 @@ Healer: #5AC629
 }
 #roleSpeSnow {
     background-color: #843131;
+}
+
+#SpeedInput {
+    grid-row: 2;
+}
+#SpeedSpan {
+    grid-row: 1;
+    text-align: center;
+}
+.SpeedDiv {
+    display: grid;
 }
