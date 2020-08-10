@@ -78,6 +78,12 @@ const globalSkillsList = [
         Name: "Potion",
         Description: "This is a placeholder for your Infusion/Tincture.</br>The recast assumes you are using HQ.",
         Recast100ms: 2700,
+    },
+    {
+        ID: 0,
+        Icon: "./resources/Pull.png",
+        Name: "Pull Placeholder",
+        Description: "This is a placeholder for the Pull/Engage",
     }
 ];
 
@@ -239,6 +245,11 @@ function getJobSkills(jobId) {
             // If it's Limit Break: GCD
             else if (skill.ID == 209) {
                 let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="global" href="#">`);                        
+                $(`#generalActions`).append(image);
+            }
+            // If it's Pull (Placeholder)
+            else if (skill.ID == 0) {
+                let image = $(`<img class="imgHover" src="${skill.Icon}" width="20" height="60" data-id=${skill.ID} data-type="global" href="#">`);                        
                 $(`#generalActions`).append(image);
             }
         });
