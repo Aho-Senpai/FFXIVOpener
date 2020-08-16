@@ -53,7 +53,7 @@ footer {
     height: auto;
 }
 
-.btnClearRotation, .btnExportRotation, .btnShareRotation {
+.btnClearRotation, .btnExportRotation, .btnShareRotation, #btnBuffWindow {
     cursor: pointer;
     padding: 9px 25px;
     background-color: transparent;
@@ -64,7 +64,7 @@ footer {
     align-self: center;
     margin: 5px;
 }
-.btnExportRotation, .btnShareRotation {
+.btnExportRotation, .btnShareRotation, #btnBuffWindow {
     border-color: #5AC629;
 }
 
@@ -304,4 +304,7 @@ Healer: #5AC629
 }
 .SpeedDiv {
     display: grid;
+}
+#BuffBar {
+    background-color: red;
 }

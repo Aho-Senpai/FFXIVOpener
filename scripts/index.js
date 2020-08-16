@@ -81,7 +81,7 @@ const globalSkillsList = [
     },
     {
         ID: 0,
-        Icon: "./resources/Pull.png",
+        Icon: "./resources/Pull1.png",
         Name: "Pull Placeholder",
         Description: "This is a placeholder for the Pull/Engage",
     }
@@ -188,7 +188,6 @@ $(function() {
     });
     $("#rotationActual").sortable();
     $("#rotationActual").disableSelection();
-    
 });
 
 function getJobSkills(jobId) {
@@ -323,4 +322,10 @@ function SecretSetting() {
         MoxSetting = true;
         $("#SSS").css("border-color", "#5AC629");
     }
+}
+
+function ShowBuffWindow() {
+    let buffBar = `<div id="BuffBar">test</div>`;
+    $(`.rotationBar`).append(buffBar);
+    $(`#BuffBar`).draggable({containment: "parent"});
 }
