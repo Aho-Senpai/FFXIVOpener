@@ -324,10 +324,50 @@ function SecretSetting() {
     }
 }
 
-function ShowBuffWindow() {
-    let buffBar = `<div><div class="BuffBar" class="ui-draggable ui-draggable-handle">test</div></div>`;
+function ShowBuffWindow(BuffName) {
+    let buffBar = `<div><div id="${BuffName}" class="BuffBar" class="ui-draggable ui-draggable-handle"></div></div>`;
     $(`#rotationDiv`).prepend(buffBar);
     $(`.BuffBar`).draggable({containment: "parent"});
-    //$(`#rotationDiv`).css("padding-top", parseInt($(`#rotationDiv`).css("padding-top")) + 10);
-    //console.log(parseInt($(`#rotationActual`).css("padding-top")));
+    
+    let selection = $(`.BuffBar`).id;
+    $(`#BuffSelect`).append(selection);
+}
+
+const SelfBuffs = [
+    "Fight or Flight",
+    "Requirescat",
+    "No Mercy",
+    "Blood Weapon",
+    "Delirium",
+    "Inner Release",
+];
+
+const RaidBuffs = [
+    "Divination",
+];
+
+function BuffPickerDialog() {
+    let BuffPicker = `<div id="DivPick"></div>`;
+    $(`.container`).append(BuffPicker);
+
+    $(`#DivPick`).dialog({
+        buttons: [
+            {
+                text: "Ok",
+                click: function() {
+                    $(this).dialog("close");
+                }
+            }
+        ],
+    });
+
+    $(`#DivPick`).selectmenu({
+        appendTo: "#DivPick",
+    });
+
+    for (i in SelfBuffs) {
+        let div = `<option>${i}</option>`;
+        $(`#DivPick-button`).append(div);
+        i++;
+    }
 }
