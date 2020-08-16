@@ -239,6 +239,7 @@ footer {
     border-color: #9b9b9b;
     border-radius: 15px;
     padding: 15px;
+    padding-top: 15px;
     background-color: #242424;
 }
 .imgHover {
@@ -305,6 +306,7 @@ Healer: #5AC629
 .SpeedDiv {
     display: grid;
 }
-#BuffBar {
+.BuffBar {
     background-color: red;
+    height: 20px;
 }
