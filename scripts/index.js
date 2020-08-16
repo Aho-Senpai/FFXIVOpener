@@ -325,10 +325,9 @@ function SecretSetting() {
 }
 
 function ShowBuffWindow() {
-    let buffBar = `<div class="BuffBar" class="ui-draggable ui-draggable-handle">test</div>`;
-    $(`.rotationBar`).append(buffBar);
+    let buffBar = `<div><div class="BuffBar" class="ui-draggable ui-draggable-handle">test</div></div>`;
+    $(`#rotationDiv`).prepend(buffBar);
     $(`.BuffBar`).draggable({containment: "parent"});
-
-    $(`#rotationctual`).css("padding-top", parseInt($(`#rotationActual`).css("padding-top")) + 10);
+    //$(`#rotationDiv`).css("padding-top", parseInt($(`#rotationDiv`).css("padding-top")) + 10);
     //console.log(parseInt($(`#rotationActual`).css("padding-top")));
 }
