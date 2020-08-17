@@ -324,50 +324,49 @@ function SecretSetting() {
     }
 }
 
-function ShowBuffWindow(BuffName) {
-    let buffBar = `<div><div id="${BuffName}" class="BuffBar" class="ui-draggable ui-draggable-handle"></div></div>`;
+function ShowBuffWindow(BuffName, BuffColor) {
+    let buffBar = 
+        `<div>
+            <div id="${BuffName}" class="BuffBar" class="ui-draggable ui-draggable-handle">${BuffName}</div>
+        </div>`;
     $(`#rotationDiv`).prepend(buffBar);
-    $(`.BuffBar`).draggable({containment: "parent"});
-    
+    $(`.BuffBar`).draggable({containment: "parent"}).css("background-color", `${BuffColor}`);
     let selection = $(`.BuffBar`).id;
     $(`#BuffSelect`).append(selection);
 }
 
-const SelfBuffs = [
-    "Fight or Flight",
-    "Requirescat",
-    "No Mercy",
-    "Blood Weapon",
-    "Delirium",
-    "Inner Release",
-];
-
-const RaidBuffs = [
-    "Divination",
-];
-
 function BuffPickerDialog() {
-    let BuffPicker = `<div id="DivPick"></div>`;
+    let BuffPicker = 
+        `<div id="DivPick">
+            <input type="text" id="buffName" placeholder="Enter the name of the buff">
+            <input type="color" id="buffColor" value="#ff0000">
+        </div>`;
     $(`.container`).append(BuffPicker);
-
     $(`#DivPick`).dialog({
         buttons: [
             {
-                text: "Ok",
+                text: "Cancel",
                 click: function() {
                     $(this).dialog("close");
                 }
-            }
+            },
+            {
+                text: "Ok",
+                click: function() {
+                    var BuffName = $(`#buffName`).val();
+                    if (BuffName !== "") {
+                        let BuffColor = $(`#buffColor`).val();
+                        ShowBuffWindow(BuffName, BuffColor);
+                        let buffList = `<option>${BuffName}</option>`;
+                        $(`#BuffSelect`).append(buffList);
+                        $(this).dialog("close");
+                        console.log($(`#buffName`).val());
+                    }
+                    else {
+                        alert("Please enter a Buff Name");
+                    }
+                }
+            },
         ],
-    });
-
-    $(`#DivPick`).selectmenu({
-        appendTo: "#DivPick",
-    });
-
-    for (i in SelfBuffs) {
-        let div = `<option>${i}</option>`;
-        $(`#DivPick-button`).append(div);
-        i++;
-    }
+    })
 }

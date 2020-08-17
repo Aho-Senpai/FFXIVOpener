@@ -301,9 +301,9 @@ Healer: #5AC629
     display: grid;
 }
 .BuffBar {
-    background-color: red;
     height: 20px;
-    width: 50px;
+    width: max-content;
+    text-align: center;
 }
 #rotationDiv {
     grid-template-rows: auto;
