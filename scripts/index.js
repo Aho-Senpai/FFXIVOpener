@@ -73,18 +73,42 @@ const globalSkillsList = [
         Recast100ms: 600,
     },
     {
-        ID: 4610,
-        Icon: "/i/020000/020707.png",
-        Name: "Potion",
-        Description: "This is a placeholder for your Infusion/Tincture.</br>The recast assumes you are using HQ.",
-        Recast100ms: 2700,
-    },
-    {
         ID: 0,
         Icon: "./resources/Pull1.png",
         Name: "Pull Placeholder",
         Description: "This is a placeholder for the Pull/Engage",
-    }
+    },
+    //Tinctures go there, to change if needed
+    {
+        ID: 27786,
+        Icon: "/i/020000/020710.png",
+        Name: "Tincture of Strength",
+        Description: "This diluted brew temporarily increases strength for twice the duration of similar potions.\n\n\n\n<span style=\"color:#00cc22;\">Duration:</span> 30s",
+    },
+    {
+        ID: 27787,
+        Icon: "/i/020000/020709.png",
+        Name: "Tincture of Dexterity",
+        Description: "This diluted brew temporarily increases dexterity for twice the duration of similar potions.\n\n\n\n<span style=\"color:#00cc22;\">Duration:</span> 30s",
+    },
+    {
+        ID: 27788,
+        Icon: "/i/020000/020707.png",
+        Name: "Tincture of Vitality",
+        Description: "This diluted brew temporarily increases vitality for twice the duration of similar potions.\n\n\n\n<span style=\"color:#00cc22;\">Duration:</span> 30s",
+    },
+    {
+        ID: 27789,
+        Icon: "/i/020000/020706.png",
+        Name: "Tincture of Inteligence",
+        Description: "This diluted brew temporarily increases inteligence for twice the duration of similar potions.\n\n\n\n<span style=\"color:#00cc22;\">Duration:</span> 30s",
+    },
+    {
+        ID: 27790,
+        Icon: "/i/020000/020708.png",
+        Name: "Tincture of Mind",
+        Description: "This diluted brew temporarily increases mind for twice the duration of similar potions.\n\n\n\n<span style=\"color:#00cc22;\">Duration:</span> 30s",
+    },
 ];
 
 const skillsBlacklist = [
@@ -237,7 +261,7 @@ function getJobSkills(jobId) {
         });
         $.each(globalSkillsList, function (_, skill) {
             // If it's AutoAttack or Sprint or Potion: OGCD
-            if (skill.ID == 7 || skill.ID == 3 || skill.ID == 4610) {
+            if (skill.ID == 7 || skill.ID == 3 || skill.Name.includes("Tincture")) {
                 let image = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="global" href="#" data-ogcd="true">`);                        
                 $(`#generalActions`).append(image);
             }
@@ -335,7 +359,8 @@ function ShowBuffWindow(BuffName, BuffColor) {
             ghost: true,
             handles: "e, w"
         })
-        .draggable({containment: "parent"});
+        .draggable({containment: "parent"})
+        .sortable();
     let selection = $(`.BuffBar`).id;
     $(`#BuffSelect`).append(selection);
 }
@@ -377,12 +402,8 @@ function BuffPickerDialog() {
 
 function DeleteBuffBar() {
     if($(`#BuffSelect`).children("option:selected").val() != "Buff List") {
-        
         let buff = $(`#BuffSelect`).children("option:selected").val();
-        console.log(`${buff}`);
-        console.log(`Parent${buff}`);
-        $(`#Parent${buff}`).remove();
-
+        $(`Div[id="Parent${buff}"]`).remove();
         $(`#BuffSelect`).children("option:selected").remove();
     }
 }
