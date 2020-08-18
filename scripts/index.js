@@ -326,11 +326,16 @@ function SecretSetting() {
 
 function ShowBuffWindow(BuffName, BuffColor) {
     let buffBar = 
-        `<div>
-            <div id="${BuffName}" class="BuffBar" class="ui-draggable ui-draggable-handle">${BuffName}</div>
+        `<div id="Parent${BuffName}">
+            <div id="${BuffName}" style="background-color:${BuffColor}" class="BuffBar" class="ui-draggable ui-draggable-handle">${BuffName}</div>
         </div>`;
     $(`#rotationDiv`).prepend(buffBar);
-    $(`.BuffBar`).draggable({containment: "parent"}).css("background-color", `${BuffColor}`);
+    $(`.BuffBar`)
+        .resizable({
+            ghost: true,
+            handles: "e, w"
+        })
+        .draggable({containment: "parent"});
     let selection = $(`.BuffBar`).id;
     $(`#BuffSelect`).append(selection);
 }
@@ -353,14 +358,13 @@ function BuffPickerDialog() {
             {
                 text: "Ok",
                 click: function() {
-                    var BuffName = $(`#buffName`).val();
+                    let BuffName = $(`#buffName`).val();
                     if (BuffName !== "") {
                         let BuffColor = $(`#buffColor`).val();
                         ShowBuffWindow(BuffName, BuffColor);
                         let buffList = `<option>${BuffName}</option>`;
                         $(`#BuffSelect`).append(buffList);
-                        $(this).dialog("close");
-                        console.log($(`#buffName`).val());
+                        $(this).dialog("destroy").remove();
                     }
                     else {
                         alert("Please enter a Buff Name");
@@ -369,4 +373,16 @@ function BuffPickerDialog() {
             },
         ],
     })
+}
+
+function DeleteBuffBar() {
+    if($(`#BuffSelect`).children("option:selected").val() != "Buff List") {
+        
+        let buff = $(`#BuffSelect`).children("option:selected").val();
+        console.log(`${buff}`);
+        console.log(`Parent${buff}`);
+        $(`#Parent${buff}`).remove();
+
+        $(`#BuffSelect`).children("option:selected").remove();
+    }
 }

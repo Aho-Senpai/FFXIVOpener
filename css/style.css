@@ -297,12 +297,8 @@ Healer: #5AC629
     grid-row: 1;
     text-align: center;
 }
-.SpeedDiv {
-    display: grid;
-}
 .BuffBar {
     height: 20px;
-    width: max-content;
     text-align: center;
 }
 #rotationDiv {
