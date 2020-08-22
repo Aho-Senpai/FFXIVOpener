@@ -4,6 +4,9 @@ body {
     height: 100%;
     color: white;
 }
+
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -11,26 +14,96 @@ header {
     color: white;
     height: 8vh;
 }
-.WebsiteTitle {
-    color: white;
-    font-size: 7vh;
-}
-.DiscordButton {
-    cursor: pointer;
-    padding: 9px 25px;
-    background-color: #242424;
-    border-radius: 50px;
-    border-color: blue;
-    color: white;
-}
-.DiscordButton:hover {
-    background-color: rgba(24, 21, 180, 0.7);
-}
+    .Logo {
+        width: 8vh;
+        height: auto;
+    }
+    .WebsiteTitle {
+        color: white;
+        font-size: 7vh;
+    }
+    .DiscordButton {
+        cursor: pointer;
+        padding: 9px 25px;
+        background-color: #242424;
+        border-radius: 50px;
+        border-color: blue;
+        color: white;
+    }
+    .DiscordButton:hover {
+        background-color: rgba(24, 21, 180, 0.7);
+    }
+
+
+
+
 main {
     width: 100%;
     height: 100%;
     margin: 0;
 }
+    .container {
+        margin: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: max-content 35% 20% 25%;
+        grid-template-rows: 
+            40% 
+            60%;
+        grid-template-areas: 
+            "jobSelectCol rotationRow rotationRow rotationRow"
+            "jobSelectCol jobSkillsCol globalSkillsCol skillTooltipCol";
+        height: calc(100vh - 8vh);
+    }
+        .jobSelectCol {
+            grid-area: jobSelectCol;
+            display: grid;
+            height: 100%;
+            grid-template-rows: 
+                4% 
+                16% 
+                16% 
+                16% 
+                16% 
+                16% 
+                16%;
+        }
+            .roleJob {
+                font-size: xx-large;
+                justify-content: center;
+                align-self: center;
+                text-align: center;
+                border-style: solid;
+                border-color: #9b9b9b;
+                border-radius: 15px;
+                padding: 15px;
+                background-color: #242424;
+                margin: auto;
+            }
+        .rotationRow {
+            grid-area: rotationRow;
+            display: grid;
+            grid-template-rows: 
+                85% 
+                15%;
+        }
+            .btnClearRotation, .btnExportRotation, .btnShareRotation, #btnBuffWindow {
+                cursor: pointer;
+                padding: 9px 25px;
+                background-color: transparent;
+                border-color: red;
+                border-radius: 50px;
+                color: white;
+                justify-self: end;
+                align-self: center;
+                margin: 5px;
+            }
+            .btnExportRotation, .btnShareRotation, #btnBuffWindow {
+                border-color: #5AC629;
+            }
+
+
+
 footer {
     display: flex;
     justify-content: flex-end;
@@ -40,57 +113,26 @@ footer {
     height: 4vh;
     align-items: center;
 }
-.footerBtn {
-    cursor: pointer;
-    background-color: transparent;
-    border-color: blue;
-    border-radius: 5%;
-    color: white;
-    padding-right: 5px;
-}
-.Logo {
-    width: 8vh;
-    height: auto;
-}
+    .footerBtn {
+        cursor: pointer;
+        background-color: transparent;
+        border-color: blue;
+        border-radius: 5%;
+        color: white;
+        padding-right: 5px;
+    }
+    #SSS {
+        background-color:transparent;
+        border-color: red;
+        border-radius: 50px;
+        color: white;
+    }
 
-.btnClearRotation, .btnExportRotation, .btnShareRotation, #btnBuffWindow {
-    cursor: pointer;
-    padding: 9px 25px;
-    background-color: transparent;
-    border-color: red;
-    border-radius: 50px;
-    color: white;
-    justify-self: end;
-    align-self: center;
-    margin: 5px;
-}
-.btnExportRotation, .btnShareRotation, #btnBuffWindow {
-    border-color: #5AC629;
-}
 
-.container {
-    margin: 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 20% 35% 20% 25%;
-    grid-template-rows: 
-        40% 
-        60%;
-    grid-template-areas: 
-        "jobSelectCol rotationRow rotationRow rotationRow"
-        "jobSelectCol jobSkillsCol globalSkillsCol skillTooltipCol";
-    height: calc(100vh - 8vh);
-}
-.jobSelectCol {
-    grid-area: jobSelectCol;
-}
-.rotationRow {
-    grid-area: rotationRow;
-    display: grid;
-    grid-template-rows: 
-        85% 
-        15%;
-}
+
+
+
+
 .jobSkillsCol {
     grid-area: jobSkillsCol;
     display: grid;
@@ -143,30 +185,8 @@ footer {
     background-color: #242424;
     margin: auto;
 }
-.jobSelectCol {
-    display: grid;
-    height: 100%;
-    grid-template-rows: 
-        4% 
-        16% 
-        16% 
-        16% 
-        16% 
-        16% 
-        16%;
-}
-.roleJob {
-    font-size: xx-large;
-    justify-content: center;
-    align-self: center;
-    text-align: center;
-    border-style: solid;
-    border-color: #9b9b9b;
-    border-radius: 15px;
-    padding: 15px;
-    background-color: #242424;
-    margin: auto;
-}
+
+
 .roleJobSpan {
     justify-self: center;
     align-self: center;
@@ -235,6 +255,8 @@ footer {
 #rotationActual {
     align-self: center;
     justify-self: center;
+    min-width: 120px;
+    min-height: 44px;
 }
 .imgHover {
     cursor: pointer;
@@ -242,12 +264,7 @@ footer {
 .ogcd {
     padding-bottom: 20px;
 }
-#SSS {
-    background-color:transparent;
-    border-color: red;
-    border-radius: 50px;
-    color: white;
-}
+
 .skillListDesc {
     align-self: center;
     justify-self: center;
@@ -308,4 +325,7 @@ Healer: #5AC629
     border-radius: 15px;
     padding: 15px;
     background-color: #242424;
+}
+#wrapDivRotation {
+    flex-wrap: wrap;
 }

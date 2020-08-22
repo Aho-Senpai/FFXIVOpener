@@ -353,7 +353,7 @@ function ShowBuffWindow(BuffName, BuffColor) {
         `<div id="Parent${BuffName}">
             <div id="${BuffName}" style="background-color:${BuffColor}" class="BuffBar" class="ui-draggable ui-draggable-handle">${BuffName}</div>
         </div>`;
-    $(`#rotationDiv`).prepend(buffBar);
+    $(`#wrapDivRotation`).prepend(buffBar);
     $(`.BuffBar`)
         .resizable({
             ghost: true,
