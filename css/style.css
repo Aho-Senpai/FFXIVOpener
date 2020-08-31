@@ -17,6 +17,7 @@ header {
     .Logo {
         width: 8vh;
         height: auto;
+        cursor: pointer;
     }
     .WebsiteTitle {
         color: white;
@@ -53,7 +54,8 @@ main {
         grid-template-areas: 
             "jobSelectCol rotationRow rotationRow rotationRow"
             "jobSelectCol jobSkillsCol globalSkillsCol skillTooltipCol";
-        height: calc(100vh - 8vh);
+        height: calc(100vh - 8vh - 10px);
+        gap: 10px;
     }
         .jobSelectCol {
             grid-area: jobSelectCol;

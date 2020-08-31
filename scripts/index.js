@@ -54,6 +54,18 @@ const ogcdOverrides = [
 
 const globalSkillsList = [
     {
+        ID: 1,
+        Icon: "./resources/BlankGCD.png",
+        Name: "GCD Blank Placeholder",
+        Description: "This is a placeholder for a GCD",
+    },
+    {
+        ID: 2,
+        Icon: "./resources/BlankOGCD.png",
+        Name: "OGCD Blank Placeholder",
+        Description: "This is a placeholder for a OGCD",
+    },
+    {
         ID: 7,
         Icon: "/i/000000/000101.png",
         Name: "Auto-Attack",
@@ -273,6 +285,16 @@ function getJobSkills(jobId) {
             // If it's Pull (Placeholder)
             else if (skill.ID == 0) {
                 let image = $(`<img class="imgHover" src="${skill.Icon}" width="20" height="60" data-id=${skill.ID} data-type="global" href="#">`);                        
+                $(`#generalActions`).append(image);
+            }
+            // If it's GCD placeholder
+            else if (skill.ID == 1) {
+                let image = $(`<img class="imgHover" src="${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="global" href="#">`);                        
+                $(`#generalActions`).append(image);
+            }
+            // If it's OGCD placeholder
+            else if (skill.ID == 2) {
+                let image = $(`<img class="imgHover" src="${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="global" href="#" data-ogcd="true">`);                        
                 $(`#generalActions`).append(image);
             }
         });
