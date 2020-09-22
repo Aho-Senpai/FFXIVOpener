@@ -210,7 +210,11 @@ $(function() {
             return roleSortOrder.indexOf(a.Role) - roleSortOrder.indexOf(b.Role);
         });                    
         $.each(jobList, function (_, job) {
-            let image = $(`<img src="https://xivapi.com${job.Icon}" width=40 height=40>`);
+            let image = $(`<img src="https://xivapi.com${job.Icon}" width=40 height=40>`)
+                .css("border-color", "rgb(226, 203, 135)")
+                .css("border-style", "solid")
+                .css("border-radius", "13px")
+                .css("margin", "2px");
             let link = $("<a></a>").attr("id", `job-${job.ID}`).attr("href", "#").attr("data-id", job.ID).append(image);
             $(`#role-${job.Role}`).append(link);
             link.click(function(){
@@ -228,7 +232,7 @@ $(function() {
 
 function getJobSkills(jobId) {
     let shorthand = jobList.find(x => x.ID === jobId).Abbreviation
-    let url = `https://xivapi.com/search?indexes=Action&filters=ClassJobCategory.${shorthand}=1,IsPvP=0,ActionCategory.ID%3E=2,ActionCategory.ID%3C=4&columns=ID,Icon,Name,Url,Description,Cast100ms,Recast100ms,Range,PrimaryCostType,PrimaryCostValue,SecondaryCostType,SecondaryCostValue,CastType,ActionCategory,ClassJobCategoryTargetID,IsRoleAction,IsPlayerAction&Limit=250&page=`;
+    let url = `https://xivapi.com/search?indexes=Action&filters=ClassJobCategory.${shorthand}=1,IsPvP=0,ActionCategory.ID%3E=2,ActionCategory.ID%3C=4&columns=ID,Icon,Name,Url,ActionCombo.ID,Description,Cast100ms,Recast100ms,Range,PrimaryCostType,PrimaryCostValue,SecondaryCostType,SecondaryCostValue,CastType,ActionCategory,ClassJobCategoryTargetID,IsRoleAction,IsPlayerAction&Limit=250&page=`;
     getAllData(url, 1).then(function(data){
         jobSkills[jobId] = data.filter(action => action.IsRoleAction === 0);
         roleSkills[jobId] = data.filter(action => action.IsRoleAction === 1);
@@ -246,6 +250,12 @@ function getJobSkills(jobId) {
                         let imageOGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job" data-ogcd="true">`);
                         $(`#jobSkillsListOGCD`).append(imageOGCD);
                     }
+                    
+                    
+                    //if (skill.ActionCombo.ID !== "null") {
+                        // Sort said skill just after the comboed action
+                        
+                    //}
                 }
                 else if (skill.ActionCategory.Name === "Ability") {
                     if (!gcdOverrides.includes(skill.ID) && !skillsBlacklist.includes(skill.ID)) {
@@ -429,3 +439,7 @@ function DeleteBuffBar() {
         $(`#BuffSelect`).children("option:selected").remove();
     }
 }
+
+/*function HideJobSelect() {
+    $(`.jobSelectCol`).style.width = "0px";
+}*/

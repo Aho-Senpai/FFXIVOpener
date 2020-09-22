@@ -86,18 +86,20 @@ main {
                 border-radius: 15px;
                 padding: 15px;
                 background-color: #242424;
-                margin: auto;
+                margin: 3px;
             }
-            #roleTank {
+            #roleTank > div > a > img {
                 background-color: #425ABD;
             }
-            #roleHealer {
+            #roleHealer > div > a > img {
                 background-color: #397B18;
             }
-            #roleMelee, #rolePhyRange, #roleMagRange {
+            #roleMelee > div > a > img,
+            #rolePhyRange > div > a > img,
+            #roleMagRange  > div > a > img {
                 background-color: #843131;
             }
-            #roleSpeSnow {
+            #roleSpeSnow > div > a > img {
                 background-color: #843131;
             }
                 .roleJobSpan {
@@ -161,7 +163,10 @@ main {
                 display: flex;
                 justify-content: space-between;
             }
-                .btnClearRotation, .btnExportRotation, .btnShareRotation, #btnBuffWindow {
+                .btnClearRotation, 
+                .btnExportRotation, 
+                .btnShareRotation, 
+                #btnBuffWindow {
                     cursor: pointer;
                     padding: 9px 25px;
                     background-color: transparent;
@@ -172,7 +177,9 @@ main {
                     align-self: center;
                     margin: 5px;
                 }
-                .btnExportRotation, .btnShareRotation, #btnBuffWindow {
+                .btnExportRotation, 
+                .btnShareRotation, 
+                #btnBuffWindow {
                     border-color: #5AC629;
                 }
         .jobSkillsCol {
@@ -280,10 +287,13 @@ footer {
     .footerBtn {
         cursor: pointer;
         background-color: transparent;
+        border-style: solid;
         border-color: blue;
-        border-radius: 5%;
+        border-radius: 10px;
+        margin: 5px;
         color: white;
         padding-right: 5px;
+        padding: 5px;
     }
     #SSS {
         background-color:transparent;
