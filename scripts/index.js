@@ -199,7 +199,7 @@ $(function() {
             let classJobCategoryIds = [30, 31];
             if(!classJobCategoryIds.includes(job.ClassJobCategory.ID)) 
                 return;
-            if(job.Role === 3 && job.ClassJobCategory.ID === 31) 
+            if(job.Role === 3 && job.ClassJobCategory.ID === 31)
                 job.Role = 6;
             jobList.push(job);
         });
@@ -250,7 +250,6 @@ function getJobSkills(jobId) {
                         let imageOGCD = $(`<img class="imgHover" src="https://xivapi.com${skill.Icon}" width="40" height="40" data-id=${skill.ID} data-type="job" data-ogcd="true">`);
                         $(`#jobSkillsListOGCD`).append(imageOGCD);
                     }
-                    
                     
                     //if (skill.ActionCombo.ID !== "null") {
                         // Sort said skill just after the comboed action
@@ -326,7 +325,8 @@ function getJobSkills(jobId) {
                     break;
             }
             let recast = skill.Recast100ms/10;
-            let tooltip = $(`
+            let tooltip = $(
+                `
                 <span id="SkillNameTooltip">${skill.Name}</span>
                 <p>${skill.Description}</p>
                 <span>Recast: ${recast} Seonds</span>
@@ -335,7 +335,7 @@ function getJobSkills(jobId) {
             $(`.skillTooltipCol`).empty();
             $(`.skillTooltipCol`).append(tooltip);
         });
-        $(".imgHover").click(function(){ 
+        $(".imgHover").click(function(){
             $(this)
                 .clone()
                 .attr("id", `timeline-${$(this).data("id")}`)
@@ -344,6 +344,34 @@ function getJobSkills(jobId) {
                     $(this).remove();
                 })
                 .appendTo($(`#rotationActual`));
+                $(".imgHover").hover(function(){
+                    let skill = {};
+                    switch($(this).data("type")){
+                        case "job":
+                            skill = jobSkills[currentJobId].find(skill => skill.ID === $(this).data("id"));
+                            break;
+                        case "role":
+                            skill = roleSkills[currentJobId].find(skill => skill.ID === $(this).data("id"));
+                            break;
+                        case "global":
+                                skill = globalSkillsList.find(skill => skill.ID === $(this).data("id"));
+                                break;
+                        default:
+                            //This scenario shouldn't happen
+                            skill = jobSkills[currentJobId].find(skill => skill.ID === $(this).data("id"));
+                            break;
+                    }
+                    let recast = skill.Recast100ms/10;
+                    let tooltip = $(
+                        `
+                        <span id="SkillNameTooltip">${skill.Name}</span>
+                        <p>${skill.Description}</p>
+                        <span>Recast: ${recast} Seonds</span>
+                        `
+                    );
+                    $(`.skillTooltipCol`).empty();
+                    $(`.skillTooltipCol`).append(tooltip);
+                });
         });
     });
 }

@@ -289,11 +289,12 @@ footer {
         background-color: transparent;
         border-style: solid;
         border-color: blue;
-        border-radius: 10px;
+        border-radius: 15px;
         margin: 5px;
         color: white;
         padding-right: 5px;
         padding: 5px;
+        text-decoration: none;
     }
     #SSS {
         background-color:transparent;
