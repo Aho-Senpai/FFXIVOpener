@@ -47,7 +47,7 @@ main {
         margin: 0;
         width: 100%;
         display: grid;
-        grid-template-columns: max-content 35% 20% 25%;
+        grid-template-columns: max-content auto auto auto;
         grid-template-rows: 
             40% 
             60%;
@@ -59,34 +59,15 @@ main {
     }
         .jobSelectCol {
             grid-area: jobSelectCol;
-            display: grid;
+            display: flex;
+            flex-direction: column;
             height: 100%;
-            grid-template-rows: 
-                4% 
-                16% 
-                16% 
-                16% 
-                16% 
-                16% 
-                16%;
+            flex-wrap: no-wrap;
+            overflow-y: scroll;
         }
-            .jobSelectTitle {
-                font-size: x-large;
-                justify-self: center;
-                align-self: center;
-                grid-row: 1;
-            }
             .roleJob {
                 font-size: xx-large;
-                justify-content: center;
-                align-self: center;
-                text-align: center;
-                border-style: solid;
-                border-color: #9b9b9b;
-                border-radius: 15px;
-                padding: 15px;
-                background-color: #242424;
-                margin: 3px;
+                display: flex;
             }
             #roleTank > div > a > img {
                 background-color: #425ABD;
@@ -102,27 +83,35 @@ main {
             #roleSpeSnow > div > a > img {
                 background-color: #843131;
             }
-                .roleJobSpan {
-                    justify-self: center;
-                    align-self: center;
-                }
                 #role-1 {
                     grid-row: 2;
+                    display: flex;
+                    flex-direction: column;
                 }
                 #role-4 {
                     grid-row: 3;
+                    display: flex;
+                    flex-direction: column;
                 }
                 #role-2 {
                     grid-row: 4;
+                    display: flex;
+                    flex-direction: column;
                 }
                 #role-3 {
                     grid-row: 5;
+                    display: flex;
+                    flex-direction: column;
                 }
                 #role-6 {
                     grid-row: 6;
+                    display: flex;
+                    flex-direction: column;
                 }
                 #role-5 {
                     grid-row: 7;
+                    display: flex;
+                    flex-direction: column;
                 }
         .rotationRow {
             grid-area: rotationRow;
@@ -320,6 +309,12 @@ footer {
 .ogcd {
     padding-bottom: 20px;
 }
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 /* FFXIV Roles Colors 
 Dark
 DPS: #843131
