@@ -283,7 +283,3 @@ function DeleteBuffBar() {
         $(`#BuffSelect`).children("option:selected").remove();
     }
 }
-
-/*function HideJobSelect() {
-    $(`.jobSelectCol`).style.width = "0px";
-}*/

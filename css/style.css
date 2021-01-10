@@ -47,7 +47,7 @@ main {
         margin: 0;
         width: 100%;
         display: grid;
-        grid-template-columns: max-content auto auto auto;
+        grid-template-columns: max-content auto auto 15%;
         grid-template-rows: 
             40% 
             60%;
@@ -69,6 +69,15 @@ main {
                 font-size: xx-large;
                 display: flex;
             }
+            #roleTank > div > a,
+            #roleHealer > div > a,
+            #roleMelee > div > a,
+            #rolePhyRange > div > a,
+            #roleMagRange  > div > a,
+            #roleSpeSnow > div > a {
+                width: 48px;
+                height: 48px;
+            }
             #roleTank > div > a > img {
                 background-color: #425ABD;
             }
@@ -85,31 +94,24 @@ main {
             }
                 #role-1 {
                     grid-row: 2;
-                    display: flex;
-                    flex-direction: column;
                 }
                 #role-4 {
                     grid-row: 3;
-                    display: flex;
-                    flex-direction: column;
                 }
                 #role-2 {
                     grid-row: 4;
-                    display: flex;
-                    flex-direction: column;
                 }
                 #role-3 {
                     grid-row: 5;
-                    display: flex;
-                    flex-direction: column;
                 }
                 #role-6 {
                     grid-row: 6;
-                    display: flex;
-                    flex-direction: column;
                 }
                 #role-5 {
                     grid-row: 7;
+                }
+                #role-1, #role-4, #role-2,
+                #role-3, #role-6, #role-5 {
                     display: flex;
                     flex-direction: column;
                 }
