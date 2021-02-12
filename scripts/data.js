@@ -197,6 +197,5 @@ const skillsWhitelist = [
     // BLU
     23268, //White Death
     23274, //Divine Cataract (Chelonian Gate Second Hit)
-    23289, //Fantom Flurry (Second Hit)
-
+    23289, //PHantom Flurry (Second Hit)
 ];
