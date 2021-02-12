@@ -187,4 +187,17 @@ const skillsWhitelist = [
     16766, //MCH Detonator
     18073, //DNC Ending
     7426, //Ruin IV
+    23268, //BLU White Death
+    23289, //BLU Fantom Flurry (Second Hit)
+    23274, //BLU Divine Cataract (Chelonian Gate Second Hit)
+    16791, //Assault I: Glittering Topaz	Action		
+    16792, //Assault II: Shining Topaz	Action		
+    16793, //Assault I: Downburst	Action		
+    16794, //Assault II: Glittering Emerald	Action		
+    16795, //Assault I: Earthen Armor	Action		
+    16796, //Assault II: Mountain Buster	Action		
+    16797, //Assault I: Aerial Slash	Action		
+    16798, //Assault II: Slipstream	Action		
+    16799, //Assault I: Crimson Cyclone	Action		
+    16800, //Assault II: Flaming Crush
 ];
