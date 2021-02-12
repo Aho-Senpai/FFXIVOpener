@@ -134,11 +134,13 @@ const skillsBlacklist = [
 
 const skillsWhitelist = [
     2265, //Fuma
+    2266, //Katon
     2267, //Raiton
     2268, //Hyoton
     2269, //Huton
     2270, //Doton
     2271, //Suiton
+    2272, //Rabbit Medium
 	16491, //goka meykakku
     16492, //hyosho ranryu
     3547, //Forbidden Chacra
@@ -165,6 +167,7 @@ const skillsWhitelist = [
     7527, //Enchanted Ripost
     7528, //Enchanted Zwerchhau
     7529, //Enchanted Redoublement
+    7530, //Enchanted Moulinet
     16528, //Enchanted Reprise
     7525, //Verflare
     7526, //Verfire
@@ -180,4 +183,8 @@ const skillsWhitelist = [
     7400, //Nastrond
     16465, //Inner Chaos
     16463, //Chaotic Cyclone
+    16479, //Raiden Thrust
+    16766, //MCH Detonator
+    18073, //DNC Ending
+    7426, //Ruin IV
 ];
