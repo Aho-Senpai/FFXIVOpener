@@ -15,12 +15,12 @@ you can also add a buff (see [Issues](#known-issues-and-todo) about it however) 
 Removing said buff can be deleted by selecting it in the dropdown and clicking `Delete Buff` button bellow  
 the `Clear` button will remove all the images and buffs in the rotation  
 Selecting another job will also clear all the skills and buffs in the rotation, unless the `SSS` button is green  
+Moving the Buff is done with the `-` and `+` buttons on the side of the buff selection dropdown (after selecting the buff you want to move)  
 
 # Known Issues and TODO:
 
 - use a better sortable for the rotation skills and buffs
 - use a better resizable for buffs
-- cannot drag the buff to the left, see previous point
 - fix some clipping on some screen sizes (especially with the buttons div)
 - unsure how to present the UI for large screens 
 - ideally add a loading bar or something while fetching data
