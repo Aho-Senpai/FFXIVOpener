@@ -1,48 +1,58 @@
 // Thanks to https://github.com/Rawrington/SkillDisplay/blob/master/src/Action.js
 const gcdOverrides = [
-	// DNC
-    15997, //standard step
-	15998, 15999, 16000, 16001, //technical step
-	16002, //step actions
-	16003, //standard finish
-	16004, //technical finish
-	16191, //single standard finish
-	16192, //double standard finish (WHY IS IT LIKE THIS)
-	16193, //single technical finish
-	16194, //double technical finish
-	16195, //triple technical finish
-	16196, //quadruple technical finish
-    // MCH
-	7418, //flamethrower
+    // This list is for Abilities that ARE GCD
+
     // NIN
-	2259, 18805, //ten
-	2261, 18806, //chi
-	2263, 18807, //jin
-	2265, 18873, 18874, 18875, //fuma shurikan
-	2266, 18876, //katon
-	2267, 18877, //raiton
-	2268, 18878, //hyoton
-	2269, 18879, //huton
-	2270, 18880, //doton
-	2271, 18881, //suiton
+    2259, 18805, //ten
+    2261, 18806, //chi
+    2263, 18807, //jin
+    2265, 18873, 18874, 18875, //fuma shurikan
+    2266, 18876, //katon
+    2267, 18877, //raiton
+    2268, 18878, //hyoton
+    2269, 18879, //huton
+    2270, 18880, //doton
+    2271, 18881, //suiton
     2272, //rabbit medium
-	16492, //hyosho ranryu
-	16491, //goka meykakku
+    16491, //goka meykakku
+    16492, //hyosho ranryu
     // SAM
     16483, //Tsubame-Gaeshi
     16484, //kaeshi higanbana
-	16485, //kaeshi goken
-	16486, //kaeshi setsugekka
+    16485, //kaeshi goken
+    16486, //kaeshi setsugekka
+    // MCH
+    7418, //flamethrower
+    // DNC
+    15997, //standard step
+    15998, 15999, 16000, 16001, //technical step
+    16002, //step actions
+    16003, //standard finish
+    16004, //technical finish
+    16191, //single standard finish
+    16192, //double standard finish
+    16193, //single technical finish
+    16194, //double technical finish
+    16195, //triple technical finish
+    16196, //quadruple technical finish
 ];
 // Thanks to https://github.com/Rawrington/SkillDisplay/blob/master/src/Action.js
 const ogcdOverrides = [
+    // This list if for Spells and Weaponskills that ARE OGCD
+
     // BRD
     114, //bard MB
-	116, //bard AP
-	3559, //bard WM
+    116, //bard AP
+    3559, //bard WM
 ];
 
 const globalSkillsList = [
+    {
+        ID: 0,
+        Icon: "./resources/Pull1.png",
+        Name: "Pull Placeholder",
+        Description: "This is a placeholder for the Pull/Engage",
+    },
     {
         ID: 1,
         Icon: "./resources/BlankGCD.png",
@@ -56,6 +66,13 @@ const globalSkillsList = [
         Description: "This is a placeholder for a OGCD",
     },
     {
+        ID: 3,
+        Icon: "/i/000000/000104.png",
+        Name: "Sprint",
+        Description: "Sprint.<br>Makes you run fast.<br>WHAT ELSE DO YOU WANT?",
+        Recast100ms: 600,
+    },
+    {
         ID: 7,
         Icon: "/i/000000/000101.png",
         Name: "Auto-Attack",
@@ -66,19 +83,6 @@ const globalSkillsList = [
         Icon: "/i/000000/000103.png",
         Name: "Limit Break",
         Description: "Limit Break.<br>Not sure why you are using that in an opener.",
-    },
-    {
-        ID: 3,
-        Icon: "/i/000000/000104.png",
-        Name: "Sprint",
-        Description: "Sprint.<br>Makes you run fast.<br>WHAT ELSE DO YOU WANT?",
-        Recast100ms: 600,
-    },
-    {
-        ID: 0,
-        Icon: "./resources/Pull1.png",
-        Name: "Pull Placeholder",
-        Description: "This is a placeholder for the Pull/Engage",
     },
     //Tinctures go there, to change if needed
     {
@@ -119,19 +123,13 @@ const skillsBlacklist = [
 ];
 
 const skillsWhitelist = [
-    // NIN
-    2265, //Fuma
-    2266, //Katon
-    2267, //Raiton
-    2268, //Hyoton
-    2269, //Huton
-    2270, //Doton
-    2271, //Suiton
-    2272, //Rabbit Medium
-	16491, //goka meykakku
-    16492, //hyosho ranryu
-    // MNK
-    3547, //Forbidden Chacra
+    // WAR
+    16463, //Chaotic Cyclone
+    16465, //Inner Chaos
+    // GNB
+    16156, //Jugular Rip
+    16157, //Abdomen Tear
+    16158, //Eye Gouge
     // AST
     4401, //Balance
     4402, //Arrow
@@ -141,6 +139,22 @@ const skillsWhitelist = [
     4406, //Spire
     7444, //Lord
     7445, //Lady
+    // MNK
+    3547, //Forbidden Chacra
+    // DRG
+    7400, //Nastrond
+    16479, //Raiden Thrust
+    // NIN
+    2265, //Fuma
+    2266, //Katon
+    2267, //Raiton
+    2268, //Hyoton
+    2269, //Huton
+    2270, //Doton
+    2271, //Suiton
+    2272, //Rabbit Medium
+    16491, //goka meykakku
+    16492, //hyosho ranryu
     // SAM
     7487, //Midare
     7488, //Tenka Goken
@@ -148,6 +162,8 @@ const skillsWhitelist = [
     16484, //Kaeshi: Higanbana
     16485, //Kaeshi: Goken
     16486, //Kaeshi: Setsugekka
+    // MCH
+    16766, //Detonator
     // DNC
     15999, //Emboite
     16000, //Entrechat
@@ -156,15 +172,6 @@ const skillsWhitelist = [
     16003, //Standard Finish
     16004, //Technical Finish
     18073, //Ending
-    // RDM
-    7527, //Enchanted Ripost
-    7528, //Enchanted Zwerchhau
-    7529, //Enchanted Redoublement
-    7530, //Enchanted Moulinet
-    7525, //Verflare
-    7526, //Verfire
-    16528, //Enchanted Reprise
-    16530, //Scorch
     // SMN
     7426, //Ruin IV
     16513, //Firebird Trance
@@ -182,18 +189,15 @@ const skillsWhitelist = [
     16798, //Assault II: Slipstream	Action		
     16799, //Assault I: Crimson Cyclone	Action		
     16800, //Assault II: Flaming Crush
-    // GNB
-    16156, //Jugular Rip
-    16157, //Abdomen Tear
-    16158, //Eye Gouge
-    // DRG
-    7400, //Nastrond
-    16479, //Raiden Thrust
-    // WAR
-    16463, //Chaotic Cyclone
-    16465, //Inner Chaos
-    // MCH
-    16766, //Detonator
+    // RDM
+    7527, //Enchanted Ripost
+    7528, //Enchanted Zwerchhau
+    7529, //Enchanted Redoublement
+    7530, //Enchanted Moulinet
+    7525, //Verflare
+    7526, //Verfire
+    16528, //Enchanted Reprise
+    16530, //Scorch
     // BLU
     23268, //White Death
     23274, //Divine Cataract (Chelonian Gate Second Hit)
