@@ -27,3 +27,5 @@ Moving the Buff is done with the `-` and `+` buttons on the side of the buff sel
 - better tooltip ? help welcome on this!  
 - fix issue with scrolling to bottom of page when on larger screen
 - buff bar isn't tied to the rotation if rotation overflow-x
+
+https://www.buymeacoffee.com/AhoSenpai
