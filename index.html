@@ -24,7 +24,7 @@
         <button id="discord-btn" onclick="discord_btn_click()">Discord</button>
     </header>
     <main>
-        <div id="Job-Select"></div>
+        <div id="Job-Select" class="hide-scrollbar"></div>
         <div id="main">
             <div id="Rotation-Main" class="Border-Div">
                 <div id="Rotation-Div" class="Border-Div">
@@ -32,7 +32,7 @@
                     <div id="Rotation-Skills" class="isEmpty"></div>
                 </div>
             </div>
-            <div id="Option-Buttons" class="Border-Div">
+            <div id="Option-Buttons" class="Border-Div hide-scrollbar">
                 <div id="BuffPicker">
                     <input type="text" id="BuffName" autocomplete="off" placeholder="Input Buff Name">
                     <input type="color" id="BuffColor" value="#CE5252">
@@ -45,22 +45,22 @@
                 <button id="ClearRotationButton" onclick="clearRotation()">Clear</button>
             </div>
             <div id="Action-Buttons">
-                <div id="ActionLists">
-                    <div id="GCD" class="Border-Div">
+                <div id="ActionLists" class="hide-scrollbar">
+                    <div id="GCD" class="Border-Div hide-scrollbar">
                         <span class="Category-Title">GCD</span>
-                        <div id="GCD-List" class="Skill-Icon-List"></div>
+                        <div id="GCD-List" class="Skill-Icon-List hide-scrollbar"></div>
                     </div>
-                    <div id="OGCD" class="Border-Div">
+                    <div id="OGCD" class="Border-Div hide-scrollbar">
                         <span class="Category-Title">OGCD</span>
-                        <div id="OGCD-List" class="Skill-Icon-List"></div>
+                        <div id="OGCD-List" class="Skill-Icon-List hide-scrollbar"></div>
                     </div>
-                    <div id="Role-Skills" class="Border-Div">
+                    <div id="Role-Skills" class="Border-Div hide-scrollbar>
                         <span class="Category-Title">Role</span>
-                        <div id="Role-Skills-List" class="Skill-Icon-List"></div>
+                        <div id="Role-Skills-List" class="Skill-Icon-List hide-scrollbar"></div>
                     </div>
-                    <div id="Global-Skills" class="Border-Div">
+                    <div id="Global-Skills" class="Border-Div hide-scrollbar">
                         <span class="Category-Title">Global</span>
-                        <div id="Global-Skills-List" class="Skill-Icon-List"></div>
+                        <div id="Global-Skills-List" class="Skill-Icon-List hide-scrollbar"></div>
                     </div>
                 </div>
                 <div id="Skill-Tooltip" class="Border-Div">
