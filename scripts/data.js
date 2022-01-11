@@ -26,15 +26,17 @@ const gcdOverrides = [
     // DNC
     15997, //standard step
     15998, 15999, 16000, 16001, //technical step
-    16002, //step actions
-    16003, //standard finish
-    16004, //technical finish
-    16191, //single standard finish
-    16192, //double standard finish
-    16193, //single technical finish
-    16194, //double technical finish
-    16195, //triple technical finish
-    16196, //quadruple technical finish
+    16002, //Step actions
+    16003, //Standard finish
+    16004, //Technical finish
+    16191, //Single standard finish
+    16192, //Double standard finish
+    16193, //Single technical finish
+    16194, //Double technical finish
+    16195, //Triple technical finish
+    16196, //Quadruple technical finish
+    // SMN
+    25830 //Rekindle
 ];
 // Thanks to https://github.com/Rawrington/SkillDisplay/blob/master/src/Action.js
 const ogcdOverrides = [
@@ -44,8 +46,20 @@ const ogcdOverrides = [
     114, //bard MB
     116, //bard AP
     3559, //bard WM
+    
     // SMN
     3582, //Deathflare
+    25823, //Ruby Rite
+    25824, //Topaz Rite
+    25825, //Emerald Rite
+    25831, //Summon Phoenix
+    25832, //Ruby Catastrophe
+    25833, //Topaz Catastrophe
+    25834, //Emerald Catastrophe
+    25835, //Crimson Cyclone
+    25836, //Mountain Buster
+    25837, //Slipstream
+    25885, //Crimson Strike
 ];
 
 const globalSkillsList = [
@@ -181,7 +195,7 @@ const skillsWhitelist = [
     16514, //Fountain of Fire
     16515, //Brand of Purgatory
     16516, //Enkindle Phoenix
-    16517, //Everlasting Flight
+    //16517, //Everlasting Flight //Removed with 6.0?
     16791, //Assault I: Glittering Topaz	Action		
     16792, //Assault II: Shining Topaz	Action		
     16793, //Assault I: Downburst	Action		
@@ -192,6 +206,18 @@ const skillsWhitelist = [
     16798, //Assault II: Slipstream	Action		
     16799, //Assault I: Crimson Cyclone	Action		
     16800, //Assault II: Flaming Crush
+    25823, //Ruby Rite
+    25824, //Topaz Rite
+    25825, //Emerald Rite
+    25830, //Rekindle
+    25831, //Summon Phoenix
+    25832, //Ruby Catastrophe
+    25833, //Topaz Catastrophe
+    25834, //Emerald Catastrophe
+    25835, //Crimson Cyclone
+    25836, //Mountain Buster
+    25837, //Slipstream
+    25885, //Crimson Strike
     // RDM
     7527, //Enchanted Ripost
     7528, //Enchanted Zwerchhau
