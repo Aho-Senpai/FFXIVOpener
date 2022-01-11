@@ -44,6 +44,8 @@ const ogcdOverrides = [
     114, //bard MB
     116, //bard AP
     3559, //bard WM
+    // SMN
+    3582, //Deathflare
 ];
 
 const globalSkillsList = [
@@ -173,6 +175,7 @@ const skillsWhitelist = [
     16004, //Technical Finish
     18073, //Ending
     // SMN
+    3582, //Deathflare
     7426, //Ruin IV
     16513, //Firebird Trance
     16514, //Fountain of Fire
