@@ -86,13 +86,13 @@ function getJobSkills(jobID) {
 function jobSelectBackgroundColor(role) {
     switch (role) {
         case 1:
-            return "#425ABD";
+            return "#425ABD"; //Tanks (Blue)
         case 4:
-            return "#397B18";
+            return "#397B18"; // Healers (Green)
         case 2: case 3: case 5: case 6:
-            return "#843131";
+            return "#843131"; // DPS (Red)
         default:
-            return "#FFFFFF";
+            return "#FFFFFF"; // Others (White) <- Should not happen
     }
 }
 
@@ -213,6 +213,7 @@ function clearDivs() {
     if (!MoxSetting) {
         clearRotation();
     }
+    // If MoxSetting = true = do not clear the timeline
     let el = document.getElementsByClassName("Skill-Icon");
     while (el.length > 0)
         el[0].parentNode.removeChild(el[0]);
