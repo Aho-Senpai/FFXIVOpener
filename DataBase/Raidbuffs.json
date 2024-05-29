@@ -1,0 +1,5 @@
+{
+    "RaidBuffs":[
+        { "ID":"1", "Name":"Trick Attack","ImageName":"TrickAttack", "Duration":30 }
+    ]
+}

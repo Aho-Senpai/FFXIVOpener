@@ -1,0 +1,62 @@
+{
+    "Tank":[
+        {
+            "ID":1,
+            "Name":"Rampart",
+            "ImageName":"Rampart",
+            "Description":"Reduces damage taken by 20%.</br>Duration: 20s",
+            "Cast":0,
+            "Recast":90,
+            "Range":0,
+            "Radius":0
+        }
+    ],
+    "Healer":[
+        {
+            "ID":1,
+            "Name":"Surecast",
+            "ImageName":"Surecast",
+            "Description":"Spells can be cast without interruption.</br>Additional Effect: Nullifies most knockback and draw-in effects</br>Duration: 6s",
+            "Cast":0,
+            "Recast":120,
+            "Range":0,
+            "Radius":0
+        }
+    ],
+    "Melee":[
+        {
+            "ID":1,
+            "Name":"Second Wind",
+            "ImageName":"SecondWind",
+            "Description":"Instantly restores own HP.</br>Cure Potency: 500",
+            "Cast":0,
+            "Recast":120,
+            "Range":0,
+            "Radius":0
+        }
+    ],
+    "PhysicalRange":[
+        {
+            "ID":1,
+            "Name":"Second Wind",
+            "ImageName":"SecondWind",
+            "Description":"Instantly restores own HP.</br>Cure Potency: 500",
+            "Cast":0,
+            "Recast":120,
+            "Range":0,
+            "Radius":0
+        }
+    ],
+    "MagicalRange":[
+        {
+            "ID":1,
+            "Name":"Surecast",
+            "ImageName":"Surecast",
+            "Description":"Spells can be cast without interruption.</br>Additional Effect: Nullifies most knockback and draw-in effects</br>Duration: 6s",
+            "Cast":0,
+            "Recast":120,
+            "Range":0,
+            "Radius":0
+        }
+    ]
+}

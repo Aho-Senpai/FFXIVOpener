@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
 <head>
     <meta charset="UTF-8" />
@@ -7,83 +7,51 @@
     <meta name="description" content="This website is for FFXIV openers" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <style>
+        /*Default BG color to hopefully help not blind the user while loading the page?*/ 
+        body{ background-color: black; color: white; } 
+    </style>
+
     <!-- Links -->
     <link rel="stylesheet" type="text/css" href="./styles/index.css" />
 
     <!-- Scripts -->
-    <script defer src="./scripts/index.js"></script>
-    <script defer src="./scripts/data.js"></script>
-    <!-- jsDelivr :: Sortable :: Latest (https://www.jsdelivr.com/package/npm/sortablejs) -->
-    <script defer src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script defer src="./scripts/index.js" ></script>
+    <script defer src="./scripts/JobSelect.js" ></script>
+    <script defer src="./scripts/getSkills.js"></script>
 </head>
 
 <body>
     <header>
-        <img id="ffxiv-logo-header" src="./resources/Logo.png" alt="logo">
-        <span id="page-title">FFXIV Opener</span>
-        <button id="discord-btn" onclick="discord_btn_click()">Discord</button>
+        <div id="JobSelect">
+            <div id="JobSelectTank"></div>
+            <div id="JobSelectHealer"></div>
+            <div id="JobSelectMelee"></div>
+            <div id="JobSelectPhysicalRange"></div>
+            <div id="JobSelectMagicalRange"></div>
+        </div>
+        <span>FFXIV Opener</span>
+        <button>Settings</button> <!-- button for now but will change as needed -->
     </header>
     <main>
-        <div id="Job-Select" class="hide-scrollbar"></div>
-        <div id="main">
-            <div id="Rotation-Main" class="Border-Div">
-                <div id="Rotation-Div" class="Border-Div">
-                    <div id="Rotation-Buffs" class="isEmpty"></div>
-                    <div id="Rotation-Skills" class="isEmpty"></div>
-                </div>
-            </div>
-            <div id="Option-Buttons" class="Border-Div hide-scrollbar">
-                <div id="BuffPicker">
-                    <input type="text" id="BuffName" autocomplete="off" placeholder="Input Buff Name">
-                    <input type="color" id="BuffColor" value="#CE5252">
-                    <button id="AddBuffButton" onclick="addBuff()">Add Buff</button>
-                    <select name="BuffList" id="RotationBuffList"></select>
-                    <button id="deleteBuff" onclick="deleteBuff()">Delete Buff</button>
-                    <button id="buffMinusMargin" onclick="removeBuffMargin()">-</button>
-                    <button id="buffPlusMargin" onclick="addBuffMargin()">+</button>
-                </div>
-                <button id="ClearRotationButton" onclick="clearRotation()">Clear</button>
-            </div>
-            <div id="Action-Buttons">
-                <div id="ActionLists" class="hide-scrollbar">
-                    <div id="GCD" class="Border-Div hide-scrollbar">
-                        <span class="Category-Title">GCD</span>
-                        <div id="GCD-List" class="Skill-Icon-List hide-scrollbar"></div>
-                    </div>
-                    <div id="OGCD" class="Border-Div hide-scrollbar">
-                        <span class="Category-Title">OGCD</span>
-                        <div id="OGCD-List" class="Skill-Icon-List hide-scrollbar"></div>
-                    </div>
-                    <div id="Role-Skills" class="Border-Div hide-scrollbar">
-                        <span class="Category-Title">Role</span>
-                        <div id="Role-Skills-List" class="Skill-Icon-List hide-scrollbar"></div>
-                    </div>
-                    <div id="Global-Skills" class="Border-Div hide-scrollbar">
-                        <span class="Category-Title">Global</span>
-                        <div id="Global-Skills-List" class="Skill-Icon-List hide-scrollbar"></div>
-                    </div>
-                </div>
-                <div id="Skill-Tooltip" class="Border-Div">
-                    <h1 id="Tooltip-title"></h1>
-                    <img id="Tooltip-img" src="" alt="">
-                    <p id="Tooltip-desc"></p>
-                    <span id="Tooltip-CastTime"></span>
-                    <span id="Tooltip-RecastTime"></span>
-                    <span id="Tooltip-Range"></span>
-                    <span id="Tooltip-Radius"></span>
-                </div>
-            </div>
+        <div id="Timeline">
+            <button>Clear Timeline</button>
+            <button>Share</button>
+        </div>
+        <div id="SkillSelect">
+            <div id="RaidBuffs">raidbuffs</div>
+            <div id="GCD">gcd</div>
+            <div id="OGCD">ogcd</div>
+            <div id="RoleSkills">role</div>
+            <div id="GlobalSkills">global</div>
+        </div>
+        <div id="Tooltip">
+            tooltip?
         </div>
     </main>
     <footer>
-        <button id="xivapi-btn" onclick="xivapiBtn()">Powered by XIVAPI</button>
-        <button id="github-btn" onclick="githubBtn()">Find project on Github</button>
-        <button id="sss-btn" onclick="sssClick()">SSS</button>
+        <!-- Non-existent Footer unless i find a reason to use it -->
     </footer>
-    <span id="SMOL-SCREEN">
-        Please consider using a larger screeen. <br />
-        Or try landscape.
-    </span>
 </body>
 
 </html>
