@@ -3,7 +3,8 @@
         {
             "ID":1,
             "Name":"Rampart",
-            "ImageName":"Rampart",
+            "ImageName":"rampart",
+            "GlobalCoolDown":"OGCD",
             "Description":"Reduces damage taken by 20%.</br>Duration: 20s",
             "Cast":0,
             "Recast":90,
@@ -15,7 +16,8 @@
         {
             "ID":1,
             "Name":"Surecast",
-            "ImageName":"Surecast",
+            "ImageName":"surecast",
+            "GlobalCoolDown":"OGCD",
             "Description":"Spells can be cast without interruption.</br>Additional Effect: Nullifies most knockback and draw-in effects</br>Duration: 6s",
             "Cast":0,
             "Recast":120,
@@ -27,7 +29,8 @@
         {
             "ID":1,
             "Name":"Second Wind",
-            "ImageName":"SecondWind",
+            "ImageName":"second_wind",
+            "GlobalCoolDown":"OGCD",
             "Description":"Instantly restores own HP.</br>Cure Potency: 500",
             "Cast":0,
             "Recast":120,
@@ -39,7 +42,8 @@
         {
             "ID":1,
             "Name":"Second Wind",
-            "ImageName":"SecondWind",
+            "ImageName":"second_wind",
+            "GlobalCoolDown":"OGCD",
             "Description":"Instantly restores own HP.</br>Cure Potency: 500",
             "Cast":0,
             "Recast":120,
@@ -51,7 +55,8 @@
         {
             "ID":1,
             "Name":"Surecast",
-            "ImageName":"Surecast",
+            "ImageName":"surecast",
+            "GlobalCoolDown":"OGCD",
             "Description":"Spells can be cast without interruption.</br>Additional Effect: Nullifies most knockback and draw-in effects</br>Duration: 6s",
             "Cast":0,
             "Recast":120,

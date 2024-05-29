@@ -1,0 +1,47 @@
+#JobSelect input[type="radio"] {
+    appearance: none;
+    cursor: pointer;
+}
+#JobSelect input[type="radio"]:checked {
+    opacity: 1;
+}
+.JobSelectImage {
+    min-height: 56px;
+    min-width: 56px;
+    height: 56px;
+    background-size: 56px;
+    opacity: 0.6;
+}
+
+#JobSelect {
+    width: fit-content;
+    background-color: darkgray;
+    z-index: 1;
+    position: fixed;
+    top: 5vh;
+    padding: auto;
+    width: 0;
+    overflow: hidden;
+    margin-left: 20%;
+}
+.JobSelectRole {
+    display: flex;
+    justify-content: center;
+}
+.JobSelectRoleTitle {
+    font-size: larger;
+}
+
+/*
+.parent {
+    display: flex;
+    justify-content: 'center' | 'space-between'; Horizontal alignment
+    align-content: 'center' | 'space-between';  Vertical alignment
+    align-items: 'center' | 'space-between';
+}
+
+.parent {
+    display: grid;
+
+}
+*/

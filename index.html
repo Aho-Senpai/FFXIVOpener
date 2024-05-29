@@ -14,23 +14,30 @@
 
     <!-- Links -->
     <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/JobSelect.css">
+    <link rel="stylesheet" type="text/css" href="./styles/SkillSelect.css">
+    <link rel="stylesheet" type="text/css" href="./styles/Tooltip.css">
 
     <!-- Scripts -->
     <script defer src="./scripts/index.js" ></script>
     <script defer src="./scripts/JobSelect.js" ></script>
     <script defer src="./scripts/getSkills.js"></script>
+    <script defer src="./scripts/timeline.js"></script>
+    <script defer src="./scripts/tooltip.js"></script>
 </head>
 
 <body>
     <header>
         <div id="JobSelect">
-            <div id="JobSelectTank"></div>
-            <div id="JobSelectHealer"></div>
-            <div id="JobSelectMelee"></div>
-            <div id="JobSelectPhysicalRange"></div>
-            <div id="JobSelectMagicalRange"></div>
+            <span class="JobSelectRole JobSelectRoleTitle">Please Select Job</span>
+            <div id="JobSelectTank" class="JobSelectRole"></div>
+            <div id="JobSelectHealer" class="JobSelectRole"></div>
+            <div id="JobSelectMelee" class="JobSelectRole"></div>
+            <div id="JobSelectPhysicalRange" class="JobSelectRole"></div>
+            <div id="JobSelectMagicalRange" class="JobSelectRole"></div>
         </div>
-        <span>FFXIV Opener</span>
+        <button onclick="ToggleJobSelect()">Job Select Btn</button>
+        <span id="WebpageTitle">FFXIV Opener</span>
         <button>Settings</button> <!-- button for now but will change as needed -->
     </header>
     <main>
@@ -39,11 +46,26 @@
             <button>Share</button>
         </div>
         <div id="SkillSelect">
-            <div id="RaidBuffs">raidbuffs</div>
-            <div id="GCD">gcd</div>
-            <div id="OGCD">ogcd</div>
-            <div id="RoleSkills">role</div>
-            <div id="GlobalSkills">global</div>
+            <div id="RaidBuffs">
+                <span class="SkillCategoryTitle">RaidBuffs</span>
+                <div id="RaidBuffsList"></div>
+            </div>
+            <div id="GCD">
+                <span class="SkillCategoryTitle">GCD</span>
+                <div id="GCDList"></div>
+            </div>
+            <div id="OGCD">
+                <span class="SkillCategoryTitle">OGCD</span>
+                <div id="OGCDList"></div>
+            </div>
+            <div id="RoleSkills">
+                <span class="SkillCategoryTitle">Role Skills</span>
+                <div id="RoleSkillsList"></div>
+            </div>
+            <div id="GlobalSkills">
+                <span class="SkillCategoryTitle">Global</span>
+                <div id="GlobalSkillsList"></div>
+            </div>
         </div>
         <div id="Tooltip">
             tooltip?

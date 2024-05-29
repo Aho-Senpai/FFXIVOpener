@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     LoadJobsDataBase();
     setTimeout(() => { MakeJobSelectorElements() }, 500); // This is a temporary hack to get it working
     // TODO: Fix the issue with MakeJobSelectorElements running before LoadJobsDataBase ends
+    ToggleJobSelect();
 });
 
 function LoadJobsDataBase () {
@@ -29,4 +30,13 @@ function MakeJobSelectorElements() {
         temp.setAttribute("onclick", `getJobSkills(\'${Object.Abbreviation}\',\'${Object.Role}\')`);
         document.getElementById(`JobSelect${Object.Role}`).appendChild(temp);
     });
+}
+
+function ToggleJobSelect() {
+    let jobSelect = document.getElementById("JobSelect");
+    if (getComputedStyle(jobSelect).width !== "0px") {
+        jobSelect.style.width = 0;
+        return;
+    }
+    jobSelect.style.width = "auto";
 }

@@ -10,31 +10,48 @@ Tank: #6B94E7
 Healer: #5AC629
 */
 
+:root {
+    color: white;
+    background-color: black;
 
-#JobSelect input[type="radio"] {
-    appearance: none;
-    cursor: pointer;
-}
-#JobSelect input[type="radio"]:checked {
-    opacity: 1;
-}
-.JobSelectImage {
-    min-height: 56px;
-    min-width: 56px;
-    height: 56px;
-    background-size: 56px;
-    opacity: 0.6;
+    --dark-tank-bg: #425ABD;
+    --dark-healer-bg: #397B18;
+    --dark-dps-bg: #843131;
+
+    --light-tank-bg: #6B94E7;
+    --light-healer-bg: #5AC629;
+    --light-dps-bg: #CE5252;
 }
 
-.GCDIcon,
-.OGCDIcon,
-.RoleIcon,
-.RaidBuffIcon,
-.GlobalSkillsIcon {
-    height: 76px;
-    width: 76px;
-    border: 0;
+body {
     margin: 0;
     padding: 0;
-    background-color: transparent;
+    color: White;
+    background-color: #1A1A1A;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+    background: black;
+}
+body::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+header {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1A1A1A;
+}
+
+main {
+    background-color: #1A1A1A;
+}
+
+#WebpageTitle {
+    font-size: xx-large;
 }
