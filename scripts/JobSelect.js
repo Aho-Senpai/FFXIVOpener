@@ -2,7 +2,7 @@ let JobList = [];
 
 document.addEventListener("DOMContentLoaded", () => {
     LoadJobsDataBase();
-    setTimeout(() => { MakeJobSelectorElements() }, 500); // This is a temporary hack to get it working
+    setTimeout(() => { MakeJobSelectorInputs() }, 500); // This is a temporary hack to get it working
     // TODO: Fix the issue with MakeJobSelectorElements running before LoadJobsDataBase ends
     ToggleJobSelect();
 });
@@ -20,15 +20,20 @@ function LoadJobsDataBase () {
     .catch((error) => console.error("Unable to fetch data:", error));
 }
 
-function MakeJobSelectorElements() {
+function MakeJobSelectorInputs() {
     JobList.forEach(Object => {
-        let temp = document.createElement("input");
-        temp.type = "radio";
-        temp.name = "JobSelect";
-        temp.classList = `JobSelect${Object.Role}${Object.Abbreviation} JobSelectImage`;
-        temp.style.backgroundImage = `url(./DataBase/Icon/Job/${Object.Abbreviation}.png)`;
-        temp.setAttribute("onclick", `getJobSkills(\'${Object.Abbreviation}\',\'${Object.Role}\')`);
-        document.getElementById(`JobSelect${Object.Role}`).appendChild(temp);
+        let InputTemp = document.createElement("input");
+        let ImageTemp = document.createElement("img");
+
+        InputTemp.type = "radio";
+        InputTemp.name = "JobSelect";
+        InputTemp.classList = `JobSelect${Object.Role}${Object.Abbreviation} JobSelectImage`;        
+        InputTemp.setAttribute("onclick", `getJobSkills(\'${Object.Abbreviation}\',\'${Object.Role}\')`);
+        
+        ImageTemp.src = `./DataBase/Icon/Job/${Object.Abbreviation}.png`;
+        InputTemp.appendChild(ImageTemp);
+        
+        document.getElementById(`JobSelect${Object.Role}`).appendChild(InputTemp);
     });
 }
 

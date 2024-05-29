@@ -15,6 +15,7 @@ function getJobSkills(JobShort, JobRole) {
     // TODO: Fix the issue with DisplayJobSkills running before fetch ends
 }
 
+//TODO: Make a function that handle fetch instead of doing that 20 times
 function LoadJobSkills(JobShort) {
     fetch(`./DataBase/${JobShort}.json`)
     .then(
@@ -78,48 +79,46 @@ function LoadGlobalSkills() {
 
 function DisplayJobSkills(JobShort, JobRole) {
     RaidBuffs.forEach(Object => {
-        let temp = document.createElement("button");
-        temp.classList = "RaidBuffIcon";
-        temp.style.backgroundImage = `url(./DataBase/Icon/RaidBuffs/${Object.ImageName}.png)`;
-        document.getElementById(`RaidBuffsList`).appendChild(temp);
+        let Path = `./DataBase/Icon/RaidBuffs/${Object.ImageName}.png`
+        BuildSkillsButtons("RaidBuffs", Path);
     })
 
     GCD.forEach(Object => {
-        let temp = document.createElement("button")
-        temp.classList = "GCDIcon GCD";
-        temp.style.backgroundImage = `url(./DataBase/Icon/PvE_Actions/${JobShort}/${Object.ImageName}.png)`;
-        document.getElementById(`GCDList`).appendChild(temp);
+        let Path = `./DataBase/Icon/PvE_Actions/${JobShort}/${Object.ImageName}.png`;
+        BuildSkillsButtons("GCD", Path);
     });
 
     OGCD.forEach(Object => {
-        let temp = document.createElement("button")
-        temp.classList = "OGCDIcon OGCD";
-        temp.style.backgroundImage = `url(./DataBase/Icon/PvE_Actions/${JobShort}/${Object.ImageName}.png)`;
-        document.getElementById(`OGCDList`).appendChild(temp);
+        let Path = `./DataBase/Icon/PvE_Actions/${JobShort}/${Object.ImageName}.png`;
+        BuildSkillsButtons("OGCD", Path);
     })
 
     RoleAction.forEach(Object => {
-        let temp = document.createElement("button")
-        temp.classList = `RoleIcon ${Object.GlobalCoolDown}`;
-        temp.style.backgroundImage = `url(./DataBase/Icon/RoleActions/${JobRole}/${Object.ImageName}.png)`;
-        document.getElementById(`RoleSkillsList`).appendChild(temp);
+        let Path = `./DataBase/Icon/RoleActions/${JobRole}/${Object.ImageName}.png`;
+        BuildSkillsButtons("RoleActions", Path);
     })
 
     GlobalSkills.forEach(Object => {
-        let temp = document.createElement("button")
-        temp.classList = `GlobalSkillsIcon ${Object.GlobalCoolDown}`;
-        if (Object.ID == 0){
-            temp.classList.add("PullIcon")
-        }
-        temp.style.backgroundImage = `url(${Object.ImageLink})`;
-        document.getElementById(`GlobalSkillsList`).appendChild(temp);
+        let Path = `${Object.ImageLink}`;
+        BuildSkillsButtons("GlobalSkills", Path);
     })
+}
+function BuildSkillsButtons(Category, Path) {
+    let TempButton = document.createElement("button");
+    let TempImage = document.createElement("img");
+    
+    TempButton.classList = `${Category}Icon`;
+    
+    TempImage.src = Path;
+    TempButton.appendChild(TempImage);
+    
+    document.getElementById(`${Category}List`).appendChild(TempButton);
 }
 
 function ClearSkills() {
     document.getElementById("RaidBuffsList").replaceChildren();
     document.getElementById("GCDList").replaceChildren();
     document.getElementById("OGCDList").replaceChildren();
-    document.getElementById("RoleSkillsList").replaceChildren();
+    document.getElementById("RoleActionsList").replaceChildren();
     document.getElementById("GlobalSkillsList").replaceChildren();
 }

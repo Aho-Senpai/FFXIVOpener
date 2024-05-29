@@ -11,10 +11,12 @@
     height: 56px;
     background-size: 56px;
     opacity: 0.6;
+    margin-bottom: 5px;
 }
-
+/* TODO: get JobSelect centered on the screen (viewheight-header?)*/
 #JobSelect {
     width: fit-content;
+    height: fit-content;
     background-color: darkgray;
     z-index: 1;
     position: fixed;
@@ -27,6 +29,7 @@
 .JobSelectRole {
     display: flex;
     justify-content: center;
+    align-content: space-around;
 }
 .JobSelectRoleTitle {
     font-size: larger;

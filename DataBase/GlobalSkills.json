@@ -46,35 +46,35 @@
     
     {
         "ID": 27786,
-        "ImageLink": "",
+        "ImageLink": "DataBase/Icon/Item/tincture_of_strength.png",
         "Name": "Tincture of Strength",
         "GlobalCoolDown":"OGCD",
         "Description": "This diluted brew temporarily increases strength for twice the duration of similar potions.\n\n\n\n<span style=\"color:#00cc22;\">Duration:</span> 30s"
     },
     {
         "ID": 27787,
-        "ImageLink": "",
+        "ImageLink": "DataBase/Icon/Item/tincture_of_dexterity.png",
         "Name": "Tincture of Dexterity",
         "GlobalCoolDown":"OGCD",
         "Description": "This diluted brew temporarily increases dexterity for twice the duration of similar potions.\n\n\n\n<span style=\"color:#00cc22;\">Duration:</span> 30s"
     },
     {
         "ID": 27788,
-        "ImageLink": "",
+        "ImageLink": "DataBase/Icon/Item/tincture_of_vitality.png",
         "Name": "Tincture of Vitality",
         "GlobalCoolDown":"OGCD",
         "Description": "This diluted brew temporarily increases vitality for twice the duration of similar potions.\n\n\n\n<span style=\"color:#00cc22;\">Duration:</span> 30s"
     },
     {
         "ID": 27789,
-        "ImageLink": "",
+        "ImageLink": "DataBase/Icon/Item/tincture_of_intelligence.png",
         "Name": "Tincture of Intelligence",
         "GlobalCoolDown":"OGCD",
         "Description": "This diluted brew temporarily increases intelligence for twice the duration of similar potions.\n\n\n\n<span style=\"color:#00cc22;\">Duration:</span> 30s"
     },
     {
         "ID": 27790,
-        "ImageLink": "",
+        "ImageLink": "DataBase/Icon/Item/tincture_of_mind.png",
         "Name": "Tincture of Mind",
         "GlobalCoolDown":"OGCD",
         "Description": "This diluted brew temporarily increases mind for twice the duration of similar potions.\n\n\n\n<span style=\"color:#00cc22;\">Duration:</span> 30s"
