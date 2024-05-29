@@ -4,6 +4,20 @@
 
 
 
+
+.GCDIcon,
+.OGCDIcon,
+.RoleIcon,
+.RaidBuffIcon input[type=radio] {
+    height: 40px;
+    width: 40px;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: scale-down;
+    background-color: transparent;
+}
+
+
 .GCDIcon,
 .OGCDIcon,
 .RoleIcon,
