@@ -7,7 +7,6 @@ module.exports = {
     output: {
         filename: "main.js",
         path: __dirname,
-        clean: true,
     },
     plugins: [
         new HtmlWebpackPlugin({
