@@ -4,10 +4,6 @@ WebPageDesign.drawio
 # Typescript
 .vscode/launch.json
 .vscode/tasks.json
-# Typescript nonsense
-# *.ts
-# /scripts/typescript/
-# /node_modules/
-# package.json
-# package-lock.json
-# tsconfig.json
+
+/node_modules/
+./index.html
