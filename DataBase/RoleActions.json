@@ -10,6 +10,71 @@
             "Recast":90,
             "Range":0,
             "Radius":0
+        },
+        {
+            "ID":2,
+            "Name":"Provoke",
+            "ImageName":"provoke",
+            "GlobalCoolDown":"OGCD",
+            "Description":"Gesture threateningly, placing yourself at the top of a target's enmity list while gaining additional enmity.",
+            "Cast":0,
+            "Recast":30,
+            "Range":25,
+            "Radius":0
+        },
+        {
+            "ID":3,
+            "Name":"Reprisal",
+            "ImageName":"reprisal",
+            "GlobalCoolDown":"OGCD",
+            "Description":"Reduces damage dealt by nearby enemies by 10%.</br>Duration: 10s",
+            "Cast":0,
+            "Recast":60,
+            "Range":0,
+            "Radius":5
+        },
+        {
+            "ID":4,
+            "Name":"Shirk",
+            "ImageName":"shirk",
+            "GlobalCoolDown":"OGCD",
+            "Description":"Diverts 25% of enmity to target party member.",
+            "Cast":0,
+            "Recast":120,
+            "Range":25,
+            "Radius":0
+        },
+        {
+            "ID":5,
+            "Name":"Interject",
+            "ImageName":"interject",
+            "GlobalCoolDown":"OGCD",
+            "Description":"Interrupts the use of a target's action.",
+            "Cast":0,
+            "Recast":30,
+            "Range":3,
+            "Radius":0
+        },{
+            "ID":6,
+            "Name":"Low Blow",
+            "ImageName":"low_blow",
+            "GlobalCoolDown":"OGCD",
+            "Description":"Stuns Target.</br>Duration: 5s",
+            "Cast":0,
+            "Recast":25,
+            "Range":3,
+            "Radius":0
+        },
+        {
+            "ID":7,
+            "Name":"Arm's Length",
+            "ImageName":"arm's_length",
+            "GlobalCoolDown":"OGCD",
+            "Description":"Creates a barrier nullifying most knockback and draw-in effects.</br>Duration: 6s</br>Additional Effect: Slow +20% when barrier is struck</br>Duration: 15s",
+            "Cast":0,
+            "Recast":120,
+            "Range":0,
+            "Radius":0
         }
     ],
     "Healer":[

@@ -80,38 +80,58 @@ function LoadGlobalSkills() {
 function DisplayJobSkills(JobShort, JobRole) {
     RaidBuffs.forEach(Object => {
         let Path = `./DataBase/Icon/RaidBuffs/${Object.ImageName}.png`
-        BuildSkillsButtons("RaidBuffs", Path);
+        let GlobalCoolDown = "RaidBuff"
+        let TempButton = document.createElement("button");
+        let TempImage = document.createElement("img");
+        TempButton.classList.add("RaidBuffsIcon");
+        TempButton.classList.add(`${GlobalCoolDown}`);
+        TempButton.id = `${Object.Name}`;
+        TempImage.src = Path;
+        TempButton.appendChild(TempImage);
+        //TempButton.addEventListener("mouseenter", showTooltip)
+        //TempButton.addEventListener("mouseleave", clearTooltip)
+        TempButton.addEventListener("click", addToTimeline)
+        document.getElementById("RaidBuffsList").appendChild(TempButton);
     })
 
     GCD.forEach(Object => {
         let Path = `./DataBase/Icon/PvE_Actions/${JobShort}/${Object.ImageName}.png`;
-        BuildSkillsButtons("GCD", Path);
+        let GlobalCoolDown = Object.GlobalCoolDown;
+        BuildSkillsButtons("GCD", Path, GlobalCoolDown);
     });
 
     OGCD.forEach(Object => {
         let Path = `./DataBase/Icon/PvE_Actions/${JobShort}/${Object.ImageName}.png`;
-        BuildSkillsButtons("OGCD", Path);
+        let GlobalCoolDown = Object.GlobalCoolDown;
+        BuildSkillsButtons("OGCD", Path, GlobalCoolDown);
     })
 
     RoleAction.forEach(Object => {
         let Path = `./DataBase/Icon/RoleActions/${JobRole}/${Object.ImageName}.png`;
-        BuildSkillsButtons("RoleActions", Path);
+        let GlobalCoolDown = Object.GlobalCoolDown;
+        BuildSkillsButtons("RoleActions", Path, GlobalCoolDown);
     })
 
     GlobalSkills.forEach(Object => {
         let Path = `${Object.ImageLink}`;
-        BuildSkillsButtons("GlobalSkills", Path);
+        let GlobalCoolDown = Object.GlobalCoolDown;
+        BuildSkillsButtons("GlobalSkills", Path, GlobalCoolDown);
     })
 }
-function BuildSkillsButtons(Category, Path) {
+function BuildSkillsButtons(Category, Path, GlobalCoolDown) {
     let TempButton = document.createElement("button");
     let TempImage = document.createElement("img");
-    
-    TempButton.classList = `${Category}Icon`;
-    
+
+    TempButton.classList.add(`${Category}Icon`);
+    TempButton.classList.add(`${GlobalCoolDown}`);
+
     TempImage.src = Path;
     TempButton.appendChild(TempImage);
-    
+
+    TempButton.addEventListener("mouseenter", showTooltip)
+    TempButton.addEventListener("mouseleave", clearTooltip)
+    TempButton.addEventListener("click", addToTimeline)
+
     document.getElementById(`${Category}List`).appendChild(TempButton);
 }
 

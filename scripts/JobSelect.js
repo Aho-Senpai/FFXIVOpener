@@ -4,7 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
     LoadJobsDataBase();
     setTimeout(() => { MakeJobSelectorInputs() }, 500); // This is a temporary hack to get it working
     // TODO: Fix the issue with MakeJobSelectorElements running before LoadJobsDataBase ends
-    ToggleJobSelect();
+
+    // Later : remove the SortableJS dependency and implement this
+    new Sortable(document.getElementById("SkillsTimeline")); //Using SortableJS to make timeline items sortable with drag&drop
+    new Sortable(document.getElementById("RaidBuffsTimeline"));
 });
 
 function LoadJobsDataBase () {
@@ -27,7 +30,7 @@ function MakeJobSelectorInputs() {
 
         InputTemp.type = "radio";
         InputTemp.name = "JobSelect";
-        InputTemp.classList = `JobSelect${Object.Role}${Object.Abbreviation} JobSelectImage`;        
+        InputTemp.classList.add(`JobSelect${Object.Role}${Object.Abbreviation}`, `JobSelectImage`);        
         InputTemp.setAttribute("onclick", `getJobSkills(\'${Object.Abbreviation}\',\'${Object.Role}\')`);
         
         ImageTemp.src = `./DataBase/Icon/Job/${Object.Abbreviation}.png`;
@@ -38,10 +41,10 @@ function MakeJobSelectorInputs() {
 }
 
 function ToggleJobSelect() {
-    let jobSelect = document.getElementById("JobSelect");
-    if (getComputedStyle(jobSelect).width !== "0px") {
-        jobSelect.style.width = 0;
+    const jobSelect = document.getElementById("JobSelect");
+    if (!jobSelect) {
+        console.error(Error);    
         return;
     }
-    jobSelect.style.width = "auto";
+    jobSelect.style.display = getComputedStyle(jobSelect).display === "block" ? "none" : "block";
 }

@@ -1,5 +1,6 @@
 #SkillSelect {
-    display: contents;
+   display: flex;
+   justify-content: center;
 }
 
 
@@ -8,8 +9,8 @@
 .RoleActionsIcon img,
 .RaidBuffsIcon img,
 .GlobalSkillsIcon img {
-    height: 40px;
-    width: 40px;
+   height: 40px;
+   width: 40px;
 }
 
 .GCDIcon,
@@ -17,11 +18,51 @@
 .RoleActionsIcon,
 .RaidBuffsIcon,
 .GlobalSkillsIcon {
-    height: 40px;
-    width: 40px;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    background-size: 40px;
+   height: 40px;
+   width: 40px;
+   border: 0;
+   margin: 0;
+   padding: 0;
+   background-color: transparent;
+   background-size: 40px;
+   cursor: pointer;
 }
+#RaidBuffs {
+   align-self: center;
+}
+.SkillCategoryTitle{
+   display: flex;
+   justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Temporary */
+ #RaidBuffs{
+    background-color: darkcyan;
+ }
+ #GCD{
+    background-color: darkkhaki;
+ }
+ #OGCD{
+    background-color: darkolivegreen;
+ }
+ #RoleActions{
+    background-color: darksalmon;
+ }
+ #GlobalSkills{
+    background-color: darkslateblue;
+ }

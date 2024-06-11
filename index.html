@@ -15,6 +15,7 @@
     <!-- Links -->
     <link rel="stylesheet" type="text/css" href="./styles/index.css" />
     <link rel="stylesheet" type="text/css" href="./styles/JobSelect.css">
+    <link rel="stylesheet" type="text/css" href="./styles/Timeline.css">
     <link rel="stylesheet" type="text/css" href="./styles/SkillSelect.css">
     <link rel="stylesheet" type="text/css" href="./styles/Tooltip.css">
 
@@ -24,6 +25,9 @@
     <script defer src="./scripts/getSkills.js"></script>
     <script defer src="./scripts/timeline.js"></script>
     <script defer src="./scripts/tooltip.js"></script>
+
+    <!-- SortableJS just for timeline -->
+    <script defer src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
 </head>
 
 <body>
@@ -36,19 +40,21 @@
             <div id="JobSelectPhysicalRange" class="JobSelectRole"></div>
             <div id="JobSelectMagicalRange" class="JobSelectRole"></div>
         </div>
-        <button onclick="ToggleJobSelect()">Job Select Btn</button>
+        <button onclick="ToggleJobSelect()">Job Select</button>
         <span id="WebpageTitle">FFXIV Opener</span>
         <button>Settings</button> <!-- button for now but will change as needed -->
     </header>
     <main>
         <div id="Timeline">
-            
-            <div id="RaibBuffsTimeline"></div>
-            <div id="SkillsTimeline"></div>
-            
-            
-            <button>Clear Timeline</button>
-            <button>Share</button>
+            <div id="TimelineDiv">
+                <div id="RaidBuffsTimeline"></div>
+                <div id="SkillsTimeline"></div>
+                <div id="SelfBuffsTimeline"></div> <!-- to implement later : when adding a skill to timeline that has a selfbuff, also add said selfbuff here -->
+            </div>
+            <div id="TimelineBtns">
+                <button>Share</button>
+                <button>Clear Timeline</button>
+            </div>
         </div>
         <div id="SkillSelect">
             <div id="RaidBuffs">
