@@ -13,12 +13,14 @@
     border-radius: 5px;
 }
 
-/* #RaidBuffsTimeline {
-    background-color: darkgoldenrod;
+#RaidBuffsTimeline {
+    /* background-color: darkgoldenrod;
     width: 99vw;
     height: 100px;
-    border: none;
-}*/
+    border: none; */
+    position: relative;
+    height: fit-content;
+}
 
 #SkillsTimeline {
     /* background-color: darkgreen; */
@@ -30,9 +32,11 @@
 }
 
 #SkillsTimeline .OGCD img{
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
-
+#SkillsTimeline .GCD img{
+    padding-top: 40px;
+}
 #TimelineBtns {
     display: flex;
     justify-content: end;
@@ -44,5 +48,6 @@
     text-align: center;
     resize: horizontal;
     overflow: auto;
-    border: none;
+    border-radius: 5px;
+    cursor: grab;
 }
