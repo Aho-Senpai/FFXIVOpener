@@ -88,9 +88,12 @@ function DisplayJobSkills(JobShort, JobRole) {
         TempButton.id = `${Object.Name}`;
         TempImage.src = Path;
         TempButton.appendChild(TempImage);
-        //TempButton.addEventListener("mouseenter", showTooltip)
-        //TempButton.addEventListener("mouseleave", clearTooltip)
+
+        TempButton.addEventListener("mouseenter", showTooltip)
+        TempButton.addEventListener("mouseleave", clearTooltip)
+
         TempButton.addEventListener("click", addToTimeline)
+
         document.getElementById("RaidBuffsList").appendChild(TempButton);
     })
 
@@ -130,6 +133,7 @@ function BuildSkillsButtons(Category, Path, GlobalCoolDown) {
 
     TempButton.addEventListener("mouseenter", showTooltip)
     TempButton.addEventListener("mouseleave", clearTooltip)
+
     TempButton.addEventListener("click", addToTimeline)
 
     document.getElementById(`${Category}List`).appendChild(TempButton);

@@ -1,3 +1,7 @@
 #Tooltip {
     display: none;
+    position: fixed;
+    background-color: blue;
+    min-width: 50px;
+    min-height: 50px;
 }

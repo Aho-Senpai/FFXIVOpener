@@ -1,5 +1,5 @@
 {
-    "GCD":[
+    "GCD": [
         {
             "ID":1,
             "Name":"Fast Blade",
@@ -34,7 +34,7 @@
             "Radius":0
         }
     ],
-    "OGCD":[
+    "OGCD": [
         {
             "ID":1,
             "Name":"Fight or Flight",

@@ -9,6 +9,7 @@ function addToTimeline() {
         //console.log(this.id);
         let Temp = document.createElement("div");
         Temp.textContent = this.id;
+        Temp.classList.add("RaidBuffTimelineBar")
         Temp.addEventListener("mousedown", moveBuffs)
         Temp.style.backgroundColor = "red"; // TODO : change
         document.getElementById("RaidBuffsTimeline").prepend(Temp);
@@ -20,9 +21,12 @@ function removeFromTimeline() {
 }
 
 //TODO : Edit this a bit, not smooth (something like "whileMouseDown" instead of "onMouseDown" ?)
+//TODO : Also make it not move the bar while resizing it
 function moveBuffs() {
     document.onmousedown = (e) => {
-        this.classList.add("BuffDivMove");
+        if (e.target.classList.contains("RaidBuffTimelineBar")){
+            this.classList.add("BuffDivMove");
+        }
     }
     document.onmousemove = (e) => {
         if (this.classList.contains("BuffDivMove")) {

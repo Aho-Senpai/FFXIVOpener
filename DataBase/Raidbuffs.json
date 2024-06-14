@@ -1,5 +1,5 @@
 {
-    "RaidBuffs":[
+    "RaidBuffs": [
         { "ID":"1", "Name":"Arcane Circle","ImageName":"arcane_circle", "Duration":15 },
         { "ID":"2", "Name":"Battle Litany","ImageName":"battle_litany", "Duration":15 },
         { "ID":"3", "Name":"Battle Voice","ImageName":"battle_voice", "Duration":15 },
