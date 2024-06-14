@@ -89,8 +89,8 @@ function DisplayJobSkills(JobShort, JobRole) {
         TempImage.src = Path;
         TempButton.appendChild(TempImage);
 
-        TempButton.addEventListener("mouseenter", showTooltip)
-        TempButton.addEventListener("mouseleave", clearTooltip)
+        //TempButton.addEventListener("mouseenter", showTooltip)
+        //TempButton.addEventListener("mouseleave", clearTooltip)
 
         TempButton.addEventListener("click", addToTimeline)
 
@@ -100,28 +100,32 @@ function DisplayJobSkills(JobShort, JobRole) {
     GCD.forEach(Object => {
         let Path = `./DataBase/Icon/PvE_Actions/${JobShort}/${Object.ImageName}.png`;
         let GlobalCoolDown = Object.GlobalCoolDown;
-        BuildSkillsButtons("GCD", Path, GlobalCoolDown);
+        let Skill = Object;
+        BuildSkillsButtons("GCD", Path, GlobalCoolDown, Skill);
     });
 
     OGCD.forEach(Object => {
         let Path = `./DataBase/Icon/PvE_Actions/${JobShort}/${Object.ImageName}.png`;
         let GlobalCoolDown = Object.GlobalCoolDown;
-        BuildSkillsButtons("OGCD", Path, GlobalCoolDown);
+        let Skill = Object;
+        BuildSkillsButtons("OGCD", Path, GlobalCoolDown, Skill);
     })
 
     RoleAction.forEach(Object => {
         let Path = `./DataBase/Icon/RoleActions/${JobRole}/${Object.ImageName}.png`;
         let GlobalCoolDown = Object.GlobalCoolDown;
-        BuildSkillsButtons("RoleActions", Path, GlobalCoolDown);
+        let Skill = Object;
+        BuildSkillsButtons("RoleActions", Path, GlobalCoolDown, Skill);
     })
 
     GlobalSkills.forEach(Object => {
         let Path = `${Object.ImageLink}`;
         let GlobalCoolDown = Object.GlobalCoolDown;
-        BuildSkillsButtons("GlobalSkills", Path, GlobalCoolDown);
+        let Skill = Object;
+        BuildSkillsButtons("GlobalSkills", Path, GlobalCoolDown, Skill);
     })
 }
-function BuildSkillsButtons(Category, Path, GlobalCoolDown) {
+function BuildSkillsButtons(Category, Path, GlobalCoolDown, Skill) {
     let TempButton = document.createElement("button");
     let TempImage = document.createElement("img");
 
@@ -131,7 +135,7 @@ function BuildSkillsButtons(Category, Path, GlobalCoolDown) {
     TempImage.src = Path;
     TempButton.appendChild(TempImage);
 
-    TempButton.addEventListener("mouseenter", showTooltip)
+    TempButton.addEventListener("mouseenter", () => showTooltip(Skill))
     TempButton.addEventListener("mouseleave", clearTooltip)
 
     TempButton.addEventListener("click", addToTimeline)

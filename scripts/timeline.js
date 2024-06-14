@@ -20,8 +20,7 @@ function removeFromTimeline() {
     document.getElementById("SkillsTimeline").removeChild(this);
 }
 
-//TODO : Edit this a bit, not smooth (something like "whileMouseDown" instead of "onMouseDown" ?)
-//TODO : Also make it not move the bar while resizing it
+//TODO : make it not move the bar while resizing it
 function moveBuffs() {
     document.onmousedown = (e) => {
         if (e.target.classList.contains("RaidBuffTimelineBar")){
