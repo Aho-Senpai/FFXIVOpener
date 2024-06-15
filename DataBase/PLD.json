@@ -27,7 +27,7 @@
             "Name":"Royal Authority",
             "ImageName":"royal_authority",
             "GlobalCoolDown":"GCD",
-            "Description":"Delivers an attack with a potency of 140.</br>Combo Action: Riot Blade Combo Potency: 400</br>Combo Bonus: Grants 3 stacks of Sword Oath</br>Duration: 30s</br>Combo Bonus: Grants Divine Might</br>Divine Might Effect: Allows next Holy Spirit",
+            "Description":"Delivers an attack with a potency of 140.</br><span style=\"color:#00cc22;\">Combo Action:</span> Riot Blade</br><span style=\"color:#00cc22;\">Combo Potency:</span> 400</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Grants 3 stacks of Sword Oath</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Grants Divine Might</br><span style=\"color:#00cc22;\">Divine Might Effect:</span> Allows next Holy Spirit",
             "Cast":0,
             "Recast":2.5,
             "Range":3,

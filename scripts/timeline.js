@@ -37,3 +37,18 @@ function moveBuffs() {
         this.classList.remove("BuffDivMove");
     }
 }
+
+function btnClearTimeline() {
+    //TODO: MoxSetting = no clear timeline
+    document.getElementById("RaidBuffsTimeline").replaceChildren();
+    document.getElementById("SkillsTimeline").replaceChildren();
+    document.getElementById("SelfBuffsTimeline").replaceChildren();
+}
+
+function btnShareTimeline() {
+    //TODO: add a menu to rename the file and select the format?
+    domtoimage.toBlob(document.getElementById('TimelineDiv'))
+    .then(function (blob) {
+        window.saveAs(blob, 'Timeline.png');
+    });
+}

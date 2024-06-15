@@ -28,6 +28,10 @@
 
     <!-- SortableJS just for timeline -->
     <script defer src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <!-- https://github.com/tsayen/dom-to-image -->
+    <script defer src="./scripts/lib/dom-to-image.min.js"></script>
+    <!-- https://github.com/eligrey/FileSaver.js -->
+    <script defer src="./scripts/lib/FileSaver.min.js"></script>
 </head>
 
 <body>
@@ -52,8 +56,8 @@
                 <div id="SelfBuffsTimeline"></div> <!-- to implement later : when adding a skill to timeline that has a selfbuff, also add said selfbuff here -->
             </div>
             <div id="TimelineBtns">
-                <button>Share</button>
-                <button>Clear Timeline</button>
+                <button onclick="btnShareTimeline()">Share</button>
+                <button onclick="btnClearTimeline()">Clear Timeline</button>
             </div>
         </div>
         <div id="SkillSelect">

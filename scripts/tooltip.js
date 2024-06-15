@@ -32,6 +32,7 @@ function getTooltipData(Skill) {
         document.getElementById("SkillTooltipRadius").style.display = "block";
         document.getElementById("SkillTooltipRadius").innerHTML = `Radius: ${Skill.Radius}`;
     }
+    //TODO: Add parsing of skill desc for adding color to combo actions and other
 }
 
 function clearTooltip() {
