@@ -6,36 +6,34 @@ function addToTimeline() {
         document.getElementById("SkillsTimeline").appendChild(TempImg);
     }
     if (this.classList.contains("RaidBuff")) {
-        //console.log(this.id);
         let Temp = document.createElement("div");
         Temp.textContent = this.id;
-        Temp.classList.add("RaidBuffTimelineBar")
-        Temp.addEventListener("mousedown", moveBuffs)
+        Temp.classList.add("RaidBuffTimelineBar");
+        Temp.addEventListener("pointerdown", (e) => pointerDownBuff(e));
+        Temp.addEventListener("pointermove", (e) => pointerMoveBuff(e));
+        Temp.addEventListener("pointerup", (e) => pointerUpBuff(e));
         Temp.style.backgroundColor = "red"; // TODO : change
         document.getElementById("RaidBuffsTimeline").prepend(Temp);
     }
 }
+function pointerDownBuff(e) {
+    if (!e.target.classList.contains("RaidBuffTimelineBar")) { return; }
+    e.target.classList.add("BuffDivMove");
+    e.target.style.cursor = "grabbing";
+}
+function pointerMoveBuff(e) {
+    if (!e.target.classList.contains("BuffDivMove")) { return; }
+    let x = e.pageX;
+    e.target.style.marginLeft = (x - 50) + "px";
+}
+function pointerUpBuff(e) {
+    if (!e.target.classList.contains("BuffDivMove")) { return; }
+    e.target.classList.remove("BuffDivMove");
+    e.target.style.cursor = "grab";
+}
 
 function removeFromTimeline() {
     document.getElementById("SkillsTimeline").removeChild(this);
-}
-
-//TODO : make it not move the bar while resizing it
-function moveBuffs() {
-    document.onmousedown = (e) => {
-        if (e.target.classList.contains("RaidBuffTimelineBar")){
-            this.classList.add("BuffDivMove");
-        }
-    }
-    document.onmousemove = (e) => {
-        if (this.classList.contains("BuffDivMove")) {
-            let x = e.pageX;
-            this.style.marginLeft = (x - 50) + "px";
-        }
-    }
-    document.onmouseup = (e) => {
-        this.classList.remove("BuffDivMove");
-    }
 }
 
 function btnClearTimeline() {
