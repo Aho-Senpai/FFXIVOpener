@@ -20,7 +20,8 @@ function addToTimeline() {
         Temp.addEventListener("pointerdown", (e) => pointerDownBuff(e, resizeObserver));
         Temp.addEventListener("pointermove", (e) => pointerMoveBuff(e));
         Temp.addEventListener("pointerup", (e) => pointerUpBuff(e, resizeObserver));
-        Temp.style.backgroundColor = "red"; // TODO : change
+        // TODO : change
+        Temp.style.backgroundColor = "red";
         document.getElementById("RaidBuffsTimeline").prepend(Temp);
     }
 }
@@ -32,7 +33,8 @@ function pointerDownBuff(e, resizeObserver) {
 }
 function pointerMoveBuff(e) {
     if (!e.target.classList.contains("BuffDivMove")) { return; }
-    e.target.style.marginLeft = (e.pageX - 50) + "px"; //TODO: Possibly replace 50 by "X position of div?"
+    //TODO: Possibly replace 50 by "X position of div?"
+    e.target.style.marginLeft = (e.pageX - 50) + "px";
 }
 function pointerUpBuff(e, resizeObserver) {
     if (!e.target.classList.contains("BuffDivMove")) { return; }
@@ -47,7 +49,10 @@ function removeFromTimeline() {
 
 function btnClearTimeline() {
     //TODO: MoxSetting = no clear timeline on job change
-    document.getElementById("RaidBuffsTimeline").replaceChildren();
-    document.getElementById("SkillsTimeline").replaceChildren();
-    document.getElementById("SelfBuffsTimeline").replaceChildren();
+    const timelineIds = [
+        "RaidBuffsTimeline", 
+        "SkillsTimeline", 
+        "SelfBuffsTimeline"
+    ];
+    timelineIds.forEach(id => document.getElementById(id).replaceChildren());
 }

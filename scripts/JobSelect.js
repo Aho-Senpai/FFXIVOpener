@@ -1,16 +1,16 @@
 let JobList = [];
 
 document.addEventListener("DOMContentLoaded", () => {
-    LoadJobsDataBase();
-    setTimeout(() => { MakeJobSelectorInputs() }, 500); // This is a temporary hack to get it working
-    // TODO: Fix the issue with MakeJobSelectorElements running before LoadJobsDataBase ends
-
+    LoadJobsDataBase()
+    .then(() => {
+        MakeJobSelectorInputs();
+    })
     // Later : remove the SortableJS dependency and implement this
     new Sortable(document.getElementById("SkillsTimeline")); //Using SortableJS to make timeline items sortable with drag&drop
 });
 
-function LoadJobsDataBase () {
-    fetch('./DataBase/Jobs.json')
+async function LoadJobsDataBase () {
+    return fetch('./DataBase/Jobs.json')
     .then(
         response => {
             if (!response.ok) {
@@ -23,20 +23,18 @@ function LoadJobsDataBase () {
 }
 
 function MakeJobSelectorInputs() {
-    JobList.forEach(Object => {
-        let InputTemp = document.createElement("input");
-        let ImageTemp = document.createElement("img");
+    JobList.forEach(({ Role, Abbreviation }) => {
+        const InputTemp = document.createElement("input");
+        const ImageTemp = document.createElement("img");
 
         InputTemp.type = "radio";
         InputTemp.name = "JobSelect";
-        InputTemp.classList.add(`JobSelect${Object.Role}${Object.Abbreviation}`, `JobSelectImage`);
-        InputTemp.id = (`${Object.Abbreviation}`);
-        InputTemp.addEventListener("click", () => getJobSkills(Object.Abbreviation, Object.Role));
-        
-        ImageTemp.src = `./DataBase/Icon/Job/${Object.Abbreviation}.png`;
+        InputTemp.classList.add(`JobSelect${Role}${Abbreviation}`, `JobSelectImage`);
+        InputTemp.id = Abbreviation;
+        InputTemp.addEventListener("click", () => getJobSkills(Abbreviation, Role));
+        ImageTemp.src = `./DataBase/Icon/Job/${Abbreviation}.png`;
         InputTemp.appendChild(ImageTemp);
-        
-        document.getElementById(`JobSelect${Object.Role}`).appendChild(InputTemp);
+        document.getElementById(`JobSelect${Role}`).appendChild(InputTemp);
     });
 }
 

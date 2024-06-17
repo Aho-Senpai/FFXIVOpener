@@ -7,146 +7,102 @@ let GlobalSkills = [];
 function getJobSkills(JobShort, JobRole) {    
     ClearSkills();
     ToggleJobSelect();
-    LoadJobSkills(JobShort);
-    LoadJobRoleSkills(JobRole);
-    LoadRaidBuffs();
-    LoadGlobalSkills();
-    setTimeout( () => { DisplayJobSkills(JobShort, JobRole) }, 500 );
-    // TODO: Fix the issue with DisplayJobSkills running before fetch ends
+    LoadSkills(JobShort, JobRole)
+    .then(() => {
+        DisplayJobSkills(JobShort, JobRole)
+    })
 }
 
-//TODO: Make a function that handle fetch instead of doing that 20 times
-function LoadJobSkills(JobShort) {
-    fetch(`./DataBase/${JobShort}.json`)
-    .then(
-        response => {
-            if (!response.ok){
-                throw new Error("Fetch Error" + response.status);
-            }
-            return response.json();
-    })
-    .then ( result => {
-        GCD = result.GCD;
-        OGCD = result.OGCD;
-    })
-    .catch((error) => console.error("Unable to fetch data:", error));
+async function LoadSkills(JobShort, JobRole) {
+    try {
+        const [jobSkillsResponse, roleSkillsResponse, raidBuffsResponse, globalSkillsResponse] = await Promise.all([
+            fetch(`./DataBase/${JobShort}.json`),
+            fetch(`./DataBase/RoleActions.json`),
+            fetch(`./DataBase/Raidbuffs.json`),
+            fetch(`./DataBase/GlobalSkills.json`)
+        ]);
+        if (!jobSkillsResponse.ok) 
+            throw new Error("Fetch Error: " + jobSkillsResponse.status);
+        if (!roleSkillsResponse.ok) 
+            throw new Error("Fetch Error: " + roleSkillsResponse.status);
+        if (!raidBuffsResponse.ok) 
+            throw new Error("Fetch Error: " + raidBuffsResponse.status);
+        if (!globalSkillsResponse.ok) 
+            throw new Error("Fetch Error: " + globalSkillsResponse.status);
+        const [jobSkills, roleSkills, raidBuffs, globalSkills] = await Promise.all([
+            jobSkillsResponse.json(),
+            roleSkillsResponse.json(),
+            raidBuffsResponse.json(),
+            globalSkillsResponse.json()
+        ]);
+        GCD = jobSkills.GCD;
+        OGCD = jobSkills.OGCD;
+        RoleAction = roleSkills[JobRole];
+        RaidBuffs = raidBuffs.RaidBuffs;
+        GlobalSkills = globalSkills.globalSkillsList;
+    } catch (error) {
+        console.error("Unable to fetch data:", error);
+    }
 }
-
-function LoadJobRoleSkills(JobRole) {
-    fetch(`./DataBase/RoleActions.json`)
-    .then(
-        response => {
-            if (!response.ok){
-                throw new Error("Fetch Error" + response.status);
-            }
-            return response.json();
-    })
-    .then( result => {
-        RoleAction = result[JobRole];
-    })
-    .catch((error) => console.error("Unable to fetch data:", error));
-}
-
-function LoadRaidBuffs() {
-    fetch(`./DataBase/Raidbuffs.json`)
-    .then(
-        response => {
-            if (!response.ok){
-                throw new Error("Fetch Error" + response.status);
-            }
-            return response.json();
-    })
-    .then( result => {
-        RaidBuffs = result.RaidBuffs;
-    })
-    .catch((error) => console.error("Unable to fetch data:", error));
-}
-
-function LoadGlobalSkills() {
-    fetch(`./DataBase/GlobalSkills.json`)
-    .then(
-        response => {
-            if (!response.ok){
-                throw new Error("Fetch Error" + response.status);
-            }
-            return response.json();
-    })
-    .then( result => {
-        GlobalSkills = result.globalSkillsList;
-    })
-    .catch((error) => console.error("Unable to fetch data:", error));
-}
-
 function DisplayJobSkills(JobShort, JobRole) {
-    RaidBuffs.forEach(Object => {
-        let Path = `./DataBase/Icon/RaidBuffs/${Object.ImageName}.png`
-        let GlobalCoolDown = "RaidBuff"
-        let TempButton = document.createElement("button");
-        let TempImage = document.createElement("img");
-        TempButton.classList.add("RaidBuffsIcon");
-        TempButton.classList.add(`${GlobalCoolDown}`);
-        TempButton.id = `${Object.Name}`;
-        TempImage.src = Path;
-        TempButton.appendChild(TempImage);
-
-        //TempButton.addEventListener("mouseenter", showTooltip)
-        //TempButton.addEventListener("mouseleave", clearTooltip)
-
-        TempButton.addEventListener("click", addToTimeline)
-
-        document.getElementById("RaidBuffsList").appendChild(TempButton);
-    })
-
-    GCD.forEach(Object => {
-        let Path = `./DataBase/Icon/PvE_Actions/${JobShort}/${Object.ImageName}.png`;
-        let GlobalCoolDown = Object.GlobalCoolDown;
-        let Skill = Object;
-        BuildSkillsButtons("GCD", Path, GlobalCoolDown, Skill);
+    const categories = [
+        { list: 
+            RaidBuffs, 
+            basePath: './DataBase/Icon/RaidBuffs/', 
+            category: 'RaidBuffs', 
+            globalCoolDown: 'RaidBuff' 
+        },
+        { list: 
+            GCD, 
+            basePath: `./DataBase/Icon/PvE_Actions/${JobShort}/`, 
+            category: 'GCD' 
+        },
+        { list: 
+            OGCD, 
+            basePath: `./DataBase/Icon/PvE_Actions/${JobShort}/`, 
+            category: 'OGCD' 
+        },
+        { list: 
+            RoleAction, 
+            basePath: `./DataBase/Icon/RoleActions/${JobRole}/`, 
+            category: 'RoleActions' 
+        },
+        { list: 
+            GlobalSkills, 
+            basePath: '', 
+            category: 'GlobalSkills', 
+            customPath: true 
+        }
+    ];
+    categories.forEach(({ list, basePath, category, globalCoolDown, customPath }) => {
+        list.forEach(object => {
+            let path = customPath ? object.ImageLink : `${basePath}${object.ImageName}.png`;
+            let coolDown = globalCoolDown || object.GlobalCoolDown;
+            BuildSkillsButtons(category, path, coolDown, object);
+        });
     });
-
-    OGCD.forEach(Object => {
-        let Path = `./DataBase/Icon/PvE_Actions/${JobShort}/${Object.ImageName}.png`;
-        let GlobalCoolDown = Object.GlobalCoolDown;
-        let Skill = Object;
-        BuildSkillsButtons("OGCD", Path, GlobalCoolDown, Skill);
-    })
-
-    RoleAction.forEach(Object => {
-        let Path = `./DataBase/Icon/RoleActions/${JobRole}/${Object.ImageName}.png`;
-        let GlobalCoolDown = Object.GlobalCoolDown;
-        let Skill = Object;
-        BuildSkillsButtons("RoleActions", Path, GlobalCoolDown, Skill);
-    })
-
-    GlobalSkills.forEach(Object => {
-        let Path = `${Object.ImageLink}`;
-        let GlobalCoolDown = Object.GlobalCoolDown;
-        let Skill = Object;
-        BuildSkillsButtons("GlobalSkills", Path, GlobalCoolDown, Skill);
-    })
 }
+
 function BuildSkillsButtons(Category, Path, GlobalCoolDown, Skill) {
     let TempButton = document.createElement("button");
     let TempImage = document.createElement("img");
-
-    TempButton.classList.add(`${Category}Icon`);
-    TempButton.classList.add(`${GlobalCoolDown}`);
-
+    TempButton.classList.add(`${Category}Icon`, GlobalCoolDown);
+    TempButton.id = Skill.Name;
     TempImage.src = Path;
     TempButton.appendChild(TempImage);
-
     TempButton.addEventListener("mouseenter", () => showTooltip(Skill));
     TempButton.addEventListener("mouseleave", clearTooltip);
-
     TempButton.addEventListener("click", addToTimeline);
-
     document.getElementById(`${Category}List`).appendChild(TempButton);
 }
 
 function ClearSkills() {
-    document.getElementById("RaidBuffsList").replaceChildren();
-    document.getElementById("GCDList").replaceChildren();
-    document.getElementById("OGCDList").replaceChildren();
-    document.getElementById("RoleActionsList").replaceChildren();
-    document.getElementById("GlobalSkillsList").replaceChildren();
+    const skillLists = [
+        "RaidBuffsList", 
+        "GCDList", 
+        "OGCDList", 
+        "RoleActionsList", 
+        "GlobalSkillsList"
+    ];
+    skillLists.forEach(id => document.getElementById(id).replaceChildren());
 }
