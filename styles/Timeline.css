@@ -1,0 +1,53 @@
+#Timeline {
+    height: fit-content;
+    width: calc(100vw-10px);
+    /* background-color: darkviolet; */
+    display: grid;
+    border: solid;
+    border-width: 3px;
+    border-radius: 5px;
+}
+#TimelineDiv {
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+#RaidBuffsTimeline {
+    /* background-color: darkgoldenrod;
+    width: 99vw;
+    height: 100px;
+    border: none; */
+    position: relative;
+    height: fit-content;
+}
+
+#SkillsTimeline {
+    /* background-color: darkgreen; */
+    height: fit-content;
+    /* display: flex; */
+    min-height: 60px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#SkillsTimeline .OGCD img{
+    padding-bottom: 40px;
+}
+#SkillsTimeline .GCD img{
+    padding-top: 40px;
+}
+#TimelineBtns {
+    display: flex;
+    justify-content: end;
+    align-content: end;
+    border: none;
+}
+
+#RaidBuffsTimeline div {
+    text-align: center;
+    resize: horizontal;
+    overflow: auto;
+    border-radius: 5px;
+    cursor: grab;
+}

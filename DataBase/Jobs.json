@@ -1,0 +1,23 @@
+{
+    "Job":[
+        { "ID":1, "Name":"Paladin", "Abbreviation":"PLD", "Role":"Tank" },
+        { "ID":2, "Name":"Warrior", "Abbreviation":"WAR", "Role":"Tank" },
+        { "ID":3, "Name":"Dark Knight", "Abbreviation":"DRK", "Role":"Tank" },
+        { "ID":4, "Name":"Gunbreaker", "Abbreviation":"GNB", "Role":"Tank" },
+        { "ID":5, "Name":"White Mage", "Abbreviation":"WHM", "Role":"Healer" },
+        { "ID":6, "Name":"Scholar", "Abbreviation":"SCH", "Role":"Healer" },
+        { "ID":7, "Name":"Astrologian", "Abbreviation":"AST", "Role":"Healer" },
+        { "ID":8, "Name":"Sage", "Abbreviation":"SGE", "Role":"Healer" },
+        { "ID":9, "Name":"Monk", "Abbreviation":"MNK", "Role":"Melee" },
+        { "ID":10, "Name":"Dragoon", "Abbreviation":"DRG", "Role":"Melee" },
+        { "ID":11, "Name":"Ninja", "Abbreviation":"NIN", "Role":"Melee" },
+        { "ID":12, "Name":"Samurai", "Abbreviation":"SAM", "Role":"Melee" },
+        { "ID":13, "Name":"Reaper", "Abbreviation":"RPR", "Role":"Melee" },
+        { "ID":14, "Name":"Bard", "Abbreviation":"BRD", "Role":"PhysicalRange" },
+        { "ID":15, "Name":"Machinist", "Abbreviation":"MCH", "Role":"PhysicalRange" },
+        { "ID":16, "Name":"Dancer", "Abbreviation":"DNC", "Role":"PhysicalRange" },
+        { "ID":17, "Name":"Black Mage", "Abbreviation":"BLM", "Role":"MagicalRange" },
+        { "ID":18, "Name":"Summoner", "Abbreviation":"SMN", "Role":"MagicalRange" },
+        { "ID":19, "Name":"Red Mage", "Abbreviation":"RDM", "Role":"MagicalRange"}
+    ]
+}

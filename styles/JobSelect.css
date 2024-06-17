@@ -1,0 +1,47 @@
+#JobSelect input[type="radio"] {
+    appearance: none;
+    cursor: pointer;
+}
+#JobSelect input[type="radio"]:checked {
+    opacity: 1;
+}
+.JobSelectImage {
+    background-size: auto;
+    opacity: 0.65;
+}
+/* TODO: get JobSelect centered on the screen (viewheight-header?)*/
+/* Currently Centered-ish, but maybe there's a better way?*/
+#JobSelect {
+    background-color: #1a1a1a;
+    z-index: 1;
+    position: fixed;
+    align-self: center;
+    justify-self: center;
+    margin-top: calc(100vh - 22px);
+    margin-left: calc(50vw - 180px);
+    border: solid;
+    border-radius: 5%; /* Note to self: this is meant to be 5% not 5px*/
+    border-color: #e2cb87;
+}
+.JobSelectRole {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+.JobSelectRoleTitle {
+    font-size: xx-large;
+}
+
+/*
+.parent {
+    display: flex;
+    justify-content: 'center' | 'space-between'; Horizontal alignment
+    align-content: 'center' | 'space-between';  Vertical alignment
+    align-items: 'center' | 'space-between';
+}
+
+.parent {
+    display: grid;
+
+}
+*/

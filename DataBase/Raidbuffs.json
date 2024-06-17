@@ -1,0 +1,70 @@
+{
+    "RaidBuffs": [
+        {
+            "ID": "1",
+            "Name": "Arcane Circle",
+            "ImageName": "arcane_circle",
+            "Duration": 15
+        },
+        {
+            "ID": "2",
+            "Name": "Battle Litany",
+            "ImageName": "battle_litany",
+            "Duration": 15
+        },
+        {
+            "ID": "3",
+            "Name": "Battle Voice",
+            "ImageName": "battle_voice",
+            "Duration": 15
+        },
+        {
+            "ID": "4",
+            "Name": "Brotherhood",
+            "ImageName": "brotherhood",
+            "Duration": 15
+        },
+        {
+            "ID": "5",
+            "Name": "Chain Stratagem",
+            "ImageName": "chain_stratagem",
+            "Duration": 15
+        },
+        {
+            "ID": "6",
+            "Name": "Divination",
+            "ImageName": "divination",
+            "Duration": 15
+        },
+        {
+            "ID": "7",
+            "Name": "Embolden",
+            "ImageName": "embolden",
+            "Duration": 15
+        },
+        {
+            "ID": "8",
+            "Name": "Radiant Finale",
+            "ImageName": "radiant_finale",
+            "Duration": 15
+        },
+        {
+            "ID": "9",
+            "Name": "Searing Light",
+            "ImageName": "searing_light",
+            "Duration": 15
+        },
+        {
+            "ID": "10",
+            "Name": "Technical Finish",
+            "ImageName": "technical_finish",
+            "Duration": 15
+        },
+        {
+            "ID": "11",
+            "Name": "Trick Attack",
+            "ImageName": "trick_attack",
+            "Duration": 15
+        }
+    ]
+}
