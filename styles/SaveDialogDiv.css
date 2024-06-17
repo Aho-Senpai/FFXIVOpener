@@ -1,0 +1,31 @@
+#SaveDialogDiv {
+    display: none;
+    position: fixed;
+    background-color: #1a1a1a;
+    z-index: 1;
+    align-self: center;
+    justify-self: center;
+    margin-top: calc(100vh - 22px);
+    margin-left: calc(50vw - 180px);
+    border: solid;
+    border-radius: 5px;
+    border-color: #e2cb87;
+
+    justify-content: center;
+    align-content: space-around;
+    flex-direction: column;
+}
+
+#SaveDialogDiv input {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    text-align: center;
+}
+
+#SaveDialogDiv button {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    cursor: pointer;
+}

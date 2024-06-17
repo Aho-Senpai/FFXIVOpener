@@ -16,7 +16,7 @@ function addToTimeline() {
                     entry.target.style.cursor = "grab";
                 }
             }
-        })
+        });
         Temp.addEventListener("pointerdown", (e) => pointerDownBuff(e, resizeObserver));
         Temp.addEventListener("pointermove", (e) => pointerMoveBuff(e));
         Temp.addEventListener("pointerup", (e) => pointerUpBuff(e, resizeObserver));
@@ -32,8 +32,7 @@ function pointerDownBuff(e, resizeObserver) {
 }
 function pointerMoveBuff(e) {
     if (!e.target.classList.contains("BuffDivMove")) { return; }
-    let x = e.pageX;
-    e.target.style.marginLeft = (x - 50) + "px";
+    e.target.style.marginLeft = (e.pageX - 50) + "px"; //TODO: Possibly replace 50 by "X position of div?"
 }
 function pointerUpBuff(e, resizeObserver) {
     if (!e.target.classList.contains("BuffDivMove")) { return; }
@@ -47,16 +46,8 @@ function removeFromTimeline() {
 }
 
 function btnClearTimeline() {
-    //TODO: MoxSetting = no clear timeline
+    //TODO: MoxSetting = no clear timeline on job change
     document.getElementById("RaidBuffsTimeline").replaceChildren();
     document.getElementById("SkillsTimeline").replaceChildren();
     document.getElementById("SelfBuffsTimeline").replaceChildren();
-}
-
-function btnShareTimeline() {
-    //TODO: add a menu to rename the file and select the format?
-    domtoimage.toBlob(document.getElementById('TimelineDiv'))
-    .then(function (blob) {
-        window.saveAs(blob, 'Timeline.png');
-    });
 }

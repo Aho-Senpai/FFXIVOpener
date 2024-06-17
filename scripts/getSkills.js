@@ -135,10 +135,10 @@ function BuildSkillsButtons(Category, Path, GlobalCoolDown, Skill) {
     TempImage.src = Path;
     TempButton.appendChild(TempImage);
 
-    TempButton.addEventListener("mouseenter", () => showTooltip(Skill))
-    TempButton.addEventListener("mouseleave", clearTooltip)
+    TempButton.addEventListener("mouseenter", () => showTooltip(Skill));
+    TempButton.addEventListener("mouseleave", clearTooltip);
 
-    TempButton.addEventListener("click", addToTimeline)
+    TempButton.addEventListener("click", addToTimeline);
 
     document.getElementById(`${Category}List`).appendChild(TempButton);
 }

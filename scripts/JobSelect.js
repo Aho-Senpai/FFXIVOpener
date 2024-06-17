@@ -30,6 +30,7 @@ function MakeJobSelectorInputs() {
         InputTemp.type = "radio";
         InputTemp.name = "JobSelect";
         InputTemp.classList.add(`JobSelect${Object.Role}${Object.Abbreviation}`, `JobSelectImage`);
+        InputTemp.id = (`${Object.Abbreviation}`);
         InputTemp.addEventListener("click", () => getJobSkills(Object.Abbreviation, Object.Role));
         
         ImageTemp.src = `./DataBase/Icon/Job/${Object.Abbreviation}.png`;
