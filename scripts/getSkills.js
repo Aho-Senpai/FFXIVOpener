@@ -84,8 +84,8 @@ function DisplayJobSkills(JobShort, JobRole) {
 }
 
 function BuildSkillsButtons(Category, Path, GlobalCoolDown, Skill) {
-    let TempButton = document.createElement("button");
-    let TempImage = document.createElement("img");
+    const TempButton = document.createElement("button");
+    const TempImage = document.createElement("img");
     TempButton.classList.add(`${Category}Icon`, GlobalCoolDown);
     TempButton.id = Skill.Name;
     TempImage.src = Path;

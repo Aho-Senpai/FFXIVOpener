@@ -1,12 +1,5 @@
 // TODO: MoxSetting = do not clear the timeline when option is selected
 
-// Probably make more .js files
-// share.js to handle the export and sharing of the timeline?
-// Data.js or something similar to handle loading the database
-// raidbuff.js maybe? to handle making a custom raidbuff?
-// may or may not need JobSelector.js
-
-
 // MEMO : Background Colors
 // function jobSelectBackgroundColor(role) {
 //     switch (role) {

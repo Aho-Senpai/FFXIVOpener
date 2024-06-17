@@ -1,9 +1,7 @@
 function showTooltip(Skill) {
-    // TODO : Add a 1 second delay before showing tooltip?
-    //console.log("tooltip on");
-    let tip = document.getElementById("Tooltip")
+    // TODO : make delay optional (settings?)
+    const tip = document.getElementById("Tooltip")
     tip.style.display = "block";
-
     //TODO : Maybe logic to "flip" the div on the left side of cursor if too close to the right of screen?
     window.onmousemove = (e) => {
         tip.style.top = e.clientY + 20 + "px";
@@ -22,38 +20,44 @@ function showTooltip(Skill) {
 }
 
 function getTooltipData(Skill) {
-    document.getElementById("SkillTooltipName").innerHTML = Skill.Name;
-    document.getElementById("SkillTooltipDesc").innerHTML = Skill.Description;
-    if (Skill.Cast !== undefined) {
-        document.getElementById("SkillTooltipCast").style.display = "block";
-        if (Skill.Cast == 0) {
-            document.getElementById("SkillTooltipCast").innerHTML = `Cast: Instant`;
+    const tooltipElements = {
+        "SkillTooltipName": Skill.Name,
+        "SkillTooltipDesc": Skill.Description,
+        "SkillTooltipCast": Skill.Cast !== undefined ? (Skill.Cast === 0 ? "Cast: Instant" : `Cast: ${Skill.Cast}s`) : undefined,
+        "SkillTooltipRecast": Skill.Recast !== undefined ? `Recast: ${Skill.Recast}s` : undefined,
+        "SkillTooltipRange": Skill.Range !== undefined ? `Range: ${Skill.Range}y` : undefined,
+        "SkillTooltipRadius": Skill.Radius !== undefined ? `Radius: ${Skill.Radius}y` : undefined
+    };
+    Object.keys(tooltipElements).forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+            const value = tooltipElements[id];
+            if (value !== undefined) {
+                element.style.display = "block";
+                element.innerHTML = value;
+            } else {
+                element.style.display = "none";
+            }
         }
-        else {
-            document.getElementById("SkillTooltipCast").innerHTML = `Cast: ${Skill.Cast}s`;
-        }
-    }
-    if (Skill.Recast !== undefined) {
-        document.getElementById("SkillTooltipRecast").style.display = "block";
-        document.getElementById("SkillTooltipRecast").innerHTML = `Recast: ${Skill.Recast}s`;
-    }
-    if (Skill.Range !== undefined) {
-        document.getElementById("SkillTooltipRange").style.display = "block";
-        document.getElementById("SkillTooltipRange").innerHTML = `Range: ${Skill.Range}y`;
-    }
-    if (Skill.Radius !== undefined) {
-        document.getElementById("SkillTooltipRadius").style.display = "block";
-        document.getElementById("SkillTooltipRadius").innerHTML = `Radius: ${Skill.Radius}y`;
-    }
+    });
     //TODO: Add parsing of skill desc for adding color to combo actions and other
 }
 
 function clearTooltip() {
-    //console.log("tooltip off");
-    let tip = document.getElementById("Tooltip")
-    tip.style.display = "none";
-    document.getElementById("SkillTooltipCast").style.display = "none";
-    document.getElementById("SkillTooltipRecast").style.display = "none";
-    document.getElementById("SkillTooltipRange").style.display = "none";
-    document.getElementById("SkillTooltipRadius").style.display = "none";
+    const tooltips = [
+        "SkillTooltipCast",
+        "SkillTooltipRecast",
+        "SkillTooltipRange",
+        "SkillTooltipRadius"
+    ];
+    tooltips.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.style.display = "none";
+        }
+    });
+    const tip = document.getElementById("Tooltip");
+    if (tip) {
+        tip.style.display = "none";
+    }
 }

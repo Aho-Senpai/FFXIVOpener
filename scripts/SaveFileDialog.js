@@ -1,25 +1,19 @@
 let FileName = document.getElementById("SaveFileName").value;
-let TimeLineDiv = document.getElementById('TimelineDiv');
+const TimeLineDiv = document.getElementById('TimelineDiv');
 
 function btnShareTimeline() {
-    let div = document.getElementById("SaveDialogDiv");
-    let SelectedJob = document.querySelector('input[name="JobSelect"]:checked');
-    let JobSelectDivDisplay = document.getElementById("JobSelect").style.display;
-
-    if(JobSelectDivDisplay == "" || JobSelectDivDisplay != "none") {
-        return; // If JobSelect is open, don't try to save
+    const div = document.getElementById("SaveDialogDiv");
+    const jobSelectDiv = document.getElementById("JobSelect");
+    if (jobSelectDiv.style.display !== "none") {
+        return;
     }
-
-    if (div.style.display == "flex") {
-        div.style.display = "none"
+    div.style.display = div.style.display === "flex" ? "none" : "flex";
+    const selectedJob = document.querySelector('input[name="JobSelect"]:checked');
+    if (selectedJob) {
+        document.getElementById("SaveFileName").placeholder = selectedJob.id;
     }
-    else {
-    div.style.display = "flex"
-    }
-
-    FileName = SelectedJob.id;
-    document.getElementById("SaveFileName").placeholder = FileName;
 }
+
 function saveToPng() {
     domtoimage.toBlob(TimeLineDiv)
     .then(function (blob) {
@@ -35,4 +29,8 @@ function saveToJpeg() {
 async function saveAsSvg() {
     //TODO: to implement (once implemented not forget to remove the disable on the html element)
     return;
+    // domtoimage.toSvg(TimeLineDiv)
+    // .then(function (blob) {
+    //     saveAs(blob, `${FileName}.svg`)
+    // });
 }

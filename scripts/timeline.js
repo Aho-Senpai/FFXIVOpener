@@ -1,12 +1,12 @@
 function addToTimeline() {
     if (this.classList.contains("GCD") || this.classList.contains("OGCD")) {
-        let TempImg = this.cloneNode(true);
+        const TempImg = this.cloneNode(true);
         TempImg.removeEventListener("click", addToTimeline);
         TempImg.addEventListener("click", removeFromTimeline);
         document.getElementById("SkillsTimeline").appendChild(TempImg);
     }
     if (this.classList.contains("RaidBuff")) {
-        let Temp = document.createElement("div");
+        const Temp = document.createElement("div");
         Temp.textContent = this.id;
         Temp.classList.add("RaidBuffTimelineBar");
         const resizeObserver = new ResizeObserver((entries) => {
