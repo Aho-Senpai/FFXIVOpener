@@ -46,7 +46,7 @@
             <div id="JobSelectPhysicalRange" class="JobSelectRole"></div>
             <div id="JobSelectMagicalRange" class="JobSelectRole"></div>
         </div>
-        <button onclick="ToggleJobSelect()">Job Select</button>
+        <button onclick="ToggleJobSelect()" title="Change Job">Job Select</button>
         <span id="WebpageTitle">FFXIV Opener</span>
         <div id="SaveDialogDiv">
             <input type="text" id="SaveFileName" name="SaveFileName" placeholder="Enter File Name"/>
@@ -55,7 +55,17 @@
 <!-- TODO: Disabled because needs to be implemented-->
             <button disabled onclick="saveAsSvg()">Save as SVG</button>
         </div>
-        <button>Settings</button> <!-- button for now but will change as needed -->
+        <div id="HeaderDivBtnGroup">
+            <button onclick="discordBtn()" id="DiscordBtn" title="Discord">
+                <img src="./resources/discord.svg" alt="Discord">
+            </button>
+            <button onclick="githubBtn()" id="GithubBtn" title="Github">
+                <img src="./resources/github.svg" alt="Github">
+            </button>
+            <button id="SettingsBtn" title="Not Yet Implemented">
+                Settings
+            </button> <!-- button for now but will change as needed -->
+        </div>
     </header>
     <main>
         <div id="Timeline">

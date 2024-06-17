@@ -34,3 +34,5 @@ async function saveAsSvg() {
     //     saveAs(blob, `${FileName}.svg`)
     // });
 }
+
+//TODO : add event listener to remove the div is click on "black space" aka outside the div?

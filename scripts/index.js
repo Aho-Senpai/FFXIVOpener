@@ -15,7 +15,7 @@
 // }
 
 // Buttons Links
-function discord_btn_click() {
+function discordBtn() {
     window.open("https://discord.gg/dPFSM53");
 }
 function githubBtn() {

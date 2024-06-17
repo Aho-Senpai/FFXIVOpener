@@ -55,3 +55,17 @@ main {
 #WebpageTitle {
     font-size: xx-large;
 }
+
+header span {
+    justify-self: center;
+    align-self: center;
+}
+#HeaderDivBtnGroup {
+    display: flex;
+}
+button {
+    cursor: pointer;
+}
+/* #DiscordBtn, #GithubBtn {
+    
+} */

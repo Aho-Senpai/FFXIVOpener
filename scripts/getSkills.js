@@ -15,7 +15,12 @@ function getJobSkills(JobShort, JobRole) {
 
 async function LoadSkills(JobShort, JobRole) {
     try {
-        const [jobSkillsResponse, roleSkillsResponse, raidBuffsResponse, globalSkillsResponse] = await Promise.all([
+        const [
+            jobSkillsResponse, 
+            roleSkillsResponse, 
+            raidBuffsResponse, 
+            globalSkillsResponse
+        ] = await Promise.all([
             fetch(`./DataBase/${JobShort}.json`),
             fetch(`./DataBase/RoleActions.json`),
             fetch(`./DataBase/Raidbuffs.json`),
