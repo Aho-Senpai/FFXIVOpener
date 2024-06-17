@@ -1,5 +1,4 @@
 function showTooltip(Skill) {
-    // TODO : make delay optional (settings?)
     const tip = document.getElementById("Tooltip")
     tip.style.display = "block";
     //TODO : Maybe logic to "flip" the div on the left side of cursor if too close to the right of screen?
@@ -40,7 +39,6 @@ function getTooltipData(Skill) {
             }
         }
     });
-    //TODO: Add parsing of skill desc for adding color to combo actions and other
 }
 
 function clearTooltip() {
