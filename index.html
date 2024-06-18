@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/SkillSelect.css">
     <link rel="stylesheet" type="text/css" href="./styles/Tooltip.css">
     <link rel="stylesheet" type="text/css" href="./styles/SaveDialogDiv.css">
+    <link rel="stylesheet" type="text/css" href="./styles/settings.css">
 
     <!-- Scripts -->
     <script defer src="./scripts/index.js" ></script>
@@ -27,6 +28,7 @@
     <script defer src="./scripts/timeline.js"></script>
     <script defer src="./scripts/tooltip.js"></script>
     <script defer src="./scripts/SaveFileDialog.js"></script>
+    <script defer src="./scripts/settings.js"></script>
 
     <!-- SortableJS just for timeline -->
     <script defer src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
@@ -62,9 +64,15 @@
             <button onclick="githubBtn()" id="GithubBtn" title="Github">
                 <img src="./resources/github.svg" alt="Github">
             </button>
-            <button id="SettingsBtn" title="Not Yet Implemented">
+            <button onclick="settingsBtn()" id="SettingsBtn" title="Settings">
                 Settings
-            </button> <!-- button for now but will change as needed -->
+            </button>
+            <div id="SettingsDiv">
+                <div id="MoxSettingDiv" title="If Enabled: Timeline is not cleared when selecting a job">
+                    <span>Mox Setting</span>
+                    <input type="checkbox" onchange="moxSetting()" id="MoxSettingCB">
+                </div>
+            </div>
         </div>
     </header>
     <main>

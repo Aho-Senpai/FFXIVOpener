@@ -48,7 +48,7 @@ function removeFromTimeline() {
 }
 
 function btnClearTimeline() {
-    //TODO: MoxSetting = no clear timeline on job change
+    if (mox == true) { return; } // if mox == true we do not want timeline to be cleared when selecting a job
     const timelineIds = [
         "RaidBuffsTimeline", 
         "SkillsTimeline", 

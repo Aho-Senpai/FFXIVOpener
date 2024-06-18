@@ -1,0 +1,13 @@
+#SettingsDiv {
+    display: none;
+    position: fixed;
+    border: solid;
+    border-radius: 5px;
+    border-color: #e2cb87;
+    background-color: #1a1a1a;
+    z-index: 1;
+    align-self: center;
+    justify-self: center;
+    margin-top: calc(100vh - 22px);
+    margin-left: calc(20px);
+}

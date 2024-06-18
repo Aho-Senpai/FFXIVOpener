@@ -11,6 +11,7 @@ function getJobSkills(JobShort, JobRole) {
     .then(() => {
         DisplayJobSkills(JobShort, JobRole)
     })
+    btnClearTimeline()
 }
 
 async function LoadSkills(JobShort, JobRole) {
