@@ -21,7 +21,7 @@ function githubBtn() {
 }
 
 //TODO : remove sortableJS dependency and implement sorting of timeline
-//TODO: change background color of each raidbuff/selfbuff? custom edit thingy?
+//TODO : change background color of each raidbuff/selfbuff? custom edit thingy?
 //TODO : add a "under level" category in GCD/OGCD lists?
 //TODO : Ability to create custom raidbuff?
 //TODO : default opener per job?
@@ -30,6 +30,7 @@ function githubBtn() {
 //TODO : Fix tooltip issue when too close to right edge
 //TODO : for share and settings "menus", make them close/hide when clicking outside the div
 //TODO : chromium fix
+//TODO : setting for image size?
 
 //todo : feature request : https://discord.com/channels/277897135515762698/283058569471852546/740962443148394516
     // ^ make each GCD smaller and smaller if in a row (low priority)

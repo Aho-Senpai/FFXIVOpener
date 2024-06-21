@@ -24,7 +24,7 @@ async function LoadJobsDataBase () {
 
 function MakeJobSelectorInputs() {
     JobList.forEach(({ Role, Abbreviation }) => {
-        const InputTemp = document.createElement("input");
+        const InputTemp = document.createElement("label");
         const ImageTemp = document.createElement("img");
 
         InputTemp.type = "radio";
