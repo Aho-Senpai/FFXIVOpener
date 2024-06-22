@@ -50,8 +50,10 @@ function removeFromTimeline() {
     document.getElementById("SkillsTimeline").removeChild(this);
 }
 
-function btnClearTimeline() {
-    if (mox == true) { return; } // if mox == true we do not want timeline to be cleared when selecting a job
+function btnClearTimeline(force) {
+    // force is a boolean so that the actual button still clears the timeline regardless
+    // if mox == true we do not want timeline to be cleared when selecting a job.
+    if (mox == true && !force) { return; }
     const timelineIds = [
         "RaidBuffsTimeline", 
         "SkillsTimeline", 

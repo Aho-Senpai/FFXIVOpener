@@ -13,7 +13,7 @@
     </style>
 
     <!-- Links -->
-    <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
     <link rel="stylesheet" type="text/css" href="./styles/JobSelect.css">
     <link rel="stylesheet" type="text/css" href="./styles/Timeline.css">
     <link rel="stylesheet" type="text/css" href="./styles/SkillSelect.css">
@@ -69,8 +69,20 @@
             </button>
             <div id="SettingsDiv">
                 <div id="MoxSettingDiv" title="If Enabled: Timeline is not cleared when selecting a job">
-                    <span>Mox Setting</span>
+                    <label for="MoxSettingCB">Mox Setting</label>
                     <input type="checkbox" onchange="moxSetting()" id="MoxSettingCB">
+                </div>
+                <div id="TimelineImageSizeSetting" title="Change Size of Images on Timeline">
+                    <label for="TimelineImageSizeSlider">Timeline Image Size <output id="TimelineImageSizeOutput" />40</label>
+                    <input type="range" min="20" max="100" step="10" value="40" id="TimelineImageSizeSlider">
+                </div>
+                <div id="SkillSelectImageSizeSetting" title="Change Size of Images on SkillSelect">
+                    <label for="SkillSelectImageSizeSlider">Skill Select Image Size <output id="SkillSelectImageSizeOutput" />80</label>
+                    <input type="range" min="20" max="120" step="10" value="80" id="SkillSelectImageSizeSlider">
+                </div>
+                <div id="BuffTextSizeSetting" title="Change Size of Buffs">
+                    <label for="BuffTextSizeSlider">Buff Bars Size <output id="BuffTextSizeOutput" />16</label>
+                    <input type="range" min="1" max="50" step="1" value="16" id="BuffTextSizeSlider">
                 </div>
             </div>
         </div>
@@ -85,7 +97,7 @@
             </div>
             <div id="TimelineBtns">
                 <button onclick="btnShareTimeline()">Share</button>
-                <button onclick="btnClearTimeline()">Clear Timeline</button>
+                <button onclick="btnClearTimeline(true)">Clear Timeline</button>
             </div>
         </div>
         <div id="SkillSelect">

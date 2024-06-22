@@ -1,5 +1,6 @@
 #Timeline {
     --timeline-image-size: 60px;
+    --buffText-size: 16px;
 
     height: fit-content;
     width: calc(100vw-10px);
@@ -17,6 +18,7 @@
 #RaidBuffsTimeline {
     position: relative;
     height: fit-content;
+    font-size: var(--buffText-size);
 }
 
 #SkillsTimeline {
