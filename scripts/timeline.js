@@ -7,21 +7,24 @@ function addToTimeline() {
     }
     if (this.classList.contains("RaidBuff")) {
         const Temp = document.createElement("div");
-        Temp.textContent = this.id;
+        const RaidbuffName = this.id
+        let bgColor;
+        RaidBuffs.forEach(element => {
+            if (element.Name !== RaidbuffName) {  return; }
+            bgColor = element.BackgroundColor;
+        });
+        Temp.textContent = RaidbuffName;
         Temp.classList.add("RaidBuffTimelineBar");
         const resizeObserver = new ResizeObserver((entries) => {
             for (const entry of entries) {
-                if (entry.target === Temp) {
-                    entry.target.classList.remove("BuffDivMove");
-                    entry.target.style.cursor = "grab";
-                }
-            }
-        });
+                if (!(entry.target === Temp)) { return; }
+                entry.target.classList.remove("BuffDivMove");
+                entry.target.style.cursor = "grab";
+        }});
         Temp.addEventListener("pointerdown", (e) => pointerDownBuff(e, resizeObserver));
         Temp.addEventListener("pointermove", (e) => pointerMoveBuff(e));
         Temp.addEventListener("pointerup", (e) => pointerUpBuff(e, resizeObserver));
-        // TODO : change
-        Temp.style.backgroundColor = "red";
+        Temp.style.backgroundColor = bgColor;
         document.getElementById("RaidBuffsTimeline").prepend(Temp);
     }
 }

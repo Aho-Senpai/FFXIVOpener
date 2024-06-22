@@ -4,67 +4,78 @@
             "ID": "1",
             "Name": "Arcane Circle",
             "ImageName": "arcane_circle",
-            "Duration": 15
+            "Duration": 20,
+            "BackgroundColor": "#aa3267"
         },
         {
             "ID": "2",
             "Name": "Battle Litany",
             "ImageName": "battle_litany",
-            "Duration": 15
+            "Duration": 15,
+            "BackgroundColor": "#3d71b1"
         },
         {
             "ID": "3",
             "Name": "Battle Voice",
             "ImageName": "battle_voice",
-            "Duration": 15
+            "Duration": 15,
+            "BackgroundColor": "#c55b73"
         },
         {
             "ID": "4",
             "Name": "Brotherhood",
             "ImageName": "brotherhood",
-            "Duration": 15
+            "Duration": 15,
+            "BackgroundColor": "#ff5d39"
         },
         {
             "ID": "5",
             "Name": "Chain Stratagem",
             "ImageName": "chain_stratagem",
-            "Duration": 15
+            "Duration": 15,
+            "BackgroundColor": "#6b80ed"
         },
         {
             "ID": "6",
             "Name": "Divination",
             "ImageName": "divination",
-            "Duration": 15
+            "Duration": 15,
+            "BackgroundColor": "#deb765"
         },
         {
             "ID": "7",
             "Name": "Embolden",
             "ImageName": "embolden",
-            "Duration": 15
+            "Duration": 20,
+            "BackgroundColor": "#60140f"
         },
         {
             "ID": "8",
             "Name": "Radiant Finale",
             "ImageName": "radiant_finale",
-            "Duration": 15
+            "Duration": 15,
+            "BackgroundColor": "#072f5a"
         },
         {
             "ID": "9",
             "Name": "Searing Light",
             "ImageName": "searing_light",
-            "Duration": 15
+            "Duration": 30,
+            "BackgroundColor": "#494c50"
         },
         {
             "ID": "10",
             "Name": "Technical Finish",
             "ImageName": "technical_finish",
-            "Duration": 15
+            "Duration": 20,
+            "BackgroundColor": "#c12769"
         },
         {
             "ID": "11",
             "Name": "Trick Attack",
             "ImageName": "trick_attack",
-            "Duration": 15
+            "Duration": 15,
+            "BackgroundColor": "#6c5344"
         }
     ]
 }

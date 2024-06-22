@@ -7,7 +7,7 @@ function btnShareTimeline() {
     if (jobSelectDiv.style.display !== "none") {
         return;
     }
-    div.style.display = div.style.display === "flex" ? "none" : "flex";
+    div.style.display = div.style.display === "flex" ? "none" : "flex"; // condition ? exprIfTrue : exprIfFalse
     const selectedJob = document.querySelector('input[name="JobSelect"]:checked');
     if (selectedJob) {
         document.getElementById("SaveFileName").placeholder = selectedJob.id;

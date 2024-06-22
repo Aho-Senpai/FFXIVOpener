@@ -2,8 +2,12 @@
     appearance: none;
     cursor: pointer;
 }
-#JobSelect input[type="radio"]:checked {
+label:has(input:checked) {
     opacity: 1;
+}
+
+#JobSelect label {
+    cursor: pointer;
 }
 .JobSelectImage {
     background-size: auto;

@@ -4,7 +4,7 @@ let RoleAction = [];
 let RaidBuffs = [];
 let GlobalSkills = [];
 
-function getJobSkills(JobShort, JobRole) {    
+function getJobSkills(JobShort, JobRole) {
     ClearSkills();
     ToggleJobSelect();
     LoadSkills(JobShort, JobRole)

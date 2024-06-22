@@ -1,16 +1,9 @@
 // MEMO : Background Colors
-// function jobSelectBackgroundColor(role) {
-//     switch (role) {
-//         case 1:
-//             return "#425ABD"; //Tanks (Blue)
-//         case 4:
-//             return "#397B18"; // Healers (Green)
-//         case 2: case 3: case 5: case 6:
-//             return "#843131"; // DPS (Red)
-//         default:
-//             return "#FFFFFF"; // Others (White) <- Should not happen
-//     }
-// }
+// "#425ABD"; //Tanks (Blue)
+// "#397B18"; // Healers (Green)
+// "#843131"; // DPS (Red)
+// "#FFFFFF"; // Others (White) <- Should not happen
+
 
 // Buttons Links
 function discordBtn() {
@@ -21,7 +14,7 @@ function githubBtn() {
 }
 
 //TODO : remove sortableJS dependency and implement sorting of timeline
-//TODO : change background color of each raidbuff/selfbuff? custom edit thingy?
+//TODO : allow user to change raidbuff/selfbuff background color
 //TODO : add a "under level" category in GCD/OGCD lists?
 //TODO : Ability to create custom raidbuff?
 //TODO : default opener per job?
@@ -29,9 +22,17 @@ function githubBtn() {
 //TODO : Settings menu prettier
 //TODO : Fix tooltip issue when too close to right edge
 //TODO : for share and settings "menus", make them close/hide when clicking outside the div
-//TODO : chromium fix
-//TODO : setting for image size?
+//TODO : chromium fix : put jobselect back to using inputs instead of labels and fix chromium not displaying images in it
+//     ^ Temp fix : switched input for label on job select
+//TODO : investigate why chromium stops moving raidbuff bar if mouse leaves div (firefox doesn't)
+//TODO : setting for image size? (css done, need button and JS side)
+//TODO : when image size setting is done, make raidbuff default length depends on duration and image size
+// raidbuff bar height depends on font size : setting for that?
 
 //todo : feature request : https://discord.com/channels/277897135515762698/283058569471852546/740962443148394516
     // ^ make each GCD smaller and smaller if in a row (low priority)
-//todo : localization
+//todo : localization (low priority)
+
+//* <span style=\"color:#00cc22;\">Combo Action:</span> // Back to start of line : combo bonus or duration ...
+//* <span style=\"color:#ee7318;\">Riot Blade</span> // Skill
+//* <span style=\"color:#cccc52;\">Sword Oath</span> // Buff

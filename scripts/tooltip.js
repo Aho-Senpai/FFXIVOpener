@@ -25,7 +25,7 @@ function getTooltipData(Skill) {
         "SkillTooltipCast": Skill.Cast !== undefined ? (Skill.Cast === 0 ? "Cast: Instant" : `Cast: ${Skill.Cast}s`) : undefined,
         "SkillTooltipRecast": Skill.Recast !== undefined ? `Recast: ${Skill.Recast}s` : undefined,
         "SkillTooltipRange": Skill.Range !== undefined ? `Range: ${Skill.Range}y` : undefined,
-        "SkillTooltipRadius": Skill.Radius !== undefined ? `Radius: ${Skill.Radius}y` : undefined
+        "SkillTooltipRadius": Skill.Radius !== undefined ? `Radius: ${Skill.Radius}y` : undefined // condition ? exprIfTrue : exprIfFalse
     };
     Object.keys(tooltipElements).forEach(id => {
         const element = document.getElementById(id);
@@ -50,12 +50,10 @@ function clearTooltip() {
     ];
     tooltips.forEach(id => {
         const element = document.getElementById(id);
-        if (element) {
-            element.style.display = "none";
-        }
+        if (!element) { return; }
+        element.style.display = "none";
     });
     const tip = document.getElementById("Tooltip");
-    if (tip) {
-        tip.style.display = "none";
-    }
+    if (!tip) { return; }
+    tip.style.display = "none";
 }

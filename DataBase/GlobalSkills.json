@@ -3,7 +3,7 @@
     {
         "ID": 0,
         "ImageLink": "./resources/Pull1.png",
-        "Name": "Pull Placeholder",
+        "Name": "Pull_Placeholder",
         "GlobalCoolDown":"GCD",
         "Description": "This is a placeholder for the Pull/Engage"
     },

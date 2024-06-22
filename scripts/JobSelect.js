@@ -11,12 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function LoadJobsDataBase () {
     return fetch('./DataBase/Jobs.json')
-    .then(
-        response => {
-            if (!response.ok) {
-                throw new Error("Fetch Error" + response.status);
-            }
-            return response.json();
+    .then( response => {
+        if (!response.ok) { throw new Error("Fetch Error" + response.status); }
+        return response.json();
     })
     .then(result => JobList = result.Job)
     .catch((error) => console.error("Unable to fetch data:", error));
@@ -24,17 +21,24 @@ async function LoadJobsDataBase () {
 
 function MakeJobSelectorInputs() {
     JobList.forEach(({ Role, Abbreviation }) => {
-        const InputTemp = document.createElement("label");
+        const InputTemp = document.createElement("input"); // TODO: to fix : put back to input and fix chromium weirdness
+        const LabelTemp = document.createElement("label");
         const ImageTemp = document.createElement("img");
 
         InputTemp.type = "radio";
         InputTemp.name = "JobSelect";
-        InputTemp.classList.add(`JobSelect${Role}${Abbreviation}`, `JobSelectImage`);
+        InputTemp.classList.add(`JobSelect${Role}${Abbreviation}`);
         InputTemp.id = Abbreviation;
         InputTemp.addEventListener("click", () => getJobSkills(Abbreviation, Role));
+        
+        LabelTemp.htmlFor = InputTemp.id;
+        LabelTemp.classList.add(`JobSelectImage`);
+
         ImageTemp.src = `./DataBase/Icon/Job/${Abbreviation}.png`;
-        InputTemp.appendChild(ImageTemp);
-        document.getElementById(`JobSelect${Role}`).appendChild(InputTemp);
+        LabelTemp.append(InputTemp);
+        LabelTemp.append(ImageTemp);
+        //document.getElementById(`JobSelect${Role}`).appendChild(InputTemp);
+        document.getElementById(`JobSelect${Role}`).appendChild(LabelTemp);
     });
 }
 
@@ -44,5 +48,6 @@ function ToggleJobSelect() {
         console.error(Error);    
         return;
     }
-    jobSelect.style.display = getComputedStyle(jobSelect).display === "block" ? "none" : "block";
+    jobSelect.style.display = getComputedStyle(jobSelect).display === "block" ? "none" : "block"; // condition ? exprIfTrue : exprIfFalse
+
 }

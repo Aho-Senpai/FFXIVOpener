@@ -13,14 +13,12 @@ Healer: #5AC629
 :root {
     color: white;
     background-color: black;
-
-    --dark-tank-bg: #425ABD;
+    /* --dark-tank-bg: #425ABD;
     --dark-healer-bg: #397B18;
     --dark-dps-bg: #843131;
-
     --light-tank-bg: #6B94E7;
     --light-healer-bg: #5AC629;
-    --light-dps-bg: #CE5252;
+    --light-dps-bg: #CE5252; */
 }
 
 body {
@@ -66,6 +64,3 @@ header span {
 button {
     cursor: pointer;
 }
-/* #DiscordBtn, #GithubBtn {
-    
-} */
