@@ -1,7 +1,8 @@
 let mox = false; // if true: do not clear timeline when selecting job
 mox = document.getElementById("MoxSettingCB").checked;
+
+const settingsDiv = document.getElementById("SettingsDiv");
 function settingsBtn() {
-    const settingsDiv = document.getElementById("SettingsDiv");
     settingsDiv.style.display = getComputedStyle(settingsDiv).display === "block" ? "none" : "block";
 }
 function moxSetting() {
@@ -27,3 +28,7 @@ BuffTextSizeInput.addEventListener("input", () => {
     BuffTextSizeOutput.textContent = BuffTextSizeInput.value;
     document.getElementById("RaidBuffsTimeline").style.cssText = `--buffText-size: ${BuffTextSizeInput.value}px`;
 });
+
+function closeSettingsDiv() {
+    settingsDiv.style.display = "none";
+}

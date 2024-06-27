@@ -1,13 +1,13 @@
 let FileName = document.getElementById("SaveFileName").value;
 const TimeLineDiv = document.getElementById('TimelineDiv');
 
+const shareDiv = document.getElementById("SaveDialogDiv");
 function btnShareTimeline() {
-    const div = document.getElementById("SaveDialogDiv");
     const jobSelectDiv = document.getElementById("JobSelect");
     if (jobSelectDiv.style.display !== "none") {
         return;
     }
-    div.style.display = div.style.display === "flex" ? "none" : "flex"; // condition ? exprIfTrue : exprIfFalse
+    shareDiv.style.display = shareDiv.style.display === "flex" ? "none" : "flex"; // condition ? exprIfTrue : exprIfFalse
     const selectedJob = document.querySelector('input[name="JobSelect"]:checked');
     if (selectedJob) {
         document.getElementById("SaveFileName").placeholder = selectedJob.id;
@@ -36,3 +36,6 @@ async function saveAsSvg() {
 }
 
 //TODO : add event listener to remove the div is click on "black space" aka outside the div?
+function closeShareDiv() {
+    shareDiv.style.display = "none";
+}

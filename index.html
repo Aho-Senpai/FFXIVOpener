@@ -51,6 +51,12 @@
         <button onclick="ToggleJobSelect()" title="Change Job">Job Select</button>
         <span id="WebpageTitle">FFXIV Opener</span>
         <div id="SaveDialogDiv">
+            <div id="ShareDivClose">
+                Share
+                <button onclick="closeShareDiv()" id="ShareCloseBtn" title="Close Share" >
+                    <img src="./DataBase/Icon/General/exit_game.png" alt="Close">
+                </button>
+            </div>
             <input type="text" id="SaveFileName" name="SaveFileName" placeholder="Enter File Name"/>
             <button onclick="saveToPng()">Save as PNG</button>
             <button onclick="saveToJpeg()">Save as JPEG</button>
@@ -68,6 +74,12 @@
                 Settings
             </button>
             <div id="SettingsDiv">
+                <div id="SettingsDivClose">
+                    Settings
+                    <button onclick="closeSettingsDiv()" id="SettingsCloseBtn" title="Close Settings" >
+                        <img src="./DataBase/Icon/General/exit_game.png" alt="Close">
+                    </button>
+                </div>
                 <div id="MoxSettingDiv" title="If Enabled: Timeline is not cleared when selecting a job">
                     <label for="MoxSettingCB">Mox Setting</label>
                     <input type="checkbox" onchange="moxSetting()" id="MoxSettingCB">

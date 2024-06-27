@@ -13,7 +13,6 @@ function githubBtn() {
 //TODO : default opener per job?
 //TODO : SelfBuffs under rotation when adding a skill that has a self buff? or have a way to add a self buff manually?
 //TODO : Settings menu prettier
-//TODO : Fix tooltip issue when too close to right edge
 //TODO : for share and settings "menus", make them close/hide when clicking outside the div
 //TODO : investigate why chromium stops moving raidbuff bar if mouse leaves div (firefox doesn't)
 //TODO : tooltip something sets all children to display block : only want the parent div to do that.

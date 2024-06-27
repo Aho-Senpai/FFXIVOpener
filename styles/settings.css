@@ -11,3 +11,20 @@
     margin-top: calc(100vh - 22px);
     margin-left: calc(0px);
 }
+#SettingsDivClose {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: xx-large;
+}
+#SettingsCloseBtn {
+    height: 48px;
+    width: 48px;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+}
