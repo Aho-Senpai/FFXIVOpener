@@ -5,6 +5,8 @@
     border-radius: 5px;
     border-color: #e2cb87;
     background-color: #1a1a1a;
+    min-width: 300px;
+    max-width: 300px;
 }
 #SkillTooltipCast, #SkillTooltipRecast, #SkillTooltipRange, #SkillTooltipRadius {
     display: none;
@@ -12,4 +14,7 @@
 #SkillTooltipName {
     justify-content: center;
     display: flex;
+}
+#Tooltip.flip {
+    transform: translateX(50%);
 }

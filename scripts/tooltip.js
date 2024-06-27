@@ -1,21 +1,28 @@
+const tip = document.getElementById("Tooltip")
 function showTooltip(Skill) {
-    const tip = document.getElementById("Tooltip")
     tip.style.display = "block";
     //TODO : Maybe logic to "flip" the div on the left side of cursor if too close to the right of screen?
     window.onmousemove = (e) => {
-        tip.style.top = e.clientY + 20 + "px";
-        // if e.clientX > 50% do marginRight instead?
-        //console.log(window.innerWidth);
-        // console.log(e.clientX > window.innerWidth/2);
-        // if (e.clientX > window.innerWidth/2) {
-        //     tip.style.marginRight = (window.innerWidth-e.clientX) - 20 + "px";
-        //     tip.style.marginLeft = (window.innerWidth - e.clientX) + "px";
-        //     return;
-        // }
-        tip.style.marginLeft = e.clientX + 20 + "px";
-        tip.style.marginRight = "0px";
+        setTooltipXPos(e);
+        setTooltipYPos(e);
     }
     getTooltipData(Skill);
+}
+function setTooltipXPos(e) {
+    if (!((window.innerWidth - (e.clientX + 20)) > tip.offsetWidth)) {
+        tip.style.marginRight = (e.clientX - tip.offsetWidth) - 20 + "px";
+        tip.style.marginLeft = (e.clientX - tip.offsetWidth ) - 20 + "px";
+        return;
+    }
+    tip.style.marginLeft = e.clientX + 20 + "px";
+    tip.style.marginRight = "0px";
+}
+function setTooltipYPos(e) {
+    if ((window.innerHeight - e.clientY - 20) < tip.offsetHeight) {
+        tip.style.top = (window.innerHeight - tip.offsetHeight) + "px";
+        return;
+    }
+    tip.style.top = e.clientY + 20 + "px";
 }
 
 function getTooltipData(Skill) {

@@ -16,6 +16,8 @@ RaidBuffs | Raidbuffs
 #RaidBuffs {
     grid-row: 1;
     grid-column: 1 / span 3;
+    /* width: fit-content;
+    justify-self: center; */
 }
 #GCD {
     grid-row: 2 / span 2;
