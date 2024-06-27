@@ -1,0 +1,347 @@
+{
+    "GCD": [
+        {
+            "ID": 1,
+            "Name": "Cascade",
+            "ImageName": "cascade",
+            "Description": "Delivers an attack with a potency of 220.</br><span style=\"color:#00cc22;\">Additional Effect:</span> 50% chance of granting Silken Symmetry</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 2,
+            "Name": "Fountain",
+            "ImageName": "fountain",
+            "Description": "Delivers an attack with a potency of 120.</br><span style=\"color:#00cc22;\">Combo Action:</span> Cascade</br><span style=\"color:#00cc22;\">Combo Potency:</span> 280</br><span style=\"color:#00cc22;\">Combo Bonus:</span> 50% chance of granting Silken Flow</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 3,
+            "Name": "Windmill",
+            "ImageName": "windmill",
+            "Description": "Delivers an attack with a potency of 100 to all nearby enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> 50% chance of granting Silken Symmetry</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 5
+        },
+        {
+            "ID": 4,
+            "Name": "Standard Step",
+            "ImageName": "standard_step",
+            "Description": "Begin dancing, granting yourself Standard Step.</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br>Action changes to Standard Finish while dancing.</br>Only Standard Finish, En Avant, Curing Waltz, Shield Samba, step actions, role actions, Sprint, and Limit Break can be performed while dancing.</br>This weaponskill does not share a recast timer with any other actions. Upon execution, the recast timer for this action will be applied to all other weaponskills and magic actions.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 30,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 5,
+            "Name": "Standard Finish",
+            "ImageName": "standard_finish",
+            "Description": "Delivers an attack to all nearby enemies. Potency varies with number of successful steps, dealing full potency for the first enemy, and 75% less for all remaining enemies.</br>0 Steps: 360</br>1 Step: 540</br>2 Steps: 850</br>Step Bonus: Grants Standard Finish and Esprit to self and party member designated as your Dance Partner</br>Damage bonus of Standard Finish varies with number of successful steps.</br>1 Step: 2%</br>2 Steps: 5%</br><span style=\"color:#00cc22;\">Duration:</span> 60s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Last Dance Ready</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Can only be executed while Dancing.</br>This weaponskill does not share a recast timer with any other actions. Upon execution, the recast timer for this action will be applied to all other weaponskills and magic actions.</br></br>※This action cannot be assigned to a hotbar.</br>※Standard Step changes to Standard Finish when requirements for execution are met.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 1.5,
+            "Range": 0,
+            "Radius": 15
+        },
+        {
+            "ID": 6,
+            "Name": "Reverse Cascade",
+            "ImageName": "reverse_cascade",
+            "Description": "Delivers an attack with a potency of 280.</br><span style=\"color:#00cc22;\">Additional Effect:</span> 50% chance of granting a Fourfold Feather</br>Can only be executed while under the effect of Silken Symmetry or Flourishing Symmetry.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 7,
+            "Name": "Bladeshower",
+            "ImageName": "bladeshower",
+            "Description": "Delivers an attack with a potency of 100 to all nearby enemies.</br><span style=\"color:#00cc22;\">Combo Action:</span> Windmill</br><span style=\"color:#00cc22;\">Combo Potency:</span> 140</br><span style=\"color:#00cc22;\">Combo Bonus:</span> 50% chance of granting Silken Flow</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 5
+        },
+        {
+            "ID": 9,
+            "Name": "Rising Windmill",
+            "ImageName": "rising_windmill",
+            "Description": "Delivers an attack with a potency of 140 to all nearby enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> 50% chance of granting a Fourfold Feather</br>Can only be executed while under the effect of Silken Symmetry or Flourishing Symmetry.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 5
+        },
+        {
+            "ID": 10,
+            "Name": "Fountainfall",
+            "ImageName": "fountainfall",
+            "Description": "Delivers an attack with a potency of 340.</br><span style=\"color:#00cc22;\">Additional Effect:</span> 50% chance of granting a Fourfold Feather</br>Can only be executed while under the effect of Silken Flow or Flourishing Flow.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 11,
+            "Name": "Bloodshower",
+            "ImageName": "bloodshower",
+            "Description": "Delivers an attack with a potency of 180 to all nearby enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> 50% chance of granting a Fourfold Feather</br>Can only be executed while under the effect of Silken Flow or Flourishing Flow.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 5
+        },
+        {
+            "ID": 20,
+            "Name": "Technical Step",
+            "ImageName": "technical_step",
+            "Description": "Begin dancing, granting yourself Technical Step.</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br>Action changes to Technical Finish while dancing.</br>Only Technical Finish, En Avant, Curing Waltz, Shield Samba, step actions, role actions, Sprint, and Limit Break can be performed while dancing.</br>This weaponskill does not share a recast timer with any other actions. Upon execution, the recast timer for this action will be applied to all other weaponskills and magic actions.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 21,
+            "Name": "Technical Finish",
+            "ImageName": "technical_finish",
+            "Description": "Delivers an attack to all nearby enemies within 15 yalms. Potency varies with number of successful steps, dealing full potency for the first enemy, and 75% less for all remaining enemies.</br>0 Steps: 350</br>1 Step: 540</br>2 Steps: 720</br>3 Steps: 900</br>4 Steps: 1,300</br>Step Bonus: Grants Technical Finish and Esprit to self and party members within 30 yalms</br>Damage bonus of Technical Finish varies with number of successful steps.</br>1 Step: 1%</br>2 Steps: 2%</br>3 Steps: 3%</br>4 Steps: 5%</br><span style=\"color:#00cc22;\">Duration:</span> 20s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Flourishing Finish</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Dance of the Dawn Ready</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Can only be executed while Dancing.</br>This weaponskill does not share a recast timer with any other actions. Upon execution, the recast timer for this action will be applied to all other weaponskills and magic actions.</br></br>※This action cannot be assigned to a hotbar.</br>※Technical Step changes to Technical Finish when requirements for execution are met.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 1.5,
+            "Range": 0,
+            "Radius": 15
+        },
+        {
+            "ID": 23,
+            "Name": "Saber Dance",
+            "ImageName": "saber_dance",
+            "Description": "Delivers an attack to target and all enemies nearby it with a potency of 520 for the first enemy, and 50% less for all remaining enemies.</br>Esprit Gauge Cost: 50",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 26,
+            "Name": "Tillana",
+            "ImageName": "tillana",
+            "Description": "Delivers an attack to all nearby enemies with a potency of 600 for the first enemy, and 50% less for all remaining enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases Esprit Gauge by 50</br>Can only be executed while under the effect of Flourishing Finish.</br></br>※This action cannot be assigned to a hotbar.</br>※Technical Finish changes to Tillana when requirements for execution are met.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 15
+        },
+        {
+            "ID": 28,
+            "Name": "Starfall Dance",
+            "ImageName": "starfall_dance",
+            "Description": "Delivers a critical direct hit to all enemies in a straight line before you with a potency of 600 for the first enemy, and 75% less for all remaining enemies.</br>Damage dealt is increased when under an effect that raises critical hit rate or direct hit rate.</br>Can only be executed while under the effect of Flourishing Starfall.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 25
+        },
+        {
+            "ID": 29,
+            "Name": "Last Dance",
+            "ImageName": "last_dance",
+            "Description": "Delivers an attack to target and all enemies nearby it with a potency of 520 for the first enemy, and 50% less for all remaining enemies.</br>Can only be executed while under the effect of Last Dance Ready.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 30,
+            "Name": "Finishing Move",
+            "ImageName": "finishing_move",
+            "Description": "Delivers an attack to all nearby enemies with a potency of 850 for the first enemy, and 75% less for all remaining enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Standard Finish and Esprit to self and party member designated as your Dance Partner</br>Standard Finish Effect: Increases damage dealt by 5%</br><span style=\"color:#00cc22;\">Duration:</span> 60s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Last Dance Ready</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Can only be executed while under the effect of Finishing Move Ready.</br>Shares a recast timer with Standard Step. Upon execution, the recast timer for this action will be applied to all other weaponskills and magic actions.</br></br>※This action cannot be assigned to a hotbar.</br>※Standard Step changes to Finishing Move when requirements for execution are met.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 30,
+            "Range": 0,
+            "Radius": 15
+        },
+        {
+            "ID": 31,
+            "Name": "Dance of the Dawn",
+            "ImageName": "dance_of_the_dawn",
+            "Description": "Delivers an attack to target and all enemies nearby it with a potency of 1,000 for the first enemy, and 50% less for all remaining enemies.</br>Esprit Gauge Cost: 50</br>Can only be executed while under the effect of Dance of the Dawn Ready.</br></br>※This action cannot be assigned to a hotbar.</br>※Saber Dance changes to Dance of the Dawn when requirements for execution are met.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        }
+    ],
+    "OGCD": [
+        {
+            "ID": 8,
+            "Name": "Fan Dance",
+            "ImageName": "fan_dance",
+            "Description": "Delivers an attack with a potency of 150.</br><span style=\"color:#00cc22;\">Additional Effect:</span> 50% chance of granting Threefold Fan Dance</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Can only be executed while in possession of Fourfold Feathers.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 12,
+            "Name": "Fan Dance II",
+            "ImageName": "fan_dance_II",
+            "Description": "Delivers an attack with a potency of 100 to all nearby enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> 50% chance of granting Threefold Fan Dance</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Can only be executed while in possession of Fourfold Feathers.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 0,
+            "Radius": 5
+        },
+        {
+            "ID": 13,
+            "Name": "En Avant",
+            "ImageName": "en_avant",
+            "Description": "Quickly dash 10 yalms forward.</br><span style=\"color:#00cc22;\">Maximum Charges:</span></br>Cannot be executed while bound.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 30,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 14,
+            "Name": "Curing Waltz",
+            "ImageName": "curing_waltz",
+            "Description": "Restores own HP and the HP of all nearby party members.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 300</br><span style=\"color:#00cc22;\">Additional Effect:</span> Party member designated as your Dance Partner will also heal self and nearby party members",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 0,
+            "Radius": 3
+        },
+        {
+            "ID": 15,
+            "Name": "Shield Samba",
+            "ImageName": "shield_samba",
+            "Description": "Reduces damage taken by self and nearby party members by 15%.</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br>Effect cannot be stacked with bard's Troubadour or machinist's Tactician.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 90,
+            "Range": 0,
+            "Radius": 30
+        },
+        {
+            "ID": 16,
+            "Name": "Closed Position",
+            "ImageName": "closed_position",
+            "Description": "Grants you Closed Position and designates a party member as your Dance Partner, allowing you to share the effects of Standard Finish, Curing Waltz, Devilment, and Tillana with said party member.</br>Effect ends upon reuse.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 30,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 17,
+            "Name": "Ending",
+            "ImageName": "ending",
+            "Description": "Ends dance with your partner.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 18,
+            "Name": "Devilment",
+            "ImageName": "devilment",
+            "Description": "Increases critical hit rate and direct hit rate by 20%.</br><span style=\"color:#00cc22;\">Duration:</span> 20s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Party member designated as your Dance Partner will also receive the effect of Devilment</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Flourishing Starfall</br><span style=\"color:#00cc22;\">Duration:</span> 20s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 19,
+            "Name": "Fan Dance III",
+            "ImageName": "fan_dance_III",
+            "Description": "Delivers an attack to target and all enemies nearby it with a potency of 200 for the first enemy, and 50% less for all remaining enemies.</br>Can only be executed while under the effect of Threefold Fan Dance.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 22,
+            "Name": "Flourish",
+            "ImageName": "flourish",
+            "Description": "Grants you the effects of Flourishing Symmetry, Flourishing Flow, Threefold Fan Dance, Fourfold Fan Dance, and Finishing Move Ready.</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Can only be executed while in combat.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 24,
+            "Name": "Improvisation",
+            "ImageName": "improvisation",
+            "Description": "Dance to the beat of your own drum, granting Rising Rhythm to self.</br>Stacks increase every 3 seconds, up to a maximum of 4.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Healing over time for self and nearby party members</br><span style=\"color:#00cc22;\">Cure Potency:</span> 100</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br>Effect ends upon using another action or moving (including facing a different direction).</br>Cancels auto-attack upon execution.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 8
+        },
+        {
+            "ID": 25,
+            "Name": "Improvised Finish",
+            "ImageName": "improvised_finish",
+            "Description": "Creates a barrier around self and all nearby party members. Damage absorbed increases with stacks of Rising Rhythm.</br>0 Stacks: 5% of maximum HP</br>1 Stack: 6% of maximum HP</br>2 Stacks: 7% of maximum HP</br>3 Stacks: 8% of maximum HP</br>4 Stacks: 10% of maximum HP</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Can only be executed while Improvisation is active.</br></br>※This action cannot be assigned to a hotbar.</br>※Improvisation changes to Improvised Finish when requirements for execution are met.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1.5,
+            "Range": 0,
+            "Radius": 8
+        },
+        {
+            "ID": 27,
+            "Name": "Fan Dance IV",
+            "ImageName": "fan_dance_IV",
+            "Description": "Delivers an attack to all enemies in a cone before you with a potency of 300 for the first enemy, and 50% less for all remaining enemies.</br>Can only be executed while under the effect of Fourfold Fan Dance.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 15,
+            "Radius": 15
+        }
+    ]
+}

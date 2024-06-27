@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 async function LoadJobsDataBase () {
-    return fetch('./DataBase/Jobs.json')
+    return fetch('./DataBase/JobsList.json')
     .then( response => {
         if (!response.ok) { throw new Error("Fetch Error" + response.status); }
         return response.json();
@@ -21,7 +21,7 @@ async function LoadJobsDataBase () {
 
 function MakeJobSelectorInputs() {
     JobList.forEach(({ Role, Abbreviation }) => {
-        const InputTemp = document.createElement("input"); // TODO: to fix : put back to input and fix chromium weirdness
+        const InputTemp = document.createElement("input");
         const LabelTemp = document.createElement("label");
         const ImageTemp = document.createElement("img");
 
@@ -37,7 +37,6 @@ function MakeJobSelectorInputs() {
         ImageTemp.src = `./DataBase/Icon/Job/${Abbreviation}.png`;
         LabelTemp.append(InputTemp);
         LabelTemp.append(ImageTemp);
-        //document.getElementById(`JobSelect${Role}`).appendChild(InputTemp);
         document.getElementById(`JobSelect${Role}`).appendChild(LabelTemp);
     });
 }

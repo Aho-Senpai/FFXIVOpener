@@ -1,0 +1,369 @@
+{
+    "GCD": [
+        {
+            "ID": 1,
+            "Name": "True Thrust",
+            "ImageName": "true_thrust",
+            "Description": "Delivers an attack with a potency of 230.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 2,
+            "Name": "Vorpal Thrust",
+            "ImageName": "vorpal_thrust",
+            "Description": "Delivers an attack with a potency of 130.</br><span style=\"color:#00cc22;\">Combo Action:</span> True Thrust</br><span style=\"color:#00cc22;\">Combo Potency:</span> 280",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 4,
+            "Name": "Piercing Talon",
+            "ImageName": "piercing_talon",
+            "Description": "Delivers a ranged attack with a potency of 150.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 20,
+            "Radius": 0
+        },
+        {
+            "ID": 5,
+            "Name": "Disembowel",
+            "ImageName": "disembowel",
+            "Description": "Delivers an attack with a potency of 140.</br><span style=\"color:#00cc22;\">Combo Action:</span> True Thrust</br><span style=\"color:#00cc22;\">Combo Potency:</span> 250</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Grants Power Surge</br>Power Surge Effect: Increases damage dealt by 10%</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 6,
+            "Name": "Full Thrust",
+            "ImageName": "full_thrust",
+            "Description": "Delivers an attack with a potency of 100.</br><span style=\"color:#00cc22;\">Combo Action:</span> Vorpal Thrust</br><span style=\"color:#00cc22;\">Combo Potency:</span> 380",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 10,
+            "Name": "Doom Spike",
+            "ImageName": "doom_spike",
+            "Description": "Delivers an attack with a potency of 110 to all enemies in a straight line before you.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 10,
+            "Radius": 10
+        },
+        {
+            "ID": 12,
+            "Name": "Chaos Thrust",
+            "ImageName": "chaos_thrust",
+            "Description": "Delivers an attack with a potency of 100.</br>140 when executed from a target's rear.</br><span style=\"color:#00cc22;\">Combo Action:</span> Disembowel</br><span style=\"color:#00cc22;\">Combo Potency:</span> 220</br>Rear Combo Potency: 260</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 40</br><span style=\"color:#00cc22;\">Duration:</span> 24s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 15,
+            "Name": "Fang and Claw",
+            "ImageName": "fang_and_claw",
+            "Description": "Delivers an attack with a potency of 140.</br>180 when executed from a target's flank.</br><span style=\"color:#00cc22;\">Combo Action:</span> Heavens' Thrust</br><span style=\"color:#00cc22;\">Combo Potency:</span> 300</br>Flank Combo Potency: 340",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 16,
+            "Name": "Wheeling Thrust",
+            "ImageName": "wheeling_thrust",
+            "Description": "Delivers an attack with a potency of 140.</br>180 when executed from a target's rear.</br><span style=\"color:#00cc22;\">Combo Action:</span> Chaotic Spring</br><span style=\"color:#00cc22;\">Combo Potency:</span> 300</br>Rear Combo Potency: 340",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 18,
+            "Name": "Sonic Thrust",
+            "ImageName": "sonic_thrust",
+            "Description": "Delivers an attack with a potency of 100 to all enemies in a straight line before you.</br><span style=\"color:#00cc22;\">Combo Action:</span> Doom Spike</br><span style=\"color:#00cc22;\">Combo Potency:</span> 120</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Grants Power Surge</br>Power Surge Effect: Increases damage dealt by 10%</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 10,
+            "Radius": 10
+        },
+        {
+            "ID": 19,
+            "Name": "Drakesbane",
+            "ImageName": "drakesbane",
+            "Description": "Delivers an attack with a potency of 440.</br><span style=\"color:#00cc22;\">Combo Action:</span> Wheeling Thrust or Fang and Claw</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Grants Draconian Fire</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Can only be executed after successfully landing Wheeling Thrust or Fang and Claw as a combo action.</br></br>※This action cannot be assigned to a hotbar.</br>※Wheeling Thrust and Fang and Claw change to Drakesbane when requirements for execution are met.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 22,
+            "Name": "Coerthan Torment",
+            "ImageName": "coerthan_torment",
+            "Description": "Delivers an attack with a potency of 100 to all enemies in a straight line before you.</br><span style=\"color:#00cc22;\">Combo Action:</span> Sonic Thrust</br><span style=\"color:#00cc22;\">Combo Potency:</span> 150</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Grants Draconian Fire</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 10,
+            "Radius": 10
+        },
+        {
+            "ID": 24,
+            "Name": "Raiden Thrust",
+            "ImageName": "raiden_thrust",
+            "Description": "Delivers an attack with a potency of 320.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Sharpens the Firstminds' Focus by 1</br>Can only be executed while under the effect of Draconian Fire.</br></br>※This action cannot be assigned to a hotbar.</br>※True Thrust changes to Raiden Thrust when requirements for execution are met.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 26,
+            "Name": "Draconian Fury",
+            "ImageName": "draconian_fury",
+            "Description": "Delivers an attack with a potency of 130 to all enemies in a straight line before you.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Sharpens the Firstminds' Focus by 1</br>Can only be executed while under the effect of Draconian Fire.</br></br>※This action cannot be assigned to a hotbar.</br>※Doom Spike changes to Draconian Fury when requirements for execution are met.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 10,
+            "Radius": 10
+        },
+        {
+            "ID": 27,
+            "Name": "Heavens' Thrust",
+            "ImageName": "heavens'_thrust",
+            "Description": "Delivers an attack with a potency of 140.</br><span style=\"color:#00cc22;\">Combo Action:</span> Lance Barrage</br><span style=\"color:#00cc22;\">Combo Potency:</span> 440",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 28,
+            "Name": "Chaotic Spring",
+            "ImageName": "chaotic_spring",
+            "Description": "Delivers an attack with a potency of 140.</br>180 when executed from a target's rear.</br><span style=\"color:#00cc22;\">Combo Action:</span> Spiral Blow</br><span style=\"color:#00cc22;\">Combo Potency:</span> 300</br>Rear Combo Potency: 340</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 45</br><span style=\"color:#00cc22;\">Duration:</span> 24s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 31,
+            "Name": "Lance Barrage",
+            "ImageName": "lance_barrage",
+            "Description": "Delivers an attack with a potency of 130.</br><span style=\"color:#00cc22;\">Combo Action:</span> True Thrust</br><span style=\"color:#00cc22;\">Combo Potency:</span> 340",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 32,
+            "Name": "Spiral Blow",
+            "ImageName": "spiral_blow",
+            "Description": "Delivers an attack with a potency of 140.</br><span style=\"color:#00cc22;\">Combo Action:</span> True Thrust</br><span style=\"color:#00cc22;\">Combo Potency:</span> 300</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Grants Power Surge</br>Power Surge Effect: Increases damage dealt by 10%</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        }
+    ],
+    "OGCD": [
+        {
+            "ID": 3,
+            "Name": "Life Surge",
+            "ImageName": "life_surge",
+            "Description": "Ensures critical damage for first weaponskill used while Life Surge is active.</br><span style=\"color:#00cc22;\">Duration:</span> 5s</br>Increases damage dealt when under an effect that raises critical hit rate.</br>Effect cannot be applied to damage over time.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Absorbs a portion of damage dealt as HP</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 2",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 40,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 7,
+            "Name": "Lance Charge",
+            "ImageName": "lance_charge",
+            "Description": "Increases damage dealt by 10%.</br><span style=\"color:#00cc22;\">Duration:</span> 20s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 8,
+            "Name": "Jump",
+            "ImageName": "jump",
+            "Description": "Delivers a jumping attack with a potency of 320. Returns you to your original position after the attack is made.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Dive Ready</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 30,
+            "Range": 20,
+            "Radius": 0
+        },
+        {
+            "ID": 9,
+            "Name": "Elusive Jump",
+            "ImageName": "elusive_jump",
+            "Description": "Executes a jump to a location 15 yalms behind you.</br>Cannot be executed while bound.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 30,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 11,
+            "Name": "Winged Glide",
+            "ImageName": "winged_glide",
+            "Description": "Rush to a targeted enemy's location.</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 2</br>Cannot be executed while bound.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 20,
+            "Radius": 0
+        },
+        {
+            "ID": 13,
+            "Name": "Dragonfire Dive",
+            "ImageName": "dragonfire_dive",
+            "Description": "Delivers a jumping fire-based attack to target and all enemies nearby it with a potency of 500 for the first enemy, and 50% less for all remaining enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Dragon's Flight</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Cannot be executed while bound.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 20,
+            "Radius": 5
+        },
+        {
+            "ID": 14,
+            "Name": "Battle Litany",
+            "ImageName": "battle_litany",
+            "Description": "Increases critical hit rate of self and nearby party members by 10%.</br><span style=\"color:#00cc22;\">Duration:</span> 20s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 30
+        },
+        {
+            "ID": 17,
+            "Name": "Geirskogul",
+            "ImageName": "geirskogul",
+            "Description": "Delivers an attack to all enemies in a straight line before you with a potency of 280 for the first enemy, and 50% less for all remaining enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Life of the Dragon</br>Life of the Dragon Effect: Increases damage dealt by 15%</br><span style=\"color:#00cc22;\">Duration:</span> 20s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 3 stacks of Nastrond Ready</br><span style=\"color:#00cc22;\">Duration:</span> 20s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 15,
+            "Radius": 15
+        },
+        {
+            "ID": 20,
+            "Name": "Mirage Dive",
+            "ImageName": "mirage_dive",
+            "Description": "Delivers an attack with a potency of 200.</br>Can only be executed when Dive Ready.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 20,
+            "Radius": 0
+        },
+        {
+            "ID": 21,
+            "Name": "Nastrond",
+            "ImageName": "nastrond",
+            "Description": "Delivers an attack to all enemies in a straight line before you with a potency of 360 for the first enemy, and 50% less for all remaining enemies.</br>Can only be executed while Nastrond Ready.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 2,
+            "Range": 15,
+            "Radius": 15
+        },
+        {
+            "ID": 23,
+            "Name": "High Jump",
+            "ImageName": "high_jump",
+            "Description": "Delivers a jumping attack with a potency of 400. Returns you to your original position after the attack is made.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Dive Ready</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 30,
+            "Range": 20,
+            "Radius": 0
+        },
+        {
+            "ID": 25,
+            "Name": "Stardiver",
+            "ImageName": "stardiver",
+            "Description": "Delivers a jumping fire-based attack to target and all enemies nearby it with a potency of 620 for the first enemy, and 50% less for all remaining enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Starcross Ready</br><span style=\"color:#00cc22;\">Duration:</span> 20s</br>Effect ends when Life of the Dragon expires.</br>Can only be executed while under the effect of Life of the Dragon.</br>Cannot be executed while bound.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 30,
+            "Range": 20,
+            "Radius": 5
+        },
+        {
+            "ID": 29,
+            "Name": "Wyrmwind Thrust",
+            "ImageName": "wyrmwind_thrust",
+            "Description": "Delivers an attack to all enemies in a straight line before you with a potency of 440 for the first enemy, and 50% less for all remaining enemies.</br>Firstminds' Focus Cost: 2",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 10,
+            "Range": 15,
+            "Radius": 15
+        },
+        {
+            "ID": 30,
+            "Name": "Rise of the Dragon",
+            "ImageName": "rise_of_the_dragon",
+            "Description": "Deals physical damage to target and all enemies nearby it with a potency of 550 for the first enemy, and 50% less for all remaining enemies.</br>Can only be executed while under the effect of Dragon's Flight.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 20,
+            "Radius": 5
+        },
+        {
+            "ID": 33,
+            "Name": "Starcross",
+            "ImageName": "starcross",
+            "Description": "Deals physical damage to target and all enemies nearby it with a potency of 700 for the first enemy, and 50% less for all remaining enemies.</br>Can only be executed while under the effect of Starcross Ready.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 3,
+            "Radius": 5
+        }
+    ]
+}

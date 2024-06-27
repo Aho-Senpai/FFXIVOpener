@@ -22,7 +22,7 @@ async function LoadSkills(JobShort, JobRole) {
             raidBuffsResponse, 
             globalSkillsResponse
         ] = await Promise.all([
-            fetch(`./DataBase/${JobShort}.json`),
+            fetch(`./DataBase/Jobs/${JobShort}.json`),
             fetch(`./DataBase/RoleActions.json`),
             fetch(`./DataBase/Raidbuffs.json`),
             fetch(`./DataBase/GlobalSkills.json`)

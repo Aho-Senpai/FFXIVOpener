@@ -1,0 +1,402 @@
+{
+    "GCD": [
+        {
+            "ID": 1,
+            "Name": "Stone",
+            "ImageName": "stone",
+            "Description": "Deals earth damage with a potency of 140.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 2,
+            "Name": "Cure",
+            "ImageName": "cure",
+            "Description": "Restores target's HP.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 500</br><span style=\"color:#00cc22;\">Additional Effect:</span> 15% chance next Cure II will cost no MP</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 3,
+            "Name": "Aero",
+            "ImageName": "aero",
+            "Description": "Deals wind damage with a potency of 50.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Wind damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 30</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 4,
+            "Name": "Medica",
+            "ImageName": "medica",
+            "Description": "Restores own HP and the HP of all nearby party members.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 400",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 15
+        },
+        {
+            "ID": 5,
+            "Name": "Raise",
+            "ImageName": "raise",
+            "Description": "Resurrects target to a weakened state.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 8,
+            "Recast": 2.5,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 6,
+            "Name": "Stone II",
+            "ImageName": "stone_II",
+            "Description": "Deals earth damage with a potency of 190.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 7,
+            "Name": "Cure II",
+            "ImageName": "cure_II",
+            "Description": "Restores target's HP.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 800",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2,
+            "Recast": 2.5,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 9,
+            "Name": "Regen",
+            "ImageName": "regen",
+            "Description": "Grants healing over time effect to target.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 250</br><span style=\"color:#00cc22;\">Duration:</span> 18s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 10,
+            "Name": "Cure III",
+            "ImageName": "cure_III",
+            "Description": "Restores own or target party member's HP and all party members nearby target.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 600",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2,
+            "Recast": 2.5,
+            "Range": 30,
+            "Radius": 10
+        },
+        {
+            "ID": 12,
+            "Name": "Holy",
+            "ImageName": "holy",
+            "Description": "Deals unaspected damage with a potency of 140 to all nearby enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Stun</br><span style=\"color:#00cc22;\">Duration:</span> 4s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2.5,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 8
+        },
+        {
+            "ID": 13,
+            "Name": "Aero II",
+            "ImageName": "aero_II",
+            "Description": "Deals wind damage with a potency of 50.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Wind damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 50</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 14,
+            "Name": "Medica II",
+            "ImageName": "medica_II",
+            "Description": "Restores own HP and the HP of all nearby party members.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 250</br><span style=\"color:#00cc22;\">Additional Effect:</span> Regen</br><span style=\"color:#00cc22;\">Cure Potency:</span> 150</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 20
+        },
+        {
+            "ID": 16,
+            "Name": "Afflatus Solace",
+            "ImageName": "afflatus_solace",
+            "Description": "Restores target's HP.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 800</br><span style=\"color:#00cc22;\">Additional Effect:</span> Nourishes the Blood Lily</br>Healing Gauge Cost: 1 Lily",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 18,
+            "Name": "Stone III",
+            "ImageName": "stone_III",
+            "Description": "Deals earth damage with a potency of 220.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 22,
+            "Name": "Stone IV",
+            "ImageName": "stone_IV",
+            "Description": "Deals earth damage with a potency of 260.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 25,
+            "Name": "Dia",
+            "ImageName": "dia",
+            "Description": "Deals unaspected damage with a potency of 70.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Unaspected damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 70</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 26,
+            "Name": "Glare",
+            "ImageName": "glare",
+            "Description": "Deals unaspected damage with a potency of 290.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 27,
+            "Name": "Afflatus Misery",
+            "ImageName": "afflatus_misery",
+            "Description": "Deals unaspected damage to target and all enemies nearby it with a potency of 1,320 for the first enemy, and 50% less for all remaining enemies.</br>Can only be executed when the Blood Lily is in full bloom.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 28,
+            "Name": "Afflatus Rapture",
+            "ImageName": "afflatus_rapture",
+            "Description": "Restores own HP and the HP of all nearby party members.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 400</br><span style=\"color:#00cc22;\">Additional Effect:</span> Nourishes the Blood Lily</br>Healing Gauge Cost: 1 Lily",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 20
+        },
+        {
+            "ID": 30,
+            "Name": "Glare III",
+            "ImageName": "glare_III",
+            "Description": "Deals unaspected damage with a potency of 330.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 31,
+            "Name": "Holy III",
+            "ImageName": "holy_III",
+            "Description": "Deals unaspected damage with a potency of 150 to all nearby enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Stun</br><span style=\"color:#00cc22;\">Duration:</span> 4s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2.5,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 8
+        },
+        {
+            "ID": 34,
+            "Name": "Glare IV",
+            "ImageName": "glare_IV",
+            "Description": "Deals unaspected damage to target and all enemies nearby it with a potency of 640 for the first enemy, and 40% less for all remaining enemies.</br>Can only be executed while Sacred Sight is active.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 35,
+            "Name": "Medica III",
+            "ImageName": "medica_III",
+            "Description": "Restores own HP and the HP of all nearby party members.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 250</br><span style=\"color:#00cc22;\">Additional Effect:</span> Regen</br><span style=\"color:#00cc22;\">Cure Potency:</span> 175</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 20
+        }
+    ],
+    "OGCD": [
+        {
+            "ID": 8,
+            "Name": "Presence of Mind",
+            "ImageName": "presence_of_mind",
+            "Description": "Reduces spell cast time and recast time, and auto-attack delay by 20%.</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 3 stacks of Sacred Sight</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 11,
+            "Name": "Aetherial Shift",
+            "ImageName": "aetherial_shift",
+            "Description": "Quickly dash 15 yalms forward.</br>Cannot be executed while bound.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 15,
+            "Name": "Benediction",
+            "ImageName": "benediction",
+            "Description": "Restores all of a target's HP.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 180,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 17,
+            "Name": "Asylum",
+            "ImageName": "asylum",
+            "Description": "Envelops a designated area in a veil of succor, granting healing over time to self and any party members who enter.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 100</br><span style=\"color:#00cc22;\">Duration:</span> 24s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases HP recovery via healing actions on party members in the designated area by 10%",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 90,
+            "Range": 30,
+            "Radius": 15
+        },
+        {
+            "ID": 19,
+            "Name": "Assize",
+            "ImageName": "assize",
+            "Description": "Deals unaspected damage with a potency of 400 to all nearby enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores own HP and the HP of nearby party members</br><span style=\"color:#00cc22;\">Cure Potency:</span> 400</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores 5% of maximum MP",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 40,
+            "Range": 0,
+            "Radius": 15
+        },
+        {
+            "ID": 20,
+            "Name": "Thin Air",
+            "ImageName": "thin_air",
+            "Description": "Next action is executed without MP cost.</br><span style=\"color:#00cc22;\">Duration:</span> 12s</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 2",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 21,
+            "Name": "Tetragrammaton",
+            "ImageName": "tetragrammaton",
+            "Description": "Restores target's HP.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 700</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 2",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 23,
+            "Name": "Divine Benison",
+            "ImageName": "divine_benison",
+            "Description": "Creates a barrier around self or target party member that absorbs damage equivalent to a heal of 500 potency.</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 2",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 30,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 24,
+            "Name": "Plenary Indulgence",
+            "ImageName": "plenary_indulgence",
+            "Description": "Grants Confession to self and nearby party members.</br><span style=\"color:#00cc22;\">Duration:</span> 10s</br>Party members under the effect of Confession will receive additional healing upon receiving HP recovery via Medica, Medica III, Cure III, or Afflatus Rapture.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 200",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 0,
+            "Radius": 20
+        },
+        {
+            "ID": 29,
+            "Name": "Temperance",
+            "ImageName": "temperance",
+            "Description": "Increases healing magic potency by 20%, while reducing damage taken by self and all party members within a radius of 50 yalms by 10%.</br><span style=\"color:#00cc22;\">Duration:</span> 20s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Divine Grace</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 32,
+            "Name": "Aquaveil",
+            "ImageName": "aquaveil",
+            "Description": "Reduces damage taken by a party member or self by 15%.</br><span style=\"color:#00cc22;\">Duration:</span> 8s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 33,
+            "Name": "Liturgy of the Bell",
+            "ImageName": "liturgy_of_the_bell",
+            "Description": "Places a healing blossom at the designated location and grants 5 stacks of Liturgy of the Bell to self.</br><span style=\"color:#00cc22;\">Duration:</span> 20s</br>Taking damage will expend 1 stack of Liturgy of the Bell to heal self and all party members within a radius of 20 yalms.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 400</br>The effect of this action can only be triggered once per second.</br>Any remaining stacks of Liturgy of the Bell will trigger an additional healing effect when time expires or upon executing this action a second time.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 200 for every remaining stack of Liturgy of the Bell</br>This action does not share a recast timer with any other actions.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 180,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 36,
+            "Name": "Divine Caress",
+            "ImageName": "divine_caress",
+            "Description": "Creates a barrier around self and all party members near you that absorbs damage equivalent to a heal of 400 potency.</br><span style=\"color:#00cc22;\">Duration:</span> 10s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Divine Aura when barrier effect expires</br>Divine Aura Effect: Healing over time</br><span style=\"color:#00cc22;\">Cure Potency:</span> 200</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br>Can only be executed while Divine Grace is active.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 0,
+            "Radius": 15
+        }
+    ]
+}

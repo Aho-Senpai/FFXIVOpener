@@ -23,3 +23,6 @@ function githubBtn() {
 //todo : localization (low priority)
 
 //? TODO : when image size setting is done, make raidbuff default length depends on duration and image size
+
+// https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+// ^ https://github.com/Aho-Senpai/FFXIVOpener/issues/8

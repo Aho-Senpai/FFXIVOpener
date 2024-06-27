@@ -1,0 +1,391 @@
+{
+    "GCD": [
+        {
+            "ID": 1,
+            "Name": "Hard Slash",
+            "ImageName": "hard_slash",
+            "Description": "Delivers an attack with a potency of 260.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 2,
+            "Name": "Syphon Strike",
+            "ImageName": "syphon_strike",
+            "Description": "Delivers an attack with a potency of 220.</br><span style=\"color:#00cc22;\">Combo Action:</span> Hard Slash</br><span style=\"color:#00cc22;\">Combo Potency:</span> 360</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Restores MP",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 3,
+            "Name": "Unleash",
+            "ImageName": "unleash",
+            "Description": "Deals unaspected damage with a potency of 120 to all nearby enemies.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 5
+        },
+        {
+            "ID": 6,
+            "Name": "Unmend",
+            "ImageName": "unmend",
+            "Description": "Deals unaspected damage with a potency of 150.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increased enmity</br><span style=\"color:#00cc22;\">Additional Effect:</span> Reduces the recast time of Shadowstride by 5 seconds",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 20,
+            "Radius": 0
+        },
+        {
+            "ID": 7,
+            "Name": "Souleater",
+            "ImageName": "souleater",
+            "Description": "Delivers an attack with a potency of 240.</br><span style=\"color:#00cc22;\">Combo Action:</span> Syphon Strike</br><span style=\"color:#00cc22;\">Combo Potency:</span> 460</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Restores own HP</br><span style=\"color:#00cc22;\">Cure Potency:</span> 300</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Increases Blood Gauge by 20",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 11,
+            "Name": "Stalwart Soul",
+            "ImageName": "stalwart_soul",
+            "Description": "Deals unaspected damage with a potency of 120 to all nearby enemies.</br><span style=\"color:#00cc22;\">Combo Action:</span> Unleash</br><span style=\"color:#00cc22;\">Combo Potency:</span> 160</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Restores MP</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Increases Blood Gauge by 20",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 5
+        },
+        {
+            "ID": 19,
+            "Name": "Bloodspiller",
+            "ImageName": "bloodspiller",
+            "Description": "Delivers an attack with a potency of 580.</br>Blood Gauge Cost: 50",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 20,
+            "Name": "Quietus",
+            "ImageName": "quietus",
+            "Description": "Delivers an attack with a potency of 240 to all nearby enemies.</br>Blood Gauge Cost: 50",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 5
+        },
+        {
+            "ID": 31,
+            "Name": "Scarlet Delirium",
+            "ImageName": "scarlet_delirium",
+            "Description": "Delivers an attack with a potency of 600.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores MP</br>Can only be executed while under the effect of Delirium.</br></br>※This action cannot be assigned to a hotbar.</br>※Bloodspiller changes to Scarlet Delirium while under the effect of Delirium.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 32,
+            "Name": "Comeuppance",
+            "ImageName": "comeuppance",
+            "Description": "Delivers an attack with a potency of 700.</br><span style=\"color:#00cc22;\">Combo Action:</span> Scarlet Delirium</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores MP</br>Can only be executed while under the effect of Delirium.</br></br>※This action cannot be assigned to a hotbar.</br>※Scarlet Delirium changes to Comeuppance when requirements for execution are met.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 33,
+            "Name": "Torcleaver",
+            "ImageName": "torcleaver",
+            "Description": "Delivers an attack with a potency of 800.</br><span style=\"color:#00cc22;\">Combo Action:</span> Comeuppance</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores MP</br>Can only be executed while under the effect of Delirium.</br></br>※This action cannot be assigned to a hotbar.</br>※Comeuppance changes to Torcleaver when requirements for execution are met.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 34,
+            "Name": "Impalement",
+            "ImageName": "impalement",
+            "Description": "Delivers an attack with a potency of 320 to all nearby enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores MP</br>Can only be executed while under the effect of Delirium.</br></br>※This action cannot be assigned to a hotbar.</br>※Quietus changes to Impalement when requirements for execution are met.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 5
+        },
+        {
+            "ID": 35,
+            "Name": "Disesteem",
+            "ImageName": "disesteem",
+            "Description": "Deals physical damage to all enemies in a straight line before you with a potency of 800 for the first enemy, and 50% less for all remaining enemies.</br>Can only be executed while Scorn is active.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 10,
+            "Radius": 10
+        }
+    ],
+    "OGCD": [
+        {
+            "ID": 4,
+            "Name": "Grit",
+            "ImageName": "grit",
+            "Description": "Significantly increases enmity generation.</br>Effect ends upon reuse.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 2,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 5,
+            "Name": "Release Grit",
+            "ImageName": "release_grit",
+            "Description": "Cancels the effect of Grit.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 8,
+            "Name": "Flood of Darkness",
+            "ImageName": "flood_of_darkness",
+            "Description": "Deals unaspected damage with a potency of 100 to all enemies in a straight line before you.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Darkside, increasing damage dealt by 10%</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Extends Darkside duration by 30s to a maximum of 60s.</br>Shares a recast timer with Edge of Darkness.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 10,
+            "Radius": 10
+        },
+        {
+            "ID": 9,
+            "Name": "Blood Weapon",
+            "ImageName": "blood_weapon",
+            "Description": "Grants 3 stacks of Blood Weapon, each stack increasing Blood Gauge by 10 and restoring MP upon landing weaponskills or spells.</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br>Effect does not stack when hitting multiple targets with a single attack.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 10,
+            "Name": "Shadow Wall",
+            "ImageName": "shadow_wall",
+            "Description": "Reduces damage taken by 30%.</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 12,
+            "Name": "Edge of Darkness",
+            "ImageName": "edge_of_darkness",
+            "Description": "Deals unaspected damage with a potency of 300.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Darkside, increasing damage dealt by 10%</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Extends Darkside duration by 30s to a maximum of 60s.</br>Shares a recast timer with Flood of Darkness.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 13,
+            "Name": "Dark Mind",
+            "ImageName": "dark_mind",
+            "Description": "Reduces magic vulnerability by 20%.</br><span style=\"color:#00cc22;\">Duration:</span> 10s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 14,
+            "Name": "Living Dead",
+            "ImageName": "living_dead",
+            "Description": "Grants the effect of Living Dead.</br>When HP is reduced to 0 while under the effect of Living Dead, instead of becoming KO'd, your status will change to Walking Dead.</br>Living Dead Duration: 10s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores HP with each weaponskill successfully delivered or spell cast</br><span style=\"color:#00cc22;\">Cure Potency:</span> 1500</br>While under the effect of Walking Dead, most attacks will not lower your HP below 1. If, before the Walking Dead timer runs out, an amount of HP totaling your maximum HP is restored, the effect will change to Undead Rebirth. If this amount is not restored, you will be KO'd.</br>Walking Dead Duration: 10s</br>While under the effect of Undead Rebirth, most attacks will not lower your HP below 1.</br>Undead Rebirth Duration: Time remaining on Walking Dead",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 300,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 15,
+            "Name": "Salted Earth",
+            "ImageName": "salted_earth",
+            "Description": "Creates a patch of salted earth at your feet, dealing unaspected damage with a potency of 50 to any enemies who enter.</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 90,
+            "Range": 0,
+            "Radius": 5
+        },
+        {
+            "ID": 16,
+            "Name": "Shadowstride",
+            "ImageName": "shadowstride",
+            "Description": "Rush to a targeted enemy's location.</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 2</br>Cannot be executed while bound.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 30,
+            "Range": 20,
+            "Radius": 0
+        },
+        {
+            "ID": 17,
+            "Name": "Abyssal Drain",
+            "ImageName": "abyssal_drain",
+            "Description": "Deals unaspected damage with a potency of 240 to target and all enemies nearby it.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores own HP</br><span style=\"color:#00cc22;\">Cure Potency:</span> 200</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores MP</br>Shares a recast timer with Carve and Spit.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 20,
+            "Radius": 5
+        },
+        {
+            "ID": 18,
+            "Name": "Carve and Spit",
+            "ImageName": "carve_and_spit",
+            "Description": "Delivers a threefold attack with a potency of 510.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores MP</br>Shares a recast timer with Abyssal Drain.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 21,
+            "Name": "Delirium",
+            "ImageName": "delirium",
+            "Description": "Grants 3 stacks of Delirium and Blood Weapon.</br>Delirium Effect: Changes Bloodspiller to Scarlet Delirium and Quietus to Impalement</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br>Blood Weapon Effect: Each stack increases Blood Gauge by 10 and restores MP upon landing weaponskills or spells</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br>Effect does not stack when hitting multiple targets with a single attack.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 22,
+            "Name": "The Blackest Night",
+            "ImageName": "the_blackest_night",
+            "Description": "Creates a barrier around self or target party member that absorbs damage totaling 25% of target's maximum HP.</br><span style=\"color:#00cc22;\">Duration:</span> 7s</br>Grants Dark Arts when barrier is completely absorbed.</br>Dark Arts Effect: Consume Dark Arts instead of MP to execute Edge of Shadow or Flood of Shadow",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 15,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 23,
+            "Name": "Flood of Shadow",
+            "ImageName": "flood_of_shadow",
+            "Description": "Deals unaspected damage with a potency of 160 to all enemies in a straight line before you.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Darkside, increasing damage dealt by 10%</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Extends Darkside duration by 30s to a maximum of 60s.</br>Shares a recast timer with Edge of Shadow.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 10,
+            "Radius": 10
+        },
+        {
+            "ID": 24,
+            "Name": "Edge of Shadow",
+            "ImageName": "edge_of_shadow",
+            "Description": "Deals unaspected damage with a potency of 460.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Darkside, increasing damage dealt by 10%</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Extends Darkside duration by 30s to a maximum of 60s.</br>Shares a recast timer with Flood of Shadow.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 25,
+            "Name": "Dark Missionary",
+            "ImageName": "dark_missionary",
+            "Description": "Reduces magic damage taken by self and nearby party members by 10%.</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 90,
+            "Range": 0,
+            "Radius": 30
+        },
+        {
+            "ID": 26,
+            "Name": "Living Shadow",
+            "ImageName": "living_shadow",
+            "Description": "Conjure a simulacrum of your darkside to fight alongside you.</br><span style=\"color:#00cc22;\">Duration:</span> 20s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Scorn</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Simulacrum Attack Potency: 420</br><span style=\"color:#00cc22;\">Additional Effect:</span> Simulacrum is able to execute Shadowbringer and Disesteem</br>Shadowbringer Potency: 570 for the first enemy, and 25% less for all remaining enemies</br>Disesteem Potency: 620 for the first enemy, and 25% less for all remaining enemies",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 27,
+            "Name": "Oblation",
+            "ImageName": "oblation",
+            "Description": "Reduces damage taken by target party member or self by 10%.</br><span style=\"color:#00cc22;\">Duration:</span> 10s</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 2",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 28,
+            "Name": "Salt and Darkness",
+            "ImageName": "salt_and_darkness",
+            "Description": "All enemies standing in the corrupted patch of Salted Earth take additional unaspected damage with a potency of 500 for the first enemy, and 50% less for all remaining enemies.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 20,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 29,
+            "Name": "Shadowbringer",
+            "ImageName": "shadowbringer",
+            "Description": "Deals unaspected damage to all enemies in a straight line before you with a potency of 600 for the first enemy, and 50% less for all remaining enemies.</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 2</br>Can only be executed while under the effect of Darkside.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 10,
+            "Radius": 10
+        },
+        {
+            "ID": 30,
+            "Name": "Shadowed Vigil",
+            "ImageName": "shadowed_vigil",
+            "Description": "Reduces damage taken by 40%.</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Vigilant</br><span style=\"color:#00cc22;\">Duration:</span> 20s</br>Vigilant Effect: Restores HP when HP falls below 50% or upon effect duration expiration</br><span style=\"color:#00cc22;\">Cure Potency:</span> 1,200",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        }
+    ]
+}

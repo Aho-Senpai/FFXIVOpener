@@ -1,0 +1,380 @@
+{
+    "GCD": [
+        {
+            "ID": 1,
+            "Name": "Blizzard",
+            "ImageName": "blizzard",
+            "Description": "Deals ice damage with a potency of 180.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Umbral Ice or removes Astral Fire</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 2,
+            "Name": "Fire",
+            "ImageName": "fire",
+            "Description": "Deals fire damage with a potency of 180.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Astral Fire or removes Umbral Ice</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br><span style=\"color:#00cc22;\">Additional Effect:</span> 40% chance to grant Firestarter</br>Firestarter Effect: Next Fire III will cost no MP and have no cast time</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 4,
+            "Name": "Thunder",
+            "ImageName": "thunder",
+            "Description": "Deals lightning damage with a potency of 120.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Lightning damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 40</br><span style=\"color:#00cc22;\">Duration:</span> 24s</br>Can only be cast while under the effect of Thunderhead, granted when gaining Astral Fire or Umbral Ice from an unaspected state, or changing between their influences.</br>Thunderhead Duration: 30s</br>Only one Thunder spell-induced damage over time effect per caster can be inflicted upon a single target.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 5,
+            "Name": "Blizzard II",
+            "ImageName": "blizzard_II",
+            "Description": "Deals ice damage with a potency of 80 to target and all enemies nearby it.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Umbral Ice III and removes Astral Fire</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 3,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 6,
+            "Name": "Scathe",
+            "ImageName": "scathe",
+            "Description": "Deals unaspected damage with a potency of 100.</br><span style=\"color:#00cc22;\">Additional Effect:</span> 20% chance potency will double",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 7,
+            "Name": "Fire II",
+            "ImageName": "fire_II",
+            "Description": "Deals fire damage with a potency of 80 to target and all enemies nearby it.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Astral Fire III and removes Umbral Ice</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 3,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 8,
+            "Name": "Thunder II",
+            "ImageName": "thunder_II",
+            "Description": "Deals lightning damage with a potency of 60 to target and all enemies nearby it.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Lightning damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 30</br><span style=\"color:#00cc22;\">Duration:</span> 18s</br>Can only be cast while under the effect of Thunderhead, granted when gaining Astral Fire or Umbral Ice from an unaspected state, or changing between their influences.</br>Thunderhead Duration: 30s</br>Only one Thunder spell-induced damage over time effect per caster can be inflicted upon a single target.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 11,
+            "Name": "Fire III",
+            "ImageName": "fire_III",
+            "Description": "Deals fire damage with a potency of 280.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Astral Fire III and removes Umbral Ice</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 3.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 12,
+            "Name": "Blizzard III",
+            "ImageName": "blizzard_III",
+            "Description": "Deals ice damage with a potency of 280.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Umbral Ice III and removes Astral Fire</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 3.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 13,
+            "Name": "Freeze",
+            "ImageName": "freeze",
+            "Description": "Deals ice damage with a potency of 120 to target and all enemies nearby it.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 3 Umbral Hearts</br>Umbral Heart Bonus: Nullifies Astral Fire's MP cost increase for Fire spells and reduces MP cost for Flare by one-third</br>Can only be executed while under the effect of Umbral Ice.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2.8,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 14,
+            "Name": "Thunder III",
+            "ImageName": "thunder_III",
+            "Description": "Deals lightning damage with a potency of 160.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Lightning damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 45</br><span style=\"color:#00cc22;\">Duration:</span> 27s</br>Can only be cast while under the effect of Thunderhead, granted when gaining Astral Fire or Umbral Ice from an unaspected state, or changing between their influences.</br>Thunderhead Duration: 30s</br>Only one Thunder spell-induced damage over time effect per caster can be inflicted upon a single target.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 16,
+            "Name": "Flare",
+            "ImageName": "flare",
+            "Description": "Deals fire damage to target and all enemies nearby it with a potency of 240 for the first enemy, and 40% less for all remaining enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Astral Fire III</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 3 stacks of Astral Soul</br>Effect ends when Astral Fire expires.</br>Can only be executed while under the effect of Astral Fire.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 4,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 18,
+            "Name": "Blizzard IV",
+            "ImageName": "blizzard_IV",
+            "Description": "Deals ice damage with a potency of 310.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 3 Umbral Hearts</br>Umbral Heart Bonus: Nullifies Astral Fire's MP cost increase for Fire spells and reduces MP cost for Flare by one-third</br>Can only be executed while under the effect of Umbral Ice.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 19,
+            "Name": "Fire IV",
+            "ImageName": "fire_IV",
+            "Description": "Deals fire damage with a potency of 310.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Astral Soul</br>Effect ends when Astral Fire expires.</br>Can only be executed while under the effect of Astral Fire.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2.8,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 21,
+            "Name": "Thunder IV",
+            "ImageName": "thunder_IV",
+            "Description": "Deals lightning damage with a potency of 80 to target and all enemies nearby it.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Lightning damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 35</br><span style=\"color:#00cc22;\">Duration:</span> 21s</br>Can only be cast while under the effect of Thunderhead, granted when gaining Astral Fire or Umbral Ice from an unaspected state, or changing between their influences.</br>Thunderhead Duration: 30s</br>Only one Thunder spell-induced damage over time effect per caster can be inflicted upon a single target.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 23,
+            "Name": "Foul",
+            "ImageName": "foul",
+            "Description": "Deals unaspected damage to target and all enemies nearby it with a potency of 600 for the first enemy, and 60% less for all remaining enemies.</br>Polyglot Cost: 1",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 24,
+            "Name": "Despair",
+            "ImageName": "despair",
+            "Description": "Deals fire damage with a potency of 340.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Astral Fire III</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br>Can only be executed while under the effect of Astral Fire.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 3,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 25,
+            "Name": "Umbral Soul",
+            "ImageName": "umbral_soul",
+            "Description": "Grants Umbral Ice and 1 Umbral Heart.</br>Umbral Heart Bonus: Nullifies Astral Fire's MP cost increase for Fire spells and reduces MP cost for Flare by one-third</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores an amount of MP commensurate with your stacks of Umbral Ice</br>Umbral Ice I: 2,500 MP</br>Umbral Ice II: 5,000 MP</br>Umbral Ice III: 10,000 MP</br>Can only be executed while under the effect of Umbral Ice.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 26,
+            "Name": "Xenoglossy",
+            "ImageName": "xenoglossy",
+            "Description": "Deals unaspected damage with a potency of 880.</br>Polyglot Cost: 1",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 27,
+            "Name": "High Fire II",
+            "ImageName": "high_fire_II",
+            "Description": "Deals fire damage with a potency of 100 to target and all enemies nearby it.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Astral Fire III and removes Umbral Ice</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 3,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 28,
+            "Name": "High Blizzard II",
+            "ImageName": "high_blizzard_II",
+            "Description": "Deals ice damage with a potency of 100 to target and all enemies nearby it.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Umbral Ice III and removes Astral Fire</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 3,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 30,
+            "Name": "Paradox",
+            "ImageName": "paradox",
+            "Description": "Deals unaspected damage with a potency of 500.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Astral Fire</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Firestarter</br>Firestarter Effect: Next Fire III will require no time to cast and cost no MP</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Can only be executed while under the effect of Paradox.</br></br>※This action cannot be assigned to a hotbar.</br>※Fire changes to Paradox when requirements for execution are met.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 31,
+            "Name": "High Thunder",
+            "ImageName": "high_thunder",
+            "Description": "Deals lightning damage with a potency of 200.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Lightning damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 55</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Can only be cast while under the effect of Thunderhead, granted when gaining Astral Fire or Umbral Ice from an unaspected state, or changing between their influences.</br>Thunderhead Duration: 30s</br>Only one Thunder spell-induced damage over time effect per caster can be inflicted upon a single target.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 32,
+            "Name": "High Thunder II",
+            "ImageName": "high_thunder_II",
+            "Description": "Deals lightning damage with a potency of 100 to target and all enemies nearby it.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Lightning damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 40</br><span style=\"color:#00cc22;\">Duration:</span> 24s</br>Can only be cast while under the effect of Thunderhead, granted when gaining Astral Fire or Umbral Ice from an unaspected state, or changing between their influences.</br>Thunderhead Duration: 30s</br>Only one Thunder spell-induced damage over time effect per caster can be inflicted upon a single target.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 34,
+            "Name": "Flare Star",
+            "ImageName": "flare_star",
+            "Description": "Deals fire damage to target and all enemies nearby it with a potency of 400 for the first enemy, and 65% less for all remaining enemies.</br>Can only be executed when the Astral Gauge is full.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 3,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        }
+    ],
+    "OGCD": [
+        {
+            "ID": 3,
+            "Name": "Transpose",
+            "ImageName": "transpose",
+            "Description": "Swaps Astral Fire with a single Umbral Ice, or Umbral Ice with a single Astral Fire.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 5,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 9,
+            "Name": "Manaward",
+            "ImageName": "manaward",
+            "Description": "Creates a barrier that nullifies damage totaling up to 30% of maximum HP.</br><span style=\"color:#00cc22;\">Duration:</span> 20s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 10,
+            "Name": "Manafont",
+            "ImageName": "manafont",
+            "Description": "Fully restores MP.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Astral Fire III</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Thunderhead</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 3 Umbral Hearts</br>Umbral Heart Bonus: Nullifies Astral Fire's MP cost increase for Fire spells</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Paradox</br>Can only be executed while under the effect of Astral Fire.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 100,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 15,
+            "Name": "Aetherial Manipulation",
+            "ImageName": "aetherial_manipulation",
+            "Description": "Rush to a target party member's side.</br>Unable to cast if bound.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 10,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 17,
+            "Name": "Ley Lines",
+            "ImageName": "ley_lines",
+            "Description": "Connects naturally occurring ley lines to create a circle of power which, while standing within it, reduces spell cast time and recast time, and auto-attack delay by 15%.</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 3
+        },
+        {
+            "ID": 20,
+            "Name": "Between the Lines",
+            "ImageName": "between_the_lines",
+            "Description": "Move instantly to Ley Lines drawn by you.</br>Cannot be executed while bound.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 3,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 22,
+            "Name": "Triplecast",
+            "ImageName": "triplecast",
+            "Description": "The next three spells will require no cast time.</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 2",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 29,
+            "Name": "Amplifier",
+            "ImageName": "amplifier",
+            "Description": "Grants Polyglot.</br>Can only be executed while under the effect of Astral Fire or Umbral Ice.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 33,
+            "Name": "Retrace",
+            "ImageName": "retrace",
+            "Description": "Weave ley lines anew, setting your circle of power at a new location.</br>Can only be executed while under the effect of Ley Lines.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 40,
+            "Range": 0,
+            "Radius": 3
+        }
+    ]
+}

@@ -1,0 +1,380 @@
+{
+    "GCD": [
+        {
+            "ID": 1,
+            "Name": "Heavy Shot",
+            "ImageName": "heavy_shot",
+            "Description": "Delivers an attack with a potency of 160.</br><span style=\"color:#00cc22;\">Additional Effect:</span> 20% chance of granting Hawk's Eye</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 2,
+            "Name": "Straight Shot",
+            "ImageName": "straight_shot",
+            "Description": "Delivers an attack with a potency of 200.</br>Can only be executed when under the effect of Hawk's Eye.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 4,
+            "Name": "Venomous Bite",
+            "ImageName": "venomous_bite",
+            "Description": "Delivers an attack with a potency of 100.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Venom</br><span style=\"color:#00cc22;\">Potency:</span> 15</br><span style=\"color:#00cc22;\">Duration:</span> 45s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 7,
+            "Name": "Quick Nock",
+            "ImageName": "quick_nock",
+            "Description": "Delivers an attack with a potency of 110 to all enemies in a cone before you.</br><span style=\"color:#00cc22;\">Additional Effect:</span> 20% chance of granting Hawk's Eye</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 12,
+            "Radius": 12
+        },
+        {
+            "ID": 8,
+            "Name": "Wide Volley",
+            "ImageName": "wide_volley",
+            "Description": "Delivers an attack with a potency of 140 to target and all enemies nearby it.</br>Barrage Potency: 220</br>Can only be executed while under the effect of Hawk's Eye.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 9,
+            "Name": "Windbite",
+            "ImageName": "windbite",
+            "Description": "Deals wind damage with a potency of 60.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Wind damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 20</br><span style=\"color:#00cc22;\">Duration:</span> 45s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 19,
+            "Name": "Iron Jaws",
+            "ImageName": "iron_jaws",
+            "Description": "Delivers an attack with a potency of 100.</br><span style=\"color:#00cc22;\">Additional Effect:</span> If the target is suffering from a Caustic Bite or Stormbite effect inflicted by you, the effect timer is reset</br><span style=\"color:#00cc22;\">Additional Effect:</span> 35% chance of granting Hawk's Eye</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 22,
+            "Name": "Caustic Bite",
+            "ImageName": "caustic_bite",
+            "Description": "Delivers an attack with a potency of 150.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Poison</br><span style=\"color:#00cc22;\">Potency:</span> 20</br><span style=\"color:#00cc22;\">Duration:</span> 45s</br><span style=\"color:#00cc22;\">Additional Effect:</span> 35% chance of granting Hawk's Eye</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 23,
+            "Name": "Stormbite",
+            "ImageName": "stormbite",
+            "Description": "Deals wind damage with a potency of 100.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Wind damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 25</br><span style=\"color:#00cc22;\">Duration:</span> 45s</br><span style=\"color:#00cc22;\">Additional Effect:</span> 35% chance of granting Hawk's Eye</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 25,
+            "Name": "Refulgent Arrow",
+            "ImageName": "refulgent_arrow",
+            "Description": "Delivers an attack with a potency of 280.</br>Can only be executed when under the effect of Hawk's Eye.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 26,
+            "Name": "Shadowbite",
+            "ImageName": "shadowbite",
+            "Description": "Delivers an attack with a potency of 170 to target and all enemies nearby it.</br>Barrage Potency: 270</br>Can only be executed when under the effect of Hawk's Eye.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 27,
+            "Name": "Burst Shot",
+            "ImageName": "burst_shot",
+            "Description": "Delivers an attack with a potency of 220.</br><span style=\"color:#00cc22;\">Additional Effect:</span> 35% chance of granting Hawk's Eye</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 28,
+            "Name": "Apex Arrow",
+            "ImageName": "apex_arrow",
+            "Description": "Delivers an attack with a potency of 120 to all enemies in a straight line before you.</br>Soul Voice Gauge Cost: 20</br>Potency increases up to 600 as Soul Voice Gauge exceeds minimum cost.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Blast Arrow Ready upon execution while Soul Voice Gauge is 80 or higher</br><span style=\"color:#00cc22;\">Duration:</span> 10s</br>Consumes Soul Voice Gauge upon execution.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 25
+        },
+        {
+            "ID": 29,
+            "Name": "Ladonsbite",
+            "ImageName": "ladonsbite",
+            "Description": "Delivers an attack with a potency of 130 to all enemies in a cone before you.</br><span style=\"color:#00cc22;\">Additional Effect:</span> 35% chance of granting Hawk's Eye</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 12,
+            "Radius": 12
+        },
+        {
+            "ID": 30,
+            "Name": "Blast Arrow",
+            "ImageName": "blast_arrow",
+            "Description": "Delivers an attack to all enemies in a straight line before you with a potency of 600 for the first enemy, and 60% less for all remaining enemies.</br>Can only be executed while under the effect of Blast Arrow Ready.</br></br>※This action cannot be assigned to a hotbar.</br>※Apex Arrow changes to Blast Arrow when requirements for execution are met.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 25
+        },
+        {
+            "ID": 33,
+            "Name": "Resonant Arrow",
+            "ImageName": "resonant_arrow",
+            "Description": "Delivers an attack to target and all enemies nearby it with a potency of 600 for the first enemy, and 50% less for all remaining enemies.</br>Can only be executed while under the effect of Resonant Arrow Ready.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 34,
+            "Name": "Radiant Encore",
+            "ImageName": "radiant_encore",
+            "Description": "Delivers an attack to target and all enemies nearby it.</br>Potency is determined by the number of different Coda consumed in the Radiant Finale executed prior, dealing full damage for the first enemy, and 50% less for all remaining enemies.</br>1 Coda: 500</br>2 Coda: 600</br>3 Coda: 900</br>Can only be executed while under the effect of Radiant Encore Ready.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        }
+    ],
+    "OGCD": [
+        {
+            "ID": 3,
+            "Name": "Raging Strikes",
+            "ImageName": "raging_strikes",
+            "Description": "Increases damage dealt by 15%.</br><span style=\"color:#00cc22;\">Duration:</span> 20s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 5,
+            "Name": "Bloodletter",
+            "ImageName": "bloodletter",
+            "Description": "Delivers an attack with a potency of 130.</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 3</br>Shares a recast timer with Rain of Death.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 15,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 6,
+            "Name": "Repelling Shot",
+            "ImageName": "repelling_shot",
+            "Description": "Jump 10 yalms away from current target.</br>Cannot be executed while bound.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 30,
+            "Range": 15,
+            "Radius": 0
+        },
+        {
+            "ID": 10,
+            "Name": "Mage's Ballad",
+            "ImageName": "mage's_ballad",
+            "Description": "Grants Mage's Ballad to self and all party members within 50 yalms, increasing damage dealt by 1%.</br><span style=\"color:#00cc22;\">Duration:</span> 45s</br><span style=\"color:#00cc22;\">Additional Effect:</span> 80% chance to grant Repertoire</br>This effect can trigger repeatedly while singing the Mage's Ballad.</br>Repertoire Effect: Reduces the recast time of Heartbreak Shot and Rain of Death by 7.5s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Mage's Coda</br>Can only be executed while in combat.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 11,
+            "Name": "The Warden's Paean",
+            "ImageName": "the_warden's_paean",
+            "Description": "Removes one select detrimental effect from self or target party member. If the target is not enfeebled, a barrier is created nullifying the target's next detrimental effect suffered.</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 45,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 12,
+            "Name": "Barrage",
+            "ImageName": "barrage",
+            "Description": "Grants Barrage, allowing the use of Refulgent Arrow and Shadowbite. Upon execution, Refulgent Arrow will strike the selected target three times, while Shadowbite's potency will be increased to 270.</br><span style=\"color:#00cc22;\">Duration:</span> 10s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Resonant Arrow Ready</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 13,
+            "Name": "Army's Paeon",
+            "ImageName": "army's_paeon",
+            "Description": "Grants Army's Paeon to self and all party members within 50 yalms, increasing direct hit rate by 3%.</br><span style=\"color:#00cc22;\">Duration:</span> 45s</br><span style=\"color:#00cc22;\">Additional Effect:</span> 80% chance to grant Repertoire</br>This effect can trigger repeatedly while singing the Army's Paeon.</br>Repertoire Effect: Reduces weaponskill cast time and recast time, spell cast time and recast time, and auto-attack delay by 4%</br>Can be stacked up to 4 times.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Army's Coda</br>Can only be executed while in combat.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 14,
+            "Name": "Rain of Death",
+            "ImageName": "rain_of_death",
+            "Description": "Delivers an attack with a potency of 100 to target and all enemies nearby it.</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 3</br>Shares a recast timer with Bloodletter.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 15,
+            "Range": 25,
+            "Radius": 8
+        },
+        {
+            "ID": 15,
+            "Name": "Battle Voice",
+            "ImageName": "battle_voice",
+            "Description": "Increases direct hit rate of self and all nearby party members by 20%.</br><span style=\"color:#00cc22;\">Duration:</span> 20s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 30
+        },
+        {
+            "ID": 16,
+            "Name": "The Wanderer's Minuet",
+            "ImageName": "the_wanderer's_minuet",
+            "Description": "Grants the Wanderer's Minuet to self and all party members within 50 yalms, increasing critical hit rate by 2%.</br><span style=\"color:#00cc22;\">Duration:</span> 45s</br><span style=\"color:#00cc22;\">Additional Effect:</span> 80% chance to grant Repertoire</br>This effect can trigger repeatedly while singing the Wanderer's Minuet.</br>Repertoire Effect: Allows execution of Pitch Perfect</br>Can be stacked up to 3 times.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Wanderer's Coda</br>Can only be executed while in combat.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 17,
+            "Name": "Pitch Perfect",
+            "ImageName": "pitch_perfect",
+            "Description": "Delivers an attack to the target and all enemies nearby it. Potency varies with number of Repertoire stacks, dealing full damage for the first enemy, and 50% less for all remaining enemies.</br>1 Repertoire Stack: 100</br>2 Repertoire Stacks: 220</br>3 Repertoire Stacks: 360</br>Can only be executed when the Wanderer's Minuet is active and you have at least one stack of Repertoire.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 18,
+            "Name": "Empyreal Arrow",
+            "ImageName": "empyreal_arrow",
+            "Description": "Delivers an attack with a potency of 260.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 15,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 20,
+            "Name": "Sidewinder",
+            "ImageName": "sidewinder",
+            "Description": "Delivers an attack with a potency of 400.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 21,
+            "Name": "Troubadour",
+            "ImageName": "troubadour",
+            "Description": "Reduces damage taken by self and nearby party members by 15%.</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br>Effect cannot be stacked with machinist's Tactician or dancer's Shield Samba.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 90,
+            "Range": 0,
+            "Radius": 30
+        },
+        {
+            "ID": 24,
+            "Name": "Nature's Minne",
+            "ImageName": "nature's_minne",
+            "Description": "Increases HP recovery via healing actions by 15% for self and nearby party members.</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 30
+        },
+        {
+            "ID": 31,
+            "Name": "Radiant Finale",
+            "ImageName": "radiant_finale",
+            "Description": "Increases damage dealt by self and nearby party members.</br><span style=\"color:#00cc22;\">Duration:</span> 20s</br>Effectiveness is determined by the number of different Coda active in the Song Gauge.</br>1 Coda: 2%</br>2 Coda: 4%</br>3 Coda: 6%</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Radiant Encore Ready</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Can only be executed when at least 1 coda is active.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 110,
+            "Range": 0,
+            "Radius": 30
+        },
+        {
+            "ID": 32,
+            "Name": "Heartbreak Shot",
+            "ImageName": "heartbreak_shot",
+            "Description": "Delivers an attack with a potency of 180.</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 3</br>Shares a recast timer with Rain of Death.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 15,
+            "Range": 25,
+            "Radius": 0
+        }
+    ]
+}

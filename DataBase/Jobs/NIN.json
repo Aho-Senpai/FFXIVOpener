@@ -1,0 +1,369 @@
+{
+    "GCD": [
+        {
+            "ID": 1,
+            "Name": "Spinning Edge",
+            "ImageName": "spinning_edge",
+            "Description": "Delivers an attack with a potency of 300.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases Ninki Gauge by 5",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.12,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 3,
+            "Name": "Gust Slash",
+            "ImageName": "gust_slash",
+            "Description": "Delivers an attack with a potency of 220.</br><span style=\"color:#00cc22;\">Combo Action:</span> Spinning Edge</br><span style=\"color:#00cc22;\">Combo Potency:</span> 380</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Increases Ninki Gauge by 5",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.12,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 5,
+            "Name": "Throwing Dagger",
+            "ImageName": "throwing_dagger",
+            "Description": "Delivers a ranged attack with a potency of 120.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases Ninki Gauge by 5",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.12,
+            "Range": 20,
+            "Radius": 0
+        },
+        {
+            "ID": 8,
+            "Name": "Aeolian Edge",
+            "ImageName": "aeolian_edge",
+            "Description": "Delivers an attack with a potency of 200.</br>260 when executed from a target's rear.</br><span style=\"color:#00cc22;\">Combo Action:</span> Gust Slash</br><span style=\"color:#00cc22;\">Combo Potency:</span> 380</br>Rear Combo Potency: 440</br>Potencies are increased by 100 while under the effect of Kazematoi.</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Increases Ninki Gauge by 15",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.12,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 12,
+            "Name": "Death Blossom",
+            "ImageName": "death_blossom",
+            "Description": "Delivers an attack with a potency of 100 to all nearby enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases Ninki Gauge by 5",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.12,
+            "Range": 0,
+            "Radius": 5
+        },
+        {
+            "ID": 17,
+            "Name": "Hakke Mujinsatsu",
+            "ImageName": "hakke_mujinsatsu",
+            "Description": "Delivers an attack with a potency of 100 to all nearby enemies.</br><span style=\"color:#00cc22;\">Combo Action:</span> Death Blossom</br><span style=\"color:#00cc22;\">Combo Potency:</span> 130</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Increases Ninki Gauge by 5",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.12,
+            "Range": 0,
+            "Radius": 5
+        },
+        {
+            "ID": 18,
+            "Name": "Armor Crush",
+            "ImageName": "armor_crush",
+            "Description": "Delivers an attack with a potency of 220.</br>280 when executed from a target's flank.</br><span style=\"color:#00cc22;\">Combo Action:</span> Gust Slash</br><span style=\"color:#00cc22;\">Combo Potency:</span> 420</br>Flank Combo Potency: 480</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Grants 2 stacks of Kazematoi</br>Kazematoi Effect: Increases potency of Aeolian Edge by 100</br>Maximum Stacks: 5</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Increases Ninki Gauge by 15",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.12,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 26,
+            "Name": "Phantom Kamaitachi",
+            "ImageName": "phantom_kamaitachi",
+            "Description": "Your shadow deals wind damage to target and all enemies within 5 yalms with a potency of 600 for the first enemy, and 50% less for all remaining enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases Ninki Gauge by 10</br>Can only be executed while under the effect of Phantom Kamaitachi Ready.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.12,
+            "Range": 20,
+            "Radius": 0
+        },
+        {
+            "ID": 28,
+            "Name": "Forked Raiju",
+            "ImageName": "forked_raiju",
+            "Description": "Rushes target and delivers a lightning attack with a potency of 640.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases Ninki Gauge by 5</br>Can only be executed while under the effect of Raiju Ready.</br>Cannot be executed while bound.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.12,
+            "Range": 20,
+            "Radius": 0
+        },
+        {
+            "ID": 29,
+            "Name": "Fleeting Raiju",
+            "ImageName": "fleeting_raiju",
+            "Description": "Deals lightning damage with a potency of 640.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases Ninki Gauge by 5</br>Can only be executed while under the effect of Raiju Ready.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.12,
+            "Range": 3,
+            "Radius": 0
+        }
+    ],
+    "OGCD": [
+        {
+            "ID": 2,
+            "Name": "Shade Shift",
+            "ImageName": "shade_shift",
+            "Description": "Create shadows that nullify damage up to 20% of maximum HP.</br><span style=\"color:#00cc22;\">Duration:</span> 20s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 4,
+            "Name": "Hide",
+            "ImageName": "hide",
+            "Description": "Blend in with your surroundings, making it impossible for most enemies to detect you, but reducing movement speed by 50%. Has no effect on enemies 10 levels higher than your own, or certain enemies with special sight.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores 2 charges to all mudra</br>The effect of Doton ends upon execution of Hide.</br>Cannot be executed while in combat.</br>Effect ends upon use of any action other than Sprint, or upon reuse of Hide.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 20,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 6,
+            "Name": "Mug",
+            "ImageName": "mug",
+            "Description": "Delivers an attack with a potency of 150.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases target's damage taken by 5%</br><span style=\"color:#00cc22;\">Duration:</span> 20s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases the chance of additional items being dropped by target if Mug is dealt before, or as, the finishing blow",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 7,
+            "Name": "Trick Attack",
+            "ImageName": "trick_attack",
+            "Description": "Delivers an attack with a potency of 300.</br>400 when executed from a target's rear.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases damage you deal target by 10%</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br>Can only be executed while under the effect of Hidden.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 9,
+            "Name": "Ten",
+            "ImageName": "ten",
+            "Description": "Make the ritual mudra hand gesture for \"heaven.\"</br><span style=\"color:#00cc22;\">Duration:</span> 6s</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 2</br>Triggers the cooldown of weaponskills, mudra, and Ninjutsu upon execution.</br>Conversely, execution of weaponskills triggers the cooldown of this action.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 20,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 10,
+            "Name": "Ninjutsu",
+            "ImageName": "ninjutsu",
+            "Description": "Executes a specific ninjutsu action coinciding with the combination of mudra made immediately beforehand.</br>If any other action is used before the mudra are combined and the ninjutsu executed, Ninjutsu will fail.</br>Triggers the cooldown of weaponskills, mudra, and Ninjutsu upon execution.</br>Conversely, execution of weaponskills triggers the cooldown of this action.</br>Restores 2 charges to all mudra when Hide is executed while outside of combat.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1.5,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 11,
+            "Name": "Chi",
+            "ImageName": "chi",
+            "Description": "Make the ritual mudra hand gesture for \"earth.\"</br><span style=\"color:#00cc22;\">Duration:</span> 6s</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 2</br>Triggers the cooldown of weaponskills, mudra, and Ninjutsu upon execution.</br>Conversely, execution of weaponskills triggers the cooldown of this action.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 20,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 13,
+            "Name": "Assassinate",
+            "ImageName": "assassinate",
+            "Description": "Delivers an attack with a potency of 200.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 14,
+            "Name": "Shukuchi",
+            "ImageName": "shukuchi",
+            "Description": "Move quickly to the specified location.</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 2</br>Cannot be executed while bound.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 20,
+            "Radius": 0
+        },
+        {
+            "ID": 15,
+            "Name": "Jin",
+            "ImageName": "jin",
+            "Description": "Make the ritual mudra hand gesture for \"man.\"</br><span style=\"color:#00cc22;\">Duration:</span> 6s</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 2</br>Triggers the cooldown of weaponskills, mudra, and Ninjutsu upon execution.</br>Conversely, execution of weaponskills triggers the cooldown of this action.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 20,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 16,
+            "Name": "Kassatsu",
+            "ImageName": "kassatsu",
+            "Description": "Allows the execution of a single ninjutsu without consumption of mudra charges.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases damage for the next ninjutsu action by 30%</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br>Recast timer of mudra is not affected by the execution of this action.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 19,
+            "Name": "Dream Within a Dream",
+            "ImageName": "dream_within_a_dream",
+            "Description": "Delivers a threefold attack, each hit with a potency of 150.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 20,
+            "Name": "Hellfrog Medium",
+            "ImageName": "hellfrog_medium",
+            "Description": "Deals fire damage with a potency of 160 to target and all enemies nearby it.</br>Ninki Gauge Cost: 50</br>Shares a recast timer with Bhavacakra.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 25,
+            "Radius": 6
+        },
+        {
+            "ID": 21,
+            "Name": "Dokumori",
+            "ImageName": "dokumori",
+            "Description": "Delivers an attack with a potency of 300.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases target's damage taken by 5%</br><span style=\"color:#00cc22;\">Duration:</span> 20s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases the chance of additional items being dropped by target if Dokumori is dealt before, or as, the finishing blow</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases Ninki Gauge by 40</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Higi</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 22,
+            "Name": "Bhavacakra",
+            "ImageName": "bhavacakra",
+            "Description": "Deals unaspected damage with a potency of 380.</br>Meisui Bonus: Potency is increased to 530 when under the effect of Meisui</br>Ninki Gauge Cost: 50</br>Shares a recast timer with Hellfrog Medium.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 23,
+            "Name": "Ten Chi Jin",
+            "ImageName": "ten_chi_jin",
+            "Description": "Temporarily converts each of the three mudra into a ninjutsu action. Executing one of these actions will convert the remaining mudra into different ninjutsu actions until all three have been executed or the Ten Chi Jin effect expires.</br><span style=\"color:#00cc22;\">Duration:</span> 6s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Tenri Jindo Ready</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Only ninjutsu available while active. The same ninjutsu cannot be executed twice.</br>Cannot be executed while under the effect of Kassatsu. Effect ends upon moving.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 24,
+            "Name": "Meisui",
+            "ImageName": "meisui",
+            "Description": "Dispels Shadow Walker, increasing the Ninki Gauge by 50.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Meisui</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Meisui Effect: Increases the potency of Zesho Meppo to 700 and Bhavacakra to 530</br>Can only be executed while in combat and under the effect of Shadow Walker.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 25,
+            "Name": "Bunshin",
+            "ImageName": "bunshin",
+            "Description": "Grants 5 stacks of Bunshin, each stack allowing your shadow to attack enemies each time you execute a weaponskill. Shadow attack potency varies based on the attack executed, but is not affected by combo bonuses.</br>Melee Attack Potency: 160</br>Ranged Attack Potency: 160</br>Area Attack Potency: 80</br>Ninki Gauge increases by 5 each time your shadow lands an attack.</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Phantom Kamaitachi Ready</br><span style=\"color:#00cc22;\">Duration:</span> 45s</br>Ninki Gauge Cost: 50",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 90,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 27,
+            "Name": "Hollow Nozuchi",
+            "ImageName": "hollow_nozuchi",
+            "Description": "All enemies standing in the corrupted earth of Doton take additional earth damage with a potency of 50.</br>Requires Hakke Mujinsatsu to be executed as a combo action or upon executing Katon, Goka Mekkyaku, or Phantom Kamaitachi.</br>Effect can only be triggered while Doton is active.</br></br>※This action cannot be assigned to a hotbar.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 0,
+            "Range": 100,
+            "Radius": 5
+        },
+        {
+            "ID": 30,
+            "Name": "Kunai's Bane",
+            "ImageName": "kunai's_bane",
+            "Description": "Deals damage to all nearby enemies with a potency of 600 for the first enemy, and 50% less for all remaining enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Afflicts target with Kunai's Bane</br>Kunai's Bane Effect: Increases damage you deal target by 10%</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br>Can only be executed while Hidden.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 3,
+            "Radius": 5
+        },
+        {
+            "ID": 31,
+            "Name": "Deathfrog Medium",
+            "ImageName": "deathfrog_medium",
+            "Description": "Deals fire damage with a potency of 300 to target and all enemies nearby it.</br>Ninki Gauge Cost: 50</br>Can only be executed while under the effect of Higi.</br>Shares a recast timer with Bhavacakra.</br></br>※This action cannot be assigned to a hotbar.</br>※Hellfrog Medium changes to Deathfrog Medium when requirements for execution are met.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 25,
+            "Radius": 6
+        },
+        {
+            "ID": 32,
+            "Name": "Zesho Meppo",
+            "ImageName": "zesho_meppo",
+            "Description": "Deals unaspected damage with a potency of 550.</br>Meisui Bonus: Potency is increased to 700</br>Ninki Gauge Cost: 50</br>Can only be executed while under the effect of Higi.</br>Shares a recast timer with Hellfrog Medium.</br></br>※This action cannot be assigned to a hotbar.</br>※Bhavacakra changes to Zesho Meppo when requirements for execution are met.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 33,
+            "Name": "Tenri Jindo",
+            "ImageName": "tenri_jindo",
+            "Description": "Deals unaspected damage to target and all enemies nearby it with a potency of 1,000 for the first enemy, and 50% less for all remaining enemies.</br>Can only be executed while under the effect of Tenri Jindo Ready.</br></br>※This action cannot be assigned to a hotbar.</br>※Ten Chi Jin changes to Tenri Jindo when requirements for execution are met.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 20,
+            "Radius": 5
+        }
+    ]
+}
