@@ -108,8 +108,14 @@
                 <div id="SkillsTimeline"></div>
             </div>
             <div id="TimelineBtns">
-                <button onclick="btnShareTimeline()">Share</button>
-                <button onclick="btnClearTimeline(true)">Clear Timeline</button>
+                <div id="BuffsBarBackgroundColorDiv">
+                    <select name="RaidBuffsBarList" id="RaidBuffsBarList"></select>
+                    <input type="color" name="RaidBuffsBarList" id="RaidBuffsBarListColor">
+                </div>
+                <div>
+                    <button onclick="btnShareTimeline()">Share</button>
+                    <button onclick="btnClearTimeline(true)">Clear Timeline</button>
+                </div>
             </div>
         </div>
         <div id="SkillSelect">

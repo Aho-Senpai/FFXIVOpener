@@ -8,13 +8,22 @@ function addToTimeline() {
     if (this.classList.contains("RaidBuff")) {
         const Temp = document.createElement("div");
         const RaidbuffName = this.id
+        const option = document.createElement("option");
+        const RBBarList = document.getElementById("RaidBuffsBarList");
         let bgColor;
         RaidBuffs.forEach(element => {
             if (element.Name !== RaidbuffName) {  return; }
             bgColor = element.BackgroundColor;
         });
         Temp.textContent = RaidbuffName;
+        Temp.id = RaidbuffName;
         Temp.classList.add("RaidBuffTimelineBar");
+        if (RBBarList.childNodes.length == 0) {
+            setRaidbuffColorPicker(bgColor);
+        }
+        option.textContent = RaidbuffName;
+        option.value = RaidbuffName;
+        document.getElementById("RaidBuffsBarList").appendChild(option);
         const resizeObserver = new ResizeObserver((entries) => {
             for (const entry of entries) {
                 if (!(entry.target === Temp)) { return; }
@@ -54,10 +63,38 @@ function btnClearTimeline(force) {
     // force is a boolean so that the actual button still clears the timeline regardless
     // if mox == true we do not want timeline to be cleared when selecting a job.
     if (mox == true && !force) { return; }
+    const raidbuffsSelector = document.getElementById("RaidBuffsBarList");
     const timelineIds = [
         "RaidBuffsTimeline", 
         "SkillsTimeline", 
         "SelfBuffsTimeline"
     ];
     timelineIds.forEach(id => document.getElementById(id).replaceChildren());
+    raidbuffsSelector.replaceChildren();
+}
+
+const raidBuffSelect = document.getElementById("RaidBuffsBarList");
+const colorPicker = document.getElementById("RaidBuffsBarListColor");
+raidBuffSelect.addEventListener("change", () => {
+    let buff = document.getElementById(raidBuffSelect.options[raidBuffSelect.selectedIndex].text);
+    let RBdivColor = buff.style.backgroundColor;
+    let pickerColor = rgbToHex(RBdivColor);
+    setRaidbuffColorPicker(pickerColor);
+});
+function setRaidbuffColorPicker(color) {
+    colorPicker.value = color;
+}
+colorPicker.addEventListener("change", () => {
+    let buff = document.getElementById(raidBuffSelect.options[raidBuffSelect.selectedIndex].text);
+    buff.style.backgroundColor = colorPicker.value;
+});
+function rgbToHex(rgb) {
+    const result = rgb.match(/\d+/g);    
+    if (result.length !== 3) {
+        throw new Error("Invalid input format. Please use the format 'rgb(107, 128, 237)'");
+    }
+    const r = parseInt(result[0]).toString(16).padStart(2, '0');
+    const g = parseInt(result[1]).toString(16).padStart(2, '0');
+    const b = parseInt(result[2]).toString(16).padStart(2, '0');
+    return `#${r}${g}${b}`;
 }

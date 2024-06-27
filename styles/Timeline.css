@@ -36,8 +36,8 @@
 }
 #TimelineBtns {
     display: flex;
-    justify-content: end;
-    align-content: end;
+    justify-content: space-between;
+    align-content: space-between;
     border: none;
 }
 
