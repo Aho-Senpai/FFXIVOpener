@@ -14,6 +14,7 @@ function githubBtn() {
 //TODO : Settings menu prettier
 //TODO : for share and settings "menus", make them close/hide when clicking outside the div
 //TODO : investigate why chromium stops moving raidbuff bar if mouse leaves div (firefox doesn't)
+//TODO : Add button to remove individual raidbuff
 
 //todo : feature request : https://discord.com/channels/277897135515762698/283058569471852546/740962443148394516
 //     ^ make each GCD smaller and smaller if in a row (low priority)

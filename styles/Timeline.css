@@ -65,3 +65,7 @@
     width: 0px; /* Remove scrollbar space */
     background: transparent; /* Make scrollbar invisible */
 }
+
+#RaidBuffsBarList {
+    min-width: 80px;
+}
