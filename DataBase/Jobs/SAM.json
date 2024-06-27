@@ -157,7 +157,7 @@
         {
             "ID": 28,
             "Name": "Kaeshi: Namikiri",
-            "ImageName": "kaeshi:_namikiri",
+            "ImageName": "kaeshi_namikiri",
             "Description": "Delivers a critical hit to all enemies in a cone before you with a potency of 900 for the first enemy, and 75% less for all remaining enemies.</br>Damage dealt is increased when under an effect that raises critical hit rate.</br></br>※This action cannot be assigned to a hotbar.</br>※Ogi Namikiri changes to Kaeshi: Namikiri when requirements for execution are met.",
             "GlobalCoolDown": "GCD",
             "Cast": 0,
