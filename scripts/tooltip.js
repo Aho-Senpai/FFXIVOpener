@@ -1,7 +1,6 @@
 const tip = document.getElementById("Tooltip")
 function showTooltip(Skill) {
     tip.style.display = "block";
-    //TODO : Maybe logic to "flip" the div on the left side of cursor if too close to the right of screen?
     window.onmousemove = (e) => {
         setTooltipXPos(e);
         setTooltipYPos(e);
@@ -32,21 +31,27 @@ function getTooltipData(Skill) {
         "SkillTooltipCast": Skill.Cast !== undefined ? (Skill.Cast === 0 ? "Cast: Instant" : `Cast: ${Skill.Cast}s`) : undefined,
         "SkillTooltipRecast": Skill.Recast !== undefined ? `Recast: ${Skill.Recast}s` : undefined,
         "SkillTooltipRange": Skill.Range !== undefined ? `Range: ${Skill.Range}y` : undefined,
-        "SkillTooltipRadius": Skill.Radius !== undefined ? `Radius: ${Skill.Radius}y` : undefined // condition ? exprIfTrue : exprIfFalse
+        "SkillTooltipRadius": Skill.Radius !== undefined ? `Radius: ${Skill.Radius}y` : undefined
     };
     Object.keys(tooltipElements).forEach(id => {
         const element = document.getElementById(id);
         if (element) {
             const value = tooltipElements[id];
             if (value !== undefined) {
-                element.style.display = "block";
+                if (id !== "SkillTooltipName") {
+                    element.style.display = "block";
+                }
                 element.innerHTML = value;
-            } else {
-                element.style.display = "none";
+            }
+            else {
+                if (id !== "SkillTooltipName") {
+                    element.style.display = "none";
+                }
             }
         }
     });
 }
+
 
 function clearTooltip() {
     const tooltips = [
