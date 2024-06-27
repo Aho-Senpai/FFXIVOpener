@@ -63,14 +63,13 @@ function btnClearTimeline(force) {
     // force is a boolean so that the actual button still clears the timeline regardless
     // if mox == true we do not want timeline to be cleared when selecting a job.
     if (mox == true && !force) { return; }
-    const raidbuffsSelector = document.getElementById("RaidBuffsBarList");
     const timelineIds = [
         "RaidBuffsTimeline", 
         "SkillsTimeline", 
         "SelfBuffsTimeline"
     ];
     timelineIds.forEach(id => document.getElementById(id).replaceChildren());
-    raidbuffsSelector.replaceChildren();
+    removeRaidbuffEntrySelector()
 }
 
 const raidBuffSelect = document.getElementById("RaidBuffsBarList");
@@ -97,4 +96,13 @@ function rgbToHex(rgb) {
     const g = parseInt(result[1]).toString(16).padStart(2, '0');
     const b = parseInt(result[2]).toString(16).padStart(2, '0');
     return `#${r}${g}${b}`;
+}
+function removeRaidbuff() {
+    let buff = document.getElementById(raidBuffSelect.options[raidBuffSelect.selectedIndex].text);
+    buff.remove();
+    removeRaidbuffEntrySelector()
+}
+function removeRaidbuffEntrySelector() {
+    const raidbuffsSelector = document.getElementById("RaidBuffsBarList");
+    raidbuffsSelector.replaceChildren();
 }
