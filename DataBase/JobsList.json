@@ -24,6 +24,6 @@
         { "ID":18, "Name":"Black Mage", "Abbreviation":"BLM", "Role":"MagicalRange" },
         { "ID":19, "Name":"Summoner", "Abbreviation":"SMN", "Role":"MagicalRange" },
         { "ID":20, "Name":"Red Mage", "Abbreviation":"RDM", "Role":"MagicalRange"},
-        { "ID":21, "Name":"Pictomancer", "Abbreviation":"PTM", "Role":"MagicalRange"}
+        { "ID":21, "Name":"Pictomancer", "Abbreviation":"PCT", "Role":"MagicalRange"}
     ]
 }

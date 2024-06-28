@@ -23,3 +23,5 @@ function githubBtn() {
 
 // https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 // ^ https://github.com/Aho-Senpai/FFXIVOpener/issues/8
+
+// Idea : drag&drop to add to timeline
