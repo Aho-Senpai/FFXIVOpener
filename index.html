@@ -12,6 +12,8 @@
         body{ background-color: black; color: white; } 
     </style>
 
+    <link rel="shortcut icon" href="resources/Logo.png" type="image/x-icon">
+
     <!-- Links -->
     <link rel="stylesheet" type="text/css" href="./styles/index.css">
     <link rel="stylesheet" type="text/css" href="./styles/JobSelect.css">
@@ -111,7 +113,7 @@
                 <div id="BuffsBarBackgroundColorDiv">
                     <select name="RaidBuffsBarList" id="RaidBuffsBarList"></select>
                     <input type="color" name="RaidBuffsBarList" id="RaidBuffsBarListColor">
-                    <button onclick="removeRaidbuff()">Remove</button>
+                    <button onclick="removeRaidbuff()" id="RaidbuffRemoveButton">Remove</button>
                 </div>
                 <div>
                     <button onclick="btnShareTimeline()">Share</button>

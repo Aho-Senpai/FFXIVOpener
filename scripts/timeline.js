@@ -98,11 +98,21 @@ function rgbToHex(rgb) {
     return `#${r}${g}${b}`;
 }
 function removeRaidbuff() {
-    let buff = document.getElementById(raidBuffSelect.options[raidBuffSelect.selectedIndex].text);
-    buff.remove();
-    removeRaidbuffEntrySelector()
+    try {
+        let buff = document.getElementById(raidBuffSelect.options[raidBuffSelect.selectedIndex].text);
+        buff.remove();
+        removeRaidbuffEntrySelector()
+    }
+    catch (error) {
+        document.getElementById("RaidbuffRemoveButton").remove()
+        console.log("There was no Raidbuff to remove, was there?");
+        console.log("Well, no more button for you!");
+        //throw console.error(error);
+    }
 }
 function removeRaidbuffEntrySelector() {
     const raidbuffsSelector = document.getElementById("RaidBuffsBarList");
-    raidbuffsSelector.replaceChildren();
+    if (raidBuffSelect.options.length != 0){
+        raidbuffsSelector.removeChild(raidBuffSelect.options[raidBuffSelect.selectedIndex]);
+    }
 }
