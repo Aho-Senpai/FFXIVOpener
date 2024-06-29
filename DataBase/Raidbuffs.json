@@ -65,13 +65,20 @@
         },
         {
             "ID": "10",
+            "Name": "Starry Muse",
+            "ImageName": "starry_muse",
+            "Duration": 20,
+            "BackgroundColor": "#6048a8"
+        },
+        {
+            "ID": "11",
             "Name": "Technical Finish",
             "ImageName": "technical_finish",
             "Duration": 20,
             "BackgroundColor": "#c12769"
         },
         {
-            "ID": "11",
+            "ID": "12",
             "Name": "Trick Attack",
             "ImageName": "trick_attack",
             "Duration": 15,
