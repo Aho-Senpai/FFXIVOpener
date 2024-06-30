@@ -29,3 +29,5 @@ function githubBtn() {
 // If an action requires something to be usable could it somehow be reflected in the tool?
 
 // Not sure how possible it would be but a Potency per minute calculation?
+
+//TODO : check all the icons that are 40x40 and get the 80x80 ones
