@@ -37,16 +37,19 @@ function addToTimeline() {
         document.getElementById("RaidBuffsTimeline").prepend(Temp);
     }
 }
+
+let initialDivOffsetX = 0;
 function pointerDownBuff(e, resizeObserver) {
     if (!e.target.classList.contains("RaidBuffTimelineBar")) { return; }
     e.target.classList.add("BuffDivMove");
     e.target.style.cursor = "grabbing";
     resizeObserver.observe(e.target);
+    initialDivOffsetX = e.pageX - e.target.getBoundingClientRect().left;
 }
 function pointerMoveBuff(e) {
-    if (!e.target.classList.contains("BuffDivMove")) { return; }
-    //TODO: Possibly replace 50 by "X position of div?"
-    e.target.style.marginLeft = (e.pageX - 50) + "px";
+    const target = document.querySelector(".BuffDivMove");
+    if (!target) { return; }
+    target.style.marginLeft = (e.pageX - initialDivOffsetX) + "px";
 }
 function pointerUpBuff(e, resizeObserver) {
     if (!e.target.classList.contains("BuffDivMove")) { return; }

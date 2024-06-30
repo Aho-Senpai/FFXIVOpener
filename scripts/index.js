@@ -22,6 +22,10 @@ function githubBtn() {
 //? TODO : when image size setting is done, make raidbuff default length depends on duration and image size
 
 // https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
-// ^ https://github.com/Aho-Senpai/FFXIVOpener/issues/8
+// ^ https://github.com/Aho-Senpai/FFXIVOpener/issues/8 local storage to keep selected job and rotation on reload?
 
 // Idea : drag&drop to add to timeline
+
+// If an action requires something to be usable could it somehow be reflected in the tool?
+
+// Not sure how possible it would be but a Potency per minute calculation?
