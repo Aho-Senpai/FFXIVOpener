@@ -9,9 +9,17 @@ label:has(input:checked) {
 #JobSelect label {
     cursor: pointer;
 }
+.JobSelectRole {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 .JobSelectImage {
     background-size: auto;
     opacity: 0.65;
+    display: flex;
+    align-self: center;
+    justify-self: center;
 }
 /* TODO: get JobSelect centered on the screen (viewheight-header?)*/
 /* Currently Centered-ish, but maybe there's a better way?*/
@@ -21,19 +29,20 @@ label:has(input:checked) {
     position: fixed;
     align-self: center;
     justify-self: center;
-    margin-top: calc(100vh - 22px);
+    margin-top: calc(100vh - 22px); /* TODO: change the 22px and 180px to be reactive?*/
     margin-left: calc(50vw - 180px);
     border: solid;
     border-radius: 5%; /* Note to self: this is meant to be 5% not 5px*/
     border-color: #e2cb87;
 }
-.JobSelectRole {
-    display: flex;
-    justify-content: center;
-    align-content: space-around;
-}
 .JobSelectRoleTitle {
     font-size: xx-large;
+}
+.JobSelectImage img {
+    height: 80px;
+    width: 80px;
+    justify-self: center;
+    align-self: center;
 }
 
 /*
@@ -49,8 +58,3 @@ label:has(input:checked) {
 
 }
 */
-
-.JobSelectImage img {
-    height: 64px;
-    width: 64px;
-}
