@@ -37,6 +37,10 @@ label:has(input:checked) {
 .JobSelectRoleTitle {
     font-size: xx-large;
 }
+.JobSelectImage input {
+    margin: 0;
+}
+
 .JobSelectImage img {
     height: 80px;
     width: 80px;
