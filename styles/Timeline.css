@@ -40,7 +40,9 @@
     align-content: space-between;
     border: none;
 }
-
+#TimelineBtns div button, #TimelineBtns div select, #TimelineBtns div input {
+    height: 100%;
+}
 #RaidBuffsTimeline div {
     text-align: center;
     resize: horizontal;

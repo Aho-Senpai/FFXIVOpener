@@ -42,25 +42,34 @@ body::-webkit-scrollbar-thumb {
 header {
     height: auto;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     background-color: #1A1A1A;
+}
+
+#JobSelectBtn {
+    justify-content: flex-start;
+    flex: 1;
+}
+#JobSelectBtn button {
+    height: 100%;
+}
+#WebpageTitle {
+    font-size: xx-large;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+}
+#HeaderDivBtnGroup {
+    justify-content: flex-end;
+    display: flex;
+    flex: 1;
 }
 
 main {
     background-color: #1A1A1A;
 }
 
-#WebpageTitle {
-    font-size: xx-large;
-}
-
-header span {
-    justify-self: center;
-    align-self: center;
-}
-#HeaderDivBtnGroup {
-    display: flex;
-}
 button {
     cursor: pointer;
 }

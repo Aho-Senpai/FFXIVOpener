@@ -21,16 +21,15 @@ label:has(input:checked) {
     align-self: center;
     justify-self: center;
 }
-/* TODO: get JobSelect centered on the screen (viewheight-header?)*/
-/* Currently Centered-ish, but maybe there's a better way?*/
 #JobSelect {
     background-color: #1a1a1a;
     z-index: 1;
     position: fixed;
     align-self: center;
     justify-self: center;
-    margin-top: calc(100vh - 22px); /* TODO: change the 22px and 180px to be reactive?*/
-    margin-left: calc(50vw - 180px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border: solid;
     border-radius: 5%; /* Note to self: this is meant to be 5% not 5px*/
     border-color: #e2cb87;

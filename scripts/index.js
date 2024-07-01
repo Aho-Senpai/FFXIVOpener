@@ -30,4 +30,4 @@ function githubBtn() {
 
 // Not sure how possible it would be but a Potency per minute calculation?
 
-//TODO : find better job icons
+//TODO : fix css for jobSelect madness
