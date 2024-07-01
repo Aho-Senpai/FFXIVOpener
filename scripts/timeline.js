@@ -4,43 +4,17 @@ function addToTimeline() {
         TempImg.removeEventListener("click", addToTimeline);
         TempImg.addEventListener("click", removeFromTimeline);
         document.getElementById("SkillsTimeline").appendChild(TempImg);
+        
     }
     if (this.classList.contains("RaidBuff")) {
-        const Temp = document.createElement("div");
-        const RaidbuffName = this.id
-        const option = document.createElement("option");
-        const RBBarList = document.getElementById("RaidBuffsBarList");
-        let bgColor;
-        RaidBuffs.forEach(element => {
-            if (element.Name !== RaidbuffName) {  return; }
-            bgColor = element.BackgroundColor;
-        });
-        Temp.textContent = RaidbuffName;
-        Temp.id = RaidbuffName;
-        Temp.classList.add("RaidBuffTimelineBar");
-        if (RBBarList.childNodes.length == 0) {
-            setRaidbuffColorPicker(bgColor);
-        }
-        option.textContent = RaidbuffName;
-        option.value = RaidbuffName;
-        document.getElementById("RaidBuffsBarList").appendChild(option);
-        const resizeObserver = new ResizeObserver((entries) => {
-            for (const entry of entries) {
-                if (!(entry.target === Temp)) { return; }
-                entry.target.classList.remove("BuffDivMove");
-                entry.target.style.cursor = "grab";
-        }});
-        Temp.addEventListener("pointerdown", (e) => pointerDownBuff(e, resizeObserver));
-        Temp.addEventListener("pointermove", (e) => pointerMoveBuff(e));
-        Temp.addEventListener("pointerup", (e) => pointerUpBuff(e, resizeObserver));
-        Temp.style.backgroundColor = bgColor;
-        document.getElementById("RaidBuffsTimeline").prepend(Temp);
+        AddRaidbuff(this);
     }
 }
 
 let initialDivOffsetX = 0;
 function pointerDownBuff(e, resizeObserver) {
-    if (!e.target.classList.contains("RaidBuffTimelineBar")) { return; }
+    if (!e.target.classList.contains("RaidBuffTimelineBar") &&
+        !e.target.classList.contains("SelfBuffTimelineBar")) { return; }
     e.target.classList.add("BuffDivMove");
     e.target.style.cursor = "grabbing";
     resizeObserver.observe(e.target);
@@ -75,21 +49,6 @@ function btnClearTimeline(force) {
     removeRaidbuffEntrySelector()
 }
 
-const raidBuffSelect = document.getElementById("RaidBuffsBarList");
-const colorPicker = document.getElementById("RaidBuffsBarListColor");
-raidBuffSelect.addEventListener("change", () => {
-    let buff = document.getElementById(raidBuffSelect.options[raidBuffSelect.selectedIndex].text);
-    let RBdivColor = buff.style.backgroundColor;
-    let pickerColor = rgbToHex(RBdivColor);
-    setRaidbuffColorPicker(pickerColor);
-});
-function setRaidbuffColorPicker(color) {
-    colorPicker.value = color;
-}
-colorPicker.addEventListener("change", () => {
-    let buff = document.getElementById(raidBuffSelect.options[raidBuffSelect.selectedIndex].text);
-    buff.style.backgroundColor = colorPicker.value;
-});
 function removeRaidbuff() {
     try {
         let buff = document.getElementById(raidBuffSelect.options[raidBuffSelect.selectedIndex].text);
@@ -105,7 +64,80 @@ function removeRaidbuff() {
 }
 function removeRaidbuffEntrySelector() {
     const raidbuffsSelector = document.getElementById("RaidBuffsBarList");
-    if (raidBuffSelect.options.length != 0){
-        raidbuffsSelector.removeChild(raidBuffSelect.options[raidBuffSelect.selectedIndex]);
+    if (raidbuffsSelector.options.length != 0){
+        raidbuffsSelector.removeChild(raidbuffsSelector.options[raidbuffsSelector.selectedIndex]);
+        // All this under is just to set the correct color of the color picker after deleting a buff
+        let buff = document.getElementById(raidBuffSelect.options[raidBuffSelect.selectedIndex].text);
+        let RBdivColor = buff.style.backgroundColor;
+        let pickerColor = rgbToHex(RBdivColor);
+        setBuffColorPicker(pickerColor);
     }
+}
+
+function AddRaidbuff(a) {
+    const Temp = document.createElement("div");
+    const RaidbuffName = a.id
+    const option = document.createElement("option");
+    const RBBarList = document.getElementById("RaidBuffsBarList");
+    let bgColor;
+    RaidBuffs.forEach(element => {
+        if (element.Name !== RaidbuffName) {  return; }
+        bgColor = element.BackgroundColor;
+    });
+    Temp.textContent = RaidbuffName;
+    Temp.id = RaidbuffName;
+    Temp.classList.add("RaidBuffTimelineBar");
+    if (RBBarList.childNodes.length == 0) {
+        setBuffColorPicker(bgColor);
+    }
+    option.textContent = RaidbuffName;
+    option.value = RaidbuffName;
+    document.getElementById("RaidBuffsBarList").appendChild(option);
+    const resizeObserver = new ResizeObserver((entries) => {
+        for (const entry of entries) {
+            if (!(entry.target === Temp)) { return; }
+            entry.target.classList.remove("BuffDivMove");
+            entry.target.style.cursor = "grab";
+    }});
+    Temp.addEventListener("pointerdown", (e) => pointerDownBuff(e, resizeObserver));
+    Temp.addEventListener("pointermove", (e) => pointerMoveBuff(e));
+    Temp.addEventListener("pointerup", (e) => pointerUpBuff(e, resizeObserver));
+    Temp.style.backgroundColor = bgColor;
+    document.getElementById("RaidBuffsTimeline").prepend(Temp);
+}
+
+function AddSelfbuff() {
+    if (document.getElementById("SelfBuffInput").value == "") {
+        alert("please enter value");
+        return;
+    }
+    const SelfbuffName = document.getElementById("SelfBuffInput").value;
+    const Temp = document.createElement("div");
+    const option = document.createElement("option");
+    const SBBarList = document.getElementById("RaidBuffsBarList");
+    let bgColor = "red";
+    // SelfBuffs.forEach(element => {
+    //     if (element.Name !== SelfbuffName) {  return; }
+    //     bgColor = element.BackgroundColor;
+    // });
+    Temp.textContent = SelfbuffName;
+    Temp.id = SelfbuffName;
+    Temp.classList.add("SelfBuffTimelineBar");
+    if (SBBarList.childNodes.length == 0) {
+        setBuffColorPicker(bgColor);
+    }
+    option.textContent = SelfbuffName;
+    option.value = SelfbuffName;
+    document.getElementById("RaidBuffsBarList").appendChild(option);
+    const resizeObserver = new ResizeObserver((entries) => {
+        for (const entry of entries) {
+            if (!(entry.target === Temp)) { return; }
+            entry.target.classList.remove("BuffDivMove");
+            entry.target.style.cursor = "grab";
+    }});
+    Temp.addEventListener("pointerdown", (e) => pointerDownBuff(e, resizeObserver));
+    Temp.addEventListener("pointermove", (e) => pointerMoveBuff(e));
+    Temp.addEventListener("pointerup", (e) => pointerUpBuff(e, resizeObserver));
+    Temp.style.backgroundColor = bgColor;
+    document.getElementById("SelfBuffsTimeline").append(Temp);
 }

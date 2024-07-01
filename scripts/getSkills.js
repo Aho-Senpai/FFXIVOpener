@@ -66,7 +66,7 @@ function DisplayJobSkills(JobShort, JobRole) {
         { list: 
             OGCD, 
             basePath: `./DataBase/Icon/PvE_Actions/${JobShort}/`, 
-            category: 'OGCD' 
+            category: 'OGCD'
         },
         { list: 
             RoleAction, 

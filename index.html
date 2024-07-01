@@ -31,7 +31,7 @@
     <script defer src="./scripts/tooltip.js"></script>
     <script defer src="./scripts/SaveFileDialog.js"></script>
     <script defer src="./scripts/settings.js"></script>
-    <script defer src="./scripts/rgb-to-hex.js"></script>
+    <script defer src="./scripts/Colors.js"></script>
 
     <!-- SortableJS just for timeline -->
     <script defer src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
@@ -108,15 +108,17 @@
         <div id="Timeline">
             <div id="TimelineDiv">
                 <div id="RaidBuffsTimeline"></div>
-                <div id="SelfBuffsTimeline"></div> 
-<!--TODO: to implement later : when adding a skill to timeline that has a selfbuff, also add said selfbuff here -->
                 <div id="SkillsTimeline"></div>
+                <!--TODO: to implement later : when adding a skill to timeline that has a selfbuff, also add said selfbuff here -->
+                <div id="SelfBuffsTimeline"></div> 
             </div>
             <div id="TimelineBtns">
                 <div id="BuffsBarBackgroundColorDiv">
                     <select name="RaidBuffsBarList" id="RaidBuffsBarList"></select>
                     <input type="color" name="RaidBuffsBarList" id="RaidBuffsBarListColor">
                     <button onclick="removeRaidbuff()" id="RaidbuffRemoveButton">Remove</button>
+                    <input type="text" name="SelfBuffName" id="SelfBuffInput" placeholder="Enter Self Buff Name">
+                    <button onclick="AddSelfbuff()" id="SelfBuffAddButton">Add SelfBuff </button>
                 </div>
                 <div>
                     <button onclick="btnShareTimeline()">Share</button>

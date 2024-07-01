@@ -43,7 +43,7 @@
 #TimelineBtns div button, #TimelineBtns div select, #TimelineBtns div input {
     height: 100%;
 }
-#RaidBuffsTimeline div {
+#RaidBuffsTimeline div, #SelfBuffsTimeline div {
     text-align: center;
     resize: horizontal;
     overflow: auto;
