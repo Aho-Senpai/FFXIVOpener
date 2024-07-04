@@ -44,17 +44,17 @@
         },
         {
             "ID": "7",
+            "Name": "Dokumori",
+            "ImageName": "Dokumori",
+            "Duration": 20,
+            "BackgroundColor": "#6c5344"
+        },
+        {
+            "ID": "8",
             "Name": "Embolden",
             "ImageName": "embolden",
             "Duration": 20,
             "BackgroundColor": "#60140f"
-        },
-        {
-            "ID": "8",
-            "Name": "Kunai's Bane",
-            "ImageName": "kunai's_bane",
-            "Duration": 15,
-            "BackgroundColor": "#6c5344"
         },
         {
             "ID": "9",
