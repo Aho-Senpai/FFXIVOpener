@@ -11,35 +11,35 @@
             "ID": "2",
             "Name": "Battle Litany",
             "ImageName": "battle_litany",
-            "Duration": 15,
+            "Duration": 20,
             "BackgroundColor": "#3d71b1"
         },
         {
             "ID": "3",
             "Name": "Battle Voice",
             "ImageName": "battle_voice",
-            "Duration": 15,
+            "Duration": 20,
             "BackgroundColor": "#c55b73"
         },
         {
             "ID": "4",
             "Name": "Brotherhood",
             "ImageName": "brotherhood",
-            "Duration": 15,
+            "Duration": 20,
             "BackgroundColor": "#ff5d39"
         },
         {
             "ID": "5",
             "Name": "Chain Stratagem",
             "ImageName": "chain_stratagem",
-            "Duration": 15,
+            "Duration": 20,
             "BackgroundColor": "#6b80ed"
         },
         {
             "ID": "6",
             "Name": "Divination",
             "ImageName": "divination",
-            "Duration": 15,
+            "Duration": 20,
             "BackgroundColor": "#deb765"
         },
         {
@@ -51,38 +51,38 @@
         },
         {
             "ID": "8",
-            "Name": "Radiant Finale",
-            "ImageName": "radiant_finale",
+            "Name": "Kunai's Bane",
+            "ImageName": "kunai's_bane",
             "Duration": 15,
-            "BackgroundColor": "#072f5a"
+            "BackgroundColor": "#6c5344"
         },
         {
             "ID": "9",
-            "Name": "Searing Light",
-            "ImageName": "searing_light",
-            "Duration": 30,
-            "BackgroundColor": "#494c50"
+            "Name": "Radiant Finale",
+            "ImageName": "radiant_finale",
+            "Duration": 20,
+            "BackgroundColor": "#072f5a"
         },
         {
             "ID": "10",
+            "Name": "Searing Light",
+            "ImageName": "searing_light",
+            "Duration": 20,
+            "BackgroundColor": "#494c50"
+        },
+        {
+            "ID": "11",
             "Name": "Starry Muse",
             "ImageName": "starry_muse",
             "Duration": 20,
             "BackgroundColor": "#6048a8"
         },
         {
-            "ID": "11",
+            "ID": "12",
             "Name": "Technical Finish",
             "ImageName": "technical_finish",
             "Duration": 20,
             "BackgroundColor": "#c12769"
-        },
-        {
-            "ID": "12",
-            "Name": "Trick Attack",
-            "ImageName": "trick_attack",
-            "Duration": 15,
-            "BackgroundColor": "#6c5344"
         }
     ]
 }

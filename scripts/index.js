@@ -8,7 +8,7 @@ function githubBtn() {
 
 //TODO : remove sortableJS dependency and implement sorting of timeline
 //TODO : add a "under level" category in GCD/OGCD lists?
-//TODO : Ability to create custom raidbuff? + custom self buff?
+//TODO : Ability to create custom raidbuff?
 //TODO : default opener per job?
 //TODO : SelfBuffs under rotation when adding a skill that has a self buff? or have a way to add a self buff manually?
 //TODO : Settings menu prettier
