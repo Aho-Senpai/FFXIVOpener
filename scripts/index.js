@@ -6,7 +6,7 @@ function githubBtn() {
     window.open("https://github.com/Aho-Senpai/FFXIVOpener");
 }
 
-//! TODO : add a "under level" category in GCD/OGCD lists?
+//! TODO : add a "under level" category in GCD/OGCD lists? done, now make it collapse/expand
 
 //TODO : remove sortableJS dependency and implement sorting of timeline
 //TODO : Ability to create custom raidbuff?

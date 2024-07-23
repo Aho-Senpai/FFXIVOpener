@@ -7,11 +7,31 @@ let RaidBuffs = [];
 let GlobalSkills = [];
 
 function getJobSkills(JobShort, JobRole) {
+    const gcdTitle = document.getElementById("UnderLevelGCDTitle");
+    const gcdList = document.getElementById("UnderLevelGCDList");
+    const ogcdTitle = document.getElementById("UnderLevelOGCDTitle");
+    const ogcdList = document.getElementById("UnderLevelOGCDList");
+
+    gcdTitle.style.display = "flex";
+    gcdList.style.display = "flex";
+    ogcdTitle.style.display = "flex";
+    ogcdList.style.display = "flex";
+
     ClearSkills();
     ToggleJobSelect();
     LoadSkills(JobShort, JobRole)
     .then(() => {
         DisplayJobSkills(JobShort, JobRole)
+    })
+    .then(() => {
+        if (!gcdList.hasChildNodes()) {
+            gcdTitle.style.display = "none";
+            gcdList.style.display = "none";
+        }
+        if (!ogcdList.hasChildNodes()) {
+            ogcdTitle.style.display = "none";
+            ogcdList.style.display = "none";
+        }
     })
     btnClearTimeline()
 }
