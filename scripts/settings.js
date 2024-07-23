@@ -16,17 +16,28 @@ TimelineImgSizeInput.addEventListener("input", () => {
     TimelineImgSizeOutput.textContent = TimelineImgSizeInput.value;
     document.getElementById("Timeline").style.cssText = `--timeline-image-size: ${TimelineImgSizeInput.value}px`;
 });
+
+const OGCDTimelineImgSizeInput = document.getElementById("OGCDTimelineImageSizeSlider");
+const OGCDTimelineImgSizeOutput = document.getElementById("OGCDTimelineImageSizeOutput");
+OGCDTimelineImgSizeInput.addEventListener("input", () => {
+    OGCDTimelineImgSizeOutput.textContent = OGCDTimelineImgSizeInput.value;
+    document.getElementById("SkillsTimeline").style.cssText = `--ogcdtimeline-image-size: ${OGCDTimelineImgSizeInput.value}px`;
+});
+
 const SkillSelectImgSizeInput = document.getElementById("SkillSelectImageSizeSlider");
 const SkillSelectImgSizeOutput = document.getElementById("SkillSelectImageSizeOutput");
 SkillSelectImgSizeInput.addEventListener("input", () => {
     SkillSelectImgSizeOutput.textContent = SkillSelectImgSizeInput.value;
     document.getElementById("SkillSelect").style.cssText = `--skillSelect-image-size: ${SkillSelectImgSizeInput.value}px`;
 });
+
+
 const BuffTextSizeInput = document.getElementById("BuffTextSizeSlider");
 const BuffTextSizeOutput = document.getElementById("BuffTextSizeOutput");
 BuffTextSizeInput.addEventListener("input", () => {
     BuffTextSizeOutput.textContent = BuffTextSizeInput.value;
     document.getElementById("RaidBuffsTimeline").style.cssText = `--buffText-size: ${BuffTextSizeInput.value}px`;
+    document.getElementById("SelfBuffsTimeline").style.cssText = `--buffText-size: ${BuffTextSizeInput.value}px`;
 });
 
 function closeSettingsDiv() {

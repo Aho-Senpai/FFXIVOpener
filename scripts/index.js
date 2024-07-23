@@ -10,7 +10,7 @@ function githubBtn() {
 //TODO : add a "under level" category in GCD/OGCD lists?
 //TODO : Ability to create custom raidbuff?
 //TODO : default opener per job?
-//TODO : SelfBuffs under rotation when adding a skill that has a self buff? or have a way to add a self buff manually?
+//TODO : SelfBuffs under rotation when adding a skill that has a self buff? or have a way to add a self buff manually? (manual method exist, mayybe automate part of it?)
 //TODO : Settings menu prettier
 //TODO : for share and settings "menus", make them close/hide when clicking outside the div
 //TODO : investigate why chromium stops moving raidbuff bar if mouse leaves div (firefox doesn't)
@@ -30,4 +30,4 @@ function githubBtn() {
 
 // Not sure how possible it would be but a Potency per minute calculation?
 
-//TODO : fix css for jobSelect madness
+//TODO : look into scroll bar showing on timeline (esp in chromium)

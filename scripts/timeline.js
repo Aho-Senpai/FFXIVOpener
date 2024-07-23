@@ -56,9 +56,6 @@ function removeRaidbuff() {
         removeRaidbuffEntrySelector()
     }
     catch (error) {
-        document.getElementById("RaidbuffRemoveButton").remove()
-        console.log("There was no Raidbuff to remove, was there?");
-        console.log("Well, no more button for you!");
         //throw console.error(error);
     }
 }

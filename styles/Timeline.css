@@ -1,5 +1,6 @@
 #Timeline {
     --timeline-image-size: 60px;
+    --ogcdtimeline-image-size: 40px;
     --buffText-size: 16px;
 
     height: fit-content;
@@ -15,7 +16,7 @@
     border-radius: 5px;
 }
 
-#RaidBuffsTimeline {
+#RaidBuffsTimeline, #SelfBuffsTimeline {
     position: relative;
     height: fit-content;
     font-size: var(--buffText-size);
@@ -32,7 +33,9 @@
     padding-bottom: calc(var(--timeline-image-size)/2);
 }
 #SkillsTimeline .GCD img{
-    padding-top: calc(var(--timeline-image-size)/2);
+    /* padding-top: calc(var(--ogcdtimeline-image-size)); */
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 #TimelineBtns {
     display: flex;
@@ -56,8 +59,14 @@
     width: var(--timeline-image-size);
 }
 
+#SkillsTimeline .OGCD, #SkillsTimeline .OGCD img {
+    height: var(--ogcdtimeline-image-size);
+    width: var(--ogcdtimeline-image-size);
+}
+
+
 #SkillsTimeline #Pull_Placeholder,#SkillsTimeline #Pull_Placeholder img {
-    height: calc(var(--timeline-image-size)*1.5);
+    height: calc(var(--timeline-image-size) + (var(--ogcdtimeline-image-size) - var(--timeline-image-size)/2));
     width: calc(var(--timeline-image-size)/2);
     padding-top: 0;
 }
