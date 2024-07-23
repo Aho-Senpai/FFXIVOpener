@@ -1,28 +1,6 @@
 {
     "GCD": [
         {
-            "ID": 1,
-            "Name": "Ruin",
-            "ImageName": "ruin",
-            "Description": "Deals unaspected damage with a potency of 150.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 1.5,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 2,
-            "Name": "Bio",
-            "ImageName": "bio",
-            "Description": "Deals unaspected damage over time.</br><span style=\"color:#00cc22;\">Potency:</span> 20</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
             "ID": 3,
             "Name": "Physick",
             "ImageName": "physick",
@@ -56,17 +34,6 @@
             "Radius": 0
         },
         {
-            "ID": 7,
-            "Name": "Bio II",
-            "ImageName": "bio_II",
-            "Description": "Deals unaspected damage over time.</br><span style=\"color:#00cc22;\">Potency:</span> 40</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
             "ID": 8,
             "Name": "Adloquium",
             "ImageName": "adloquium",
@@ -78,78 +45,12 @@
             "Radius": 0
         },
         {
-            "ID": 9,
-            "Name": "Succor",
-            "ImageName": "succor",
-            "Description": "Restores own HP and the HP of all nearby party members.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 200</br><span style=\"color:#00cc22;\">Additional Effect:</span> Erects a magicked barrier which nullifies damage equaling 160% of the amount of HP restored</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Effect cannot be stacked with certain sage barrier effects.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 2,
-            "Recast": 2.5,
-            "Range": 0,
-            "Radius": 15
-        },
-        {
-            "ID": 10,
-            "Name": "Ruin II",
-            "ImageName": "ruin_II",
-            "Description": "Deals unaspected damage with a potency of 220.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 15,
-            "Name": "Art of War",
-            "ImageName": "art_of_war",
-            "Description": "Deals unaspected damage with a potency of 165 to all nearby enemies.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 0,
-            "Radius": 5
-        },
-        {
-            "ID": 18,
-            "Name": "Broil",
-            "ImageName": "broil",
-            "Description": "Deals unaspected damage with a potency of 220.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 1.5,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 23,
-            "Name": "Broil II",
-            "ImageName": "broil_II",
-            "Description": "Deals unaspected damage with a potency of 240.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 1.5,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
             "ID": 27,
             "Name": "Biolysis",
             "ImageName": "biolysis",
             "Description": "Deals unaspected damage over time.</br><span style=\"color:#00cc22;\">Potency:</span> 75</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
             "GlobalCoolDown": "GCD",
             "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 28,
-            "Name": "Broil III",
-            "ImageName": "broil_III",
-            "Description": "Deals unaspected damage with a potency of 255.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 1.5,
             "Recast": 2.5,
             "Range": 25,
             "Radius": 0
@@ -208,6 +109,107 @@
             "Recast": 2.5,
             "Range": 0,
             "Radius": 15
+        }
+    ],
+    "UnderlevelGCD": [
+        {
+            "ID": 1,
+            "Name": "Ruin",
+            "ImageName": "ruin",
+            "Description": "Deals unaspected damage with a potency of 150.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 2,
+            "Name": "Bio",
+            "ImageName": "bio",
+            "Description": "Deals unaspected damage over time.</br><span style=\"color:#00cc22;\">Potency:</span> 20</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 7,
+            "Name": "Bio II",
+            "ImageName": "bio_II",
+            "Description": "Deals unaspected damage over time.</br><span style=\"color:#00cc22;\">Potency:</span> 40</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 9,
+            "Name": "Succor",
+            "ImageName": "succor",
+            "Description": "Restores own HP and the HP of all nearby party members.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 200</br><span style=\"color:#00cc22;\">Additional Effect:</span> Erects a magicked barrier which nullifies damage equaling 160% of the amount of HP restored</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Effect cannot be stacked with certain sage barrier effects.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 15
+        },
+        {
+            "ID": 10,
+            "Name": "Ruin II",
+            "ImageName": "ruin_II",
+            "Description": "Deals unaspected damage with a potency of 220.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 15,
+            "Name": "Art of War",
+            "ImageName": "art_of_war",
+            "Description": "Deals unaspected damage with a potency of 165 to all nearby enemies.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 5
+        },
+        {
+            "ID": 18,
+            "Name": "Broil",
+            "ImageName": "broil",
+            "Description": "Deals unaspected damage with a potency of 220.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 23,
+            "Name": "Broil II",
+            "ImageName": "broil_II",
+            "Description": "Deals unaspected damage with a potency of 240.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 28,
+            "Name": "Broil III",
+            "ImageName": "broil_III",
+            "Description": "Deals unaspected damage with a potency of 255.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
         }
     ],
     "OGCD": [
@@ -453,5 +455,6 @@
             "Range": 0,
             "Radius": 0
         }
-    ]
+    ],
+    "UnderlevelOGCD": []
 }

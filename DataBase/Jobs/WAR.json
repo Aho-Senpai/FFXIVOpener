@@ -56,32 +56,10 @@
             "Radius": 0
         },
         {
-            "ID": 10,
-            "Name": "Inner Beast",
-            "ImageName": "inner_beast",
-            "Description": "Delivers an attack with a potency of 330.</br>Beast Gauge Cost: 50",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 3,
-            "Radius": 0
-        },
-        {
             "ID": 12,
             "Name": "Mythril Tempest",
             "ImageName": "mythril_tempest",
             "Description": "Delivers an attack with a potency of 100 to all nearby enemies.</br><span style=\"color:#00cc22;\">Combo Action:</span> Overpower</br><span style=\"color:#00cc22;\">Combo Potency:</span> 140</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Grants Surging Tempest, increasing damage dealt by 10%</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Extends Surging Tempest duration by 30s to a maximum of 60s.</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Increases Beast Gauge by 20",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 0,
-            "Radius": 5
-        },
-        {
-            "ID": 14,
-            "Name": "Steel Cyclone",
-            "ImageName": "steel_cyclone",
-            "Description": "Delivers an attack with a potency of 160 to all nearby enemies.</br>Beast Gauge Cost: 50",
             "GlobalCoolDown": "GCD",
             "Cast": 0,
             "Recast": 2.5,
@@ -166,40 +144,31 @@
             "Radius": 5
         }
     ],
+    "UnderlevelGCD": [
+        {
+            "ID": 10,
+            "Name": "Inner Beast",
+            "ImageName": "inner_beast",
+            "Description": "Delivers an attack with a potency of 330.</br>Beast Gauge Cost: 50",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 14,
+            "Name": "Steel Cyclone",
+            "ImageName": "steel_cyclone",
+            "Description": "Delivers an attack with a potency of 160 to all nearby enemies.</br>Beast Gauge Cost: 50",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 5
+        }
+    ],
     "OGCD": [
-        {
-            "ID": 3,
-            "Name": "Berserk",
-            "ImageName": "berserk",
-            "Description": "Grants 3 stacks of Berserk, each stack guaranteeing weaponskill attacks are critical and direct hits.</br>Increases damage dealt when under an effect that raises critical hit rate or direct hit rate.</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Extends Surging Tempest duration by 10s to a maximum of 60s",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 60,
-            "Range": 0,
-            "Radius": 0
-        },
-        {
-            "ID": 5,
-            "Name": "Defiance",
-            "ImageName": "defiance",
-            "Description": "Significantly increases enmity generation.</br>Effect ends upon reuse.",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 2,
-            "Range": 0,
-            "Radius": 0
-        },
-        {
-            "ID": 6,
-            "Name": "Release Defiance",
-            "ImageName": "release_defiance",
-            "Description": "Cancels the effect of Defiance.",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 1,
-            "Range": 0,
-            "Radius": 0
-        },
         {
             "ID": 9,
             "Name": "Thrill of Battle",
@@ -208,17 +177,6 @@
             "GlobalCoolDown": "OGCD",
             "Cast": 0,
             "Recast": 90,
-            "Range": 0,
-            "Radius": 0
-        },
-        {
-            "ID": 11,
-            "Name": "Vengeance",
-            "ImageName": "vengeance",
-            "Description": "Reduces damage taken by 30% and delivers an attack with a potency of 55 every time you suffer physical damage.</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 120,
             "Range": 0,
             "Radius": 0
         },
@@ -241,17 +199,6 @@
             "GlobalCoolDown": "OGCD",
             "Cast": 0,
             "Recast": 60,
-            "Range": 0,
-            "Radius": 0
-        },
-        {
-            "ID": 18,
-            "Name": "Raw Intuition",
-            "ImageName": "raw_intuition",
-            "Description": "Reduces damage taken by 10%.</br><span style=\"color:#00cc22;\">Duration:</span> 6s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores HP with each weaponskill successfully delivered</br><span style=\"color:#00cc22;\">Cure Potency:</span> 400</br>Shares a recast timer with Nascent Flash.",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 25,
             "Range": 0,
             "Radius": 0
         },
@@ -364,6 +311,63 @@
             "Recast": 1,
             "Range": 0,
             "Radius": 5
+        }
+    ],
+    "UnderlevelOGCD": [
+        {
+            "ID": 3,
+            "Name": "Berserk",
+            "ImageName": "berserk",
+            "Description": "Grants 3 stacks of Berserk, each stack guaranteeing weaponskill attacks are critical and direct hits.</br>Increases damage dealt when under an effect that raises critical hit rate or direct hit rate.</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Extends Surging Tempest duration by 10s to a maximum of 60s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 5,
+            "Name": "Defiance",
+            "ImageName": "defiance",
+            "Description": "Significantly increases enmity generation.</br>Effect ends upon reuse.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 2,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 6,
+            "Name": "Release Defiance",
+            "ImageName": "release_defiance",
+            "Description": "Cancels the effect of Defiance.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 11,
+            "Name": "Vengeance",
+            "ImageName": "vengeance",
+            "Description": "Reduces damage taken by 30% and delivers an attack with a potency of 55 every time you suffer physical damage.</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 18,
+            "Name": "Raw Intuition",
+            "ImageName": "raw_intuition",
+            "Description": "Reduces damage taken by 10%.</br><span style=\"color:#00cc22;\">Duration:</span> 6s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores HP with each weaponskill successfully delivered</br><span style=\"color:#00cc22;\">Cure Potency:</span> 400</br>Shares a recast timer with Nascent Flash.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 25,
+            "Range": 0,
+            "Radius": 0
         }
     ]
 }

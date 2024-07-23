@@ -1,17 +1,6 @@
 {
     "GCD": [
         {
-            "ID": 1,
-            "Name": "Ruin",
-            "ImageName": "ruin",
-            "Description": "Deals unaspected damage with a potency of 240.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 1.5,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
             "ID": 2,
             "Name": "Summon Carbuncle",
             "ImageName": "summon_carbuncle",
@@ -34,28 +23,6 @@
             "Radius": 0
         },
         {
-            "ID": 5,
-            "Name": "Aethercharge",
-            "ImageName": "aethercharge",
-            "Description": "Grants Aethercharge, increasing the potency of Ruin, Ruin II, and Ruin III by 50, and Outburst by 20.</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Ruby Arcanum, Topaz Arcanum, and Emerald Arcanum</br>Can only be executed in combat and while Carbuncle is summoned.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 60,
-            "Range": 0,
-            "Radius": 0
-        },
-        {
-            "ID": 6,
-            "Name": "Summon Ruby",
-            "ImageName": "summon_ruby",
-            "Description": "Summons Ruby Carbuncle, and orders it to execute Glittering Ruby.</br>Glittering Ruby Effect: Rushes target and deals fire damage with a potency of 400</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 2 stacks of Fire Attunement</br>Fire Attunement Effect: Gemshine and Precious Brilliance become fire-aspected</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Can only be executed while under the effect of Ruby Arcanum and Carbuncle is summoned.</br>Current pet will leave the battlefield while Ruby Carbuncle is present, and return once gone.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
             "ID": 7,
             "Name": "Gemshine",
             "ImageName": "gemshine",
@@ -63,17 +30,6 @@
             "GlobalCoolDown": "GCD",
             "Cast": 2.5,
             "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 8,
-            "Name": "Ruby Ruin",
-            "ImageName": "ruby_ruin",
-            "Description": "Deals fire damage with a potency of 340.</br>Fire Attunement Cost: 1</br>This action does not share a recast timer with any other actions. Upon execution, the recast timer for this action will be applied to all other weaponskills and magic actions.</br></br>※This action cannot be assigned to a hotbar.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 2.8,
-            "Recast": 3,
             "Range": 25,
             "Radius": 0
         },
@@ -89,61 +45,6 @@
             "Radius": 0
         },
         {
-            "ID": 12,
-            "Name": "Summon Topaz",
-            "ImageName": "summon_topaz",
-            "Description": "Summons Topaz Carbuncle, and orders it to execute Glittering Topaz.</br>Glittering Topaz Effect: Rushes target and deals earth damage with a potency of 400</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 4 stacks of Earth Attunement</br>Earth Attunement Effect: Gemshine and Precious Brilliance become earth-aspected</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Can only be executed while under the effect of Topaz Arcanum and Carbuncle is summoned.</br>Current pet will leave the battlefield while Topaz Carbuncle is present, and return once gone.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 13,
-            "Name": "Topaz Ruin",
-            "ImageName": "topaz_ruin",
-            "Description": "Deals earth damage with a potency of 240.</br>Earth Attunement Cost: 1</br></br>※This action cannot be assigned to a hotbar.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 14,
-            "Name": "Summon Emerald",
-            "ImageName": "summon_emerald",
-            "Description": "Summons Emerald Carbuncle, and orders it to execute Glittering Emerald.</br>Glittering Emerald Effect: Deals wind damage with a potency of 400</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 4 stacks of Wind Attunement</br>Wind Attunement Effect: Gemshine and Precious Brilliance become wind-aspected</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Can only be executed while under the effect of Emerald Arcanum and Carbuncle is summoned.</br>Current pet will leave the battlefield while Emerald Carbuncle is present, and return once gone.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 15,
-            "Name": "Emerald Ruin",
-            "ImageName": "emerald_ruin",
-            "Description": "Deals wind damage with a potency of 160.</br>Wind Attunement Cost: 1</br></br>※This action cannot be assigned to a hotbar.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 1.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 16,
-            "Name": "Outburst",
-            "ImageName": "outburst",
-            "Description": "Deals unaspected damage with a potency of 100 to target and all enemies nearby it.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 1.5,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 5
-        },
-        {
             "ID": 17,
             "Name": "Precious Brilliance",
             "ImageName": "precious_brilliance",
@@ -153,116 +54,6 @@
             "Recast": 2.5,
             "Range": 25,
             "Radius": 5
-        },
-        {
-            "ID": 18,
-            "Name": "Ruby Outburst",
-            "ImageName": "ruby_outburst",
-            "Description": "Deals fire damage with a potency of 160 to target and all enemies nearby it.</br>Fire Attunement Cost: 1</br>This action does not share a recast timer with any other actions. Upon execution, the recast timer for this action will be applied to all other weaponskills and magic actions.</br></br>※This action cannot be assigned to a hotbar.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 2.8,
-            "Recast": 3,
-            "Range": 25,
-            "Radius": 5
-        },
-        {
-            "ID": 19,
-            "Name": "Topaz Outburst",
-            "ImageName": "topaz_outburst",
-            "Description": "Deals earth damage with a potency of 110 to target and all enemies nearby it.</br>Earth Attunement Cost: 1</br></br>※This action cannot be assigned to a hotbar.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 5
-        },
-        {
-            "ID": 20,
-            "Name": "Emerald Outburst",
-            "ImageName": "emerald_outburst",
-            "Description": "Deals wind damage with a potency of 70 to target and all enemies nearby it.</br>Wind Attunement Cost: 1</br></br>※This action cannot be assigned to a hotbar.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 1.5,
-            "Range": 25,
-            "Radius": 5
-        },
-        {
-            "ID": 21,
-            "Name": "Ruin II",
-            "ImageName": "ruin_II",
-            "Description": "Deals unaspected damage with a potency of 270.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 1.5,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 22,
-            "Name": "Summon Ifrit",
-            "ImageName": "summon_ifrit",
-            "Description": "Summons Ifrit-Egi and orders it to execute Inferno.</br>Inferno Effect: Rushes forward and deals fire damage to all enemies in a 5-yalm cone before it with a potency of 600 for the first enemy, and 60% less for all remaining enemies</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 2 stacks of Fire Attunement</br>Fire Attunement Effect: Gemshine and Precious Brilliance become fire-aspected</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Ifrit's Favor</br>Effect of Ifrit's Favor ends upon execution of certain summoner actions.</br>Can only be executed while under the effect of Ruby Arcanum and Carbuncle is summoned.</br>Current pet will leave the battlefield while Ifrit-Egi is present, and return once gone.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 23,
-            "Name": "Ruby Ruin II",
-            "ImageName": "ruby_ruin_II",
-            "Description": "Deals fire damage with a potency of 380.</br>Fire Attunement Cost: 1</br>This action does not share a recast timer with any other actions. Upon execution, the recast timer for this action will be applied to all other weaponskills and magic actions.</br></br>※This action cannot be assigned to a hotbar.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 2.8,
-            "Recast": 3,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 24,
-            "Name": "Topaz Ruin II",
-            "ImageName": "topaz_ruin_II",
-            "Description": "Deals earth damage with a potency of 270.</br>Earth Attunement Cost: 1</br></br>※This action cannot be assigned to a hotbar.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 25,
-            "Name": "Emerald Ruin II",
-            "ImageName": "emerald_ruin_II",
-            "Description": "Deals wind damage with a potency of 170.</br>Wind Attunement Cost: 1</br></br>※This action cannot be assigned to a hotbar.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 1.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 26,
-            "Name": "Summon Titan",
-            "ImageName": "summon_titan",
-            "Description": "Summons Titan-Egi and orders it to execute Earthen Fury.</br>Earthen Fury Effect: Rushes forward and deals earth damage to all enemies within 5 yalms with a potency of 600 for the first enemy, and 60% less for all remaining enemies</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 4 stacks of Earth Attunement</br>Earth Attunement Effect: Gemshine and Precious Brilliance become earth-aspected</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Can only be executed while under the effect of Topaz Arcanum and Carbuncle is summoned.</br>Current pet will leave the battlefield while Titan-Egi is present, and return once gone.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 28,
-            "Name": "Summon Garuda",
-            "ImageName": "summon_garuda",
-            "Description": "Summons Garuda-Egi and orders it to execute Aerial Blast.</br>Aerial Blast Effect: Deals wind damage to target and all enemies within 5 yalms with a potency of 600 for the first enemy, and 60% less for all remaining enemies</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 4 stacks of Wind Attunement</br>Wind Attunement Effect: Gemshine and Precious Brilliance become wind-aspected</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Garuda's Favor</br>Effect of Garuda's Favor ends upon execution of certain summoner actions.</br>Can only be executed while under the effect of Emerald Arcanum and Carbuncle is summoned.</br>Current pet will leave the battlefield while Garuda-Egi is present, and return once gone.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
         },
         {
             "ID": 30,
@@ -309,17 +100,6 @@
             "Radius": 0
         },
         {
-            "ID": 34,
-            "Name": "Dreadwyrm Trance",
-            "ImageName": "dreadwyrm_trance",
-            "Description": "Enters Dreadwyrm Trance.</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Changes Ruin III to Astral Impulse and Outburst to Astral Flare</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Ruby Arcanum, Topaz Arcanum, and Emerald Arcanum</br>Can only be executed in combat and while Carbuncle is summoned.</br>This action does not share a recast timer with any other actions.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 60,
-            "Range": 0,
-            "Radius": 0
-        },
-        {
             "ID": 35,
             "Name": "Astral Impulse",
             "ImageName": "astral_impulse",
@@ -329,17 +109,6 @@
             "Recast": 2.5,
             "Range": 25,
             "Radius": 0
-        },
-        {
-            "ID": 36,
-            "Name": "Astral Flare",
-            "ImageName": "astral_flare",
-            "Description": "Deals unaspected damage with a potency of 180 to target and all enemies nearby it.</br>Can only be executed while in Dreadwyrm Trance.</br></br>※This action cannot be assigned to a hotbar.</br>※Tri-disaster changes to Astral Flare when requirements for execution are met.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 5
         },
         {
             "ID": 37,
@@ -650,6 +419,239 @@
             "Radius": 0
         }
     ],
+    "UnderlevelGCD": [
+        {
+            "ID": 1,
+            "Name": "Ruin",
+            "ImageName": "ruin",
+            "Description": "Deals unaspected damage with a potency of 240.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 5,
+            "Name": "Aethercharge",
+            "ImageName": "aethercharge",
+            "Description": "Grants Aethercharge, increasing the potency of Ruin, Ruin II, and Ruin III by 50, and Outburst by 20.</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Ruby Arcanum, Topaz Arcanum, and Emerald Arcanum</br>Can only be executed in combat and while Carbuncle is summoned.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 6,
+            "Name": "Summon Ruby",
+            "ImageName": "summon_ruby",
+            "Description": "Summons Ruby Carbuncle, and orders it to execute Glittering Ruby.</br>Glittering Ruby Effect: Rushes target and deals fire damage with a potency of 400</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 2 stacks of Fire Attunement</br>Fire Attunement Effect: Gemshine and Precious Brilliance become fire-aspected</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Can only be executed while under the effect of Ruby Arcanum and Carbuncle is summoned.</br>Current pet will leave the battlefield while Ruby Carbuncle is present, and return once gone.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 8,
+            "Name": "Ruby Ruin",
+            "ImageName": "ruby_ruin",
+            "Description": "Deals fire damage with a potency of 340.</br>Fire Attunement Cost: 1</br>This action does not share a recast timer with any other actions. Upon execution, the recast timer for this action will be applied to all other weaponskills and magic actions.</br></br>※This action cannot be assigned to a hotbar.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2.8,
+            "Recast": 3,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 12,
+            "Name": "Summon Topaz",
+            "ImageName": "summon_topaz",
+            "Description": "Summons Topaz Carbuncle, and orders it to execute Glittering Topaz.</br>Glittering Topaz Effect: Rushes target and deals earth damage with a potency of 400</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 4 stacks of Earth Attunement</br>Earth Attunement Effect: Gemshine and Precious Brilliance become earth-aspected</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Can only be executed while under the effect of Topaz Arcanum and Carbuncle is summoned.</br>Current pet will leave the battlefield while Topaz Carbuncle is present, and return once gone.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 13,
+            "Name": "Topaz Ruin",
+            "ImageName": "topaz_ruin",
+            "Description": "Deals earth damage with a potency of 240.</br>Earth Attunement Cost: 1</br></br>※This action cannot be assigned to a hotbar.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 14,
+            "Name": "Summon Emerald",
+            "ImageName": "summon_emerald",
+            "Description": "Summons Emerald Carbuncle, and orders it to execute Glittering Emerald.</br>Glittering Emerald Effect: Deals wind damage with a potency of 400</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 4 stacks of Wind Attunement</br>Wind Attunement Effect: Gemshine and Precious Brilliance become wind-aspected</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Can only be executed while under the effect of Emerald Arcanum and Carbuncle is summoned.</br>Current pet will leave the battlefield while Emerald Carbuncle is present, and return once gone.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 15,
+            "Name": "Emerald Ruin",
+            "ImageName": "emerald_ruin",
+            "Description": "Deals wind damage with a potency of 160.</br>Wind Attunement Cost: 1</br></br>※This action cannot be assigned to a hotbar.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 1.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 16,
+            "Name": "Outburst",
+            "ImageName": "outburst",
+            "Description": "Deals unaspected damage with a potency of 100 to target and all enemies nearby it.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 18,
+            "Name": "Ruby Outburst",
+            "ImageName": "ruby_outburst",
+            "Description": "Deals fire damage with a potency of 160 to target and all enemies nearby it.</br>Fire Attunement Cost: 1</br>This action does not share a recast timer with any other actions. Upon execution, the recast timer for this action will be applied to all other weaponskills and magic actions.</br></br>※This action cannot be assigned to a hotbar.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2.8,
+            "Recast": 3,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 19,
+            "Name": "Topaz Outburst",
+            "ImageName": "topaz_outburst",
+            "Description": "Deals earth damage with a potency of 110 to target and all enemies nearby it.</br>Earth Attunement Cost: 1</br></br>※This action cannot be assigned to a hotbar.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 20,
+            "Name": "Emerald Outburst",
+            "ImageName": "emerald_outburst",
+            "Description": "Deals wind damage with a potency of 70 to target and all enemies nearby it.</br>Wind Attunement Cost: 1</br></br>※This action cannot be assigned to a hotbar.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 1.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 21,
+            "Name": "Ruin II",
+            "ImageName": "ruin_II",
+            "Description": "Deals unaspected damage with a potency of 270.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 22,
+            "Name": "Summon Ifrit",
+            "ImageName": "summon_ifrit",
+            "Description": "Summons Ifrit-Egi and orders it to execute Inferno.</br>Inferno Effect: Rushes forward and deals fire damage to all enemies in a 5-yalm cone before it with a potency of 600 for the first enemy, and 60% less for all remaining enemies</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 2 stacks of Fire Attunement</br>Fire Attunement Effect: Gemshine and Precious Brilliance become fire-aspected</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Ifrit's Favor</br>Effect of Ifrit's Favor ends upon execution of certain summoner actions.</br>Can only be executed while under the effect of Ruby Arcanum and Carbuncle is summoned.</br>Current pet will leave the battlefield while Ifrit-Egi is present, and return once gone.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 23,
+            "Name": "Ruby Ruin II",
+            "ImageName": "ruby_ruin_II",
+            "Description": "Deals fire damage with a potency of 380.</br>Fire Attunement Cost: 1</br>This action does not share a recast timer with any other actions. Upon execution, the recast timer for this action will be applied to all other weaponskills and magic actions.</br></br>※This action cannot be assigned to a hotbar.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2.8,
+            "Recast": 3,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 24,
+            "Name": "Topaz Ruin II",
+            "ImageName": "topaz_ruin_II",
+            "Description": "Deals earth damage with a potency of 270.</br>Earth Attunement Cost: 1</br></br>※This action cannot be assigned to a hotbar.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 25,
+            "Name": "Emerald Ruin II",
+            "ImageName": "emerald_ruin_II",
+            "Description": "Deals wind damage with a potency of 170.</br>Wind Attunement Cost: 1</br></br>※This action cannot be assigned to a hotbar.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 1.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 26,
+            "Name": "Summon Titan",
+            "ImageName": "summon_titan",
+            "Description": "Summons Titan-Egi and orders it to execute Earthen Fury.</br>Earthen Fury Effect: Rushes forward and deals earth damage to all enemies within 5 yalms with a potency of 600 for the first enemy, and 60% less for all remaining enemies</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 4 stacks of Earth Attunement</br>Earth Attunement Effect: Gemshine and Precious Brilliance become earth-aspected</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Can only be executed while under the effect of Topaz Arcanum and Carbuncle is summoned.</br>Current pet will leave the battlefield while Titan-Egi is present, and return once gone.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 28,
+            "Name": "Summon Garuda",
+            "ImageName": "summon_garuda",
+            "Description": "Summons Garuda-Egi and orders it to execute Aerial Blast.</br>Aerial Blast Effect: Deals wind damage to target and all enemies within 5 yalms with a potency of 600 for the first enemy, and 60% less for all remaining enemies</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 4 stacks of Wind Attunement</br>Wind Attunement Effect: Gemshine and Precious Brilliance become wind-aspected</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Garuda's Favor</br>Effect of Garuda's Favor ends upon execution of certain summoner actions.</br>Can only be executed while under the effect of Emerald Arcanum and Carbuncle is summoned.</br>Current pet will leave the battlefield while Garuda-Egi is present, and return once gone.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 34,
+            "Name": "Dreadwyrm Trance",
+            "ImageName": "dreadwyrm_trance",
+            "Description": "Enters Dreadwyrm Trance.</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Changes Ruin III to Astral Impulse and Outburst to Astral Flare</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Ruby Arcanum, Topaz Arcanum, and Emerald Arcanum</br>Can only be executed in combat and while Carbuncle is summoned.</br>This action does not share a recast timer with any other actions.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 36,
+            "Name": "Astral Flare",
+            "ImageName": "astral_flare",
+            "Description": "Deals unaspected damage with a potency of 180 to target and all enemies nearby it.</br>Can only be executed while in Dreadwyrm Trance.</br></br>※This action cannot be assigned to a hotbar.</br>※Tri-disaster changes to Astral Flare when requirements for execution are met.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        }
+    ],
     "OGCD": [
         {
             "ID": 3,
@@ -660,17 +662,6 @@
             "Cast": 0,
             "Recast": 60,
             "Range": 0,
-            "Radius": 0
-        },
-        {
-            "ID": 9,
-            "Name": "Fester",
-            "ImageName": "fester",
-            "Description": "Deals unaspected damage with a potency of 340.</br>Aetherflow Gauge Cost: 1",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 1,
-            "Range": 25,
             "Radius": 0
         },
         {
@@ -870,6 +861,19 @@
             "Recast": 0,
             "Range": 50,
             "Radius": 5
+        }
+    ],
+    "UnderlevelOGCD": [
+        {
+            "ID": 9,
+            "Name": "Fester",
+            "ImageName": "fester",
+            "Description": "Deals unaspected damage with a potency of 340.</br>Aetherflow Gauge Cost: 1",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 25,
+            "Radius": 0
         }
     ]
 }

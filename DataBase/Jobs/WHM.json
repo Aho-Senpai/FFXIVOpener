@@ -1,38 +1,6 @@
 {
     "GCD": [
-        {
-            "ID": 1,
-            "Name": "Stone",
-            "ImageName": "stone",
-            "Description": "Deals earth damage with a potency of 140.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 1.5,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 2,
-            "Name": "Cure",
-            "ImageName": "cure",
-            "Description": "Restores target's HP.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 500</br><span style=\"color:#00cc22;\">Additional Effect:</span> 15% chance next <span style=\"color:#ee7318;\">Cure II</span> will cost no MP</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
-            "GlobalCoolDown": "GCD",
-            "Cast": 1.5,
-            "Recast": 2.5,
-            "Range": 30,
-            "Radius": 0
-        },
-        {
-            "ID": 3,
-            "Name": "Aero",
-            "ImageName": "aero",
-            "Description": "Deals wind damage with a potency of 50.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Wind damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 30</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
+        
         {
             "ID": 4,
             "Name": "Medica",
@@ -55,17 +23,7 @@
             "Range": 30,
             "Radius": 0
         },
-        {
-            "ID": 6,
-            "Name": "Stone II",
-            "ImageName": "stone_II",
-            "Description": "Deals earth damage with a potency of 190.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 1.5,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
+        
         {
             "ID": 7,
             "Name": "Cure II",
@@ -100,39 +58,6 @@
             "Radius": 10
         },
         {
-            "ID": 12,
-            "Name": "Holy",
-            "ImageName": "holy",
-            "Description": "Deals unaspected damage with a potency of 140 to all nearby enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Stun</br><span style=\"color:#00cc22;\">Duration:</span> 4s",
-            "GlobalCoolDown": "GCD",
-            "Cast": 2.5,
-            "Recast": 2.5,
-            "Range": 0,
-            "Radius": 8
-        },
-        {
-            "ID": 13,
-            "Name": "Aero II",
-            "ImageName": "aero_II",
-            "Description": "Deals wind damage with a potency of 50.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Wind damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 50</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 14,
-            "Name": "Medica II",
-            "ImageName": "medica_II",
-            "Description": "Restores own HP and the HP of all nearby party members.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 250</br><span style=\"color:#00cc22;\">Additional Effect:</span> Regen</br><span style=\"color:#00cc22;\">Cure Potency:</span> 150</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
-            "GlobalCoolDown": "GCD",
-            "Cast": 2,
-            "Recast": 2.5,
-            "Range": 0,
-            "Radius": 20
-        },
-        {
             "ID": 16,
             "Name": "Afflatus Solace",
             "ImageName": "afflatus_solace",
@@ -141,28 +66,6 @@
             "Cast": 0,
             "Recast": 2.5,
             "Range": 30,
-            "Radius": 0
-        },
-        {
-            "ID": 18,
-            "Name": "Stone III",
-            "ImageName": "stone_III",
-            "Description": "Deals earth damage with a potency of 220.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 1.5,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 22,
-            "Name": "Stone IV",
-            "ImageName": "stone_IV",
-            "Description": "Deals earth damage with a potency of 260.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 1.5,
-            "Recast": 2.5,
-            "Range": 25,
             "Radius": 0
         },
         {
@@ -252,6 +155,106 @@
             "Recast": 2.5,
             "Range": 0,
             "Radius": 20
+        }
+    ],
+    "UnderlevelGCD": [
+        {
+            "ID": 1,
+            "Name": "Stone",
+            "ImageName": "stone",
+            "Description": "Deals earth damage with a potency of 140.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },{
+            "ID": 2,
+            "Name": "Cure",
+            "ImageName": "cure",
+            "Description": "Restores target's HP.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 500</br><span style=\"color:#00cc22;\">Additional Effect:</span> 15% chance next <span style=\"color:#ee7318;\">Cure II</span> will cost no MP</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 3,
+            "Name": "Aero",
+            "ImageName": "aero",
+            "Description": "Deals wind damage with a potency of 50.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Wind damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 30</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 6,
+            "Name": "Stone II",
+            "ImageName": "stone_II",
+            "Description": "Deals earth damage with a potency of 190.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 12,
+            "Name": "Holy",
+            "ImageName": "holy",
+            "Description": "Deals unaspected damage with a potency of 140 to all nearby enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Stun</br><span style=\"color:#00cc22;\">Duration:</span> 4s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2.5,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 8
+        },
+        {
+            "ID": 13,
+            "Name": "Aero II",
+            "ImageName": "aero_II",
+            "Description": "Deals wind damage with a potency of 50.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Wind damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 50</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 14,
+            "Name": "Medica II",
+            "ImageName": "medica_II",
+            "Description": "Restores own HP and the HP of all nearby party members.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 250</br><span style=\"color:#00cc22;\">Additional Effect:</span> Regen</br><span style=\"color:#00cc22;\">Cure Potency:</span> 150</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 20
+        },
+        {
+            "ID": 18,
+            "Name": "Stone III",
+            "ImageName": "stone_III",
+            "Description": "Deals earth damage with a potency of 220.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 22,
+            "Name": "Stone IV",
+            "ImageName": "stone_IV",
+            "Description": "Deals earth damage with a potency of 260.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
         }
     ],
     "OGCD": [
@@ -398,5 +401,8 @@
             "Range": 0,
             "Radius": 15
         }
+    ],
+    "UnderlevelOGCD": [
+        
     ]
 }

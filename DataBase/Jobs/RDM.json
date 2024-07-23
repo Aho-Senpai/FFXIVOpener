@@ -12,50 +12,6 @@
             "Radius": 0
         },
         {
-            "ID": 2,
-            "Name": "Jolt",
-            "ImageName": "jolt",
-            "Description": "Deals unaspected damage with a potency of 170.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases both Black Mana and White Mana by 2",
-            "GlobalCoolDown": "GCD",
-            "Cast": 2,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 3,
-            "Name": "Verthunder",
-            "ImageName": "verthunder",
-            "Description": "Deals lightning damage with a potency of 360.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases Black Mana by 6</br><span style=\"color:#00cc22;\">Additional Effect:</span> 50% chance of becoming Verfire Ready</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
-            "GlobalCoolDown": "GCD",
-            "Cast": 5,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 5,
-            "Name": "Veraero",
-            "ImageName": "veraero",
-            "Description": "Deals wind damage with a potency of 360.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases White Mana by 6</br><span style=\"color:#00cc22;\">Additional Effect:</span> 50% chance of becoming Verstone Ready</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
-            "GlobalCoolDown": "GCD",
-            "Cast": 5,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 6,
-            "Name": "Scatter",
-            "ImageName": "scatter",
-            "Description": "Deals unaspected damage with a potency of 120 to target and all enemies nearby it.</br>Acceleration Potency: 170</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases both Black Mana and White Mana by 3",
-            "GlobalCoolDown": "GCD",
-            "Cast": 5,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 5
-        },
-        {
             "ID": 7,
             "Name": "Verthunder II",
             "ImageName": "verthunder_II",
@@ -141,17 +97,6 @@
             "Cast": 2,
             "Recast": 2.5,
             "Range": 30,
-            "Radius": 0
-        },
-        {
-            "ID": 22,
-            "Name": "Jolt II",
-            "ImageName": "jolt_II",
-            "Description": "Deals unaspected damage with a potency of 280.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases both Black Mana and White Mana by 2",
-            "GlobalCoolDown": "GCD",
-            "Cast": 2,
-            "Recast": 2.5,
-            "Range": 25,
             "Radius": 0
         },
         {
@@ -353,6 +298,63 @@
             "Radius": 0
         }
     ],
+    "UnderlevelGCD": [
+        {
+            "ID": 2,
+            "Name": "Jolt",
+            "ImageName": "jolt",
+            "Description": "Deals unaspected damage with a potency of 170.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases both Black Mana and White Mana by 2",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 3,
+            "Name": "Verthunder",
+            "ImageName": "verthunder",
+            "Description": "Deals lightning damage with a potency of 360.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases Black Mana by 6</br><span style=\"color:#00cc22;\">Additional Effect:</span> 50% chance of becoming Verfire Ready</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 5,
+            "Name": "Veraero",
+            "ImageName": "veraero",
+            "Description": "Deals wind damage with a potency of 360.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases White Mana by 6</br><span style=\"color:#00cc22;\">Additional Effect:</span> 50% chance of becoming Verstone Ready</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 6,
+            "Name": "Scatter",
+            "ImageName": "scatter",
+            "Description": "Deals unaspected damage with a potency of 120 to target and all enemies nearby it.</br>Acceleration Potency: 170</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases both Black Mana and White Mana by 3",
+            "GlobalCoolDown": "GCD",
+            "Cast": 5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 22,
+            "Name": "Jolt II",
+            "ImageName": "jolt_II",
+            "Description": "Deals unaspected damage with a potency of 280.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases both Black Mana and White Mana by 2",
+            "GlobalCoolDown": "GCD",
+            "Cast": 2,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        }
+    ],
     "OGCD": [
         {
             "ID": 4,
@@ -475,5 +477,6 @@
             "Range": 25,
             "Radius": 5
         }
-    ]
+    ],
+    "UnderlevelOGCD": []
 }

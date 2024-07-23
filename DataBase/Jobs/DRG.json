@@ -12,17 +12,6 @@
             "Radius": 0
         },
         {
-            "ID": 2,
-            "Name": "Vorpal Thrust",
-            "ImageName": "vorpal_thrust",
-            "Description": "Delivers an attack with a potency of 130.</br><span style=\"color:#00cc22;\">Combo Action:</span> True Thrust</br><span style=\"color:#00cc22;\">Combo Potency:</span> 280",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 3,
-            "Radius": 0
-        },
-        {
             "ID": 4,
             "Name": "Piercing Talon",
             "ImageName": "piercing_talon",
@@ -31,28 +20,6 @@
             "Cast": 0,
             "Recast": 2.5,
             "Range": 20,
-            "Radius": 0
-        },
-        {
-            "ID": 5,
-            "Name": "Disembowel",
-            "ImageName": "disembowel",
-            "Description": "Delivers an attack with a potency of 140.</br><span style=\"color:#00cc22;\">Combo Action:</span> True Thrust</br><span style=\"color:#00cc22;\">Combo Potency:</span> 250</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Grants Power Surge</br>Power Surge Effect: Increases damage dealt by 10%</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 3,
-            "Radius": 0
-        },
-        {
-            "ID": 6,
-            "Name": "Full Thrust",
-            "ImageName": "full_thrust",
-            "Description": "Delivers an attack with a potency of 100.</br><span style=\"color:#00cc22;\">Combo Action:</span> Vorpal Thrust</br><span style=\"color:#00cc22;\">Combo Potency:</span> 380",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 3,
             "Radius": 0
         },
         {
@@ -65,17 +32,6 @@
             "Recast": 2.5,
             "Range": 10,
             "Radius": 10
-        },
-        {
-            "ID": 12,
-            "Name": "Chaos Thrust",
-            "ImageName": "chaos_thrust",
-            "Description": "Delivers an attack with a potency of 100.</br>140 when executed from a target's rear.</br><span style=\"color:#00cc22;\">Combo Action:</span> Disembowel</br><span style=\"color:#00cc22;\">Combo Potency:</span> 220</br>Rear Combo Potency: 260</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 40</br><span style=\"color:#00cc22;\">Duration:</span> 24s",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 3,
-            "Radius": 0
         },
         {
             "ID": 15,
@@ -199,6 +155,52 @@
             "Radius": 0
         }
     ],
+    "UnderlevelGCD": [
+        {
+            "ID": 2,
+            "Name": "Vorpal Thrust",
+            "ImageName": "vorpal_thrust",
+            "Description": "Delivers an attack with a potency of 130.</br><span style=\"color:#00cc22;\">Combo Action:</span> True Thrust</br><span style=\"color:#00cc22;\">Combo Potency:</span> 280",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 5,
+            "Name": "Disembowel",
+            "ImageName": "disembowel",
+            "Description": "Delivers an attack with a potency of 140.</br><span style=\"color:#00cc22;\">Combo Action:</span> True Thrust</br><span style=\"color:#00cc22;\">Combo Potency:</span> 250</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Grants Power Surge</br>Power Surge Effect: Increases damage dealt by 10%</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 6,
+            "Name": "Full Thrust",
+            "ImageName": "full_thrust",
+            "Description": "Delivers an attack with a potency of 100.</br><span style=\"color:#00cc22;\">Combo Action:</span> Vorpal Thrust</br><span style=\"color:#00cc22;\">Combo Potency:</span> 380",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 12,
+            "Name": "Chaos Thrust",
+            "ImageName": "chaos_thrust",
+            "Description": "Delivers an attack with a potency of 100.</br>140 when executed from a target's rear.</br><span style=\"color:#00cc22;\">Combo Action:</span> Disembowel</br><span style=\"color:#00cc22;\">Combo Potency:</span> 220</br>Rear Combo Potency: 260</br><span style=\"color:#00cc22;\">Combo Bonus:</span> Damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 40</br><span style=\"color:#00cc22;\">Duration:</span> 24s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        }
+    ],
     "OGCD": [
         {
             "ID": 3,
@@ -220,17 +222,6 @@
             "Cast": 0,
             "Recast": 60,
             "Range": 0,
-            "Radius": 0
-        },
-        {
-            "ID": 8,
-            "Name": "Jump",
-            "ImageName": "jump",
-            "Description": "Delivers a jumping attack with a potency of 320. Returns you to your original position after the attack is made.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Dive Ready</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 30,
-            "Range": 20,
             "Radius": 0
         },
         {
@@ -364,6 +355,19 @@
             "Recast": 1,
             "Range": 3,
             "Radius": 5
+        }
+    ],
+    "UnderlevelOGCD": [
+        {
+            "ID": 8,
+            "Name": "Jump",
+            "ImageName": "jump",
+            "Description": "Delivers a jumping attack with a potency of 320. Returns you to your original position after the attack is made.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Dive Ready</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 30,
+            "Range": 20,
+            "Radius": 0
         }
     ]
 }

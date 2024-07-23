@@ -67,17 +67,6 @@
             "Radius":0
         },
         {
-            "ID": 7,
-            "Name":"Rage of Halone",
-            "ImageName":"rage_of_halone",
-            "GlobalCoolDown":"GCD",
-            "Description":"Delivers an attack with a potency of 100.</br><span style=\"color:#00cc22;\">Combo Action:</span> <span style=\"color:#ee7318;\">Riot Blade</span></br><span style=\"color:#00cc22;\">Combo Potency:</span> 330",
-            "Cast":0,
-            "Recast":2.5,
-            "Range":3,
-            "Radius":0
-        },
-        {
             "ID": 8,
             "Name":"Prominence",
             "ImageName":"prominence",
@@ -210,6 +199,21 @@
             "Radius":5
         }
     ],
+
+    "UnderlevelGCD": [
+        {
+            "ID": 7,
+            "Name":"Rage of Halone",
+            "ImageName":"rage_of_halone",
+            "GlobalCoolDown":"GCD",
+            "Description":"Delivers an attack with a potency of 100.</br><span style=\"color:#00cc22;\">Combo Action:</span> <span style=\"color:#ee7318;\">Riot Blade</span></br><span style=\"color:#00cc22;\">Combo Potency:</span> 330",
+            "Cast":0,
+            "Recast":2.5,
+            "Range":3,
+            "Radius":0
+        }
+    ],
+
     "OGCD": [
         {
             "ID":1,
@@ -219,61 +223,6 @@
             "Description":"Increases damage dealt by 25%.</br><span style=\"color:#00cc22;\">Duration:</span> 20s",
             "Cast":0,
             "Recast":60,
-            "Range":0,
-            "Radius":0
-        },
-        {
-            "ID": 2,
-            "Name":"Iron Will",
-            "ImageName":"iron_will",
-            "GlobalCoolDown":"OGCD",
-            "Description":"Significantly increases enmity generation.</br>Effect ends upon reuse.",
-            "Cast":0,
-            "Recast":2,
-            "Range":0,
-            "Radius":0
-        },
-        {
-            "ID": 3,
-            "Name":"Release Iron Will",
-            "ImageName":"release_iron_will",
-            "GlobalCoolDown":"OGCD",
-            "Description":"Cancels the effect of Iron Will.",
-            "Cast":0,
-            "Recast":1,
-            "Range":0,
-            "Radius":0
-        },
-        {
-            "ID": 4,
-            "Name":"Spirits Within",
-            "ImageName":"spirits_within",
-            "GlobalCoolDown":"OGCD",
-            "Description":"Delivers an attack with a potency of 270.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores MP",
-            "Cast":0,
-            "Recast":30,
-            "Range":3,
-            "Radius":0
-        },
-        {
-            "ID": 5,
-            "Name":"Sheltron",
-            "ImageName":"sheltron",
-            "GlobalCoolDown":"OGCD",
-            "Description":"Reduces damage taken by 15%.</br><span style=\"color:#00cc22;\">Duration:</span> 6s</br><span style=\"color:#00cc22;\">Oath Gauge Cost:</span> 50",
-            "Cast":0,
-            "Recast":5,
-            "Range":0,
-            "Radius":0
-        },
-        {
-            "ID": 6,
-            "Name":"Sentinel",
-            "ImageName":"sentinel",
-            "GlobalCoolDown":"OGCD",
-            "Description":"Reduces damage taken by 30%.</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
-            "Cast":0,
-            "Recast":120,
             "Range":0,
             "Radius":0
         },
@@ -341,17 +290,6 @@
             "Cast":0,
             "Recast":10,
             "Range":30,
-            "Radius":0
-        },
-        {
-            "ID": 13,
-            "Name":"Requiescat",
-            "ImageName":"requiescat",
-            "GlobalCoolDown":"OGCD",
-            "Description":"Deals unaspected damage with a potency of 320.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 4 stacks of <span style=\"color:#ee7318;\"><span style=\"color:#cccc52;\">Requiescat</span></span></br><span style=\"color:#00cc22;\">Requiescat Effect:</span> Increases the potency of <span style=\"color:#ee7318;\">Holy Spirit</span>, <span style=\"color:#ee7318;\">Holy Circle</span>, and all <span style=\"color:#ee7318;\">Confiteor</span> combo actions and spells will require no cast time</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants <span style=\"color:#ee7318;\">Confiteor Ready</span></br><span style=\"color:#00cc22;\">Duration:</span> 30s",
-            "Cast":0,
-            "Recast":60,
-            "Range":3,
             "Radius":0
         },
         {
@@ -430,6 +368,74 @@
             "Recast":1,
             "Range":25,
             "Radius":5
+        }
+    ],
+    "UnderlevelOGCD": [
+        {
+            "ID": 2,
+            "Name":"Iron Will",
+            "ImageName":"iron_will",
+            "GlobalCoolDown":"OGCD",
+            "Description":"Significantly increases enmity generation.</br>Effect ends upon reuse.",
+            "Cast":0,
+            "Recast":2,
+            "Range":0,
+            "Radius":0
+        },
+        {
+            "ID": 3,
+            "Name":"Release Iron Will",
+            "ImageName":"release_iron_will",
+            "GlobalCoolDown":"OGCD",
+            "Description":"Cancels the effect of Iron Will.",
+            "Cast":0,
+            "Recast":1,
+            "Range":0,
+            "Radius":0
+        },
+        {
+            "ID": 4,
+            "Name":"Spirits Within",
+            "ImageName":"spirits_within",
+            "GlobalCoolDown":"OGCD",
+            "Description":"Delivers an attack with a potency of 270.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores MP",
+            "Cast":0,
+            "Recast":30,
+            "Range":3,
+            "Radius":0
+        },
+        {
+            "ID": 5,
+            "Name":"Sheltron",
+            "ImageName":"sheltron",
+            "GlobalCoolDown":"OGCD",
+            "Description":"Reduces damage taken by 15%.</br><span style=\"color:#00cc22;\">Duration:</span> 6s</br><span style=\"color:#00cc22;\">Oath Gauge Cost:</span> 50",
+            "Cast":0,
+            "Recast":5,
+            "Range":0,
+            "Radius":0
+        },
+        {
+            "ID": 6,
+            "Name":"Sentinel",
+            "ImageName":"sentinel",
+            "GlobalCoolDown":"OGCD",
+            "Description":"Reduces damage taken by 30%.</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "Cast":0,
+            "Recast":120,
+            "Range":0,
+            "Radius":0
+        },
+        {
+            "ID": 13,
+            "Name":"Requiescat",
+            "ImageName":"requiescat",
+            "GlobalCoolDown":"OGCD",
+            "Description":"Deals unaspected damage with a potency of 320.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants 4 stacks of <span style=\"color:#ee7318;\"><span style=\"color:#cccc52;\">Requiescat</span></span></br><span style=\"color:#00cc22;\">Requiescat Effect:</span> Increases the potency of <span style=\"color:#ee7318;\">Holy Spirit</span>, <span style=\"color:#ee7318;\">Holy Circle</span>, and all <span style=\"color:#ee7318;\">Confiteor</span> combo actions and spells will require no cast time</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants <span style=\"color:#ee7318;\">Confiteor Ready</span></br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "Cast":0,
+            "Recast":60,
+            "Range":3,
+            "Radius":0
         }
     ]
 }

@@ -177,6 +177,7 @@
             "Radius": 5
         }
     ],
+    "UnderlevelGCD": [],
     "OGCD": [
         {
             "ID": 2,
@@ -197,50 +198,6 @@
             "GlobalCoolDown": "OGCD",
             "Cast": 0,
             "Recast": 90,
-            "Range": 0,
-            "Radius": 0
-        },
-        {
-            "ID": 6,
-            "Name": "Royal Guard",
-            "ImageName": "royal_guard",
-            "Description": "Significantly increases enmity generation.</br>Effect ends upon reuse.",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 2,
-            "Range": 0,
-            "Radius": 0
-        },
-        {
-            "ID": 7,
-            "Name": "Release Royal Guard",
-            "ImageName": "release_royal_guard",
-            "Description": "Cancels the effect of Royal Guard.",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 1,
-            "Range": 0,
-            "Radius": 0
-        },
-        {
-            "ID": 9,
-            "Name": "Danger Zone",
-            "ImageName": "danger_zone",
-            "Description": "Delivers an attack with a potency of 250.",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 30,
-            "Range": 3,
-            "Radius": 0
-        },
-        {
-            "ID": 12,
-            "Name": "Nebula",
-            "ImageName": "nebula",
-            "Description": "Reduces damage taken by 30%.</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 120,
             "Range": 0,
             "Radius": 0
         },
@@ -298,17 +255,6 @@
             "Recast": 90,
             "Range": 0,
             "Radius": 30
-        },
-        {
-            "ID": 23,
-            "Name": "Heart of Stone",
-            "ImageName": "heart_of_stone",
-            "Description": "Reduces damage taken by a party member or self by 15%.</br><span style=\"color:#00cc22;\">Duration:</span> 7s</br><span style=\"color:#00cc22;\">Additional Effect:</span> When targeting a party member while under the effect of Brutal Shell, that effect is also granted to the target</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 25,
-            "Range": 30,
-            "Radius": 0
         },
         {
             "ID": 24,
@@ -419,6 +365,63 @@
             "Recast": 1,
             "Range": 0,
             "Radius": 5
+        }
+    ],
+    "UnderlevelOGCD": [
+        {
+            "ID": 6,
+            "Name": "Royal Guard",
+            "ImageName": "royal_guard",
+            "Description": "Significantly increases enmity generation.</br>Effect ends upon reuse.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 2,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 7,
+            "Name": "Release Royal Guard",
+            "ImageName": "release_royal_guard",
+            "Description": "Cancels the effect of Royal Guard.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 9,
+            "Name": "Danger Zone",
+            "ImageName": "danger_zone",
+            "Description": "Delivers an attack with a potency of 250.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 30,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 12,
+            "Name": "Nebula",
+            "ImageName": "nebula",
+            "Description": "Reduces damage taken by 30%.</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 23,
+            "Name": "Heart of Stone",
+            "ImageName": "heart_of_stone",
+            "Description": "Reduces damage taken by a party member or self by 15%.</br><span style=\"color:#00cc22;\">Duration:</span> 7s</br><span style=\"color:#00cc22;\">Additional Effect:</span> When targeting a party member while under the effect of Brutal Shell, that effect is also granted to the target</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 25,
+            "Range": 30,
+            "Radius": 0
         }
     ]
 }

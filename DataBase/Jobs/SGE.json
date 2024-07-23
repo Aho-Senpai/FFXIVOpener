@@ -1,17 +1,6 @@
 {
     "GCD": [
         {
-            "ID": 1,
-            "Name": "Dosis",
-            "ImageName": "dosis",
-            "Description": "Deals unaspected damage with a potency of 300.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores HP to targets under the effect of Kardion granted by you</br><span style=\"color:#00cc22;\">Cure Potency:</span> 170",
-            "GlobalCoolDown": "GCD",
-            "Cast": 1.5,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
             "ID": 2,
             "Name": "Diagnosis",
             "ImageName": "diagnosis",
@@ -45,17 +34,6 @@
             "Radius": 0
         },
         {
-            "ID": 7,
-            "Name": "Phlegma",
-            "ImageName": "phlegma",
-            "Description": "Deals unaspected damage to target and all enemies nearby it with a potency of 400 for the first enemy, and 30% less for all remaining enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores HP to targets under the effect of Kardion granted by you</br><span style=\"color:#00cc22;\">Cure Potency:</span> 170</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 2</br>Recast timer cannot be affected by status effects or gear attributes.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 40,
-            "Range": 6,
-            "Radius": 5
-        },
-        {
             "ID": 8,
             "Name": "Eukrasia",
             "ImageName": "eukrasia",
@@ -75,83 +53,6 @@
             "Cast": 0,
             "Recast": 1.5,
             "Range": 30,
-            "Radius": 0
-        },
-        {
-            "ID": 10,
-            "Name": "Eukrasian Prognosis",
-            "ImageName": "eukrasian_prognosis",
-            "Description": "Restores own HP and the HP of all nearby party members.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 100</br><span style=\"color:#00cc22;\">Additional Effect:</span> Erects a magicked barrier which nullifies damage equaling 320% of the amount of HP restored</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Effect cannot be stacked with those of Eukrasian Diagnosis or scholar's Galvanize.</br>Can only be executed while under the effect of Eukrasia.</br></br>※This action cannot be assigned to a hotbar.</br>※Prognosis changes to Eukrasian Prognosis when requirements for execution are met.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 1.5,
-            "Range": 0,
-            "Radius": 15
-        },
-        {
-            "ID": 11,
-            "Name": "Eukrasian Dosis",
-            "ImageName": "eukrasian_dosis",
-            "Description": "Deals unaspected damage over time.</br><span style=\"color:#00cc22;\">Potency:</span> 40</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores HP to targets under the effect of Kardion granted by you</br><span style=\"color:#00cc22;\">Cure Potency:</span> 170</br>Can only be executed while under the effect of Eukrasia.</br></br>※This action cannot be assigned to a hotbar.</br>※Dosis changes to Eukrasian Dosis when requirements for execution are met.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 1.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 15,
-            "Name": "Dyskrasia",
-            "ImageName": "dyskrasia",
-            "Description": "Deals unaspected damage with a potency of 160 to all nearby enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores HP to targets under the effect of Kardion granted by you</br><span style=\"color:#00cc22;\">Cure Potency:</span> 170",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 0,
-            "Radius": 5
-        },
-        {
-            "ID": 22,
-            "Name": "Toxikon",
-            "ImageName": "toxikon",
-            "Description": "Deals unaspected damage to target and all enemies nearby it with a potency of 300 for the first enemy, and 50% less for all remaining enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores HP to targets under the effect of Kardion granted by you</br><span style=\"color:#00cc22;\">Cure Potency:</span> 170</br>Addersting Cost: 1",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 5
-        },
-        {
-            "ID": 24,
-            "Name": "Dosis II",
-            "ImageName": "dosis_II",
-            "Description": "Deals unaspected damage with a potency of 320.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores HP to targets under the effect of Kardion granted by you</br><span style=\"color:#00cc22;\">Cure Potency:</span> 170",
-            "GlobalCoolDown": "GCD",
-            "Cast": 1.5,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 25,
-            "Name": "Phlegma II",
-            "ImageName": "phlegma_II",
-            "Description": "Deals unaspected damage to target and all enemies nearby it with a potency of 490 for the first enemy, and 50% less for all remaining enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores HP to targets under the effect of Kardion granted by you</br><span style=\"color:#00cc22;\">Cure Potency:</span> 170</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 2</br>Recast timer cannot be affected by status effects or gear attributes.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 40,
-            "Range": 6,
-            "Radius": 5
-        },
-        {
-            "ID": 26,
-            "Name": "Eukrasian Dosis II",
-            "ImageName": "eukrasian_dosis_II",
-            "Description": "Deals unaspected damage over time.</br><span style=\"color:#00cc22;\">Potency:</span> 60</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores HP to targets under the effect of Kardion granted by you</br><span style=\"color:#00cc22;\">Cure Potency:</span> 170</br>Can only be executed while under the effect of Eukrasia.</br></br>※This action cannot be assigned to a hotbar.</br>※Dosis II changes to Eukrasian Dosis II when requirements for execution are met.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 1.5,
-            "Range": 25,
             "Radius": 0
         },
         {
@@ -243,6 +144,107 @@
             "Radius": 15
         }
     ],
+    "UnderlevelGCD": [
+        {
+            "ID": 1,
+            "Name": "Dosis",
+            "ImageName": "dosis",
+            "Description": "Deals unaspected damage with a potency of 300.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores HP to targets under the effect of Kardion granted by you</br><span style=\"color:#00cc22;\">Cure Potency:</span> 170",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 7,
+            "Name": "Phlegma",
+            "ImageName": "phlegma",
+            "Description": "Deals unaspected damage to target and all enemies nearby it with a potency of 400 for the first enemy, and 30% less for all remaining enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores HP to targets under the effect of Kardion granted by you</br><span style=\"color:#00cc22;\">Cure Potency:</span> 170</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 2</br>Recast timer cannot be affected by status effects or gear attributes.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 40,
+            "Range": 6,
+            "Radius": 5
+        },
+        {
+            "ID": 10,
+            "Name": "Eukrasian Prognosis",
+            "ImageName": "eukrasian_prognosis",
+            "Description": "Restores own HP and the HP of all nearby party members.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 100</br><span style=\"color:#00cc22;\">Additional Effect:</span> Erects a magicked barrier which nullifies damage equaling 320% of the amount of HP restored</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Effect cannot be stacked with those of Eukrasian Diagnosis or scholar's Galvanize.</br>Can only be executed while under the effect of Eukrasia.</br></br>※This action cannot be assigned to a hotbar.</br>※Prognosis changes to Eukrasian Prognosis when requirements for execution are met.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 1.5,
+            "Range": 0,
+            "Radius": 15
+        },
+        {
+            "ID": 11,
+            "Name": "Eukrasian Dosis",
+            "ImageName": "eukrasian_dosis",
+            "Description": "Deals unaspected damage over time.</br><span style=\"color:#00cc22;\">Potency:</span> 40</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores HP to targets under the effect of Kardion granted by you</br><span style=\"color:#00cc22;\">Cure Potency:</span> 170</br>Can only be executed while under the effect of Eukrasia.</br></br>※This action cannot be assigned to a hotbar.</br>※Dosis changes to Eukrasian Dosis when requirements for execution are met.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 1.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 15,
+            "Name": "Dyskrasia",
+            "ImageName": "dyskrasia",
+            "Description": "Deals unaspected damage with a potency of 160 to all nearby enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores HP to targets under the effect of Kardion granted by you</br><span style=\"color:#00cc22;\">Cure Potency:</span> 170",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 0,
+            "Radius": 5
+        },
+        {
+            "ID": 22,
+            "Name": "Toxikon",
+            "ImageName": "toxikon",
+            "Description": "Deals unaspected damage to target and all enemies nearby it with a potency of 300 for the first enemy, and 50% less for all remaining enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores HP to targets under the effect of Kardion granted by you</br><span style=\"color:#00cc22;\">Cure Potency:</span> 170</br>Addersting Cost: 1",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 24,
+            "Name": "Dosis II",
+            "ImageName": "dosis_II",
+            "Description": "Deals unaspected damage with a potency of 320.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores HP to targets under the effect of Kardion granted by you</br><span style=\"color:#00cc22;\">Cure Potency:</span> 170",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 25,
+            "Name": "Phlegma II",
+            "ImageName": "phlegma_II",
+            "Description": "Deals unaspected damage to target and all enemies nearby it with a potency of 490 for the first enemy, and 50% less for all remaining enemies.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores HP to targets under the effect of Kardion granted by you</br><span style=\"color:#00cc22;\">Cure Potency:</span> 170</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 2</br>Recast timer cannot be affected by status effects or gear attributes.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 40,
+            "Range": 6,
+            "Radius": 5
+        },
+        {
+            "ID": 26,
+            "Name": "Eukrasian Dosis II",
+            "ImageName": "eukrasian_dosis_II",
+            "Description": "Deals unaspected damage over time.</br><span style=\"color:#00cc22;\">Potency:</span> 60</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Restores HP to targets under the effect of Kardion granted by you</br><span style=\"color:#00cc22;\">Cure Potency:</span> 170</br>Can only be executed while under the effect of Eukrasia.</br></br>※This action cannot be assigned to a hotbar.</br>※Dosis II changes to Eukrasian Dosis II when requirements for execution are met.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 1.5,
+            "Range": 25,
+            "Radius": 0
+        }
+    ],
     "OGCD": [
         {
             "ID": 3,
@@ -254,17 +256,6 @@
             "Recast": 5,
             "Range": 30,
             "Radius": 0
-        },
-        {
-            "ID": 6,
-            "Name": "Physis",
-            "ImageName": "physis",
-            "Description": "Gradually restores own HP and the HP of all nearby party members.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 100</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 60,
-            "Range": 0,
-            "Radius": 15
         },
         {
             "ID": 12,
@@ -441,6 +432,19 @@
             "Recast": 180,
             "Range": 0,
             "Radius": 20
+        }
+    ],
+    "UnderlevelOGCD": [
+        {
+            "ID": 6,
+            "Name": "Physis",
+            "ImageName": "physis",
+            "Description": "Gradually restores own HP and the HP of all nearby party members.</br><span style=\"color:#00cc22;\">Cure Potency:</span> 100</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 0,
+            "Radius": 15
         }
     ]
 }

@@ -144,73 +144,8 @@
             "Radius": 10
         }
     ],
+    "UnderlevelGCD": [],
     "OGCD": [
-        {
-            "ID": 4,
-            "Name": "Grit",
-            "ImageName": "grit",
-            "Description": "Significantly increases enmity generation.</br>Effect ends upon reuse.",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 2,
-            "Range": 0,
-            "Radius": 0
-        },
-        {
-            "ID": 5,
-            "Name": "Release Grit",
-            "ImageName": "release_grit",
-            "Description": "Cancels the effect of Grit.",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 1,
-            "Range": 0,
-            "Radius": 0
-        },
-        {
-            "ID": 8,
-            "Name": "Flood of Darkness",
-            "ImageName": "flood_of_darkness",
-            "Description": "Deals unaspected damage with a potency of 100 to all enemies in a straight line before you.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Darkside, increasing damage dealt by 10%</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Extends Darkside duration by 30s to a maximum of 60s.</br>Shares a recast timer with Edge of Darkness.",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 1,
-            "Range": 10,
-            "Radius": 10
-        },
-        {
-            "ID": 9,
-            "Name": "Blood Weapon",
-            "ImageName": "blood_weapon",
-            "Description": "Grants 3 stacks of Blood Weapon, each stack increasing Blood Gauge by 10 and restoring MP upon landing weaponskills or spells.</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br>Effect does not stack when hitting multiple targets with a single attack.",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 60,
-            "Range": 0,
-            "Radius": 0
-        },
-        {
-            "ID": 10,
-            "Name": "Shadow Wall",
-            "ImageName": "shadow_wall",
-            "Description": "Reduces damage taken by 30%.</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 120,
-            "Range": 0,
-            "Radius": 0
-        },
-        {
-            "ID": 12,
-            "Name": "Edge of Darkness",
-            "ImageName": "edge_of_darkness",
-            "Description": "Deals unaspected damage with a potency of 300.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Darkside, increasing damage dealt by 10%</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Extends Darkside duration by 30s to a maximum of 60s.</br>Shares a recast timer with Flood of Darkness.",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 1,
-            "Range": 3,
-            "Radius": 0
-        },
         {
             "ID": 13,
             "Name": "Dark Mind",
@@ -385,6 +320,74 @@
             "Cast": 0,
             "Recast": 120,
             "Range": 0,
+            "Radius": 0
+        }
+    ],
+    "UnderlevelOGCD": [
+        {
+            "ID": 4,
+            "Name": "Grit",
+            "ImageName": "grit",
+            "Description": "Significantly increases enmity generation.</br>Effect ends upon reuse.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 2,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 5,
+            "Name": "Release Grit",
+            "ImageName": "release_grit",
+            "Description": "Cancels the effect of Grit.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 8,
+            "Name": "Flood of Darkness",
+            "ImageName": "flood_of_darkness",
+            "Description": "Deals unaspected damage with a potency of 100 to all enemies in a straight line before you.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Darkside, increasing damage dealt by 10%</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Extends Darkside duration by 30s to a maximum of 60s.</br>Shares a recast timer with Edge of Darkness.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 10,
+            "Radius": 10
+        },
+        {
+            "ID": 9,
+            "Name": "Blood Weapon",
+            "ImageName": "blood_weapon",
+            "Description": "Grants 3 stacks of Blood Weapon, each stack increasing Blood Gauge by 10 and restoring MP upon landing weaponskills or spells.</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br>Effect does not stack when hitting multiple targets with a single attack.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 10,
+            "Name": "Shadow Wall",
+            "ImageName": "shadow_wall",
+            "Description": "Reduces damage taken by 30%.</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 0,
+            "Radius": 0
+        },
+        {
+            "ID": 12,
+            "Name": "Edge of Darkness",
+            "ImageName": "edge_of_darkness",
+            "Description": "Deals unaspected damage with a potency of 300.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Darkside, increasing damage dealt by 10%</br><span style=\"color:#00cc22;\">Duration:</span> 30s</br>Extends Darkside duration by 30s to a maximum of 60s.</br>Shares a recast timer with Flood of Darkness.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 3,
             "Radius": 0
         }
     ]

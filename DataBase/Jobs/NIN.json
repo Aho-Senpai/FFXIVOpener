@@ -111,6 +111,9 @@
             "Radius": 0
         }
     ],
+    "UnderlevelGCD": [
+        
+    ],
     "OGCD": [
         {
             "ID": 2,
@@ -132,28 +135,6 @@
             "Cast": 0,
             "Recast": 20,
             "Range": 0,
-            "Radius": 0
-        },
-        {
-            "ID": 6,
-            "Name": "Mug",
-            "ImageName": "mug",
-            "Description": "Delivers an attack with a potency of 150.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases target's damage taken by 5%</br><span style=\"color:#00cc22;\">Duration:</span> 20s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases the chance of additional items being dropped by target if Mug is dealt before, or as, the finishing blow",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 120,
-            "Range": 3,
-            "Radius": 0
-        },
-        {
-            "ID": 7,
-            "Name": "Trick Attack",
-            "ImageName": "trick_attack",
-            "Description": "Delivers an attack with a potency of 300.</br>400 when executed from a target's rear.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases damage you deal target by 10%</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br>Can only be executed while under the effect of Hidden.",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 60,
-            "Range": 3,
             "Radius": 0
         },
         {
@@ -187,17 +168,6 @@
             "Cast": 0,
             "Recast": 20,
             "Range": 0,
-            "Radius": 0
-        },
-        {
-            "ID": 13,
-            "Name": "Assassinate",
-            "ImageName": "assassinate",
-            "Description": "Delivers an attack with a potency of 200.",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 60,
-            "Range": 3,
             "Radius": 0
         },
         {
@@ -364,6 +334,41 @@
             "Recast": 1,
             "Range": 20,
             "Radius": 5
+        }
+    ],
+    "UnderlevelOGCD": [
+        {
+            "ID": 6,
+            "Name": "Mug",
+            "ImageName": "mug",
+            "Description": "Delivers an attack with a potency of 150.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases target's damage taken by 5%</br><span style=\"color:#00cc22;\">Duration:</span> 20s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases the chance of additional items being dropped by target if Mug is dealt before, or as, the finishing blow",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 120,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 7,
+            "Name": "Trick Attack",
+            "ImageName": "trick_attack",
+            "Description": "Delivers an attack with a potency of 300.</br>400 when executed from a target's rear.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases damage you deal target by 10%</br><span style=\"color:#00cc22;\">Duration:</span> 15s</br>Can only be executed while under the effect of Hidden.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 13,
+            "Name": "Assassinate",
+            "ImageName": "assassinate",
+            "Description": "Delivers an attack with a potency of 200.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 60,
+            "Range": 3,
+            "Radius": 0
         }
     ]
 }

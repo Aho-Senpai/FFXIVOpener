@@ -6,8 +6,9 @@ function githubBtn() {
     window.open("https://github.com/Aho-Senpai/FFXIVOpener");
 }
 
+//! TODO : add a "under level" category in GCD/OGCD lists?
+
 //TODO : remove sortableJS dependency and implement sorting of timeline
-//TODO : add a "under level" category in GCD/OGCD lists?
 //TODO : Ability to create custom raidbuff?
 //TODO : default opener per job?
 //TODO : SelfBuffs under rotation when adding a skill that has a self buff? or have a way to add a self buff manually? (manual method exist, mayybe automate part of it?)

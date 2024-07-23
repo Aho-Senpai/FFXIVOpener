@@ -23,28 +23,6 @@
             "Radius": 0
         },
         {
-            "ID": 4,
-            "Name": "Thunder",
-            "ImageName": "thunder",
-            "Description": "Deals lightning damage with a potency of 120.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Lightning damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 40</br><span style=\"color:#00cc22;\">Duration:</span> 24s</br>Can only be cast while under the effect of Thunderhead, granted when gaining Astral Fire or Umbral Ice from an unaspected state, or changing between their influences.</br>Thunderhead Duration: 30s</br>Only one Thunder spell-induced damage over time effect per caster can be inflicted upon a single target.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 5,
-            "Name": "Blizzard II",
-            "ImageName": "blizzard_II",
-            "Description": "Deals ice damage with a potency of 80 to target and all enemies nearby it.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Umbral Ice III and removes Astral Fire</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
-            "GlobalCoolDown": "GCD",
-            "Cast": 3,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 5
-        },
-        {
             "ID": 6,
             "Name": "Scathe",
             "ImageName": "scathe",
@@ -54,28 +32,6 @@
             "Recast": 2.5,
             "Range": 25,
             "Radius": 0
-        },
-        {
-            "ID": 7,
-            "Name": "Fire II",
-            "ImageName": "fire_II",
-            "Description": "Deals fire damage with a potency of 80 to target and all enemies nearby it.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Astral Fire III and removes Umbral Ice</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
-            "GlobalCoolDown": "GCD",
-            "Cast": 3,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 5
-        },
-        {
-            "ID": 8,
-            "Name": "Thunder II",
-            "ImageName": "thunder_II",
-            "Description": "Deals lightning damage with a potency of 60 to target and all enemies nearby it.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Lightning damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 30</br><span style=\"color:#00cc22;\">Duration:</span> 18s</br>Can only be cast while under the effect of Thunderhead, granted when gaining Astral Fire or Umbral Ice from an unaspected state, or changing between their influences.</br>Thunderhead Duration: 30s</br>Only one Thunder spell-induced damage over time effect per caster can be inflicted upon a single target.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 5
         },
         {
             "ID": 11,
@@ -111,17 +67,6 @@
             "Radius": 5
         },
         {
-            "ID": 14,
-            "Name": "Thunder III",
-            "ImageName": "thunder_III",
-            "Description": "Deals lightning damage with a potency of 160.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Lightning damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 45</br><span style=\"color:#00cc22;\">Duration:</span> 27s</br>Can only be cast while under the effect of Thunderhead, granted when gaining Astral Fire or Umbral Ice from an unaspected state, or changing between their influences.</br>Thunderhead Duration: 30s</br>Only one Thunder spell-induced damage over time effect per caster can be inflicted upon a single target.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
             "ID": 16,
             "Name": "Flare",
             "ImageName": "flare",
@@ -153,17 +98,6 @@
             "Recast": 2.5,
             "Range": 25,
             "Radius": 0
-        },
-        {
-            "ID": 21,
-            "Name": "Thunder IV",
-            "ImageName": "thunder_IV",
-            "Description": "Deals lightning damage with a potency of 80 to target and all enemies nearby it.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Lightning damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 35</br><span style=\"color:#00cc22;\">Duration:</span> 21s</br>Can only be cast while under the effect of Thunderhead, granted when gaining Astral Fire or Umbral Ice from an unaspected state, or changing between their influences.</br>Thunderhead Duration: 30s</br>Only one Thunder spell-induced damage over time effect per caster can be inflicted upon a single target.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 5
         },
         {
             "ID": 23,
@@ -276,6 +210,74 @@
             "Radius": 5
         }
     ],
+    "UnderlevelGCD": [
+        {
+            "ID": 4,
+            "Name": "Thunder",
+            "ImageName": "thunder",
+            "Description": "Deals lightning damage with a potency of 120.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Lightning damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 40</br><span style=\"color:#00cc22;\">Duration:</span> 24s</br>Can only be cast while under the effect of Thunderhead, granted when gaining Astral Fire or Umbral Ice from an unaspected state, or changing between their influences.</br>Thunderhead Duration: 30s</br>Only one Thunder spell-induced damage over time effect per caster can be inflicted upon a single target.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 5,
+            "Name": "Blizzard II",
+            "ImageName": "blizzard_II",
+            "Description": "Deals ice damage with a potency of 80 to target and all enemies nearby it.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Umbral Ice III and removes Astral Fire</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 3,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 7,
+            "Name": "Fire II",
+            "ImageName": "fire_II",
+            "Description": "Deals fire damage with a potency of 80 to target and all enemies nearby it.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Grants Astral Fire III and removes Umbral Ice</br><span style=\"color:#00cc22;\">Duration:</span> 15s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 3,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 8,
+            "Name": "Thunder II",
+            "ImageName": "thunder_II",
+            "Description": "Deals lightning damage with a potency of 60 to target and all enemies nearby it.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Lightning damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 30</br><span style=\"color:#00cc22;\">Duration:</span> 18s</br>Can only be cast while under the effect of Thunderhead, granted when gaining Astral Fire or Umbral Ice from an unaspected state, or changing between their influences.</br>Thunderhead Duration: 30s</br>Only one Thunder spell-induced damage over time effect per caster can be inflicted upon a single target.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 14,
+            "Name": "Thunder III",
+            "ImageName": "thunder_III",
+            "Description": "Deals lightning damage with a potency of 160.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Lightning damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 45</br><span style=\"color:#00cc22;\">Duration:</span> 27s</br>Can only be cast while under the effect of Thunderhead, granted when gaining Astral Fire or Umbral Ice from an unaspected state, or changing between their influences.</br>Thunderhead Duration: 30s</br>Only one Thunder spell-induced damage over time effect per caster can be inflicted upon a single target.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 21,
+            "Name": "Thunder IV",
+            "ImageName": "thunder_IV",
+            "Description": "Deals lightning damage with a potency of 80 to target and all enemies nearby it.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Lightning damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 35</br><span style=\"color:#00cc22;\">Duration:</span> 21s</br>Can only be cast while under the effect of Thunderhead, granted when gaining Astral Fire or Umbral Ice from an unaspected state, or changing between their influences.</br>Thunderhead Duration: 30s</br>Only one Thunder spell-induced damage over time effect per caster can be inflicted upon a single target.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        }
+    ],
     "OGCD": [
         {
             "ID": 3,
@@ -376,5 +378,6 @@
             "Range": 0,
             "Radius": 3
         }
-    ]
+    ],
+    "UnderlevelOGCD": []
 }

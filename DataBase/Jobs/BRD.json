@@ -12,61 +12,6 @@
             "Radius": 0
         },
         {
-            "ID": 2,
-            "Name": "Straight Shot",
-            "ImageName": "straight_shot",
-            "Description": "Delivers an attack with a potency of 200.</br>Can only be executed when under the effect of Hawk's Eye.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 4,
-            "Name": "Venomous Bite",
-            "ImageName": "venomous_bite",
-            "Description": "Delivers an attack with a potency of 100.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Venom</br><span style=\"color:#00cc22;\">Potency:</span> 15</br><span style=\"color:#00cc22;\">Duration:</span> 45s",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
-            "ID": 7,
-            "Name": "Quick Nock",
-            "ImageName": "quick_nock",
-            "Description": "Delivers an attack with a potency of 110 to all enemies in a cone before you.</br><span style=\"color:#00cc22;\">Additional Effect:</span> 20% chance of granting Hawk's Eye</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 12,
-            "Radius": 12
-        },
-        {
-            "ID": 8,
-            "Name": "Wide Volley",
-            "ImageName": "wide_volley",
-            "Description": "Delivers an attack with a potency of 140 to target and all enemies nearby it.</br>Barrage Potency: 220</br>Can only be executed while under the effect of Hawk's Eye.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 5
-        },
-        {
-            "ID": 9,
-            "Name": "Windbite",
-            "ImageName": "windbite",
-            "Description": "Deals wind damage with a potency of 60.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Wind damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 20</br><span style=\"color:#00cc22;\">Duration:</span> 45s",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
             "ID": 19,
             "Name": "Iron Jaws",
             "ImageName": "iron_jaws",
@@ -188,6 +133,63 @@
             "Radius": 5
         }
     ],
+    "UnderlevelGCD": [
+        {
+            "ID": 2,
+            "Name": "Straight Shot",
+            "ImageName": "straight_shot",
+            "Description": "Delivers an attack with a potency of 200.</br>Can only be executed when under the effect of Hawk's Eye.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 4,
+            "Name": "Venomous Bite",
+            "ImageName": "venomous_bite",
+            "Description": "Delivers an attack with a potency of 100.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Venom</br><span style=\"color:#00cc22;\">Potency:</span> 15</br><span style=\"color:#00cc22;\">Duration:</span> 45s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 7,
+            "Name": "Quick Nock",
+            "ImageName": "quick_nock",
+            "Description": "Delivers an attack with a potency of 110 to all enemies in a cone before you.</br><span style=\"color:#00cc22;\">Additional Effect:</span> 20% chance of granting Hawk's Eye</br><span style=\"color:#00cc22;\">Duration:</span> 30s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 12,
+            "Radius": 12
+        },
+        {
+            "ID": 8,
+            "Name": "Wide Volley",
+            "ImageName": "wide_volley",
+            "Description": "Delivers an attack with a potency of 140 to target and all enemies nearby it.</br>Barrage Potency: 220</br>Can only be executed while under the effect of Hawk's Eye.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 5
+        },
+        {
+            "ID": 9,
+            "Name": "Windbite",
+            "ImageName": "windbite",
+            "Description": "Deals wind damage with a potency of 60.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Wind damage over time</br><span style=\"color:#00cc22;\">Potency:</span> 20</br><span style=\"color:#00cc22;\">Duration:</span> 45s",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        }
+    ],
     "OGCD": [
         {
             "ID": 3,
@@ -198,17 +200,6 @@
             "Cast": 0,
             "Recast": 120,
             "Range": 0,
-            "Radius": 0
-        },
-        {
-            "ID": 5,
-            "Name": "Bloodletter",
-            "ImageName": "bloodletter",
-            "Description": "Delivers an attack with a potency of 130.</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 3</br>Shares a recast timer with Rain of Death.",
-            "GlobalCoolDown": "OGCD",
-            "Cast": 0,
-            "Recast": 15,
-            "Range": 25,
             "Radius": 0
         },
         {
@@ -370,6 +361,19 @@
             "Name": "Heartbreak Shot",
             "ImageName": "heartbreak_shot",
             "Description": "Delivers an attack with a potency of 180.</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 3</br>Shares a recast timer with Rain of Death.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 15,
+            "Range": 25,
+            "Radius": 0
+        }
+    ],
+    "UnderlevelOGCD": [
+        {
+            "ID": 5,
+            "Name": "Bloodletter",
+            "ImageName": "bloodletter",
+            "Description": "Delivers an attack with a potency of 130.</br><span style=\"color:#00cc22;\">Maximum Charges:</span> 3</br>Shares a recast timer with Rain of Death.",
             "GlobalCoolDown": "OGCD",
             "Cast": 0,
             "Recast": 15,

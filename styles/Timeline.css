@@ -1,6 +1,6 @@
 #Timeline {
-    --timeline-image-size: 60px;
-    --ogcdtimeline-image-size: 40px;
+    --timeline-image-size: 80px;
+    --ogcdtimeline-image-size: 80px;
     --buffText-size: 16px;
 
     height: fit-content;
@@ -16,7 +16,8 @@
     border-radius: 5px;
 }
 
-#RaidBuffsTimeline, #SelfBuffsTimeline {
+#RaidBuffsTimeline, 
+#SelfBuffsTimeline {
     position: relative;
     height: fit-content;
     font-size: var(--buffText-size);
@@ -43,10 +44,13 @@
     align-content: space-between;
     border: none;
 }
-#TimelineBtns div button, #TimelineBtns div select, #TimelineBtns div input {
+#TimelineBtns div button, 
+#TimelineBtns div select, 
+#TimelineBtns div input {
     height: 100%;
 }
-#RaidBuffsTimeline div, #SelfBuffsTimeline div {
+#RaidBuffsTimeline div, 
+#SelfBuffsTimeline div {
     text-align: center;
     resize: horizontal;
     overflow: auto;
@@ -54,18 +58,21 @@
     cursor: grab;
 }
 
-#SkillsTimeline img, #SkillsTimeline button {
+#SkillsTimeline img, 
+#SkillsTimeline button {
     height: var(--timeline-image-size);
     width: var(--timeline-image-size);
 }
 
-#SkillsTimeline .OGCD, #SkillsTimeline .OGCD img {
+#SkillsTimeline .OGCD, 
+#SkillsTimeline .OGCD img {
     height: var(--ogcdtimeline-image-size);
     width: var(--ogcdtimeline-image-size);
 }
 
 
-#SkillsTimeline #Pull_Placeholder,#SkillsTimeline #Pull_Placeholder img {
+#SkillsTimeline #Pull_Placeholder,
+#SkillsTimeline #Pull_Placeholder img {
     height: calc(var(--timeline-image-size) + (var(--ogcdtimeline-image-size) - var(--timeline-image-size)/2));
     width: calc(var(--timeline-image-size)/2);
     padding-top: 0;

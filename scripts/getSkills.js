@@ -1,5 +1,7 @@
 let GCD = [];
+let UnderLevelGCD = [];
 let OGCD = [];
+let UnderLevelOGCD = [];
 let RoleAction = [];
 let RaidBuffs = [];
 let GlobalSkills = [];
@@ -42,7 +44,9 @@ async function LoadSkills(JobShort, JobRole) {
             globalSkillsResponse.json()
         ]);
         GCD = jobSkills.GCD;
+        UnderLevelGCD = jobSkills.UnderlevelGCD;
         OGCD = jobSkills.OGCD;
+        UnderLevelOGCD = jobSkills.UnderlevelOGCD;
         RoleAction = roleSkills[JobRole];
         RaidBuffs = raidBuffs.RaidBuffs;
         GlobalSkills = globalSkills.globalSkillsList;
@@ -61,12 +65,22 @@ function DisplayJobSkills(JobShort, JobRole) {
         { list: 
             GCD, 
             basePath: `./DataBase/Icon/PvE_Actions/${JobShort}/`, 
-            category: 'GCD' 
+            category: 'GCD'
+        },
+        { list: 
+            UnderLevelGCD, 
+            basePath: `./DataBase/Icon/PvE_Actions/${JobShort}/`, 
+            category: 'UnderLevelGCD'
         },
         { list: 
             OGCD, 
             basePath: `./DataBase/Icon/PvE_Actions/${JobShort}/`, 
             category: 'OGCD'
+        },
+        { list: 
+            UnderLevelOGCD, 
+            basePath: `./DataBase/Icon/PvE_Actions/${JobShort}/`, 
+            category: 'UnderLevelOGCD'
         },
         { list: 
             RoleAction, 
@@ -100,13 +114,16 @@ function BuildSkillsButtons(Category, Path, GlobalCoolDown, Skill) {
     TempButton.addEventListener("mouseleave", clearTooltip);
     TempButton.addEventListener("click", addToTimeline);
     document.getElementById(`${Category}List`).appendChild(TempButton);
+    //if underlevel is empty, remove div?
 }
 
 function ClearSkills() {
     const skillLists = [
         "RaidBuffsList", 
-        "GCDList", 
+        "GCDList",
+        "UnderLevelGCDList", 
         "OGCDList", 
+        "UnderLevelOGCDList",
         "RoleActionsList", 
         "GlobalSkillsList"
     ];

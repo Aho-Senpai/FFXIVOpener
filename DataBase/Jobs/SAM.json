@@ -1,17 +1,6 @@
 {
     "GCD": [
         {
-            "ID": 1,
-            "Name": "Hakaze",
-            "ImageName": "hakaze",
-            "Description": "Delivers an attack with a potency of 200.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases Kenki Gauge by 5",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 3,
-            "Radius": 0
-        },
-        {
             "ID": 2,
             "Name": "Jinpu",
             "ImageName": "jinpu",
@@ -43,17 +32,6 @@
             "Recast": 2.5,
             "Range": 3,
             "Radius": 0
-        },
-        {
-            "ID": 6,
-            "Name": "Fuga",
-            "ImageName": "fuga",
-            "Description": "Delivers an attack with a potency of 90 to all enemies in a cone before you.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases Kenki Gauge by 5",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 8,
-            "Radius": 8
         },
         {
             "ID": 7,
@@ -177,18 +155,31 @@
             "Radius": 0
         }
     ],
-    "OGCD": [
+    "UnderlevelGCD": [
         {
-            "ID": 3,
-            "Name": "Third Eye",
-            "ImageName": "third_eye",
-            "Description": "Reduces the amount of damage taken by the next attack by 10%.</br><span style=\"color:#00cc22;\">Duration:</span> 4s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases Kenki Gauge by 10 when hit",
-            "GlobalCoolDown": "OGCD",
+            "ID": 1,
+            "Name": "Hakaze",
+            "ImageName": "hakaze",
+            "Description": "Delivers an attack with a potency of 200.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases Kenki Gauge by 5",
+            "GlobalCoolDown": "GCD",
             "Cast": 0,
-            "Recast": 15,
-            "Range": 0,
+            "Recast": 2.5,
+            "Range": 3,
             "Radius": 0
         },
+        {
+            "ID": 6,
+            "Name": "Fuga",
+            "ImageName": "fuga",
+            "Description": "Delivers an attack with a potency of 90 to all enemies in a cone before you.</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases Kenki Gauge by 5",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 8,
+            "Radius": 8
+        }
+    ],
+    "OGCD": [
         {
             "ID": 13,
             "Name": "Meikyo Shisui",
@@ -331,6 +322,19 @@
             "Recast": 1,
             "Range": 8,
             "Radius": 8
+        }
+    ],
+    "UnderlevelOGCD": [
+        {
+            "ID": 3,
+            "Name": "Third Eye",
+            "ImageName": "third_eye",
+            "Description": "Reduces the amount of damage taken by the next attack by 10%.</br><span style=\"color:#00cc22;\">Duration:</span> 4s</br><span style=\"color:#00cc22;\">Additional Effect:</span> Increases Kenki Gauge by 10 when hit",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 15,
+            "Range": 0,
+            "Radius": 0
         }
     ]
 }

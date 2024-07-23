@@ -36,24 +36,46 @@ RaidBuffs | Raidbuffs
     grid-column: 3;
 }
 
-#RaidBuffs, #GCD, #OGCD, #GlobalSkills, #RoleActions {
+#RaidBuffs, 
+#GCD, 
+#OGCD, 
+#GlobalSkills, 
+#RoleActions {
     border: solid;
     border-radius: 5px;
     border-color: #e2cb87;
     margin: 3px;
 }
-#RaidBuffsList, #GCDList, #OGCDList, #GlobalSkillsList, #RoleActionsList {
+#RaidBuffsList, 
+#GCDList, 
+#UnderLevelGCDList, 
+#OGCDList, 
+#UnderLevelOGCDList, 
+#GlobalSkillsList, 
+#RoleActionsList {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.GCDIcon img, .OGCDIcon img, .RoleActionsIcon img, .RaidBuffsIcon img, .GlobalSkillsIcon img {
+.GCDIcon img, 
+.UnderLevelGCDIcon img, 
+.OGCDIcon img, 
+.UnderLevelOGCDIcon img, 
+.RoleActionsIcon img, 
+.RaidBuffsIcon img, 
+.GlobalSkillsIcon img {
     height: var(--skillSelect-image-size);
     width: var(--skillSelect-image-size);
 }
 
-.GCDIcon, .OGCDIcon, .RoleActionsIcon, .RaidBuffsIcon, .GlobalSkillsIcon {
+.GCDIcon, 
+.UnderLevelGCDIcon, 
+.OGCDIcon, 
+.UnderLevelOGCDIcon, 
+.RoleActionsIcon, 
+.RaidBuffsIcon, 
+.GlobalSkillsIcon {
     height: var(--skillSelect-image-size);
     width: var(--skillSelect-image-size);
     border: 0;

@@ -309,6 +309,7 @@
             "Radius": 5
         }
     ],
+    "UnderlevelGCD": [],
     "OGCD": [
         {
             "ID": 3,
@@ -475,5 +476,6 @@
             "Range": 25,
             "Radius": 25
         }
-    ]
+    ],
+    "UnderlevelOGCD": []
 }
