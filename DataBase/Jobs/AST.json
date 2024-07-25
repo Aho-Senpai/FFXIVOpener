@@ -280,6 +280,96 @@
             "Range": 0,
             "Radius": 0
         },
+
+        {
+            "ID": 14,
+            "Name": "The Balance",
+            "ImageName": "the_balance",
+            "Description": "Increases damage dealt by a party member or self by 6% if target is melee DPS or tank, or 3% for all other roles.</br>Duration: 15s</br>※This action cannot be assigned to a hotbar.</br>※Play I changes to The Balance when requirements for execution are met. ",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 15,
+            "Name": "The Arrow",
+            "ImageName": "the_arrow",
+            "Description": "Increases HP recovery via healing actions for a party member or self by 10%.</br>Duration: 15s</br>※This action cannot be assigned to a hotbar.</br>※Play II changes to The Arrow when requirements for execution are met. ",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 13,
+            "Name": "The Spire",
+            "ImageName": "the_spire",
+            "Description": "Creates a barrier around self or target party member that absorbs damage equivalent to a heal of 400 potency.</br>Duration: 30s</br>※This action cannot be assigned to a hotbar.</br>※Play III changes to The Spire when requirements for execution are met.",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 13,
+            "Name": "The Spear",
+            "ImageName": "the_spear",
+            "Description": "Increases damage dealt by a party member or self by 6% if target is ranged DPS or healer, or 3% for all other roles.</br>Duration: 15s</br>※This action cannot be assigned to a hotbar.</br>※Play I changes to The Spear when requirements for execution are met. ",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 13,
+            "Name": "The Bole",
+            "ImageName": "the_bole",
+            "Description": "Reduces damage taken by a party member or self by 10%.</br>Duration: 15s</br>※This action cannot be assigned to a hotbar.</br>※Play II changes to The Bole when requirements for execution are met. ",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 13,
+            "Name": "The Ewer",
+            "ImageName": "the_ewer",
+            "Description": "Grants healing over time effect to a party member or self.</br>Cure Potency: 200</br>Duration: 15s</br>※This action cannot be assigned to a hotbar.</br>※Play III changes to The Ewer when requirements for execution are met. ",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 13,
+            "Name": "Lord of Crowns",
+            "ImageName": "lord_of_crowns",
+            "Description": "Deals unaspected damage with a potency of 400 to all nearby enemies.</br>※This action cannot be assigned to a hotbar.</br>※Minor Arcana changes to Lord of Crowns when requirements for execution are met. ",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 30,
+            "Radius": 0
+        },
+        {
+            "ID": 13,
+            "Name": "Lady of Crowns",
+            "ImageName": "lady_of_crowns",
+            "Description": "Restores own HP and the HP of all nearby party members.</br>Cure Potency: 400</br>※This action cannot be assigned to a hotbar.</br>※Minor Arcana changes to Lady of Crowns when requirements for execution are met. ",
+            "GlobalCoolDown": "OGCD",
+            "Cast": 0,
+            "Recast": 1,
+            "Range": 30,
+            "Radius": 0
+        },
+
         {
             "ID": 18,
             "Name": "Synastry",
