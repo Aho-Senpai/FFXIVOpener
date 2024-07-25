@@ -13,9 +13,9 @@ function getJobSkills(JobShort, JobRole) {
     const ogcdList = document.getElementById("UnderLevelOGCDList");
 
     gcdTitle.style.display = "flex";
-    gcdList.style.display = "flex";
+    gcdList.style.display = "none";
     ogcdTitle.style.display = "flex";
-    ogcdList.style.display = "flex";
+    ogcdList.style.display = "none";
 
     ClearSkills();
     ToggleJobSelect();
@@ -148,4 +148,15 @@ function ClearSkills() {
         "GlobalSkillsList"
     ];
     skillLists.forEach(id => document.getElementById(id).replaceChildren());
+}
+
+function UnderLevelHide(Cat) {
+    const elementId = `UnderLevel${Cat}List`;
+    const element = document.getElementById(elementId);
+    
+    if (element.style.display == "none") {
+        element.style.display = "flex";
+    } else {
+        element.style.display = "none";
+    }
 }
