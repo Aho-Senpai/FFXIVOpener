@@ -16,7 +16,7 @@ function btnShareTimeline() {
 
 function saveToPng() {
     if (FileName == "") {
-        FileName == document.getElementById("SaveFileName").placeholder;
+        FileName = document.getElementById("SaveFileName").placeholder;
     }
     domtoimage.toBlob(TimeLineDiv)
     .then(function (blob) {
@@ -25,7 +25,7 @@ function saveToPng() {
 }
 function saveToJpeg() {
     if (FileName == "") {
-        FileName == document.getElementById("SaveFileName").placeholder;
+        FileName = document.getElementById("SaveFileName").placeholder;
     }
     domtoimage.toJpeg(TimeLineDiv, { quality: 1 })
     .then(function (blob) {
