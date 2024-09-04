@@ -132,7 +132,7 @@ function BuildSkillsButtons(Category, Path, GlobalCoolDown, Skill) {
     TempImage.src = Path;
     TempName.innerHTML = `${Skill.Name}`;
     TempName.classList.add("SkillName");
-    TempName.style.display = "none";
+    TempName.style.display = skillNames ? "block" : "none";
     TempButton.appendChild(TempImage);
     TempButton.appendChild(TempName);
     TempButton.addEventListener("mouseenter", () => showTooltip(Skill));

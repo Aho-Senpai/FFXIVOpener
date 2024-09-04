@@ -14,6 +14,7 @@ function moxSetting() {
 }
 function skillsName() {
     const skillNamesChecked = document.getElementById("SkillsSelectNamesCheckbox").checked;
+    skillNames = skillNamesChecked;
     document.querySelectorAll(".SkillName").forEach(element => {
         element.style.display = skillNamesChecked ? "block" : "none";
     });

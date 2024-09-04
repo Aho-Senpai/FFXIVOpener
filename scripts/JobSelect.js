@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(() => {
         MakeJobSelectorInputs();
     })
+    skillsName();
     // Later : remove the SortableJS dependency and implement this
     new Sortable(document.getElementById("SkillsTimeline")); //Using SortableJS to make timeline items sortable with drag&drop
 });
