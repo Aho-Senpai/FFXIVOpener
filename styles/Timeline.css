@@ -75,8 +75,8 @@
 }
 
 
-#SkillsTimeline #Pull_Placeholder,
-#SkillsTimeline #Pull_Placeholder img {
+#SkillsTimeline #Pull,
+#SkillsTimeline #Pull img {
     height: calc(var(--timeline-image-size) + (var(--ogcdtimeline-image-size) - var(--timeline-image-size)/2));
     width: calc(var(--timeline-image-size)/2);
     padding-top: 0;
