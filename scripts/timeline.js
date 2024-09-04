@@ -2,9 +2,9 @@ function addToTimeline() {
     if (this.classList.contains("GCD") || this.classList.contains("OGCD")) {
         const TempImg = this.cloneNode(true);
         TempImg.removeEventListener("click", addToTimeline);
+        TempImg.removeChild(TempImg.querySelector(".SkillName"));
         TempImg.addEventListener("click", removeFromTimeline);
         document.getElementById("SkillsTimeline").appendChild(TempImg);
-        
     }
     if (this.classList.contains("RaidBuff")) {
         AddRaidbuff(this);

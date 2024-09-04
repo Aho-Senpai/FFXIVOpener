@@ -44,6 +44,10 @@
     align-content: space-between;
     border: none;
 }
+#SkillsTimeline button label {
+    display: none;
+}
+
 #TimelineBtns div button, 
 #TimelineBtns div select, 
 #TimelineBtns div input {

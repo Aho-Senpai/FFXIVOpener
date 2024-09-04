@@ -1,16 +1,6 @@
 {
     "GCD": [
-        {
-            "ID": 1,
-            "Name": "Riposte",
-            "ImageName": "riposte",
-            "Description": "Delivers an attack with a potency of 130.</br>Action upgraded to Enchanted Riposte if both Black Mana and White Mana are at 20 or more.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 3,
-            "Radius": 0
-        },
+
         {
             "ID": 7,
             "Name": "Verthunder II",
@@ -55,39 +45,9 @@
             "Range": 25,
             "Radius": 0
         },
-        {
-            "ID": 11,
-            "Name": "Zwerchhau",
-            "ImageName": "zwerchhau",
-            "Description": "Delivers an attack with a potency of 100.</br><span style=\"color:#00cc22;\">Combo Action:</span> Riposte or Enchanted Riposte</br><span style=\"color:#00cc22;\">Combo Potency:</span> 150</br>Action upgraded to Enchanted Zwerchhau if both Black Mana and White Mana are at 15 or more.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 3,
-            "Radius": 0
-        },
-        {
-            "ID": 15,
-            "Name": "Redoublement",
-            "ImageName": "redoublement",
-            "Description": "Delivers an attack with a potency of 100.</br><span style=\"color:#00cc22;\">Combo Action:</span> Zwerchhau or Enchanted Zwerchhau</br><span style=\"color:#00cc22;\">Combo Potency:</span> 230</br>Action upgraded to Enchanted Redoublement if both Black Mana and White Mana are at 15 or more.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 3,
-            "Radius": 0
-        },
-        {
-            "ID": 17,
-            "Name": "Moulinet",
-            "ImageName": "moulinet",
-            "Description": "Delivers an attack with a potency of 60 to all enemies in a cone before you.</br>Action upgraded to Enchanted Moulinet if both Black Mana and White Mana are at 20 or more.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 8,
-            "Radius": 8
-        },
+
+
+
         {
             "ID": 18,
             "Name": "Vercure",
@@ -143,17 +103,7 @@
             "Range": 25,
             "Radius": 5
         },
-        {
-            "ID": 27,
-            "Name": "Reprise",
-            "ImageName": "reprise",
-            "Description": "Delivers an attack with a potency of 100.</br>Action upgraded to Enchanted Reprise if both Black Mana and White Mana are at 5 or more.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 0,
-            "Recast": 2.5,
-            "Range": 3,
-            "Radius": 0
-        },
+
         {
             "ID": 28,
             "Name": "Scorch",
@@ -300,6 +250,17 @@
     ],
     "UnderlevelGCD": [
         {
+            "ID": 1,
+            "Name": "Riposte",
+            "ImageName": "riposte",
+            "Description": "Delivers an attack with a potency of 130.</br>Action upgraded to Enchanted Riposte if both Black Mana and White Mana are at 20 or more.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
             "ID": 2,
             "Name": "Jolt",
             "ImageName": "jolt",
@@ -344,6 +305,39 @@
             "Radius": 5
         },
         {
+            "ID": 11,
+            "Name": "Zwerchhau",
+            "ImageName": "zwerchhau",
+            "Description": "Delivers an attack with a potency of 100.</br><span style=\"color:#00cc22;\">Combo Action:</span> Riposte or Enchanted Riposte</br><span style=\"color:#00cc22;\">Combo Potency:</span> 150</br>Action upgraded to Enchanted Zwerchhau if both Black Mana and White Mana are at 15 or more.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 15,
+            "Name": "Redoublement",
+            "ImageName": "redoublement",
+            "Description": "Delivers an attack with a potency of 100.</br><span style=\"color:#00cc22;\">Combo Action:</span> Zwerchhau or Enchanted Zwerchhau</br><span style=\"color:#00cc22;\">Combo Potency:</span> 230</br>Action upgraded to Enchanted Redoublement if both Black Mana and White Mana are at 15 or more.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
+            "Radius": 0
+        },
+        {
+            "ID": 17,
+            "Name": "Moulinet",
+            "ImageName": "moulinet",
+            "Description": "Delivers an attack with a potency of 60 to all enemies in a cone before you.</br>Action upgraded to Enchanted Moulinet if both Black Mana and White Mana are at 20 or more.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 8,
+            "Radius": 8
+        },
+        {
             "ID": 22,
             "Name": "Jolt II",
             "ImageName": "jolt_II",
@@ -352,6 +346,17 @@
             "Cast": 2,
             "Recast": 2.5,
             "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 27,
+            "Name": "Reprise",
+            "ImageName": "reprise",
+            "Description": "Delivers an attack with a potency of 100.</br>Action upgraded to Enchanted Reprise if both Black Mana and White Mana are at 5 or more.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 0,
+            "Recast": 2.5,
+            "Range": 3,
             "Radius": 0
         }
     ],

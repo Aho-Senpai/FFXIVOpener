@@ -126,15 +126,19 @@ function DisplayJobSkills(JobShort, JobRole) {
 function BuildSkillsButtons(Category, Path, GlobalCoolDown, Skill) {
     const TempButton = document.createElement("button");
     const TempImage = document.createElement("img");
+    const TempName = document.createElement("label");
     TempButton.classList.add(`${Category}Icon`, GlobalCoolDown);
     TempButton.id = Skill.Name;
     TempImage.src = Path;
+    TempName.innerHTML = `${Skill.Name}`;
+    TempName.classList.add("SkillName");
+    TempName.style.display = "none";
     TempButton.appendChild(TempImage);
+    TempButton.appendChild(TempName);
     TempButton.addEventListener("mouseenter", () => showTooltip(Skill));
     TempButton.addEventListener("mouseleave", clearTooltip);
     TempButton.addEventListener("click", addToTimeline);
     document.getElementById(`${Category}List`).appendChild(TempButton);
-    //if underlevel is empty, remove div?
 }
 
 function ClearSkills() {

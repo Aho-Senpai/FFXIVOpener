@@ -1,15 +1,24 @@
 let mox = false; // if true: do not clear timeline when selecting job
 mox = document.getElementById("MoxSettingCB").checked;
 
+let skillNames = false;
+skillNames = document.getElementById("SkillsSelectNamesCheckbox").checked;
+
 const settingsDiv = document.getElementById("SettingsDiv");
 function settingsBtn() {
     settingsDiv.style.display = getComputedStyle(settingsDiv).display === "block" ? "none" : "block";
 }
 function moxSetting() {
     const Mox = document.getElementById("MoxSettingCB");
-    Mox.checked = Mox.checked;
     mox = Mox.checked;
 }
+function skillsName() {
+    const skillNamesChecked = document.getElementById("SkillsSelectNamesCheckbox").checked;
+    document.querySelectorAll(".SkillName").forEach(element => {
+        element.style.display = skillNamesChecked ? "block" : "none";
+    });
+}
+
 const TimelineImgSizeInput = document.getElementById("TimelineImageSizeSlider");
 const TimelineImgSizeOutput = document.getElementById("TimelineImageSizeOutput");
 TimelineImgSizeInput.addEventListener("input", () => {

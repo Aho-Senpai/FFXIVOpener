@@ -69,6 +69,19 @@ RaidBuffs | Raidbuffs
     width: var(--skillSelect-image-size);
 }
 
+.GCDIcon label, 
+.UnderLevelGCDIcon label, 
+.OGCDIcon label, 
+.UnderLevelOGCDIcon label, 
+.RoleActionsIcon label, 
+.RaidBuffsIcon label, 
+.GlobalSkillsIcon label {
+    color: white;
+    background-color: black;
+    position: relative;
+    bottom: 105%;
+}
+
 .GCDIcon, 
 .UnderLevelGCDIcon, 
 .OGCDIcon, 
