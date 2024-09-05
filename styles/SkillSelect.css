@@ -105,3 +105,11 @@ RaidBuffs | Raidbuffs
     display: flex;
     justify-content: center;
 }
+
+#UnderLevelGCDTitle, #UnderLevelOGCDTitle {
+    cursor: pointer;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 5px;
+}
