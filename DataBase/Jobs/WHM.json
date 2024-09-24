@@ -80,17 +80,6 @@
             "Radius": 0
         },
         {
-            "ID": 26,
-            "Name": "Glare",
-            "ImageName": "glare",
-            "Description": "Deals unaspected damage with a potency of 290.",
-            "GlobalCoolDown": "GCD",
-            "Cast": 1.5,
-            "Recast": 2.5,
-            "Range": 25,
-            "Radius": 0
-        },
-        {
             "ID": 27,
             "Name": "Afflatus Misery",
             "ImageName": "afflatus_misery",
@@ -250,6 +239,17 @@
             "Name": "Stone IV",
             "ImageName": "stone_IV",
             "Description": "Deals earth damage with a potency of 260.",
+            "GlobalCoolDown": "GCD",
+            "Cast": 1.5,
+            "Recast": 2.5,
+            "Range": 25,
+            "Radius": 0
+        },
+        {
+            "ID": 26,
+            "Name": "Glare",
+            "ImageName": "glare",
+            "Description": "Deals unaspected damage with a potency of 290.",
             "GlobalCoolDown": "GCD",
             "Cast": 1.5,
             "Recast": 2.5,

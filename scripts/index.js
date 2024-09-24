@@ -11,7 +11,8 @@ function githubBtn() {
 //TODO : remove sortableJS dependency and implement sorting of timeline
 //TODO : Ability to create custom raidbuff?
 //TODO : default opener per job?
-//TODO : SelfBuffs under rotation when adding a skill that has a self buff? or have a way to add a self buff manually? (manual method exist, maybe automate part of it?)
+//TODO : SelfBuffs under rotation when adding a skill that has a self buff? or have a way to add a self buff manually? 
+//     ^ (manual method exist, maybe automate part of it?)
 //TODO : Settings menu prettier
 //TODO : for share and settings "menus", make them close/hide when clicking outside the div
 //TODO : investigate why chromium stops moving raidbuff bar if mouse leaves div (firefox doesn't)

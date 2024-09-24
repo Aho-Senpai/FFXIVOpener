@@ -109,6 +109,105 @@
             "Recast": 2.12,
             "Range": 3,
             "Radius": 0
+        },
+        {
+            "ID": 30,
+            "Name":"Fuma Shuriken",
+            "ImageName":"fuma_shuriken",
+            "GlobalCoolDown":"GCD",
+            "Description":"Delivers a ranged ninjutsu attack with a potency of 500. <br>Mudra Combination: Any one of the Ten, Chi, or Jin mudra<br>Triggers the cooldown of weaponskills, mudra, and Ninjutsu upon execution.<br><br>※This action cannot be assigned to a hotbar.<br>※Ninjutsu changes to Fuma Shuriken when requirements for execution are met. ",
+            "Cast":0,
+            "Recast":1.5,
+            "Range":25,
+            "Radius":0
+        },
+        {
+            "ID": 31,
+            "Name":"Katon",
+            "ImageName":"katon",
+            "GlobalCoolDown":"GCD",
+            "Description":"Deals fire damage with a potency of 350 to target and all enemies nearby it.<br>Mudra Combination: Chi→Ten or Jin→Ten<br>Triggers the cooldown of weaponskills, mudra, and Ninjutsu upon execution.<br><br>※This action cannot be assigned to a hotbar.<br>※Ninjutsu changes to Katon when requirements for execution are met. ",
+            "Cast":0,
+            "Recast":1.5,
+            "Range":20,
+            "Radius":5
+        },
+        {
+            "ID": 32,
+            "Name":"Raiton",
+            "ImageName":"raiton",
+            "GlobalCoolDown":"GCD",
+            "Description":"Deals lightning damage with a potency of 740.<br>Additional Effect: Grants a stack of Raiju Ready<br>Duration: 30s<br>Maximum Stacks: 3<br>Effect of Raiju Ready ends upon execution of any melee weaponskill.<br>Mudra Combination: Ten→Chi or Jin→Chi<br>Triggers the cooldown of weaponskills, mudra, and Ninjutsu upon execution.<br><br>※This action cannot be assigned to a hotbar.<br>※Ninjutsu changes to Raiton when requirements for execution are met. ",
+            "Cast":0,
+            "Recast":1.5,
+            "Range":20,
+            "Radius":0
+        },
+        {
+            "ID": 33,
+            "Name":"Hyoton",
+            "ImageName":"hyoton",
+            "GlobalCoolDown":"GCD",
+            "Description":"Deals ice damage with a potency of 350.<br>Additional Effect: Bind<br>Duration: 15s<br>Mudra Combination: Ten→Jin or Chi→Jin<br>Cancels auto-attack upon execution.<br>Triggers the cooldown of weaponskills, mudra, and Ninjutsu upon execution.<br><br>※This action cannot be assigned to a hotbar.<br>※Ninjutsu changes to Hyoton when requirements for execution are met. ",
+            "Cast":0,
+            "Recast":1.5,
+            "Range":25,
+            "Radius":0
+        },
+        {
+            "ID": 34,
+            "Name":"Huton",
+            "ImageName":"huton",
+            "GlobalCoolDown":"GCD",
+            "Description":"Deals wind damage with a potency of 240 to target and all enemies nearby it.<br>Additional Effect: Grants Shadow Walker<br>Shadow Walker Effect: Allows execution of actions which require the effect of Hidden, without being under that effect<br>Duration: 20s<br>Mudra Combination: Jin→Chi→Ten or Chi→Jin→Ten<br>Triggers the cooldown of weaponskills, mudra, and Ninjutsu upon execution.<br><br>※This action cannot be assigned to a hotbar.<br>※Ninjutsu changes to Huton when requirements for execution are met. ",
+            "Cast":0,
+            "Recast":1.5,
+            "Range":20,
+            "Radius":5
+        },
+        {
+            "ID": 35,
+            "Name":"Doton",
+            "ImageName":"doton",
+            "GlobalCoolDown":"GCD",
+            "Description":"Creates a patch of corrupted earth, dealing damage with a potency of 80 to any enemies who enter.<br>Duration: 18s<br>Additional Effect: Heavy +40%<br>Mudra Combination: Ten→Jin→Chi or Jin→Ten→Chi<br>Triggers the cooldown of weaponskills, mudra, and Ninjutsu upon execution.<br><br>※This action cannot be assigned to a hotbar.<br>※Ninjutsu changes to Doton when requirements for execution are met. ",
+            "Cast":0,
+            "Recast":1.5,
+            "Range":0,
+            "Radius":5
+        },
+        {
+            "ID": 36,
+            "Name":"Suiton",
+            "ImageName":"suiton",
+            "GlobalCoolDown":"GCD",
+            "Description":"Deals water damage with a potency of 580.<br>Additional Effect: Grants Shadow Walker<br>Shadow Walker Effect: Allows execution of actions which require the effect of Hidden, without being under that effect<br>Duration: 20s<br>Mudra Combination: Ten→Chi→Jin or Chi→Ten→Jin<br>Triggers the cooldown of weaponskills, mudra, and Ninjutsu upon execution.<br><br>※This action cannot be assigned to a hotbar.<br>※Ninjutsu changes to Suiton when requirements for execution are met. ",
+            "Cast":0,
+            "Recast":1.5,
+            "Range":20,
+            "Radius":0
+        },
+        {
+            "ID": 37,
+            "Name":"Goka Mekkyaku",
+            "ImageName":"goka_mekkyaku",
+            "GlobalCoolDown":"GCD",
+            "Description":"Deals fire damage with a potency of 600 to target and all enemies nearby it.<br>Mudra Combination: Chi→Ten or Jin→Ten<br>Can only be executed while under the effect of Kassatsu.<br>Triggers the cooldown of weaponskills, mudra, and Ninjutsu upon execution.<br><br>※This action cannot be assigned to a hotbar.<br>※Ninjutsu changes to Goka Mekkyaku when requirements for execution are met. ",
+            "Cast":0,
+            "Recast":1.5,
+            "Range":20,
+            "Radius":5
+        },
+        {
+            "ID": 38,
+            "Name":"Hyosho Ranryu",
+            "ImageName":"hyosho_ranryu",
+            "GlobalCoolDown":"GCD",
+            "Description":"Deals ice damage with a potency of 1,300.<br>Mudra Combination: Ten→Jin or Chi→Jin<br>Can only be executed while under the effect of Kassatsu.<br>Triggers the cooldown of weaponskills, mudra, and Ninjutsu upon execution.<br><br>※This action cannot be assigned to a hotbar.<br>※Ninjutsu changes to Hyosho Ranryu when requirements for execution are met. ",
+            "Cast":0,
+            "Recast":1.5,
+            "Range":25,
+            "Radius":0
         }
     ],
     "UnderlevelGCD": [
